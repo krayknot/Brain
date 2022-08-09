@@ -1,0 +1,1 @@
+take all the agents and skins in their respective single cab files and extract the cab files through post installation wizard.
