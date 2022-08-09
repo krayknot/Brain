@@ -1,0 +1,727 @@
+<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>HTML Book</title>
+<style>
+<!--
+ li.MsoNormal
+	{mso-style-parent:"";
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	margin-left:0in; margin-right:0in; margin-top:0in}
+-->
+</style>
+<LINK href="../style.css" rel=stylesheet type=text/css>
+</head>
+
+<body>
+
+<table width="838" border="1" align="center" style="border-width: 0" height="1714">
+  <tr> 
+    <td bordercolor="0" style="border-style: none; border-width: medium" width="10" bgcolor="#33CCFF" height="55">&nbsp;</td>
+    <td bordercolor="0" style="border-style: none; border-width: medium" width="814" bgcolor="#33CCFF" colspan="2" height="55">
+    <font face="Broadway BT" size="7" color="#000000"><b>HTML Book</b></font></td>
+  </tr>
+  <tr> 
+    <td bordercolor="0" style="border-style: none; border-width: medium" width="832" colspan="3" bgcolor="#009900" height="13">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" bgcolor="#00CC99" height="17">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" bgcolor="#00CC99" height="17">
+    <span lang="EN" style="font-size: 12.0pt; font-family: Arial Black">13. 
+    Style Sheets</span></td>
+    <td style="border-style: none; border-width: medium" width="14" height="17" bgcolor="#00CC99">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#FFCC00">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#FFCC00">
+    <a name="introstyle">
+    <span lang="EN" style="font-size: 10pt; font-family: Tahoma; font-weight: 700">
+    13.1 Introduction</span></a></td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#FFCC00">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="116" bgcolor="#FFFFCC">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="116" bgcolor="#FFFFCC">
+    <font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>You can use 
+    HTML to </b><strong>markup a document's structure</strong><b> and style 
+    sheets to </b><strong>declare the document's presentation</strong><b>. Using 
+    style sheets solves the problem of the limited range of presentation 
+    mechanisms provided by HTML. Style sheets simplify HTML markup and allow 
+    greater influence over presentation. They give you control over the 
+    presentation of documents, e.g. font information, alignment, colors, etc. 
+    Style information can be specified for individual elements or groups of 
+    elements. It allows for the separation of content and presentation so that 
+    you can change the presentation of an entire site by editing a single style 
+    sheet, making site maintenance much easier.</b></span></font><p>
+    <font face="Tahoma" style="font-size: 8pt"><strong>
+    <span lang="EN" style="color: red">Eg.1</span></strong><b><span lang="EN"> 
+    The following example is a short style sheet stored in a file named &quot;mystyle.css&quot; 
+    which sets the text color of a paragraph to blue and surrounds it with a 
+    solid yellow border:</span></b></font></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">p.classname {</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">color : &quot;blue&quot;;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">border: &quot;solid yellow&quot;;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">}</span></code></pre>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>You may 
+    link this style sheet to each of your HTML documents with the </b><strong>
+    link</strong><b> element as follows:</b></span></font></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0 Transitional//EN&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;html&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp; &lt;head&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp; &lt;title&gt;Document With Linked Style Sheet&lt;/title&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&nbsp;&nbsp; &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;mystyle.css&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp; &lt;/head&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp; &lt;body&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&nbsp;&nbsp; &lt;p class=&quot;classname&quot;&gt;This paragraph will have blue text within a yellow border.&lt;/p&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp; &lt;/body&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;/html&gt;</span></code></pre>
+    <p><span lang="EN" style="font-size: 8pt; font-family: Tahoma"><b>To refresh 
+    your memory regarding how to create </b><strong>external style sheets</strong><b> 
+    click
+    <a href="mk:@MSITStore:\WINDOWS\Temporary%20Internet%20Files\htmItutoriaI.chm::/page004.htm#eg3" style="color: blue; text-decoration: underline; text-underline: single">
+    here</a>. (Click on the BACK button to return here).</b></span></td>
+    <td style="border-style: none; border-width: medium" width="14" height="116" bgcolor="#FFFFCC">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#009900">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="17" bgcolor="#FFCC00">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="17" bgcolor="#FFCC00">
+    <a name="isi">
+    <span lang="EN" style="font-size: 10pt; font-family: Tahoma; font-weight: 700">
+    13.2 Inline Style Information</span></a></td>
+    <td style="border-style: none; border-width: medium" width="14" height="17" bgcolor="#FFCC00">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="376" bgcolor="#FFFFCC">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="376" bgcolor="#FFFFCC">
+    <b><span lang="EN" style="font-size: 8pt; font-family: Tahoma; color: red">
+    style = property: value</span><span lang="EN" style="font-size: 8pt; font-family: Tahoma"><br>
+    This attribute specifies style information for the current element.</span></b><p>
+    <span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700">
+    In CSS (cascading style sheets), property declarations have the form 
+    &quot;property: value&quot; and different property/value pairs are separated from each 
+    other by a semi-colon.</span></p>
+    <p><strong>
+    <span style="font-size: 8pt; font-family: Tahoma; color: red" lang="EN">Eg.2</span></strong><span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700"> 
+    The CSS example below sets color, font family and font size information for 
+    the text in a </span><strong>
+    <span style="font-size: 8pt; font-family: Tahoma" lang="EN">specific</span></strong><span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700"> 
+    paragraph.</span></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;p style=&quot;font-family: arial; font-size: 10pt; color: blue&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">This is how to set a particular style within a paragraph.&lt;/p&gt;</span></code></pre>
+    <p>
+    <span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700">
+    The text is rendered as follows:</span></p>
+    <p>
+    <span lang="EN" style="font-size: 8pt; font-family: Tahoma; color: blue; font-weight: 700">
+    This is how to set a particular style within a paragraph.</span></p>
+    <p><strong><span lang="EN" style="font-size: 8pt; font-family: Tahoma">Note:</span></strong><span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700"> 
+    The </span><strong>
+    <span lang="EN" style="font-size: 8pt; font-family: Tahoma">style element</span></strong><span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700"> 
+    (see section 9.4 below) should be used to specify style information for
+    </span><strong><span lang="EN" style="font-size: 8pt; font-family: Tahoma">
+    more than one element</span></strong><span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700">. 
+    For maximum flexibility it is best to define styles in </span><strong>
+    <span lang="EN" style="font-size: 8pt; font-family: Tahoma">external style 
+    sheets</span></strong><span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700">.</span></td>
+    <td style="border-style: none; border-width: medium" width="14" height="376" bgcolor="#FFFFCC">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#009900">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="17" bgcolor="#FFCC00">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="17" bgcolor="#FFCC00">
+    <a name="se">
+    <span lang="EN" style="font-size: 10pt; font-family: Tahoma; font-weight: 700">
+    13.3 The style Element</span></a></td>
+    <td style="border-style: none; border-width: medium" width="14" height="17" bgcolor="#FFCC00">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="138" bgcolor="#FFFFCC">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="138" bgcolor="#FFFFCC">
+    <h3><span style="font-size: 8pt; font-family: Tahoma" lang="EN">
+    Syntax&nbsp;&nbsp;&nbsp;&nbsp;&lt;style&gt;...&lt;/style&gt;</span></h3>
+    <p>
+    <a href="javascript:void(0);" title="Click for popup list" style="color: blue; text-decoration: underline; text-underline: single">
+    <font face="Tahoma">
+    <span lang="EN" style="font-size: 8pt; font-weight: 700">List of </span>
+    </font><span lang="EN" style="font-size: 10.0pt; font-family: Verdana">
+    <strong><span style="font-size: 8pt; font-family: Tahoma">style</span></strong></span><font face="Tahoma"><span lang="EN" style="font-size: 8pt; font-weight: 700"> 
+    Attributes</span></font></a></p>
+    <p>
+    <span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700">
+    The </span><strong>
+    <span style="font-size: 8pt; font-family: Tahoma" lang="EN">style</span></strong><span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700"> 
+    element allows you to put style sheet rules in the head of the document. 
+    HTML permits any number of </span><strong>
+    <span style="font-size: 8pt; font-family: Tahoma" lang="EN">style</span></strong><span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700"> 
+    elements in the </span><strong>
+    <span style="font-size: 8pt; font-family: Tahoma" lang="EN">head</span></strong><span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700"> 
+    section of a document.</span></p>
+    <p><strong>
+    <span style="font-size: 8pt; font-family: Tahoma; color: red" lang="EN">Eg.3</span></strong><span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700"> 
+    In the following example, CSS style declaration puts a border around every
+    </span><strong><span style="font-size: 8pt; font-family: Tahoma" lang="EN">p</span></strong><span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700"> 
+    element in the document and centers it on the page.</span></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;head&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;style type=&quot;text/css&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">p {</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">border-width: &quot;1&quot;; </span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">border: &quot;double&quot;; </span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">border-color: &quot;blue&quot;; </span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">text-align: &quot;center&quot;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">}</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;/style&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;/head&gt;</span></code></pre>
+    <p>
+    <span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700">
+    The text is surrounded by a border as follows:</span></p>
+    <div style="border: 2.25pt double blue; padding: 0in">
+      <p align="center" style="text-align: center; border: medium none; padding: 0in">
+      <span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700">
+      The text in this paragraph is centered and surrounded by a blue 
+      double-line border.</span></div>
+    <p><strong>
+    <span style="font-size: 8pt; font-family: Tahoma; color: red" lang="EN">Eg.4</span></strong><span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700"> 
+    We can modify it so that this style information will apply only to </span>
+    <strong><span style="font-size: 8pt; font-family: Tahoma" lang="EN">p</span></strong><span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700"> 
+    elements of a specific class as follows:</span></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;head&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;style type=&quot;text/css&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN"> p.classname {</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN"> border-width: &quot;1&quot;; </span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;border: &quot;double&quot;; </span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;border-color: &quot;blue&quot;; </span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;text-align: &quot;center&quot;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN"> }</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN"> &lt;/style&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN"> &lt;/head&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN"> &lt;body&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN"> &lt;p class=&quot;classname&quot;&gt;This paragraph is affected by the style&lt;/p&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN"> &lt;p&gt;This one is not affected by the style&lt;/p&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;/body&gt;</span></code></pre>
+    <p><strong>
+    <span style="font-size: 8pt; font-family: Tahoma; color: red" lang="EN">Eg.5</span></strong><span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700"> 
+    Finally, we can set the </span><strong>
+    <span style="font-size: 8pt; font-family: Tahoma" lang="EN">id</span></strong><span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700"> 
+    attribute to limit the scope of the style information to a </span><strong>
+    <span style="font-size: 8pt; font-family: Tahoma" lang="EN">single instance 
+    of p</span></strong><span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700"> 
+    as follows:</span></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;head&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;style type=&quot;text/css&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN"> #idname {</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN"> border-width: &quot;1&quot;; </span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;border: &quot;double&quot;; </span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;border-color: &quot;blue&quot;; </span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;text-align: &quot;center&quot;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN"> }</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN"> &lt;/style&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN"> &lt;/head&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN"> &lt;body&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN"> &lt;p class=&quot;classname&quot;&gt;This paragraph is not affected by the style&lt;/p&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN"> &lt;p id=&quot;idname&quot;&gt;This one is affected by the style&lt;/p&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN"> &lt;p&gt;This paragraph is not affected by the style&lt;/p&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;/body&gt;</span></code></pre>
+    <p>
+    <span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700">
+    Style information may be set for almost every HTML element. However, the
+    </span><strong><span style="font-size: 8pt; font-family: Tahoma" lang="EN">
+    div</span></strong><span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700"> 
+    and </span><strong>
+    <span style="font-size: 8pt; font-family: Tahoma" lang="EN">span</span></strong><span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700"> 
+    elements are particularly useful in that they do not impose any presentation 
+    semantics (besides block-level vs. inline). When these two elements are 
+    combined with style sheets, they allow users to extend HTML indefinitely, 
+    particularly when used with the </span><strong>
+    <span style="font-size: 8pt; font-family: Tahoma" lang="EN">class</span></strong><span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700"> 
+    and </span><strong>
+    <span style="font-size: 8pt; font-family: Tahoma" lang="EN">id </span>
+    </strong>
+    <span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700">
+    attributes.</span></p>
+    <p><strong>
+    <span style="font-size: 8pt; font-family: Tahoma; color: red" lang="EN">Eg.6</span></strong><span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700"> 
+    In the following example, we use the </span><strong>
+    <span style="font-size: 8pt; font-family: Tahoma" lang="EN">span</span></strong><span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700"> 
+    element to highlight, in yellow, some words in a paragraph.</span></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;head&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN"> &lt;style type=&quot;text/css&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp; span.hilite { background-color: &quot;yellow&quot; }</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN"> &lt;/style&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;/head&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;body&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp; &lt;p&gt;The span element is used to &lt;span class=&quot;hilite&quot;&gt;highlight these words&lt;/span&gt;.</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;/body&gt;</span></code></pre>
+    <p>
+    <span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700">
+    The paragraph is rendered as follows:</span></p>
+    <p>
+    <span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700">
+    The span element is used to <span style="background: yellow">highlight these 
+    words</span>.</span></p>
+    <p>
+    <span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700">
+    The same effect could be achieved using the following code:</span></p>
+    <p class="MsoNormal"><b><code style="font-family: Tahoma">
+    <span lang="EN" style="font-size: 8pt">&lt;p&gt;The span element is used to &lt;span 
+    style=&quot;background-color: yellow&quot;&gt;highlight these words&lt;/span&gt;.&lt;/p&gt;</span></code><span lang="EN" style="font-size: 8pt; font-family: Tahoma">
+    </span></b></p>
+    <p><strong>
+    <span style="font-size: 8pt; font-family: Tahoma; color: red" lang="EN">Eg.7</span></strong><span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700"> 
+    In the following example, use is made of the </span><strong>
+    <span style="font-size: 8pt; font-family: Tahoma" lang="EN">div</span></strong><span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700"> 
+    element and the </span><strong>
+    <span style="font-size: 8pt; font-family: Tahoma" lang="EN">class</span></strong><span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700"> 
+    attribute to set the text alignment for a series of headings. This style 
+    information could be reused for other headings by setting the class 
+    attribute elsewhere in the document.</span></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;head&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN"> &lt;style type=&quot;text/css&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&nbsp; div.centeralign { text-align: &quot;center&quot; }</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN"> &lt;/style&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;/head&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;body&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN"> &lt;div class=&quot;centeralign&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&nbsp; &lt;h3&gt;This is heading 1&lt;/h3&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN"> &lt;/div&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;/body&gt;</span></code></pre>
+    <p>
+    <span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700">
+    The headings are rendered as follows:</span></p>
+    <h3 align="center" style="text-align: center">
+    <span style="font-size: 8pt; font-family: Tahoma">This is heading 1</span></h3>
+    </td>
+    <td style="border-style: none; border-width: medium" width="14" height="138" bgcolor="#FFFFCC">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#009900">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="17" bgcolor="#FFCC00">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="17" bgcolor="#FFCC00">
+    <a name="mt">
+    <span lang="EN" style="font-size: 10pt; font-family: Tahoma; font-weight: 700">
+    13.4 Media types</span></a></td>
+    <td style="border-style: none; border-width: medium" width="14" height="17" bgcolor="#FFCC00">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="215" bgcolor="#FFFFCC">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="215" bgcolor="#FFFFCC">
+    <span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700">
+    You are able to design documents that take advantage of the characteristics 
+    of the media where the document is to be rendered (e.g., graphical displays, 
+    handheld devices, speech-based browsers, braille-based tactile devices, 
+    television screens, etc.). By specifying the media attribute, user agents 
+    are able to load and apply style sheets selectively.</span><p>
+    <span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700">
+    The following is a list of recognized media descriptors:</span></p>
+    <ul type="disc" style="margin-bottom: 0in">
+      <li class="MsoNormal"><strong>
+      <span style="font-size: 8pt; font-family: Tahoma" lang="EN">screen</span></strong><span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700">: 
+      Intended primarily for color computer screens. </span></li>
+      <li class="MsoNormal"><strong><span lang="EN" style="font-family: Tahoma">
+      <span style="font-size: 8pt">tty</span></span></strong><span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700">: 
+      Intended for media using a fixed-pitch character grid, such as teletypes, 
+      terminals, or portable devices with limited display capabilities. You 
+      should not use pixel units with the &quot;tty&quot; media type. </span></li>
+      <li class="MsoNormal"><strong><span lang="EN" style="font-family: Tahoma">
+      <span style="font-size: 8pt">tv</span></span></strong><span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700">: 
+      Intended for television-type devices (low resolution, color, limited 
+      scrollability screens, sound available). </span></li>
+      <li class="MsoNormal"><strong>
+      <span style="font-size: 8pt; font-family: Tahoma" lang="EN">projection</span></strong><span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700">: 
+      Intended for projected presentations, for example projectors or print to 
+      transparencies. </span></li>
+      <li class="MsoNormal"><strong>
+      <span style="font-size: 8pt; font-family: Tahoma" lang="EN">handheld</span></strong><span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700">: 
+      Intended for handheld devices (typically small screen, monochrome, limited 
+      bandwidth). </span></li>
+      <li class="MsoNormal"><strong>
+      <span style="font-size: 8pt; font-family: Tahoma" lang="EN">print</span></strong><span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700">: 
+      Intended for paged, opaque material and for documents viewed on screen in 
+      print preview mode. </span></li>
+      <li class="MsoNormal"><strong><span lang="EN" style="font-family: Tahoma">
+      <span style="font-size: 8pt">braille</span></span></strong><span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700">: 
+      Intended for braille tactile feedback devices. </span></li>
+      <li class="MsoNormal"><strong>
+      <span style="font-size: 8pt; font-family: Tahoma" lang="EN">embossed</span></strong><span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700">: 
+      Intended for paged braille printers. </span></li>
+      <li class="MsoNormal"><strong>
+      <span style="font-size: 8pt; font-family: Tahoma" lang="EN">aural</span></strong><span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700">: 
+      Intended for speech synthesizers. </span></li>
+      <li class="MsoNormal"><strong>
+      <span style="font-size: 8pt; font-family: Tahoma" lang="EN">all</span></strong><span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700">: 
+      Suitable for all devices. </span></li>
+    </ul>
+    <p>
+    <span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700">
+    The following sample declarations apply to </span><strong>
+    <span style="font-size: 8pt; font-family: Tahoma" lang="EN">p</span></strong><span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700"> 
+    elements. When projected, as in a business meeting for example, all 
+    instances will have a text-alignment of left. When printed, all instances 
+    will have a text-alignment of justify.</span></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;head&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN"> &lt;style type=&quot;text/css&quot; media=&quot;projection&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&nbsp;&nbsp; p { text-align: &quot;left&quot;}</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN"> &lt;/style&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN"> &lt;style type=&quot;text/css&quot; media=&quot;print&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&nbsp; p { text-align: &quot;justify&quot; }</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN"> &lt;/style&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN"> </span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;<span style="color: black">This example adds sound effects to anchors for use in speech output:</span></span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN"> </span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&lt;style type=&quot;text/css&quot; media=&quot;aural&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&nbsp; a { cue-before: uri(sound1.wav); cue-after: uri(sound2.wav)}</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN"> &lt;/style&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;/head&gt;</span></code></pre>
+    <p>
+    <span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700">
+    Media control is particularly useful when applied to external style sheets 
+    since user agents can save time by downloading only those style sheets that 
+    apply to the current device. For instance, speech-based browsers can avoid 
+    downloading style sheets designed for visual browsers.</span></td>
+    <td style="border-style: none; border-width: medium" width="14" height="215" bgcolor="#FFFFCC">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#009900">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#FFCC00">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#FFCC00">
+    <a name="exs">
+    <span lang="EN" style="font-size: 10pt; font-family: Tahoma; font-weight: 700">
+    13.5 External Style Sheets</span></a></td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#FFCC00">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="224" bgcolor="#FFFFCC">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="224" bgcolor="#FFFFCC">
+    <span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700">
+    It's possible to separate style sheets from HTML documents and save them as
+    </span><strong><span style="font-size: 8pt; font-family: Tahoma" lang="EN">
+    external style sheets</span></strong><span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700">. 
+    This offers the following benefits:</span><ul type="disc" style="margin-bottom: 0in">
+      <li class="MsoNormal">
+      <span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700">
+      You may change the presentation of several HTML documents without 
+      requiring modifications to those HTML documents. </span></li>
+    </ul>
+    <p>
+    <span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700">
+    User agents may load style sheets selectively based on media descriptions.</span></td>
+    <td style="border-style: none; border-width: medium" width="14" height="224" bgcolor="#FFFFCC">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#009900">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="17" bgcolor="#FFCC00">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="17" bgcolor="#FFCC00">
+    <a name="spec">
+    <span lang="EN" style="font-size: 10pt; font-family: Tahoma; font-weight: 700">
+    13.6 Specifying External Style Sheets</span></a></td>
+    <td style="border-style: none; border-width: medium" width="14" height="17" bgcolor="#FFCC00">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="93" bgcolor="#FFFFCC">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="93" bgcolor="#FFFFCC">
+    <span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700">
+    External style sheets are specified with the following attributes of the
+    </span><strong><span style="font-size: 8pt; font-family: Tahoma" lang="EN">
+    link</span></strong><span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700"> 
+    element:</span><ul type="disc" style="margin-bottom: 0in">
+      <li class="MsoNormal">
+      <span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700">
+      Set the rel attribute to &quot;stylesheet&quot;. </span></li>
+      <li class="MsoNormal">
+      <span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700">
+      Set the value of the type attribute to indicate the language of the linked 
+      style sheet resource. This allows the user agent to avoid downloading a 
+      style sheet for an unsupported style sheet language. </span></li>
+      <li class="MsoNormal">
+      <span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700">
+      Set the value of href to the location of the style sheet file. The value 
+      of href is a URI. </span></li>
+    </ul>
+    <p>
+    <span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700">
+    The following specifies a link to an external style sheet located in the 
+    file mystyle.css:</span></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;mystyle.css&quot;&gt;</span></code></pre>
+    <h3><span style="font-size: 8pt; font-family: Tahoma" lang="EN">
+    Syntax&nbsp;&nbsp;&nbsp;&nbsp;&lt;link&gt;</span></h3>
+    <p>
+    <a href="javascript:void(0);" title="Click for popup list" style="color: blue; text-decoration: underline; text-underline: single">
+    <font face="Tahoma">
+    <span lang="EN" style="font-size: 8pt; font-weight: 700">List of </span>
+    </font><span lang="EN" style="font-size: 10.0pt; font-family: Verdana">
+    <strong><span style="font-size: 8pt; font-family: Tahoma">link</span></strong></span><font face="Tahoma"><span lang="EN" style="font-size: 8pt; font-weight: 700"> 
+    Attributes</span></font></a></p>
+    <p>&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="93" bgcolor="#FFFFCC">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#009900">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="17" bgcolor="#FFCC00">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="17" bgcolor="#FFCC00">
+    <a name="ic">
+    <span lang="EN" style="font-size: 10pt; font-family: Tahoma; font-weight: 700">
+    13.7 Inheritance and Cascading</span></a></td>
+    <td style="border-style: none; border-width: medium" width="14" height="17" bgcolor="#FFCC00">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="74" bgcolor="#FFFFCC">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="74" bgcolor="#FFFFCC">
+    <span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700">
+    In order to render a document, the user agent needs to find values for style 
+    properties, for example the font family, font style, size, text color, etc. 
+    The exact mechanism depends on the style sheet language, but the following 
+    description is generally applicable.</span><p>
+    <span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700">
+    The cascading mechanism is used when a number of style rules all apply 
+    directly to an element. The mechanism allows the user agent to sort the 
+    rules by specificity, to determine which rule to apply. If no rule can be 
+    found, the next step depends on whether the style property can be inherited 
+    or not. Not all properties can be inherited. For these properties the style 
+    sheet language provides default values for use when there are no explicit 
+    rules for a particular element.</span></p>
+    <p>
+    <span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700">
+    If the property can be inherited, the user agent examines the immediately 
+    enclosing element to see if a rule applies to that. This process continues 
+    until an applicable rule is found. This mechanism allows style sheets to be 
+    specified compactly. For instance, you may specify the font family for all 
+    elements within the </span><strong>
+    <span lang="EN" style="font-size: 8pt; font-family: Tahoma">body</span></strong><span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700"> 
+    by a single rule that applies to the </span><strong>
+    <span lang="EN" style="font-size: 8pt; font-family: Tahoma">body</span></strong><span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700"> 
+    element.</span></p>
+    <p>&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="74" bgcolor="#FFFFCC">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#009900">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="17" bgcolor="#FFCC00">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="17" bgcolor="#FFCC00">
+    <a name="precedence">
+    <span lang="EN" style="font-size: 10pt; font-family: Tahoma; font-weight: 700">
+    13.8 Precedence</span></a></td>
+    <td style="border-style: none; border-width: medium" width="14" height="17" bgcolor="#FFCC00">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="36" bgcolor="#FFFFCC">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="36" bgcolor="#FFFFCC">
+    <span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700">
+    In some cases different style sheet specifications may conflict with one 
+    another. The browser must then decide which declaration to use. The choice 
+    is made on the basis of an order of precedence.</span><p>
+    <span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700">
+    The order of precedence for cascading style sheets is as follows:</span></p>
+    <ol start="1" type="1" style="margin-bottom: 0in">
+      <li class="MsoNormal"><strong>
+      <span style="font-size: 8pt; font-family: Tahoma" lang="EN">inline style 
+      information</span></strong><span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700"> 
+      takes precedence over </span><strong>
+      <span style="font-size: 8pt; font-family: Tahoma" lang="EN">embedded style 
+      sheets</span></strong><span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700">, 
+      and </span></li>
+      <li class="MsoNormal"><strong>
+      <span style="font-size: 8pt; font-family: Tahoma" lang="EN">embedded style 
+      sheets</span></strong><span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700"> 
+      in turn take precedence over </span><strong>
+      <span style="font-size: 8pt; font-family: Tahoma" lang="EN">linked style 
+      sheets</span></strong><span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700">.
+      </span></li>
+    </ol>
+    <p>
+    <span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700">
+    It is important to remember this order so that you'll know which style 
+    declarations will have precedence.</span></p>
+    <p><a name="ex13.1"><strong>
+    <span style="font-size: 8pt; font-family: Tahoma" lang="EN">Exercise 13.1</span></strong></a></p>
+    <ol start="1" type="1" style="margin-bottom: 0in">
+      <li class="MsoNormal">
+      <span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700">
+      In the editor, type the code in
+      <a href="mk:@MSITStore:\WINDOWS\Temporary%20Internet%20Files\htmItutoriaI.chm::/page013.htm#eg2#eg2" style="color: blue; text-decoration: underline; text-underline: single">
+      Eg.2</a> between the </span><strong>
+      <span style="font-size: 8pt; font-family: Tahoma" lang="EN">body</span></strong><span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700"> 
+      tags. Preview in Browser. </span></li>
+      <li class="MsoNormal">
+      <span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700">
+      Change the value of font-family to arial. Preview in Browser. </span></li>
+      <li class="MsoNormal">
+      <span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700">
+      Change the value of font-size to 14pt and the value of color to red. 
+      Preview in Browser after making each change. </span></li>
+      <li class="MsoNormal">
+      <span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700">
+      Change the property values above to whatever you want. Preview in your 
+      browser to see the effects. (Always try to use hexadecimal codes for 
+      stating color values (e.g. #FF0000 = red); you can use the color palette 
+      to get these values). </span></li>
+      <li class="MsoNormal">
+      <span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700">
+      Reset the editor. Type the code in
+      <a href="mk:@MSITStore:\WINDOWS\Temporary%20Internet%20Files\htmItutoriaI.chm::/page013.htm#eg3#eg3" style="color: blue; text-decoration: underline; text-underline: single">
+      Eg.3</a> between the </span><strong>
+      <span style="font-size: 8pt; font-family: Tahoma" lang="EN">head</span></strong><span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700"> 
+      tags in the editor. (Do not type the opening and closing head tags given 
+      in the example code to prevent having 2 sets of head tags). Between the
+      </span><strong>
+      <span style="font-size: 8pt; font-family: Tahoma" lang="EN">body</span></strong><b><span lang="EN" style="font-size: 8pt; font-family: Tahoma"> 
+      tags type: </span><code style="font-family: Tahoma">
+      <span lang="EN" style="font-size: 8pt">&lt;p&gt;This is text in a paragraph&lt;/p&gt;</span></code><span lang="EN" style="font-size: 8pt; font-family: Tahoma">. 
+      Preview in Browser. </span></b></li>
+      <li class="MsoNormal"><b>
+      <span lang="EN" style="font-size: 8pt; font-family: Tahoma">To the style 
+      sheet add: </span><code style="font-family: Tahoma">
+      <span lang="EN" style="font-size: 8pt">body {font-family: &quot;arial&quot;; 
+      font-size: &quot;10pt&quot;}</span></code><span lang="EN" style="font-size: 8pt; font-family: Tahoma"> 
+      so that it looks as follows: </span></b></li>
+    </ol>
+    <pre style="text-indent: -.25in; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 10.0pt; font-family: Courier New; margin-left: .5in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><span lang="EN"><font face="Tahoma" style="font-size: 8pt; font-weight: 700"><code>7.</code></font><code style="font-family: Courier New"><span style="font-style: normal; font-variant: normal; font-weight: 700; font-size: 8pt; font-family: Tahoma">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></code><font face="Tahoma" style="font-size: 8pt; font-weight: 700"><code>p {</code></font></span></pre>
+    <pre style="text-indent: -.25in; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 10.0pt; font-family: Courier New; margin-left: .5in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><span lang="EN"><font face="Tahoma" style="font-size: 8pt; font-weight: 700"><code>8.</code></font><code style="font-family: Courier New"><span style="font-style: normal; font-variant: normal; font-weight: 700; font-size: 8pt; font-family: Tahoma">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></code><font face="Tahoma" style="font-size: 8pt; font-weight: 700"><code>border-width: &quot;1&quot;; </code></font></span></pre>
+    <pre style="text-indent: -.25in; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 10.0pt; font-family: Courier New; margin-left: .5in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><span lang="EN"><font face="Tahoma" style="font-size: 8pt; font-weight: 700"><code>9.</code></font><code style="font-family: Courier New"><span style="font-style: normal; font-variant: normal; font-weight: 700; font-size: 8pt; font-family: Tahoma">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></code><font face="Tahoma" style="font-size: 8pt; font-weight: 700"><code>border: &quot;double&quot;; </code></font></span></pre>
+    <pre style="text-indent: -.25in; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 10.0pt; font-family: Courier New; margin-left: .5in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><span lang="EN"><font face="Tahoma" style="font-size: 8pt; font-weight: 700"><code>10.</code></font><code style="font-family: Courier New"><span style="font-style: normal; font-variant: normal; font-weight: 700; font-size: 8pt; font-family: Tahoma">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></code><font face="Tahoma" style="font-size: 8pt; font-weight: 700"><code>border-color: &quot;blue&quot;; </code></font></span></pre>
+    <pre style="text-indent: -.25in; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 10.0pt; font-family: Courier New; margin-left: .5in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><span lang="EN"><font face="Tahoma" style="font-size: 8pt; font-weight: 700"><code>11.</code></font><code style="font-family: Courier New"><span style="font-style: normal; font-variant: normal; font-weight: 700; font-size: 8pt; font-family: Tahoma">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></code><font face="Tahoma" style="font-size: 8pt; font-weight: 700"><code>text-align: &quot;center&quot;</code></font></span></pre>
+    <pre style="text-indent: -.25in; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 10.0pt; font-family: Courier New; margin-left: .5in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><span lang="EN"><font face="Tahoma" style="font-size: 8pt; font-weight: 700"><code>12.</code></font><code style="font-family: Courier New"><span style="font-style: normal; font-variant: normal; font-weight: 700; font-size: 8pt; font-family: Tahoma">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></code><font face="Tahoma" style="font-size: 8pt; font-weight: 700"><code>}</code></font></span></pre>
+    <pre style="text-indent: -.25in; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 10.0pt; font-family: Courier New; margin-left: .5in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><span lang="EN"><font face="Tahoma" style="font-size: 8pt; font-weight: 700"><code>13.</code></font><code style="font-family: Courier New"><span style="font-style: normal; font-variant: normal; font-weight: 700; font-size: 8pt; font-family: Tahoma">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></code><font face="Tahoma" style="font-size: 8pt; font-weight: 700"><code>body {</code></font></span></pre>
+    <pre style="text-indent: -.25in; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 10.0pt; font-family: Courier New; margin-left: .5in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><span lang="EN"><font face="Tahoma" style="font-size: 8pt; font-weight: 700"><code>14.</code></font><code style="font-family: Courier New"><span style="font-style: normal; font-variant: normal; font-weight: 700; font-size: 8pt; font-family: Tahoma">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></code><font face="Tahoma" style="font-size: 8pt; font-weight: 700"><code>font-family: &quot;arial&quot;; </code></font></span></pre>
+    <pre style="text-indent: -.25in; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 10.0pt; font-family: Courier New; margin-left: .5in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><span lang="EN"><font face="Tahoma" style="font-size: 8pt; font-weight: 700"><code>15.</code></font><code style="font-family: Courier New"><span style="font-style: normal; font-variant: normal; font-weight: 700; font-size: 8pt; font-family: Tahoma">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></code><font face="Tahoma" style="font-size: 8pt; font-weight: 700"><code>font-size: &quot;10pt&quot;</code></font></span></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: .5in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">}</span></code></pre>
+    <p class="MsoNormal" style="margin-left: .5in">
+    <span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700">
+    Preview in Browser. </span></p>
+    <ol start="16" type="1" style="margin-bottom: 0in">
+      <li class="MsoNormal"><b>
+      <span lang="EN" style="font-size: 8pt; font-family: Tahoma">Change the 
+      value of double in the declaration </span>
+      <code style="font-family: Tahoma"><span lang="EN" style="font-size: 8pt">
+      border: &quot;double&quot;;</span></code><span lang="EN" style="font-size: 8pt; font-family: Tahoma"> 
+      to each of the following in turn; </span>
+      <code style="font-family: Tahoma"><span lang="EN" style="font-size: 8pt">
+      none, solid, groove, ridge, inset, outset, dotted and dashed (these are 
+      the permitted values for the border property)</span></code><span lang="EN" style="font-size: 8pt; font-family: Tahoma">. 
+      Preview in Browser after each change. </span></b></li>
+      <li class="MsoNormal"><b>
+      <span lang="EN" style="font-size: 8pt; font-family: Tahoma">Change the 
+      value of the text-align property to </span>
+      <code style="font-family: Tahoma"><span lang="EN" style="font-size: 8pt">
+      right, left and then justify</span></code><span lang="EN" style="font-size: 8pt; font-family: Tahoma">. 
+      Preview in Browser after each change. (You will have to compose at least 3 
+      or 4 sentences between the p tags before you will be able to see the 
+      effects of using justify). </span></b></li>
+      <li class="MsoNormal">
+      <span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700">
+      Reset the editor. Type the code which is between the head and body tags 
+      given in
+      <a href="mk:@MSITStore:\WINDOWS\Temporary%20Internet%20Files\htmItutoriaI.chm::/page013.htm#eg4#eg4" style="color: blue; text-decoration: underline; text-underline: single">
+      Eg.4</a> into the editor. Preview in Browser. </span></li>
+      <li class="MsoNormal"><b>
+      <span lang="EN" style="font-size: 8pt; font-family: Tahoma">Add the 
+      following to the style sheet (under the code belonging to </span>
+      <code style="font-family: Tahoma"><span lang="EN" style="font-size: 8pt">
+      p.classname</span></code><span lang="EN" style="font-size: 8pt; font-family: Tahoma">):
+      </span></b></li>
+    </ol>
+    <pre style="text-indent: -.25in; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 10.0pt; font-family: Courier New; margin-left: .5in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><span lang="EN"><font face="Tahoma" style="font-size: 8pt; font-weight: 700"><code>20.</code></font><code style="font-family: Courier New"><span style="font-style: normal; font-variant: normal; font-weight: 700; font-size: 8pt; font-family: Tahoma">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></code><font face="Tahoma" style="font-size: 8pt; font-weight: 700"><code>p.somename {</code></font></span></pre>
+    <pre style="text-indent: -.25in; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 10.0pt; font-family: Courier New; margin-left: .5in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><span lang="EN"><font face="Tahoma" style="font-size: 8pt; font-weight: 700"><code>21.</code></font><code style="font-family: Courier New"><span style="font-style: normal; font-variant: normal; font-weight: 700; font-size: 8pt; font-family: Tahoma">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></code><font face="Tahoma" style="font-size: 8pt; font-weight: 700"><code>border-width: &quot;1&quot;; </code></font></span></pre>
+    <pre style="text-indent: -.25in; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 10.0pt; font-family: Courier New; margin-left: .5in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><span lang="EN"><font face="Tahoma" style="font-size: 8pt; font-weight: 700"><code>22.</code></font><code style="font-family: Courier New"><span style="font-style: normal; font-variant: normal; font-weight: 700; font-size: 8pt; font-family: Tahoma">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></code><font face="Tahoma" style="font-size: 8pt; font-weight: 700"><code>border: &quot;solid&quot;; </code></font></span></pre>
+    <pre style="text-indent: -.25in; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 10.0pt; font-family: Courier New; margin-left: .5in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><span lang="EN"><font face="Tahoma" style="font-size: 8pt; font-weight: 700"><code>23.</code></font><code style="font-family: Courier New"><span style="font-style: normal; font-variant: normal; font-weight: 700; font-size: 8pt; font-family: Tahoma">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></code><font face="Tahoma" style="font-size: 8pt; font-weight: 700"><code>border-color: &quot;red&quot;; </code></font></span></pre>
+    <pre style="text-indent: -.25in; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 10.0pt; font-family: Courier New; margin-left: .5in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><span lang="EN"><font face="Tahoma" style="font-size: 8pt; font-weight: 700"><code>24.</code></font><code style="font-family: Courier New"><span style="font-style: normal; font-variant: normal; font-weight: 700; font-size: 8pt; font-family: Tahoma">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></code><font face="Tahoma" style="font-size: 8pt; font-weight: 700"><code>text-align: &quot;left&quot;</code></font></span></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: .5in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">}</span></code></pre>
+    <ol start="25" type="1" style="margin-bottom: 0in">
+      <li class="MsoNormal"><b>
+      <span lang="EN" style="font-size: 8pt; font-family: Tahoma">To the opening
+      </span><code style="font-family: Tahoma">
+      <span lang="EN" style="font-size: 8pt">&lt;p&gt;</span></code><span lang="EN" style="font-size: 8pt; font-family: Tahoma"> 
+      tag of the </span></b><strong>
+      <span style="font-size: 8pt; font-family: Tahoma" lang="EN">second 
+      paragraph</span></strong><b><span lang="EN" style="font-size: 8pt; font-family: Tahoma"> 
+      add the following attribute and value: </span>
+      <code style="font-family: Tahoma"><span lang="EN" style="font-size: 8pt">
+      class=&quot;somename&quot;</span></code><span lang="EN" style="font-size: 8pt; font-family: Tahoma"> 
+      so that it looks like this </span><code style="font-family: Tahoma">
+      <span lang="EN" style="font-size: 8pt">&lt;p class=&quot;somename&quot;&gt;</span></code><span lang="EN" style="font-size: 8pt; font-family: Tahoma"> 
+      Preview in Browser. </span></b></li>
+      <li class="MsoNormal">
+      <span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700">
+      Reset the editor. Type the code which is between the head and body tags 
+      given in
+      <a href="mk:@MSITStore:\WINDOWS\Temporary%20Internet%20Files\htmItutoriaI.chm::/page013.htm#eg6#eg6" style="color: blue; text-decoration: underline; text-underline: single">
+      Eg.6</a> into the editor. Preview in Browser. </span></li>
+      <li class="MsoNormal"><b>
+      <span lang="EN" style="font-size: 8pt; font-family: Tahoma">Change the 
+      value of </span><code style="font-family: Tahoma">
+      <span lang="EN" style="font-size: 8pt">background-color</span></code><span lang="EN" style="font-size: 8pt; font-family: Tahoma"> 
+      from yellow to #99FFFF. Preview in Browser. </span></b></li>
+      <li class="MsoNormal"><b>
+      <span lang="EN" style="font-size: 8pt; font-family: Tahoma">Between the 
+      style tags add: </span><code style="font-family: Tahoma">
+      <span lang="EN" style="font-size: 8pt">p { text-indent: 5em }</span></code><span lang="EN" style="font-size: 8pt; font-family: Tahoma">. 
+      Preview in Browser. Notice how the sentence is indented. Using the 
+      text-indent property and value with the p selector in this way indents the 
+      first line of each paragraph. Change the value of 5em to 2em and then 
+      preview in browser. </span></b></li>
+      <li class="MsoNormal">
+      <span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700">
+      Reset the editor. Type the code which is between the head and body tags 
+      given in
+      <a href="mk:@MSITStore:\WINDOWS\Temporary%20Internet%20Files\htmItutoriaI.chm::/page013.htm#eg7#eg7" style="color: blue; text-decoration: underline; text-underline: single">
+      Eg.7</a> into the editor. Preview in Browser. </span></li>
+    </ol>
+    <p><b><span lang="EN" style="font-size: 8pt; font-family: Tahoma">Change the 
+    value of </span><code style="font-family: Tahoma">
+    <span lang="EN" style="font-size: 8pt">text-align</span></code><span lang="EN" style="font-size: 8pt; font-family: Tahoma"> 
+    from center to right and then to left. Preview in browser after each change.</span></b></p>
+    <p>&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="36" bgcolor="#FFFFCC">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#009900">&nbsp;</td>
+  </tr>
+</table>
+
+</body>
+
+</html>

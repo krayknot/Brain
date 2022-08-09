@@ -1,0 +1,976 @@
+<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>New Page 1</title>
+<style>
+<!--
+ li.MsoNormal
+	{mso-style-parent:"";
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	margin-left:0in; margin-right:0in; margin-top:0in}
+-->
+</style>
+<LINK href="../style.css" rel=stylesheet type=text/css>
+</head>
+
+<body>
+
+<table width="838" border="1" align="center" style="border-width: 0" height="1714">
+  <tr> 
+    <td bordercolor="0" style="border-style: none; border-width: medium" width="10" bgcolor="#33CCFF" height="55">&nbsp;</td>
+    <td bordercolor="0" style="border-style: none; border-width: medium" width="814" bgcolor="#33CCFF" colspan="2" height="55">
+    <font face="Broadway BT" size="7" color="#000000"><b>HTML Book</b></font></td>
+  </tr>
+  <tr> 
+    <td bordercolor="0" style="border-style: none; border-width: medium" width="832" colspan="3" bgcolor="#009900" height="13">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" bgcolor="#00CC99" height="17">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" bgcolor="#00CC99" height="17">
+    <span lang="EN" style="font-size: 12.0pt; font-family: Arial Black">9. 
+    Images, Objects and Applets</span></td>
+    <td style="border-style: none; border-width: medium" width="14" height="17" bgcolor="#00CC99">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#FFCC00">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#FFCC00">
+    <a name="introioa">
+    <span lang="EN" style="font-size: 10pt; font-family: Tahoma; font-weight:700">9.1 
+    Introduction</span></a></td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#FFCC00">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="116" bgcolor="#FFFFCC">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="116" bgcolor="#FFFFCC">
+    <b><font face="Tahoma" style="font-size: 8pt">
+    <span lang="EN">HTML presents multimedia features which allow you to include 
+    images, applets (programs that are automatically downloaded and run on the 
+    user's machine), video clips, and other HTML documents in their pages.</span></font></b><p>
+    <font face="Tahoma" style="font-size: 8pt">
+    <span lang="EN"><b>Versions of HTML prior to version 4 allowed authors to 
+    include images via the </b> <strong>img</strong><b> element and applets via the
+    </b>
+    <strong>applet</strong><b> element. These elements have several limitations:</b></span></font></p>
+    <ul type="disc" style="margin-bottom: 0in">
+      <li class="MsoNormal"><b><font face="Tahoma" style="font-size: 8pt"><span lang="EN">They fail to solve the more general 
+      problem of how to include new and future media types. </span></font></b></li>
+      <li class="MsoNormal"><font face="Tahoma" style="font-size: 8pt"><span lang="EN">
+      <b>The </b> <strong>applet</strong><b> element 
+      only works with Java-based applets. This element is </b> <strong>deprecated</strong><b> 
+      in favor of the </b> <strong>object</strong><b> element. </b> </span>
+      </font></li>
+      <li class="MsoNormal"><b><font face="Tahoma" style="font-size: 8pt"><span lang="EN">They pose accessibility problems.
+      </span></font></b></li>
+    </ul>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>However, HTML 4.0 introduced the
+    </b> <strong>object</strong><b> 
+    element, which offers an all-purpose solution to generic object inclusion. 
+    The </b> <strong>object</strong><b> element allows HTML authors to specify 
+    everything required by an object for its presentation by a user agent: 
+    source code, initial values, and run-time data. In this specification, the 
+    term &quot;object&quot; is used to describe the things that people want to place in 
+    HTML documents; other commonly used terms for these things are: applets, 
+    plug-ins, media handlers, etc.</b></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>To include images, you may use the
+    </b> <strong>object</strong><b> 
+    element or the </b> <strong>img</strong><b> element.</b></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>To include applets, you should use the
+    </b> <strong>object</strong><b> 
+    element as the </b> <strong>applet</strong><b> element is deprecated.</b></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>To include one HTML document in another, you may use 
+    either the new </b> <strong>iframe</strong><b> element or the </b> <strong>object</strong><b> 
+    element. In both cases, the embedded document remains independent of the 
+    main document. Visual user agents may present the embedded document in a 
+    distinct window within the main document.</b></span></font></p>
+    <p><b><font face="Tahoma" style="font-size: 8pt"><span lang="EN">Images and other included objects may have hyperlinks 
+    associated with them, both through the standard linking mechanisms, but also 
+    via image maps.</span></font></b></p>
+    <p><span lang="EN" style="font-size: 8pt; font-family: Tahoma">
+    <b>Note that although the </b> <strong>object</strong><b> element is intended to 
+    replace the more specific </b> <strong>img and applet</strong><b> elements, as well 
+    as the proprietary </b> <strong>embed and bgsound</strong><b> elements, a lack of 
+    browser support and severe bugs in supporting browsers make the other 
+    elements a better choice for now.</b></span></td>
+    <td style="border-style: none; border-width: medium" width="14" height="116" bgcolor="#FFFFCC">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#009900">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="17" bgcolor="#FFCC00">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="17" bgcolor="#FFCC00">
+    <a name="imgelement">
+    <span lang="EN" style="font-size: 10pt; font-family: Tahoma; font-weight:700">9.2 
+    The img Element</span></a></td>
+    <td style="border-style: none; border-width: medium" width="14" height="17" bgcolor="#FFCC00">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="376" bgcolor="#FFFFCC">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="376" bgcolor="#FFFFCC">
+    <h3><font face="Tahoma" style="font-size: 8pt"><span lang="EN">Syntax&nbsp;&nbsp;&nbsp;&nbsp;&lt;img&gt;</span></font></h3>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN">
+    <a href="javascript:void(0);" title="Click for popup list" style="color: blue; text-decoration: underline; text-underline: single">
+    <b>List of </b> <strong>img</strong><b> Attributes</b></a></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>The </b> <strong>img</strong><b> element embeds an image in the 
+    current document at the location of the element's declaration. The </b> <strong>
+    img</strong><b> element has no content; it is usually replaced inline by the 
+    image designated by the </b> <strong>src</strong><b> attribute, the exception being 
+    for left or right-aligned images.</b></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><strong><span lang="EN" style="color: red">Eg.1</span></strong><b><span lang="EN"> 
+    We can insert an image directly into a document as follows:</span></b></font></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;body&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;p&gt;Here is a photo of our product range:</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;img src=&quot;http://www.mycompany.com/images/products.jpg&quot;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp; width=&quot;70&quot; height=&quot;70&quot; alt=&quot;A photo of our product range.&quot;&gt;&lt;/p&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;/body&gt;</span></code></pre>
+    <p><font face="Tahoma" style="font-size: 8pt"><strong><span lang="EN" style="color: red">Eg.2</span></strong><span lang="EN"><b> 
+    The image can also be inserted using the </b> <strong>object</strong><b> element as 
+    follows:</b></span></font></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;body&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;p&gt;Here is a photo of our product range:</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;object data=&quot;http://www.mycompany.com/images/products.jpg&quot;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; type=&quot;image/jpg&quot; width=&quot;70&quot; height=&quot;70&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">A photo of our product range.</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;/object&gt;&lt;/p&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;/body&gt;</span></code></pre>
+    <p><span lang="EN" style="font-size: 8pt; font-family: Tahoma">
+    <b>The </b> <strong>alt</strong><b> attribute specifies alternate text that is 
+    displayed when the image cannot be rendered. User agents display alternate 
+    text when they cannot render images, cannot support a certain type of image 
+    or when users configure them not to display images.</b></span></td>
+    <td style="border-style: none; border-width: medium" width="14" height="376" bgcolor="#FFFFCC">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#009900">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="17" bgcolor="#FFCC00">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="17" bgcolor="#FFCC00">
+    <a name="obelement">
+    <span lang="EN" style="font-size: 10pt; font-family: Tahoma; font-weight:700">9.3 
+    The object Element</span></a></td>
+    <td style="border-style: none; border-width: medium" width="14" height="17" bgcolor="#FFCC00">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="138" bgcolor="#FFFFCC">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="138" bgcolor="#FFFFCC">
+    <h3><font face="Tahoma" style="font-size: 8pt"><span lang="EN">Syntax&nbsp;&nbsp;&nbsp;&nbsp;&lt;object&gt;...&lt;/object&gt;</span></font></h3>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN">
+    <a href="javascript:void(0);" title="Click for popup list" style="color: blue; text-decoration: underline; text-underline: single">
+    <b>List of </b> <strong>object</strong><b> Attributes</b></a></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>Most user agents have built-in mechanisms for rendering 
+    common data types such as text, images, colors, fonts, and graphic elements. 
+    To render data types they don't support themselves, user agents generally 
+    run external applications. The </b> <strong>object</strong><b> element allows you to 
+    control whether data should be rendered externally or by some program which 
+    is specified by you, that renders the data within the user agent.</b></span></font></p>
+    <p><b><font face="Tahoma" style="font-size: 8pt"><span lang="EN">In most cases, three things need to be specified:</span></font></b></p>
+    <ul type="disc" style="margin-bottom: 0in">
+      <li class="MsoNormal"><b><font face="Tahoma" style="font-size: 8pt"><span lang="EN">The implementation of the included 
+      object. For instance, if the included object is a navigation applet, you 
+      must indicate the location of the applet's executable code. </span></font>
+      </b></li>
+      <li class="MsoNormal"><b><font face="Tahoma" style="font-size: 8pt"><span lang="EN">The data to be rendered. For 
+      instance, if the included object is a program that renders font data, you 
+      must indicate the location of that data. </span></font></b></li>
+      <li class="MsoNormal"><b><font face="Tahoma" style="font-size: 8pt"><span lang="EN">Additional values required by the 
+      object at run-time. For example, some applets may require initial values 
+      for parameters. </span></font></b></li>
+    </ul>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>The </b> <strong>object</strong><b> element allows you to specify 
+    all three types of data. However, all three types of data may not need to be 
+    specified at once. For example, some objects may not require data. Others 
+    may not require run-time initialization. Others may not require additional 
+    implementation information, i.e., the user agent itself may already know how 
+    to render that type of data, for example, GIF images.</b></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>You use the
+    </b> <strong>object</strong><b> element to specify an 
+    object's implementation and the location of the data to be rendered. 
+    However, to specify run-time values, you use the </b> <strong>param</strong><b> 
+    element.</b></span></font></p>
+    <p><b><font face="Tahoma" style="font-size: 8pt"><span lang="EN">In the following example, we insert an analog clock 
+    applet, complete with alternate text, in a document via the object element. 
+    The applet, written in the Python language (hence .py extension), requires 
+    no additional data or run-time values. The classid attribute specifies the 
+    location of the applet:</span></font></b></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;p&gt;&lt;object classid=&quot;http://www.somesite.com/analogclock.py&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">An animated clock.</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;/object&gt;&lt;/p&gt;</span></code></pre>
+    <p><b><font face="Tahoma" style="font-size: 8pt"><span lang="EN">One significant consequence of the object element is that 
+    it offers a mechanism for specifying alternate object renderings. Each 
+    embedded object declaration may specify alternate content types. If a user 
+    agent cannot render the outermost object, it tries to render the contents, 
+    which may be another object element, etc.</span></font></b></p>
+    <p><b><font face="Tahoma" style="font-size: 8pt"><span lang="EN">In the following example, several object declarations are 
+    embedded to illustrate how alternate renderings work. A user agent will 
+    attempt to render the first object element it can, in the following order: 
+    (1) a solar-eclipse applet written in the Python language, (2) an MPEG 
+    animation of the eclipse, (3) a GIF image of the eclipse, (4) alternate 
+    text.</span></font></b></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;p&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;!-- First try the applet --&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;object title=&quot;The solar eclipse as seen from the observatory&quot; </span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;classid=&quot;http://www.somesite.com/eclipse.py&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &lt;!-- If unable to, try the MPEG video --&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp; &lt;object data=&quot;eclipse.mpeg&quot; type=&quot;application/mpeg&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;!-- If unable to, try the GIF image --&gt; </span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&lt;object data=&quot;eclipse.gif&quot; type=&quot;image/gif&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;!-- Otherwise use the last resort and display the text --&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The solar eclipse as seen from the observatory.</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp; &lt;/object&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp; &lt;/object&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN"> &lt;/object&gt;&lt;/p&gt;</span></code></pre>
+    <p>
+    <span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight:700">
+    The outermost declaration specifies an applet that requires no data or 
+    initial values. The second declaration specifies an MPEG animation and, 
+    since it does not define the location of an implementation to handle MPEG, 
+    relies on the user agent to handle the animation. The type attribute is also 
+    set so that a user agent that knows it cannot render MPEG will not bother to 
+    retrieve &quot;eclipse.mpeg&quot; from the network. The third declaration specifies 
+    the location of a GIF image and furnishes alternate text in case all other 
+    mechanisms fail.</span></td>
+    <td style="border-style: none; border-width: medium" width="14" height="138" bgcolor="#FFFFCC">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#009900">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="17" bgcolor="#FFCC00">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="17" bgcolor="#FFCC00">
+    <a name="paramemt">
+    <span lang="EN" style="font-size: 10pt; font-family: Tahoma; font-weight:700">9.4 
+    Object initialization: the param Element</span></a></td>
+    <td style="border-style: none; border-width: medium" width="14" height="17" bgcolor="#FFCC00">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="215" bgcolor="#FFFFCC">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="215" bgcolor="#FFFFCC">
+    <h3><font face="Tahoma" style="font-size: 8pt"><span lang="EN">Syntax&nbsp;&nbsp;&nbsp;&nbsp;&lt;param&gt;</span></font></h3>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN">
+    <a href="javascript:void(0);" title="Click for popup list" style="color: blue; text-decoration: underline; text-underline: single">
+    <b>List of </b> <strong>param</strong><b> Attributes</b></a></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><strong><span lang="EN">param</span></strong><b><span lang="EN"> elements 
+    specify a set of values that may be required by an object at run-time. Any 
+    number of param elements may appear in the content of an object or applet 
+    element, in any order, but must be placed at the start of the content of the 
+    enclosing object or applet element.</span></b></font></p>
+    <p><b><font face="Tahoma" style="font-size: 8pt"><span lang="EN">To illustrate the use of the param element, let's return 
+    to the clock example given above. If the applet is able to handle two 
+    run-time parameters that define its initial height and width, we can set the 
+    initial dimensions to 60x60 pixels with two param elements.</span></font></b></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;p&gt;&lt;object classid=&quot;http://www.somesite.com/analogclock.py&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;param name=&quot;height&quot; value=&quot;60&quot; valuetype=&quot;data&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;param name=&quot;width&quot; value=&quot;60&quot; valuetype=&quot;data&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">Your user agent cannot render this application.</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;/object&gt;&lt;/p&gt;</span></code></pre>
+    <p><b><font face="Tahoma" style="font-size: 8pt"><span lang="EN">In the following example, run-time data for the object's 
+    &quot;location&quot; parameter is specified as an external resource (a GIF file). The 
+    value of the valuetype attribute is thus set to &quot;ref&quot; and the value is a URI 
+    designating the resource.</span></font></b></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;p&gt;&lt;object classid=&quot;http://www.somesite.com&quot;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; standby=&quot;Loading photo, please wait...&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;param name=&quot;location&quot; value=&quot;/images/product.gif&quot; valuetype=&quot;ref&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;/object&gt;&lt;/p&gt;</span></code></pre>
+    <p><span lang="EN" style="font-size: 8pt; font-family: Tahoma"><b>A </b>
+    <strong>standby</strong><b> attribute has also been set so that the user agent 
+    may display a message while the rendering mechanism loads.</b></span></td>
+    <td style="border-style: none; border-width: medium" width="14" height="215" bgcolor="#FFFFCC">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#009900">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#FFCC00">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#FFCC00">
+    <a name="obnames">
+    <span lang="EN" style="font-size: 10pt; font-family: Tahoma; font-weight:700">9.5 
+    Naming Schemes For Objects</span></a></td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#FFCC00">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="224" bgcolor="#FFFFCC">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="224" bgcolor="#FFFFCC">
+    <b><font face="Tahoma" style="font-size: 8pt">
+    <span lang="EN">The location of an object's implementation is given by a 
+    URI. The first segment of an absolute URI specifies the naming scheme used 
+    to transfer the data designated by the URI. For HTML documents, this scheme 
+    is frequently &quot;http&quot;. Some applets might use other naming schemes. For 
+    instance, when specifying a Java applet, authors may use URIs that begin 
+    with &quot;java&quot; and for ActiveX applets, authors may use &quot;clsid&quot;.</span></font></b><p>
+    <b><font face="Tahoma" style="font-size: 8pt">
+    <span lang="EN">In the following example, we insert a Java applet into an 
+    HTML document.</span></font></b></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;p&gt;&lt;object codetype=&quot;application/java&quot; classid=&quot;java:app.start&quot;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">codebase=&quot;http://www.somesite.com/java/archive/&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;/object&gt;&lt;/p&gt;</span></code></pre>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>By setting the
+    </b> <strong>codetype</strong><b> attribute above, 
+    a user agent can decide whether to retrieve the Java application based on 
+    whether it supports the application or not.</b></span></font></p>
+    <p><span lang="EN" style="font-size: 8pt; font-family: Tahoma">
+    <b>Some rendering schemes require additional information to identify their 
+    implementation and must be told where to find that information. Path 
+    information may be given to the object's implementation via the </b> <strong>
+    codebase</strong><b> attribute.</b></span></td>
+    <td style="border-style: none; border-width: medium" width="14" height="224" bgcolor="#FFFFCC">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#009900">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="17" bgcolor="#FFCC00">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="17" bgcolor="#FFCC00">
+    <a name="app">
+    <span lang="EN" style="font-size: 10pt; font-family: Tahoma; font-weight:700">9.6 
+    The applet Element</span></a></td>
+    <td style="border-style: none; border-width: medium" width="14" height="17" bgcolor="#FFCC00">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="93" bgcolor="#FFFFCC">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="93" bgcolor="#FFFFCC">
+    <h3><font face="Tahoma" style="font-size: 8pt"><span lang="EN">Syntax&nbsp;&nbsp;&nbsp;&nbsp;&lt;applet&gt;...&lt;/applet&gt;</span></font></h3>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN">
+    <a href="javascript:void(0);" title="Click for popup list" style="color: blue; text-decoration: underline; text-underline: single">
+    <b>List of </b> <strong>applet</strong><b> Attributes</b></a></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>Applet is deprecated together with all of its attributes 
+    in favor of the </b> <strong>object</strong><b> element.</b></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>The </b> <strong>applet</strong><b> element, supported by all 
+    Java-enabled browsers, allows designers to embed a Java applet in an HTML 
+    document.</b></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>The content of the
+    </b> <strong>applet</strong><b> acts as 
+    alternate information for user agents that don't support this element or 
+    that have been configured not to support applets. User agents must ignore 
+    the content otherwise.</b></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><strong><span lang="EN">DEPRECATED EXAMPLE USING THE APPLET ELEMENT:</span></strong><b><span lang="EN"><br>
+    In the following example, the applet element includes a Java applet in the 
+    document. Since the applet is in the same directory as the current document, 
+    no codebase is supplied.</span></b></font></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;p&gt;&lt;applet code=&quot;clock.class&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">Java applet of an animated clock.</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;/applet&gt;&lt;/p&gt;</span></code></pre>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>The above example may be re-written using the
+    </b> <strong>
+    object</strong><b> element as follows:</b></span></font></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;p&gt;&lt;object codetype=&quot;application/java&quot; classid=&quot;java:clock.class&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">Java applet of an animated clock.</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;/object&gt;&lt;/p&gt;</span></code></pre>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>Initial values may be supplied to the applet via the
+    </b>
+    <strong>param</strong><b> element.</b></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><strong><span lang="EN">DEPRECATED EXAMPLE USING THE APPLET ELEMENT:</span></strong><b><span lang="EN"><br>
+    Audio playing java applet:</span></b></font></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;p&gt;&lt;applet code=&quot;Audioapp&quot; width=&quot;15&quot; height=&quot;15&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;param name=&quot;audible&quot; value=&quot;sounds.wav&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">Audio playing java applet.</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;/applet&gt;&lt;/p&gt;</span></code></pre>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>The above can be re-written using the
+    </b> <strong>object</strong><b> 
+    element as follows:</b></span></font></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;p&gt;&lt;object codetype=&quot;application/java&quot; classid=&quot;Audioapp&quot; width=&quot;15&quot; height=&quot;15&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;param name=&quot;audible&quot; value=&quot;sounds.wav&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">Audio playing java applet.</span></code></pre>
+    <p><code style="font-family: Tahoma">
+    <span lang="EN" style="font-size: 8pt; font-weight:700">&lt;/object&gt;&lt;/p&gt;</span></code></td>
+    <td style="border-style: none; border-width: medium" width="14" height="93" bgcolor="#FFFFCC">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#009900">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="17" bgcolor="#FFCC00">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="17" bgcolor="#FFCC00">
+    <a name="ed">
+    <span lang="EN" style="font-size: 10pt; font-family: Tahoma; font-weight:700">9.7 
+    Embedded Documents</span></a></td>
+    <td style="border-style: none; border-width: medium" width="14" height="17" bgcolor="#FFCC00">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="74" bgcolor="#FFFFCC">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="74" bgcolor="#FFFFCC">
+    <font face="Tahoma" style="font-size: 8pt">
+    <span lang="EN"><b>Rather than linking to a document, it is possible to embed 
+    the document directly into an HTML document. To do this one can use either 
+    the </b> <strong>iframe</strong><b> element or the </b> <strong>object</strong><b> element 
+    for this purpose, but the elements differ in some respects. Apart from the 
+    two elements having different content models, the </b> <strong>iframe</strong><b> 
+    element may be a target frame and may be &quot;selected&quot; by a user agent as the 
+    focus for printing, etc. User agents may render selected frames elements in 
+    ways that distinguish them from unselected frames, such as by drawing a 
+    border around the selected frame.</b></span></font><p><b>
+    <font face="Tahoma" style="font-size: 8pt"><span lang="EN">An embedded 
+    document is entirely independent of the document in which it is embedded. 
+    For instance, relative URIs within the embedded document resolve according 
+    to the base URI of the embedded document, not that of the main document. An 
+    embedded document is only rendered within another document, for example, in 
+    a subwindow. It remains otherwise independent.</span></font></b></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>For example, the following code embeds the contents of 
+    included_doc.html at the location where the </b> <strong>object</strong><b> 
+    definition occurs.</b></span></font></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">...previous text...</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;object data=&quot;included_doc.html&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">The document included_doc.html could not be embedded.</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;/object&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">...text after...</span></code></pre>
+    <p><span lang="EN" style="font-size: 8pt; font-family: Tahoma">
+    <b>The contents of the </b> <strong>object</strong><b> element must only be rendered if 
+    the file specified by the </b> <strong>data attribute</strong><b> cannot be loaded.</b></span></td>
+    <td style="border-style: none; border-width: medium" width="14" height="74" bgcolor="#FFFFCC">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#009900">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="17" bgcolor="#FFCC00">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="17" bgcolor="#FFCC00">
+    <a name="imaps">
+    <span lang="EN" style="font-size: 10pt; font-family: Tahoma; font-weight:700">9.8 
+    Image Maps</span></a></td>
+    <td style="border-style: none; border-width: medium" width="14" height="17" bgcolor="#FFCC00">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="36" bgcolor="#FFFFCC">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="36" bgcolor="#FFFFCC">
+    <b><font face="Tahoma" style="font-size: 8pt">
+    <span lang="EN">Using image maps, it is possible to specify regions of an 
+    image or object and assign a specific action to each region, such as to 
+    retrieve a document or run a program, etc. When the region is activated by 
+    the user, e.g. by clicking on it, the action is executed.</span></font></b><p>
+    <b><font face="Tahoma" style="font-size: 8pt">
+    <span lang="EN">An image map is created using a list of co-ordinates that 
+    define the mapping regions and which URI's those co-ordinates are associated 
+    with. This is known as the map file. To create an image map you should use 
+    an image mapping program or a graphics program capable of image mapping.</span></font></b></p>
+    <p><b><font face="Tahoma" style="font-size: 8pt"><span lang="EN">There are two types of image maps:</span></font></b></p>
+    <ul type="disc" style="margin-bottom: 0in">
+      <li class="MsoNormal"><font face="Tahoma" style="font-size: 8pt"><strong><span lang="EN">Client-side</span></strong><b><span lang="EN">. 
+      When a user activates a region of a client-side image map with a mouse, 
+      the pixel coordinates are interpreted by the user agent. The user agent 
+      selects a link that was specified for the activated region and follows it.
+      </span></b></font></li>
+      <li class="MsoNormal"><font face="Tahoma" style="font-size: 8pt"><strong><span lang="EN">Server-side</span></strong><span lang="EN"><b>. 
+      When a user activates a region of a server-side image map with a mouse, 
+      the pixel coordinates of the click are sent to the server-side agent 
+      specified by the </b> <strong>href</strong><b> attribute of the </b> <strong>a</strong><b> 
+      element. The server-side agent interprets the coordinates and performs 
+      some action. </b> </span></font></li>
+    </ul>
+    <p><b><font face="Tahoma" style="font-size: 8pt"><span lang="EN">Client-side image maps are preferred over server-side 
+    image maps for at least two reasons: </span></font></b></p>
+    <ul type="disc" style="margin-bottom: 0in">
+      <li class="MsoNormal"><b><font face="Tahoma" style="font-size: 8pt"><span lang="EN">they are accessible to people 
+      browsing with non-graphical user agents and </span></font></b></li>
+    </ul>
+    <p>
+    <span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight:700">
+    they offer immediate feedback as to whether or not the pointer is over an 
+    active region.</span></p>
+    <p>&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="36" bgcolor="#FFFFCC">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#009900">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="17" bgcolor="#FFCC00">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="17" bgcolor="#FFCC00">
+    <a name="maparea">
+    <span lang="EN" style="font-size: 10pt; font-family: Tahoma; font-weight:700">9.9 
+    The map and area Elements</span></a></td>
+    <td style="border-style: none; border-width: medium" width="14" height="17" bgcolor="#FFCC00">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="36" bgcolor="#FFFFCC">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="36" bgcolor="#FFFFCC">
+    <h3><font face="Tahoma" style="font-size: 8pt"><span lang="EN">Syntax&nbsp;&nbsp;&nbsp;&nbsp;&lt;map&gt;...&lt;/map&gt;</span></font></h3>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN">
+    <a href="javascript:void(0);" title="Click for popup list" style="color: blue; text-decoration: underline; text-underline: single">
+    <b>List of </b> <strong>map</strong><b> Attributes</b></a></span></font></p>
+    <h3><font face="Tahoma" style="font-size: 8pt"><span lang="EN">Syntax&nbsp;&nbsp;&nbsp;&nbsp;&lt;area&gt;</span></font></h3>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN">
+    <a href="javascript:void(0);" title="Click for popup list" style="color: blue; text-decoration: underline; text-underline: single">
+    <b>List of </b> <strong>area</strong><b> Attributes</b></a></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>The </b> <strong>map</strong><b> element specifies a client-side 
+    image map that may be associated with other elements, such as </b> <strong>img, 
+    object, or input</strong><b>. An image map is associated with an element via 
+    the element's usemap attribute.</b></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>The presence of the
+    </b> <strong>usemap</strong><b> attribute for 
+    an object implies that the object being included is an image. Furthermore, 
+    when the </b> <strong>object</strong><b> element has an associated client-side image 
+    map, user agents may implement user interaction with the object solely in 
+    terms of the client-side image map. This allows user agents, such as an 
+    audio browser, to interact with the object without having to process it. The 
+    user agent may even choose not to retrieve or process the object. When an 
+    object has an associated image map, it should not be expected that the 
+    object will be retrieved or processed by every user agent.</b></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>The </b> <strong>map</strong><b> element content model allows the 
+    following to be combined: </b> </span></font></p>
+    <ol start="1" type="1" style="margin-bottom: 0in">
+      <li class="MsoNormal"><font face="Tahoma" style="font-size: 8pt"><span lang="EN">
+      <b>One or more </b> <strong>area</strong><b> 
+      elements. These elements have no content but specify the geometric regions 
+      of the image map and the link associated with each region. User agents do 
+      not generally render </b> <strong>area</strong><b> elements, therefore </b> <strong>
+      alternate text</strong><b> must be provided for each area with the </b> <strong>
+      alt attribute</strong><b>. </b> </span></font></li>
+      <li class="MsoNormal"><font face="Tahoma" style="font-size: 8pt"><span lang="EN">
+      <b>Block-level content. This content 
+      should include </b> <strong>a</strong><b> elements that specify the geometric 
+      regions of the image map and the link associated with each region. User 
+      agents should render block-level content of a </b> <strong>map</strong><b> 
+      element, therefore this method should be used to create more accessible 
+      documents. </b> </span></font></li>
+    </ol>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>Note that when a
+    </b> <strong>map</strong><b> element contains 
+    both </b> <strong>area</strong><b> elements and block-level content, user agents 
+    must ignore the </b> <strong>area</strong><b> elements.</b></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>An image maps's geometry should be specified completely 
+    with </b> <strong>area</strong><b> elements, or completely with </b> <strong>a</strong><b> 
+    elements, or completely with both if content is mixed. Mixing content 
+    enables older user agents to handle map geometries specified by </b> <strong>area</strong><b> 
+    elements and new user agents to take advantage of richer block content.</b></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><strong><span lang="EN">Client-side image map examples</span></strong></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>In the following example, a client-side image map is 
+    created for the </b> <strong>object</strong><b> element. In this example we do not 
+    want to render the image map's contents when the object is rendered, so we 
+    &quot;hide&quot; the </b> <strong>map</strong><b> element within the </b> <strong>object</strong><b> 
+    element's content. Consequently, the map element's contents will only be 
+    rendered if the object cannot be rendered.</b></span></font></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp; &lt;body&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;&lt;object data=&quot;imagemap.gif&quot; type=&quot;image/gif&quot; usemap=&quot;#examplemap&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp; &lt;map name=&quot;examplemap&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Navigation links:</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;a href=&quot;products.html&quot; shape=&quot;rect&quot; coords=&quot;0,0,75,73&quot;&gt;Our Products&lt;/a&gt; </span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href=&quot;prices.html&quot; shape=&quot;rect&quot; coords=&quot;75,0,148,73&quot;&gt;Our Prices&lt;/a&gt; </span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href=&quot;specials.html&quot; shape=&quot;rect&quot; coords=&quot;0,73,75,147&quot;&gt;Special Offers&lt;/a&gt; </span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href=&quot;search.html&quot; shape=&quot;rect&quot; coords=&quot;75,73,148,147&quot;&gt;Search&lt;/a&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/p&gt;&lt;/map&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp; &lt;/object&gt;&lt;/p&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp; &lt;/body&gt;</span></code></pre>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>We may prefer to render the image map's contents even 
+    when a user agent can render the object. For instance, we may want to 
+    associate an image map with an </b> <strong>object</strong><b> element and include a 
+    text navigation bar at the bottom of the page. To do so, we define the </b>
+    <strong>map</strong><b> element outside of the </b> <strong>object</strong><b> element:</b></span></font></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp; &lt;body&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;&lt;object data=&quot;imagemap.gif&quot; type=&quot;image/gif&quot; usemap=&quot;#examplemap&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp; &lt;/object&gt;&lt;/p&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp; ...more of the page here...</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp; &lt;map name=&quot;examplemap&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Navigation links:</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;a href=&quot;products.html&quot; shape=&quot;rect&quot; coords=&quot;0,0,75,73&quot;&gt;Our Products&lt;/a&gt; </span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href=&quot;prices.html&quot; shape=&quot;rect&quot; coords=&quot;75,0,148,73&quot;&gt;Our Prices&lt;/a&gt; </span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href=&quot;specials.html&quot; shape=&quot;rect&quot; coords=&quot;0,73,75,147&quot;&gt;Special Offers&lt;/a&gt; </span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href=&quot;search.html&quot; shape=&quot;rect&quot; coords=&quot;75,73,148,147&quot;&gt;Search&lt;/a&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/p&gt;&lt;/map&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp; &lt;/body&gt;</span></code></pre>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>Below we create a similar image map using the
+    </b> <strong>
+    area</strong><b> element and utilizing the </b> <strong>alt</strong><b> attribute:</b></span></font></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;p&gt;&lt;object data=&quot;imagemap.gif&quot; type=&quot;image/gif&quot; usemap=&quot;#examplemap&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp; &lt;p&gt;Navigation links.&lt;/p&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp; &lt;/object&gt;&lt;/p&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;map name=&quot;examplemap&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN"> &lt;area href=&quot;products.html&quot; </span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alt=&quot;Our Products&quot; </span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;shape=&quot;rect&quot; </span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;coords=&quot;0,0,75,73&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN"> &lt;area href=&quot;prices.html&quot; </span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alt=&quot;Our Prices&quot; </span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;shape=&quot;rect&quot; </span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;coords=&quot;75,0,148,73&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN"> &lt;area href=&quot;specials.html&quot; </span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alt=&quot;Special Offers&quot; </span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;shape=&quot;rect&quot;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; coords=&quot;0,73,75,147&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN"> &lt;area href=&quot;search.html&quot; </span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alt=&quot;Search&quot; </span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;shape=&quot;rect&quot; </span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;coords=&quot;75,73,148,147&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;/map&gt;</span></code></pre>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>Below is a similar version as just given above, but this 
+    time using the </b> <strong>img</strong><b> element instead of the </b> <strong>object</strong><b> 
+    element and using the same </b> <strong>map</strong><b> declaration:</b></span></font></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;p&gt;&lt;img src=&quot;imagemap.gif&quot; usemap=&quot;#examplemap&quot; alt=&quot;navigation links&quot;&gt;&lt;/p&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;map name=&quot;examplemap&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN"> &lt;area href=&quot;products.html&quot; </span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alt=&quot;Our Products&quot; </span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;shape=&quot;rect&quot; </span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;coords=&quot;0,0,75,73&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN"> &lt;area href=&quot;prices.html&quot; </span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alt=&quot;Our Prices&quot; </span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;shape=&quot;rect&quot; </span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;coords=&quot;75,0,148,73&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN"> &lt;area href=&quot;specials.html&quot; </span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alt=&quot;Special Offers&quot; </span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;shape=&quot;rect&quot;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; coords=&quot;0,73,75,147&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN"> &lt;area href=&quot;search.html&quot; </span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alt=&quot;Search&quot; </span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;shape=&quot;rect&quot; </span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;coords=&quot;75,73,148,147&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;/map&gt;</span></code></pre>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>In the example below, if the user agent doesn't support 
+    the JPG format, it tries to render the GIF image. If it doesn't support the 
+    GIF format, it renders the text description provided as the content of the 
+    inner </b> <strong>object</strong><b> element.</b></span></font></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp; &lt;body&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;&lt;object data=&quot;imagemap.jpg&quot; type=&quot;image/jpg&quot; usemap=&quot;#examplemap&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &lt;object data=&quot;imagemap.gif&quot; type=&quot;image/gif&quot; usemap=&quot;#examplemap&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;map name=&quot;examplemap&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Navigation links:</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;a href=&quot;products.html&quot; shape=&quot;rect&quot; coords=&quot;0,0,75,73&quot;&gt;Our Products&lt;/a&gt; </span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href=&quot;prices.html&quot; shape=&quot;rect&quot; coords=&quot;75,0,148,73&quot;&gt;Our Prices&lt;/a&gt; </span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href=&quot;specials.html&quot; shape=&quot;rect&quot; coords=&quot;0,73,75,147&quot;&gt;Special Offers&lt;/a&gt; </span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href=&quot;search.html&quot; shape=&quot;rect&quot; coords=&quot;75,73,148,147&quot;&gt;Search&lt;/a&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/p&gt;&lt;/map&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/object&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp; &lt;/object&gt;&lt;/p&gt;</span></code></pre>
+    <p><code style="font-family: Tahoma">
+    <span lang="EN" style="font-size: 8pt; font-weight:700">&nbsp;&nbsp; &lt;/body&gt;</span></code></p>
+    <p>&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="36" bgcolor="#FFFFCC">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#009900">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="17" bgcolor="#FFCC00">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="17" bgcolor="#FFCC00">
+    <a name="simap">
+    <span lang="EN" style="font-size: 10pt; font-family: Tahoma; font-weight:700">9.10 
+    Server-side Image Maps</span></a></td>
+    <td style="border-style: none; border-width: medium" width="14" height="17" bgcolor="#FFCC00">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="36" bgcolor="#FFFFCC">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="36" bgcolor="#FFFFCC">
+    <b><font face="Tahoma" style="font-size: 8pt">
+    <span lang="EN">Server-side image maps may be used in situations where the 
+    image map is too complicated for a client-side image map.</span></font></b><p>
+    <font face="Tahoma" style="font-size: 8pt">
+    <span lang="EN"><b>It is only possible to define a server-side image map for 
+    the </b> <strong>img</strong><b> and </b> <strong>input</strong><b> elements. In the case of 
+    the </b> <strong>img</strong><b> element, the img element must be inside an
+    </b> <strong>
+    a</strong><b> element and the boolean attribute </b> <strong>ismap</strong><b> must be 
+    set. In the case of the </b> <strong>input</strong><b> element, the input must be of 
+    type &quot;image&quot;.</b></span></font></p>
+    <p><b><font face="Tahoma" style="font-size: 8pt"><span lang="EN">When the user activates the link by clicking on the 
+    image, the screen coordinates are sent directly to the server where the 
+    document resides. Screen coordinates are expressed as screen pixel values 
+    relative to the image.</span></font></b></p>
+    <p><b><font face="Tahoma" style="font-size: 8pt"><span lang="EN">In the example below, the active region defines a 
+    server-side link. Therefore, clicking anywhere on the image will cause the 
+    click's coordinates to be sent to the perl script located in the cgi-bin 
+    directory on the server.</span></font></b></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;p&gt;&lt;a href=&quot;http://www.somesite.com/cgi-bin/bannerads&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;img src=&quot;banner1.gif&quot; ismap alt=&quot;banner1&quot;&gt;&lt;/a&gt;&lt;/p&gt;</span></code></pre>
+    <p><span lang="EN" style="font-size: 8pt; font-family: Tahoma">
+    <b>The location clicked is passed to the perl script on the server as follows. 
+    The user agent derives a new URI from the URI specified by the</b><strong> href</strong><b> 
+    attribute of the </b> <strong>a</strong><b> element, by appending '?' followed by 
+    the x and y coordinates, separated by a comma. The link is then followed 
+    using the new URI. For instance, in the given example, if the user clicks at 
+    the location x=18, y=35 then the derived URI <br>
+    is &quot;http://www.somesite.com/cgi-bin/bannerads?18,35&quot;.</b></span></p>
+    <p>&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="36" bgcolor="#FFFFCC">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#009900">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="17" bgcolor="#FFCC00">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="17" bgcolor="#FFCC00">
+    <a name="dime">
+    <span lang="EN" style="font-size: 10pt; font-family: Tahoma; font-weight:700">9.11 
+    Dimensions &amp; Presentation of Images, Objects, and Applets</span></a></td>
+    <td style="border-style: none; border-width: medium" width="14" height="17" bgcolor="#FFCC00">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="36" bgcolor="#FFFFCC">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="36" bgcolor="#FFFFCC">
+    <font face="Tahoma" style="font-size: 8pt">
+    <strong><span lang="EN">All img and object <span style="color:red">
+    attributes</span> that concern visual alignment and presentation have been 
+    deprecated in favor of <span style="color:red">style sheets</span>.</span></strong></font><p>
+    <font face="Tahoma" style="font-size: 8pt">
+    <span lang="EN">
+    <a href="javascript:void(0);" title="Click for popup list" style="color: blue; text-decoration: underline; text-underline: single">
+    <b>List of </b> <strong><span style="text-decoration: none">img</span></strong><b> 
+    Attributes</b></a></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN">
+    <a href="javascript:void(0);" title="Click for popup list" style="color: blue; text-decoration: underline; text-underline: single">
+    <b>List of </b> <strong><span style="text-decoration: none">object</span></strong><b> 
+    Attributes</b></a></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN">
+    <a href="javascript:void(0);" title="Click for popup list" style="color: blue; text-decoration: underline; text-underline: single">
+    <b>List of </b> <strong><span style="text-decoration: none">applet</span></strong><b> 
+    Attributes</b></a></span></font></p>
+    <p><strong><span style="font-size: 8pt; font-family: Tahoma" lang="EN">Width and height</span></strong></p>
+    <p>
+    <b>
+    <span lang="EN" style="font-size: 8pt; font-family: Tahoma; color: red">
+    width = pixels or percentage</span><span lang="EN" style="font-size: 8pt; font-family: Tahoma"> 
+    - Image and object width override.</span></b></p>
+    <p>
+    <b>
+    <span lang="EN" style="font-size: 8pt; font-family: Tahoma; color: red">
+    height = pixels or percentage</span><span lang="EN" style="font-size: 8pt; font-family: Tahoma"> 
+    - Image and object height override.</span></b></p>
+    <p>
+    <span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight:700">When 
+    specified, the width and height attributes tell user agents to override the 
+    natural image or object size in favor of the stated values. However, 
+    specifying </span><strong>
+    <span style="font-size: 8pt; font-family: Tahoma" lang="EN">actual values for the height and width attributes</span></strong><span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight:700"> 
+    gives user agents an idea of the size of an image (<a href="mk:@MSITStore:\WINDOWS\Temporary%20Internet%20Files\htmItutoriaI.chm::/page009.htm#eg1#eg1" style="color: blue; text-decoration: underline; text-underline: single">Eg.1</a> 
+    above) or object (<a href="mk:@MSITStore:\WINDOWS\Temporary%20Internet%20Files\htmItutoriaI.chm::/page009.htm#eg2#eg2" style="color: blue; text-decoration: underline; text-underline: single">Eg.2</a> 
+    above) so that they may </span><strong>
+    <span style="font-size: 8pt; font-family: Tahoma" lang="EN">reserve space</span></strong><span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight:700"> 
+    for it and </span><strong>
+    <span style="font-size: 8pt; font-family: Tahoma" lang="EN">continue rendering the document</span></strong><span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight:700"> 
+    while waiting for the image data. </span><strong>
+    <span style="font-size: 8pt; font-family: Tahoma" lang="EN">This results in the page being 
+    rendered faster</span></strong><span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight:700">. 
+    Most graphics programs are able to give the width and height dimensions of 
+    an image.</span></p>
+    <p><strong><span style="font-size: 8pt; font-family: Tahoma" lang="EN">White space around 
+    images and objects</span></strong></p>
+    <p>
+    <b>
+    <span lang="EN" style="font-size: 8pt; font-family: Tahoma; color: red">
+    hspace = pixels</span><span lang="EN" style="font-size: 8pt; font-family: Tahoma"> 
+    - (</span></b><strong><span style="font-size: 8pt; font-family: Tahoma" lang="EN">Deprecated 
+    attribute</span></strong><span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight:700">) 
+    This attribute specifies the amount of white space to be inserted to the 
+    left and right of an </span><strong>
+    <span style="font-size: 8pt; font-family: Tahoma" lang="EN">image, applet, or object</span></strong><span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight:700">. 
+    If no hspace value is specified, the default value is generally a small, 
+    non-zero length.</span></p>
+    <p>
+    <b>
+    <span lang="EN" style="font-size: 8pt; font-family: Tahoma; color: red">
+    vspace = pixels</span><span lang="EN" style="font-size: 8pt; font-family: Tahoma"> 
+    - (</span></b><strong><span style="font-size: 8pt; font-family: Tahoma" lang="EN">Deprecated 
+    attribute</span></strong><span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight:700">) 
+    This attribute specifies the amount of white space to be inserted above and 
+    below an </span><strong>
+    <span style="font-size: 8pt; font-family: Tahoma" lang="EN">image, 
+    applet, or object</span></strong><span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight:700">. 
+    If no vspace value is specified, the default value is generally a small, 
+    non-zero length.</span></p>
+    <p><strong><span style="font-size: 8pt; font-family: Tahoma" lang="EN">Borders</span></strong></p>
+    <p>
+    <span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight:700">An image 
+    or object may be surrounded by a border, for example when a border is 
+    specified by you or when the image is the content of an </span><strong>
+    <span style="font-size: 8pt; font-family: Tahoma" lang="EN">a</span></strong><span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight:700"> 
+    element.</span></p>
+    <p>
+    <b>
+    <span lang="EN" style="font-size: 8pt; font-family: Tahoma; color: red">
+    border = pixels</span><span lang="EN" style="font-size: 8pt; font-family: Tahoma"> 
+    - (</span></b><strong><span style="font-size: 8pt; font-family: Tahoma" lang="EN">Deprecated 
+    attribute</span></strong><span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight:700">) 
+    This attribute specifies the width of an image's or object's border, in 
+    pixels. If no border value is specified, the default value for this 
+    attribute depends on the user agent.</span></p>
+    <p><strong><span style="font-size: 8pt; font-family: Tahoma" lang="EN">Alignment</span></strong></p>
+    <p>
+    <b>
+    <span lang="EN" style="font-size: 8pt; font-family: Tahoma; color: red">
+    align = [ top | middle | bottom | left | right&nbsp;]</span><span lang="EN" style="font-size: 8pt; font-family: Tahoma"> 
+    (</span></b><strong><span style="font-size: 8pt; font-family: Tahoma" lang="EN">Deprecated 
+    attribute</span></strong><span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight:700">) 
+    This attribute specifies the position of an image, object, or applet with 
+    respect to its context (surrounding text).</span></p>
+    <h3><a name="alttext">
+    <span style="font-size: 8pt; font-family: Tahoma" lang="EN">9.12 
+    Specifying Alternate Text</span></a></h3>
+    <p>
+    <b>
+    <span lang="EN" style="font-size: 8pt; font-family: Tahoma; color: red">
+    alt = text</span><span lang="EN" style="font-size: 8pt; font-family: Tahoma"> 
+    - This attribute specifies alternate text for user agents that cannot 
+    display images, forms, or applets. The </span></b><strong>
+    <span style="font-size: 8pt; font-family: Tahoma" lang="EN">lang attribute</span></strong><span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight:700"> 
+    specifies the language of the alternate text.</span></p>
+    <p>
+    <span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight:700">The
+    </span><strong><span style="font-size: 8pt; font-family: Tahoma" lang="EN">img, area, 
+    applet, and input </span></strong>
+    <span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight:700">elements let 
+    you specify alternate text to serve as content when the element cannot be 
+    rendered normally. Specifying alternate text assists users whose browsers 
+    don't support forms, visually impaired users, those who use speech 
+    synthesizers and those who have configured their browsers not to display 
+    images.</span></p>
+    <p>
+    <span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight:700">The
+    </span><strong><span style="font-size: 8pt; font-family: Tahoma" lang="EN">alt</span></strong><span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight:700"> 
+    attribute must be specified for the </span><strong>
+    <span style="font-size: 8pt; font-family: Tahoma" lang="EN">img and area</span></strong><span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight:700"> 
+    elements. It is optional for the </span><strong>
+    <span style="font-size: 8pt; font-family: Tahoma" lang="EN">input and applet</span></strong><span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight:700"> 
+    elements.</span></p>
+    <p>
+    <span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight:700">While 
+    alternate text may be very helpful, do not specify irrelevant or meaningless 
+    alternate text as this will annoy users and slow down user agents that must 
+    convert text to speech or braille output. When using the alt attribute for
+    </span><strong>
+    <span lang="EN" style="font-size: 8pt; font-family: Tahoma">img and area 
+    elements</span></strong><span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight:700">, 
+    rather than using a text string that is irrelevant or meaningless, use 
+    alternate text that consists of an </span><strong>
+    <span lang="EN" style="font-size: 8pt; font-family: Tahoma">empty string</span></strong><span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight:700">, 
+    (i.e. alt=&quot;&quot;).</span></p>
+    <p>&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="36" bgcolor="#FFFFCC">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#009900">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="17" bgcolor="#FFCC00">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="17" bgcolor="#FFCC00">
+    <a name="imgformats">
+    <span lang="EN" style="font-size: 10pt; font-family: Tahoma; font-weight:700">9.13 
+    Supported Image Formats</span></a></td>
+    <td style="border-style: none; border-width: medium" width="14" height="17" bgcolor="#FFCC00">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="36" bgcolor="#FFFFCC">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="36" bgcolor="#FFFFCC">
+    <strong><span style="font-size: 8pt; font-family: Tahoma" lang="EN">GIF:</span></strong><span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight:700"> 
+    This is an acronym for </span><strong>
+    <span style="font-size: 8pt; font-family: Tahoma" lang="EN">Graphics Interchange Format</span></strong><span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight:700">. 
+    This format uses a maximum of 256 colors and all other colors are created by 
+    combining various proportions of these colors. The GIF format is best for 
+    displaying images such as </span><strong>
+    <span style="font-size: 8pt; font-family: Tahoma" lang="EN">icons, buttons</span></strong><span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight:700"> 
+    and </span><strong>
+    <span style="font-size: 8pt; font-family: Tahoma" lang="EN">logos</span></strong><span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight:700"> 
+    that have been created using a graphics program.</span><p>
+    <span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight:700">GIF 89a is 
+    the current version and has the following features: </span></p>
+    <ol start="1" type="1" style="margin-bottom: 0in">
+      <li class="MsoNormal"><strong>
+      <span style="font-size: 8pt; font-family: Tahoma" lang="EN">Interlacing:</span></strong><span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight:700"> 
+      Saving the GIF 89a image as interlaced will enable the browser to display 
+      the image as it loads, getting gradually smoother and clearer until it is 
+      finished loading. Non-interlaced GIFs only appear once the whole image has 
+      loaded. Interlaced GIFs have slightly larger file sizes than 
+      non-interlaced GIFs. </span></li>
+      <li class="MsoNormal"><strong>
+      <span style="font-size: 8pt; font-family: Tahoma" lang="EN">Transparency:</span></strong><span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight:700"> 
+      You can set a single color to be transparent with a GIF 89a image. This 
+      means that it will allow the background color or image to show through it.
+      </span></li>
+      <li class="MsoNormal"><strong>
+      <span style="font-size: 8pt; font-family: Tahoma" lang="EN">Animated GIFs:</span></strong><span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight:700"> 
+      GIF 89a images can be animated using special GIF animation software. An 
+      animated GIF consists of a number of separate GIF images which are saved 
+      into a file and then looped once, a certain number of times or 
+      indefinitely. </span></li>
+    </ol>
+    <p>
+    <span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight:700">Images in 
+    this format are saved with the .gif extension, i.e. image_name.gif</span></p>
+    <p><strong><span style="font-size: 8pt; font-family: Tahoma" lang="EN">JPEG:</span></strong><span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight:700"> 
+    This is an acronym for </span><strong>
+    <span style="font-size: 8pt; font-family: Tahoma" lang="EN">Joint Photographic Experts 
+    Group</span></strong><span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight:700">. 
+    This format is good for </span><strong>
+    <span style="font-size: 8pt; font-family: Tahoma" lang="EN">photographs</span></strong><span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight:700"> 
+    because JPEG files can contain up to 16 million colors. You don't have the 
+    options of including transparency or interlacing images with JPEG images. 
+    However, JPEG images allow you to specify the degree of file compression, 
+    thereby allowing you to decide between a balance of image quality and file 
+    size.</span></p>
+    <p>
+    <span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight:700">There is 
+    also a newer version of the JPEG format known as </span><strong>
+    <span style="font-size: 8pt; font-family: Tahoma" lang="EN">Progressive JPEG</span></strong><span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight:700">. 
+    The Pro-JPEG format provides superior compression compared to ordinary JPEGs 
+    and also supports interlacing.</span></p>
+    <p>
+    <span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight:700">Images in 
+    this format are saved with the .jpg extension, i.e. image_name.jpg</span></p>
+    <p><strong><span style="font-size: 8pt; font-family: Tahoma" lang="EN">PNG:</span></strong><span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight:700"> 
+    This is an acronym for </span><strong>
+    <span style="font-size: 8pt; font-family: Tahoma" lang="EN">Portable Network Graphics</span></strong><span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight:700">. 
+    This format is good for images that have a </span><strong>
+    <span style="font-size: 8pt; font-family: Tahoma" lang="EN">combination of text and 
+    graphics</span></strong><span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight:700">, 
+    for example, program GUI screenshots. The PNG format allows variable 
+    transparency, fast interlacing and truecolor images.</span></p>
+    <p>
+    <span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight:700">Images in 
+    this format are saved with the .png extension, i.e. image_name.png</span></p>
+    <p>&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="36" bgcolor="#FFFFCC">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#009900">&nbsp;</td>
+  </tr>
+</table>
+
+</body>
+
+</html>

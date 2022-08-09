@@ -1,0 +1,1650 @@
+<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>HTML Book</title>
+<style>
+<!--
+ li.MsoNormal
+	{mso-style-parent:"";
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	margin-left:0in; margin-right:0in; margin-top:0in}
+ table.MsoNormalTable
+	{mso-style-parent:"";
+	font-size:10.0pt;
+	font-family:"Times New Roman"}
+-->
+</style>
+
+<LINK href="../style.css" rel=stylesheet type=text/css>
+</head>
+
+<body>
+
+<table width="838" border="1" align="center" style="border-width: 0" height="1714">
+  <tr> 
+    <td bordercolor="0" style="border-style: none; border-width: medium" width="10" bgcolor="#33CCFF" height="55">&nbsp;</td>
+    <td bordercolor="0" style="border-style: none; border-width: medium" width="814" bgcolor="#33CCFF" colspan="2" height="55">
+    <font face="Broadway BT" size="7" color="#000000"><b>HTML Book</b></font></td>
+  </tr>
+  <tr> 
+    <td bordercolor="0" style="border-style: none; border-width: medium" width="832" colspan="3" bgcolor="#009900" height="13">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" bgcolor="#00CC99" height="17">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" bgcolor="#00CC99" height="17">
+    <span lang="EN" style="font-size: 12.0pt; font-family: Arial Black">7. 
+    Tables</span></td>
+    <td style="border-style: none; border-width: medium" width="14" height="17" bgcolor="#00CC99">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#FFCC00">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#FFCC00">
+    <a name="introtables">
+    <span lang="EN" style="font-size: 10pt; font-family: Tahoma; font-weight:700">7.1 
+    Introduction</span></a></td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#FFCC00">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="116" bgcolor="#FFFFCC">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="116" bgcolor="#FFFFCC">
+    <font face="Tahoma" style="font-size: 8pt; font-weight: 700">
+    <span lang="EN">A table is made up of rows and columns of cells, into which 
+    can be arranged text, including preformatted text, links, images, forms and 
+    even other tables.</span></font><p>
+    <font face="Tahoma" style="font-size: 8pt; font-weight: 700"><span lang="EN">Every table can have a caption 
+    that provides a short description of the table's purpose. A longer 
+    description may also be provided (via the summary attribute) for the benefit 
+    of people using speech or Braille-based user agents.</span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>Table rows may be grouped into head, foot, and body 
+    sections, using the </b> <strong>thead, tfoot and tbody</strong><b> elements 
+    respectively. Row groups express additional structural information and may 
+    be rendered by user agents in ways that emphasize this structure.</b></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>Columns can also be grouped to provide additional 
+    structural information that can be applied by user agents. Furthermore, 
+    column properties can be declared at the start of a table definition using 
+    the </b> <strong>colgroup and col</strong><b> elements, in a way that enables user 
+    agents to render the table incrementally rather than having to wait for all 
+    the table data to arrive before rendering.</b></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>Table cells may either contain &quot;header&quot; information, 
+    enclosed within the </b> <strong>th</strong><b> elements, or &quot;data&quot;, enclosed within 
+    the </b> <strong>td</strong><b> elements. Cells may span multiple rows and columns.</b></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><b><span lang="EN" style="color: red">Eg.1</span><span lang="EN"> 
+    Here's a simple table that illustrates some of the features of the HTML 
+    table model:</span></b></font></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;table border=&quot;1&quot; summary=&quot;This table gives some statistics about two different</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; locations: average sunshine and rain per year, and whether</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; they get any snow.&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;caption&gt;Table with merged cells&lt;/caption&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;tr&gt;&lt;th rowspan=&quot;2&quot;&gt;City&lt;/th&gt;&lt;th colspan=&quot;2&quot;&gt;Average&lt;/th&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp; &lt;th rowspan=&quot;2&quot;&gt;Snow&lt;/th&gt;&lt;/tr&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;tr&gt;&lt;th&gt;Sunshine&lt;/th&gt;&lt;th&gt;Rain&lt;/th&gt;&lt;/tr&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;tr&gt;&lt;th&gt;Los Angeles&lt;/th&gt;&lt;td&gt;2184 hr/yr&lt;/td&gt;&lt;td&gt;900 ml/yr&lt;/td&gt;&lt;td&gt;No&lt;/td&gt;&lt;/tr&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;tr&gt;&lt;th&gt;New York&lt;/th&gt;&lt;td&gt;1456 hr/yr&lt;/td&gt;&lt;td&gt;2160 ml/yr&lt;/td&gt;&lt;td&gt;Yes&lt;/td&gt;&lt;/tr&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;/table&gt;</span></code></pre>
+    <p><font face="Tahoma" style="font-size: 8pt; font-weight: 700"><span lang="EN">It is rendered as follows:</span></font></p>
+    <table class="MsoNormalTable" border="1" cellpadding="0">
+      <tr style="height: 13.8pt">
+        <td colspan="4" style="height: 13.8pt; border-left: medium none; border-right: medium none; border-top: medium none; border-bottom: 1.0pt none black; padding: .75pt">
+        <p class="MsoNormal" align="center" style="text-align: center">
+        <font face="Tahoma" style="font-size: 8pt; font-weight: 700">Table 
+        with merged cells</font></td>
+        <![if !supportMisalignedRows]>
+        <td style="height: 13.8pt; border: medium none" width="0" height="18">
+        </td>
+        <![endif]>
+      </tr>
+      <tr>
+        <td rowspan="2" style="padding: .75pt">
+        <p class="MsoNormal" align="center" style="text-align: center">
+        <font face="Tahoma" style="font-size: 8pt"><b>City</b></font></td>
+        <td colspan="2" style="padding: .75pt">
+        <p class="MsoNormal" align="center" style="text-align: center">
+        <font face="Tahoma" style="font-size: 8pt"><b>
+        Average</b></font></td>
+        <td rowspan="2" style="padding: .75pt">
+        <p class="MsoNormal" align="center" style="text-align: center">
+        <font face="Tahoma" style="font-size: 8pt"><b>Snow</b></font></td>
+        <![if !supportMisalignedRows]>
+        <td style="border: medium none" width="0">
+        <p class="MsoNormal">&nbsp;</td>
+        <![endif]>
+      </tr>
+      <tr>
+        <td style="padding: .75pt">
+        <p class="MsoNormal" align="center" style="text-align: center">
+        <font face="Tahoma" style="font-size: 8pt"><b>
+        Sunshine</b></font></td>
+        <td style="padding: .75pt">
+        <p class="MsoNormal" align="center" style="text-align: center">
+        <font face="Tahoma" style="font-size: 8pt"><b>Rain</b></font></td>
+        <![if !supportMisalignedRows]>
+        <td style="border: medium none" width="0">
+        <p class="MsoNormal">&nbsp;</td>
+        <![endif]>
+      </tr>
+      <tr>
+        <td style="padding: .75pt">
+        <p class="MsoNormal" align="center" style="text-align: center">
+        <font face="Tahoma" style="font-size: 8pt"><b>Los 
+        Angeles</b></font></td>
+        <td style="padding: .75pt">
+        <p class="MsoNormal">
+        <font face="Tahoma" style="font-size: 8pt; font-weight: 700">2184 hr/yr</font></td>
+        <td style="padding: .75pt">
+        <p class="MsoNormal">
+        <font face="Tahoma" style="font-size: 8pt; font-weight: 700">900 ml/yr</font></td>
+        <td style="padding: .75pt">
+        <p class="MsoNormal">
+        <font face="Tahoma" style="font-size: 8pt; font-weight: 700">No</font></td>
+        <![if !supportMisalignedRows]>
+        <td style="border: medium none" width="0">
+        <p class="MsoNormal">&nbsp;</td>
+        <![endif]>
+      </tr>
+      <tr>
+        <td style="padding: .75pt">
+        <p class="MsoNormal" align="center" style="text-align: center">
+        <font face="Tahoma" style="font-size: 8pt"><b>New 
+        York</b></font></td>
+        <td style="padding: .75pt">
+        <p class="MsoNormal">
+        <font face="Tahoma" style="font-size: 8pt; font-weight: 700">1456 hr/yr</font></td>
+        <td style="padding: .75pt">
+        <p class="MsoNormal">
+        <font face="Tahoma" style="font-size: 8pt; font-weight: 700">2160 ml/yr</font></td>
+        <td style="padding: .75pt">
+        <p class="MsoNormal">
+        <font face="Tahoma" style="font-size: 8pt; font-weight: 700">Yes</font></td>
+        <![if !supportMisalignedRows]>
+        <td style="border: medium none" width="0">
+        <p class="MsoNormal">&nbsp;</td>
+        <![endif]>
+      </tr>
+    </table>
+    </td>
+    <td style="border-style: none; border-width: medium" width="14" height="116" bgcolor="#FFFFCC">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#009900">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="17" bgcolor="#FFCC00">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="17" bgcolor="#FFCC00">
+    <a name="tabelem">
+    <span lang="EN" style="font-size: 10pt; font-family: Tahoma; font-weight:700">7.2 
+    Elements Used To Construct Tables</span></a></td>
+    <td style="border-style: none; border-width: medium" width="14" height="17" bgcolor="#FFCC00">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="376" bgcolor="#FFFFCC">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="376" bgcolor="#FFFFCC">
+    <h3><font face="Tahoma" style="font-size: 8pt"><span lang="EN">Syntax&nbsp;&nbsp;&nbsp;&nbsp;&lt;table&gt;...&lt;/table&gt;</span></font></h3>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN">
+    <a href="javascript:void(0);" title="Click for popup list" style="color: blue; text-decoration: underline; text-underline: single">
+    <b>List of </b> <strong><span style="text-decoration: none">table</span></strong><b> 
+    Attributes</b></a></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>The </b> <strong>table</strong><b> element contains all other 
+    elements that specify caption, rows, content, and formatting.</b></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt; font-weight: 700"><span lang="EN">In order for a user agent to format a table in one pass, 
+    you must tell the user agent:</span></font></p>
+    <ul type="disc" style="margin-bottom: 0in">
+      <li class="MsoNormal">
+      <font face="Tahoma" style="font-size: 8pt; font-weight: 700"><span lang="EN">The number of columns in the table.
+      </span></font></li>
+      <li class="MsoNormal">
+      <font face="Tahoma" style="font-size: 8pt; font-weight: 700"><span lang="EN">The widths of these columns. </span>
+      </font>
+      </li>
+    </ul>
+    <p><span lang="EN" style="font-size: 8pt; font-family: Tahoma">
+    <b>More precisely, a user agent may render a table in a single pass when the 
+    column widths are specified using a combination of </b> <strong>colgroup and col</strong><b> 
+    elements. If any of the columns are specified in relative or percentage 
+    terms, you must also specify the width of the table itself.</b></span></td>
+    <td style="border-style: none; border-width: medium" width="14" height="376" bgcolor="#FFFFCC">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#009900">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="17" bgcolor="#FFCC00">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="17" bgcolor="#FFCC00">
+    <a name="cap">
+    <span lang="EN" style="font-size: 10pt; font-family: Tahoma; font-weight:700">7.3 
+    Table Captions: The caption element</span></a></td>
+    <td style="border-style: none; border-width: medium" width="14" height="17" bgcolor="#FFCC00">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="138" bgcolor="#FFFFCC">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="138" bgcolor="#FFFFCC">
+    <h3><font face="Tahoma" style="font-size: 8pt"><span lang="EN">Syntax&nbsp;&nbsp;&nbsp;&nbsp;&lt;caption&gt;...&lt;/caption&gt;</span></font></h3>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN">
+    <a href="javascript:void(0);" title="Click for popup list" style="color: blue; text-decoration: underline; text-underline: single">
+    <b>List of </b> <strong><span style="text-decoration: none">caption</span></strong><b> 
+    Attributes</b></a></span></font></p>
+    <p><span lang="EN" style="font-size: 8pt; font-family: Tahoma">
+    <b>When present, the caption element's text should describe the nature of the 
+    table. The </b> <strong>caption</strong><b> element is only permitted immediately 
+    after the table start tag. A </b> <strong>table</strong><b> element may only contain 
+    one caption element.</b></span></td>
+    <td style="border-style: none; border-width: medium" width="14" height="138" bgcolor="#FFFFCC">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#009900">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="17" bgcolor="#FFCC00">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="17" bgcolor="#FFCC00">
+    <a name="rgroups">
+    <span lang="EN" style="font-size: 10pt; font-family: Tahoma; font-weight:700">7.4 
+    Row groups: the thead, tfoot, and tbody elements</span></a></td>
+    <td style="border-style: none; border-width: medium" width="14" height="17" bgcolor="#FFCC00">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="215" bgcolor="#FFFFCC">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="215" bgcolor="#FFFFCC">
+    <h3><font face="Tahoma" style="font-size: 8pt"><span lang="EN">Syntax&nbsp;&nbsp;&nbsp;&nbsp;&lt;thead&gt;...&lt;/thead&gt; (use of this element is 
+    optional)</span></font></h3>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN">
+    <a href="javascript:void(0);" title="Click for popup list" style="color: blue; text-decoration: underline; text-underline: single">
+    <b>List of </b> <strong>thead</strong><b> Attributes</b></a></span></font></p>
+    <h3><font face="Tahoma" style="font-size: 8pt"><span lang="EN">Syntax&nbsp;&nbsp;&nbsp;&nbsp;&lt;tfoot&gt;...&lt;/tfoot&gt; (use of this element is 
+    optional)</span></font></h3>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN">
+    <a href="javascript:void(0);" title="Click for popup list" style="color: blue; text-decoration: underline; text-underline: single">
+    <b>List of </b> <strong>tfoot</strong><b> Attributes</b></a></span></font></p>
+    <h3><font face="Tahoma" style="font-size: 8pt"><span lang="EN">Syntax&nbsp;&nbsp;&nbsp;&nbsp;&lt;tbody&gt;...&lt;/tbody&gt; (use of this element is 
+    optional)</span></font></h3>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN">
+    <a href="javascript:void(0);" title="Click for popup list" style="color: blue; text-decoration: underline; text-underline: single">
+    <b>List of </b> <strong>tbody</strong><b> Attributes</b></a></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt; font-weight: 700"><span lang="EN">Table rows may be grouped into a table head, table foot, 
+    and one or more table body sections, using the thead, tfoot and tbody 
+    elements respectively. This division enables user agents to support 
+    scrolling of table bodies independently of the table head and foot. When 
+    long tables are printed, the table head and foot information may be repeated 
+    on each page that contains table data.</span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt; font-weight: 700"><span lang="EN">The table head and table foot should contain information 
+    about the table's columns. The table body should contain rows of table data.</span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>When present, each thead, tfoot, and tbody contains a row 
+    group. Each row group must contain at least one row, defined by the </b> <strong>
+    tr</strong><b> element.</b></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><b><span lang="EN" style="color: red">Eg.2</span><span lang="EN"> The 
+    following example illustrates the order and structure of table heads, feet, 
+    and bodies.</span></b></font></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;table width=&quot;100%&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;thead&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp; &lt;tr&gt;&lt;td&gt;...Header information here...&lt;/td&gt;&lt;/tr&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;/thead&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;tfoot&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp; &lt;tr&gt;&lt;td&gt;...Footer information here...&lt;/td&gt;&lt;/tr&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;/tfoot&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;tbody&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp; &lt;tr&gt;&lt;td&gt;...First row of first block of data...&lt;/td&gt;&lt;/tr&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp; &lt;tr&gt;&lt;td&gt;...Second row of first block of data...&lt;/td&gt;&lt;/tr&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;/tbody&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;tbody&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp; &lt;tr&gt;&lt;td&gt;...First row of second block of data...&lt;/td&gt;&lt;/tr&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp; &lt;tr&gt;&lt;td&gt;...Second row of second block of data...&lt;/td&gt;&lt;/tr&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp; &lt;tr&gt;&lt;td&gt;...Third row of second block of data...&lt;/td&gt;&lt;/tr&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp; &lt;tr&gt;&lt;td&gt;...Fourth row of second block of data...&lt;/td&gt;&lt;/tr&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;/tbody&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;/table&gt;</span></code></pre>
+    <p><font face="Tahoma" style="font-size: 8pt; font-weight: 700"><span lang="EN">It is rendered as follows:</span></font></p>
+    <table class="MsoNormalTable" border="0" cellpadding="0" width="100%" style="width: 100.0%">
+      <thead>
+        <tr>
+          <td style="padding: .75pt">
+          <p class="MsoNormal">
+          <font face="Tahoma" style="font-size: 8pt; font-weight: 700">...Header information here...</font></td>
+        </tr>
+      </thead>
+      <tr>
+        <td style="padding: .75pt">
+        <p class="MsoNormal">
+        <font face="Tahoma" style="font-size: 8pt; font-weight: 700">...Footer information here...</font></td>
+      </tr>
+      <tr>
+        <td style="padding: .75pt">
+        <p class="MsoNormal">
+        <font face="Tahoma" style="font-size: 8pt; font-weight: 700">...First row of first block of data...</font></td>
+      </tr>
+      <tr>
+        <td style="padding: .75pt">
+        <p class="MsoNormal">
+        <font face="Tahoma" style="font-size: 8pt; font-weight: 700">...Second row of first block of data...</font></td>
+      </tr>
+      <tr>
+        <td style="padding: .75pt">
+        <p class="MsoNormal">
+        <font face="Tahoma" style="font-size: 8pt; font-weight: 700">...First row of second block of data...</font></td>
+      </tr>
+      <tr>
+        <td style="padding: .75pt">
+        <p class="MsoNormal">
+        <font face="Tahoma" style="font-size: 8pt; font-weight: 700">...Second row of second block of data...</font></td>
+      </tr>
+      <tr>
+        <td style="padding: .75pt">
+        <p class="MsoNormal">
+        <font face="Tahoma" style="font-size: 8pt; font-weight: 700">...Third row of second block of data...</font></td>
+      </tr>
+      <tr>
+        <td style="padding: .75pt">
+        <p class="MsoNormal">
+        <font face="Tahoma" style="font-size: 8pt; font-weight: 700">...Fourth row of second block of data...</font></td>
+      </tr>
+    </table>
+    <p><font face="Tahoma" style="font-size: 8pt"><strong><span lang="EN">tfoot</span></strong><span lang="EN"><b> must appear 
+    before </b> <strong>tbody</strong><b> within a </b> <strong>table</strong><b> definition so 
+    that user agents can render the foot before receiving all of the rows of 
+    data. The following summarizes which tags are required and which may be 
+    omitted:</b></span></font></p>
+    <ul type="disc" style="margin-bottom: 0in">
+      <li class="MsoNormal"><font face="Tahoma" style="font-size: 8pt"><span lang="EN">
+      <b>The </b> <strong>tbody</strong><b> start and 
+      end tags are always required except when the table contains only one table 
+      body and no table head or foot sections. </b> </span></font></li>
+      <li class="MsoNormal"><font face="Tahoma" style="font-size: 8pt"><span lang="EN">
+      <b>The start and end tags for </b> <strong>
+      thead and tfoot</strong><b> are required to establish the table head and foot 
+      sections respectively. </b> </span></font></li>
+    </ul>
+    <p><span lang="EN" style="font-size: 8pt; font-family: Tahoma">
+    <b>The </b> <strong>thead, tfoot, and tbody</strong><b> sections must contain the same 
+    number of columns.</b></span></td>
+    <td style="border-style: none; border-width: medium" width="14" height="215" bgcolor="#FFFFCC">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#009900">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#FFCC00">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#FFCC00">
+    <a name="colg">
+    <span lang="EN" style="font-size: 10pt; font-family: Tahoma"><b>7.5 
+    Column groups: the </b> <strong>colgroup and 
+    col</strong><b> elements</b></span></a></td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#FFCC00">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="224" bgcolor="#FFFFCC">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="224" bgcolor="#FFFFCC">
+    <font face="Tahoma" style="font-size: 8pt; font-weight: 700">
+    <span lang="EN">Column groups allow the creation of structural divisions 
+    within a table.</span></font><p>
+    <font face="Tahoma" style="font-size: 8pt; font-weight: 700"><span lang="EN">A table may either contain a single 
+    implicit column group (no colgroup element delimits the columns) or any 
+    number of explicit column groups (each delimited by an instance of the 
+    colgroup element).</span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>The </b> <strong>col</strong><b> element allows you to share 
+    attributes among several columns without implying any structural grouping. 
+    The &quot;span&quot; of the col element is the number of columns that will share the 
+    element's attributes.</b></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><strong><span lang="EN">The colgroup Element</span></strong></font></p>
+    <h3><font face="Tahoma" style="font-size: 8pt"><span lang="EN">Syntax&nbsp;&nbsp;&nbsp;&nbsp;&lt;colgroup&gt;...&lt;/colgroup&gt;</span></font></h3>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN">
+    <a href="javascript:void(0);" title="Click for popup list" style="color: blue; text-decoration: underline; text-underline: single">
+    <b>List of </b> <strong>colgroup</strong><b> Attributes</b></a></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>The </b> <strong>colgroup</strong><b> element creates an explicit 
+    column group. The number of columns in the column group may be specified in 
+    two, mutually exclusive ways:</b></span></font></p>
+    <ol start="1" type="1" style="margin-bottom: 0in">
+      <li class="MsoNormal">
+      <font face="Tahoma" style="font-size: 8pt; font-weight: 700"><span lang="EN">The element's span attribute 
+      specifies the number of columns in the group (default value = 1). </span>
+      </font>
+      </li>
+      <li class="MsoNormal">
+      <font face="Tahoma" style="font-size: 8pt; font-weight: 700"><span lang="EN">Each col element in the colgroup 
+      represents one or more columns in the group. </span></font></li>
+    </ol>
+    <p><font face="Tahoma" style="font-size: 8pt; font-weight: 700"><span lang="EN">The advantage of using the span attribute is that you may 
+    group together information about column widths. Thus, if a table contains 
+    thirty columns, all of which have a width of 20 pixels, it can be written 
+    as:</span></font></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;colgroup span=&quot;30&quot; width=&quot;20&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;/colgroup&gt;</span></code></pre>
+    <p>
+    <span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight:700">When it 
+    is necessary to single out a column (e.g., for style information, to specify 
+    width information, etc.) within a group, you must identify that column with 
+    a col element. Thus, to apply special style information to the last column 
+    of the previous table, we single it out as follows:</span></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;colgroup width=&quot;20&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp; &lt;col span=&quot;29&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp; &lt;col id=&quot;special&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;/colgroup&gt;</span></code></pre>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>The width attribute of the
+    </b> <strong>colgroup</strong><b> 
+    element is inherited by all 30 columns. The first </b> <strong>col</strong><b> 
+    element refers to the first 29 columns (doing nothing special to them) and 
+    the second one assigns an id value to the 30th column so that style sheets 
+    may refer to it.</b></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><b><span lang="EN" style="color: red">Eg.3</span><span lang="EN"> The 
+    table in the following example contains two column groups. The first column 
+    group contains 4 columns and the second contains 3 columns. The default 
+    width for each column in the first column group is 40 pixels. The width of 
+    each column in the second column group will be the minimum required for that 
+    column.</span></b></font></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;table&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;colgroup span=&quot;4&quot; width=&quot;40&quot;&gt;&lt;/colgroup&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;colgroup span=&quot;3&quot; width=&quot;0*&quot;&gt;&lt;/colgroup&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;thead&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;tr&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN" style="color: #CC00CC">&lt;td&gt;col1&lt;/td&gt;&lt;td&gt;col2&lt;/td&gt;&lt;td&gt;col3&lt;/td&gt;&lt;td&gt;col4&lt;/td&gt;</span><span lang="EN" style="color: #3300FF">&lt;td&gt;col1&lt;/td&gt;&lt;td&gt;col2&lt;/td&gt;&lt;td&gt;col3&lt;/td&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;/tr&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;/thead&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;/table&gt;</span></code></pre>
+    <p><font face="Tahoma" style="font-size: 8pt"><strong><span lang="EN">Note:</span></strong><span lang="EN"><b> All the
+    </b>
+    <strong>td</strong><b> tags and data in this </b> <strong>
+    <span style="color: #CC00CC">color</span></strong><b> belong to the first 
+    column group. All the </b> <strong>td</strong><b> tags and data in this </b> <strong>
+    <span style="color: #3300FF">color</span></strong><b> belong to the second 
+    column group.</b></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><strong><span lang="EN">The col Element</span></strong></font></p>
+    <h3><font face="Tahoma" style="font-size: 8pt"><span lang="EN">Syntax&nbsp;&nbsp;&nbsp;&nbsp;&lt;col&gt;</span></font></h3>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN">
+    <a href="javascript:void(0);" title="Click for popup list" style="color: blue; text-decoration: underline; text-underline: single">
+    <b>List of </b> <strong>col</strong><b> Attributes</b></a></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>The </b> <strong>col</strong><b> element allows you to group 
+    together attribute specifications for table columns. The col does not group 
+    columns together structurally -- that is the role of the </b> <strong>colgroup</strong><b> 
+    element. </b> <strong>col</strong><b> elements are empty and serve only as a support 
+    for attributes. They may appear inside or outside an explicit column group 
+    (i.e., colgroup element).</b></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt; font-weight: 700"><span lang="EN">The width attribute for col refers to the width of each 
+    column in the element's span.</span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><strong><span lang="EN">Calculating the number of columns in a table</span></strong></font></p>
+    <ol start="1" type="1" style="margin-bottom: 0in">
+      <li class="MsoNormal"><font face="Tahoma" style="font-size: 8pt"><span lang="EN">
+      <b>If the table element contains any </b>
+      <strong>colgroup</strong><b> or </b> <strong>col</strong><b> elements, user agents 
+      should calculate the number of columns by summing the following: </b> </span>
+      </font>
+      <ul type="disc" style="margin-bottom: 0in">
+        <li class="MsoNormal"><font face="Tahoma" style="font-size: 8pt"><span lang="EN">
+        <b>For each </b> <strong>col</strong><b> 
+        element, take the value of its span attribute (default value = 1). </b>
+        </span></font></li>
+        <li class="MsoNormal"><font face="Tahoma" style="font-size: 8pt"><span lang="EN">
+        <b>For each </b> <strong>colgroup</strong><b> 
+        element containing at least one col element, ignore the span attribute 
+        for the </b> <strong>colgroup</strong><b> element. For each </b> <strong>col</strong><b> 
+        element, perform the calculation of step 1. </b> </span></font></li>
+        <li class="MsoNormal"><font face="Tahoma" style="font-size: 8pt"><span lang="EN">
+        <b>For each empty </b> <strong>colgroup</strong><b> 
+        element, take the value of its span attribute (default value = 1). </b>
+        </span></font></li>
+      </ul>
+      </li>
+      <li class="MsoNormal"><font face="Tahoma" style="font-size: 8pt"><span lang="EN">
+      <b>Otherwise, if the table element 
+      contains no </b> <strong>colgroup</strong><b> or </b> <strong>col</strong><b> elements, 
+      user agents should base the number of columns on what is required by the 
+      rows. The number of columns is equal to the number of columns required by 
+      the row with the most columns, including cells that span multiple columns. 
+      For any row that has fewer than this number of columns, the end of that 
+      row should be padded with empty cells. </b> </span></font></li>
+    </ol>
+    <p><font face="Tahoma" style="font-size: 8pt; font-weight: 700"><span lang="EN">It is an error if a table contains colgroup or col 
+    elements and the two calculations do not result in the same number of 
+    columns.</span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt; font-weight: 700"><span lang="EN">Once the user agent has calculated the number of columns 
+    in the table, it may group them into column groups.</span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><b><span lang="EN" style="color: red">Eg.4</span><span lang="EN"> As 
+    an example, for each of the following tables, the two column calculation 
+    methods should result in four columns. The first three tables may be 
+    rendered incrementally.</span></b></font></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;table&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;colgroup span=&quot;4&quot;&gt;&lt;/colgroup&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;tr&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;td&gt;...1st column data here...&lt;/td&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;td&gt;...2nd column data here...&lt;/td&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;td&gt;...3rd column data here...&lt;/td&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;td&gt;...4th column data here...&lt;/td&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;/tr&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;/table&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;table&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;colgroup&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;col&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;col span=&quot;3&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;/colgroup&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;tr&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;td&gt;...1st column data here...&lt;/td&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;td&gt;...2nd column data here...&lt;/td&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;td&gt;...3rd column data here...&lt;/td&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;td&gt;...4th column data here...&lt;/td&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;/tr&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;/table&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;table&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;colgroup&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;col&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;/colgroup&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;colgroup span=&quot;3&quot;&gt;&lt;/colgroup&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;tr&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;td&gt;...1st column data here...&lt;/td&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;td&gt;...2nd column data here...&lt;/td&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;td&gt;...3rd column data here...&lt;/td&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;td&gt;...4th column data here...&lt;/td&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;/tr&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;/table&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;table&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;tr&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;td&gt;...1st column data here...&lt;/td&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;td&gt;...2nd column data here...&lt;/td&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;td&gt;...3rd column data here...&lt;/td&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;td&gt;...4th column data here...&lt;/td&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;/tr&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;/table&gt;</span></code></pre>
+    <p><font face="Tahoma" style="font-size: 8pt"><strong><span lang="EN">Calculating the width of columns</span></strong></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt; font-weight: 700"><span lang="EN">Column widths may be specified in three ways:</span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><strong><span lang="EN">Fixed: </span></strong>
+    <b><span lang="EN">A fixed 
+    width specification is given in pixels (e.g., width=&quot;30&quot;). A fixed-width 
+    specification enables incremental rendering.</span></b></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><strong><span lang="EN">Percentage: </span></strong>
+    <b><span lang="EN">A 
+    percentage specification (e.g., width=&quot;20%&quot;) is based on the percentage of 
+    the horizontal space available to the table (between the current left and 
+    right margins, including floats). Note that this space does not depend on 
+    the table itself, and thus percentage specifications enable incremental 
+    rendering.</span></b></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><strong><span lang="EN">Proportional: </span></strong><span lang="EN">
+    <b>Proportional specifications (e.g., width=&quot;3*&quot;) refer to portions of the 
+    horizontal space required by a table. If the table width is given a fixed 
+    value via the width attribute of the </b> <strong>table</strong><b> element, user 
+    agents may render the table incrementally even with proportional columns.</b></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt; font-weight: 700"><span lang="EN">However, if the table does not have a fixed width, user 
+    agents must receive all table data before they can determine the horizontal 
+    space required by the table. Only then may this space be allotted to 
+    proportional columns.</span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt; font-weight: 700"><span lang="EN">If no width information for a column is specified, a user 
+    agent may not be able to incrementally format the table since it must wait 
+    for the entire column of data to arrive in order to allot an appropriate 
+    width.</span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt; font-weight: 700"><span lang="EN">If column widths prove to be too narrow for the contents 
+    of a particular table cell, user agents will need to reflow the table.</span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>In the next example the table contains six columns. The 
+    first one does not belong to an explicit column group. The next three belong 
+    to the first explicit column group and the last two belong to the second 
+    explicit column group. This table cannot be formatted incrementally since it 
+    contains proportional column width specifications and no value for the width 
+    attribute for the </b> <strong>table</strong><b> element.</b></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt; font-weight: 700"><span lang="EN">Once the browser has received the table's data: the 
+    available horizontal space will be alloted by the user agent as follows: 
+    First the user agent will allot 25 pixels to columns one and two. Then, the 
+    minimal space required for the third column will be reserved. The remaining 
+    horizontal space will be divided into six equal portions (since 3* + 1* + 2* 
+    = 6 portions). Column four (3*) will receive three of these portions, column 
+    five (1*) will receive one, and column six (2*) will receive two.</span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><b><span lang="EN" style="color: red">Eg.5</span></b></font></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;table&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;colgroup&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp; &lt;col width=&quot;25&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;/colgroup&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;colgroup&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp; &lt;col width=&quot;25&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp; &lt;col width=&quot;0*&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp; &lt;col width=&quot;3*&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;/colgroup&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;colgroup align=&quot;center&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp; &lt;col width=&quot;1*&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp; &lt;col width=&quot;2*&quot; align=&quot;char&quot; char=&quot;:&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;/colgroup&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;thead&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;tr&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;td&gt;...1st column data here...&lt;/td&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;td&gt;...2nd column data here...&lt;/td&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;td&gt;...3rd column data here...&lt;/td&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;td&gt;...4th column data here...&lt;/td&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;td&gt;...5th column data here...&lt;/td&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;td&gt;...6th column data here...&lt;/td&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;/tr&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;/thead&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;/table&gt;</span></code></pre>
+    <p><font face="Tahoma" style="font-size: 8pt; font-weight: 700"><span lang="EN">The value of the align attribute in the third column 
+    group has been set to &quot;center&quot;. All cells in every column in this group will 
+    inherit this value, but you can override it. The final col does just that, 
+    by specifying that every cell in the column it governs will be aligned along 
+    the &quot;:&quot; character.</span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><b><span lang="EN" style="color: red">Eg.6</span><span lang="EN"> In 
+    the following table, the column width specifications allow the user agent to 
+    format the table incrementally:</span></b></font></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;table width=&quot;150&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;colgroup span=&quot;4&quot; width=&quot;20&quot;&gt;&lt;/colgroup&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;colgroup width=&quot;*&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp; &lt;col id=&quot;secondlast-column&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp; &lt;col id=&quot;last-column&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;/colgroup&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;thead&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;tr&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;td&gt;...1st column data here...&lt;/td&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;td&gt;...2nd column data here...&lt;/td&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;td&gt;...3rd column data here...&lt;/td&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;td&gt;...4th column data here...&lt;/td&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;td&gt;...5th column data here...&lt;/td&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;td&gt;...6th column data here...&lt;/td&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;/tr&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;/thead&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;/table&gt;</span></code></pre>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>The first four columns will be 20 pixels wide each (20 x 
+    4 = 80 pixels total). The last two columns will each receive half of the 
+    remaining 70 pixels (150 - 80 = 70 pixels). Note that the </b> <strong>col</strong><b> 
+    elements appear only so that an id value may be specified for the last two 
+    columns.</b></span></font></td>
+    <td style="border-style: none; border-width: medium" width="14" height="224" bgcolor="#FFFFCC">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#009900">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="17" bgcolor="#FFCC00">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="17" bgcolor="#FFCC00">
+    <a name="trows">
+    <span lang="EN" style="font-size: 10pt; font-family: Tahoma; font-weight:700">7.6 
+    Table rows: The tr element</span></a></td>
+    <td style="border-style: none; border-width: medium" width="14" height="17" bgcolor="#FFCC00">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="93" bgcolor="#FFFFCC">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="93" bgcolor="#FFFFCC">
+    <h3><font face="Tahoma" style="font-size: 8pt"><span lang="EN">Syntax&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;...&lt;/tr&gt;</span></font></h3>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN">
+    <a href="javascript:void(0);" title="Click for popup list" style="color: blue; text-decoration: underline; text-underline: single">
+    <b>List of </b> <strong>tr</strong><b> Attributes</b></a></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>The </b> <strong>tr</strong><b> element acts as a container for a 
+    row of table cells.</b></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><b><span lang="EN" style="color: red">Eg.7</span></b><span lang="EN"><b> The 
+    following example table contains three rows, each begun by the </b> <strong>tr</strong><b> 
+    element:</b></span></font></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;table border=&quot;1&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;caption&gt;Acronyms And Their Meanings&lt;/caption&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp; &lt;tr&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp; &lt;td align=&quot;center&quot;&gt;Acronym&lt;/td&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp; &lt;td align=&quot;center&quot;&gt;Meaning&lt;/td&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp; &lt;/tr&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp; &lt;tr&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp; &lt;td&gt;GIF&lt;/td&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp; &lt;td&gt;Graphics Interchange Format&lt;/td&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp; &lt;/tr&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp; &lt;tr&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp; &lt;td&gt;JPEG&lt;/td&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp; &lt;td&gt;Joint Photographers Experts Group&lt;/td&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp; &lt;/tr&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;/table&gt;</span></code></pre>
+    <p><font face="Tahoma" style="font-size: 8pt; font-weight: 700"><span lang="EN">It is rendered as follows:</span></font></p>
+    <table class="MsoNormalTable" border="1" cellpadding="0">
+      <tr>
+        <td colspan="2" style="border: medium none; padding: .75pt">
+        <p class="MsoNormal" align="center" style="text-align: center">
+        <font face="Tahoma" style="font-size: 8pt; font-weight: 700">Acronyms 
+        And Their Meanings</font></td>
+      </tr>
+      <tr>
+        <td style="padding: .75pt">
+        <p class="MsoNormal" align="center" style="text-align: center">
+        <font face="Tahoma" style="font-size: 8pt; font-weight: 700">Acronym</font></td>
+        <td style="padding: .75pt">
+        <p class="MsoNormal" align="center" style="text-align: center">
+        <font face="Tahoma" style="font-size: 8pt; font-weight: 700">Meaning</font></td>
+      </tr>
+      <tr>
+        <td style="padding: .75pt">
+        <p class="MsoNormal">
+        <font face="Tahoma" style="font-size: 8pt; font-weight: 700">GIF</font></td>
+        <td style="padding: .75pt">
+        <p class="MsoNormal">
+        <font face="Tahoma" style="font-size: 8pt; font-weight: 700">Graphics Interchange Format</font></td>
+      </tr>
+      <tr>
+        <td style="padding: .75pt">
+        <p class="MsoNormal">
+        <font face="Tahoma" style="font-size: 8pt; font-weight: 700">JPEG</font></td>
+        <td style="padding: .75pt">
+        <p class="MsoNormal">
+        <font face="Tahoma" style="font-size: 8pt; font-weight: 700">Joint Photographers Experts Group</font></td>
+      </tr>
+    </table>
+    <p>&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="93" bgcolor="#FFFFCC">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#009900">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="17" bgcolor="#FFCC00">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="17" bgcolor="#FFCC00">
+    <a name="tcells">
+    <span lang="EN" style="font-size: 10pt; font-family: Tahoma; font-weight:700">7.7 
+    Table cells: the th and td elements</span></a></td>
+    <td style="border-style: none; border-width: medium" width="14" height="17" bgcolor="#FFCC00">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="74" bgcolor="#FFFFCC">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="74" bgcolor="#FFFFCC">
+    <h3><font face="Tahoma" style="font-size: 8pt"><span lang="EN">Syntax&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;...&lt;/th&gt;</span></font></h3>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN">
+    <a href="javascript:void(0);" title="Click for popup list" style="color: blue; text-decoration: underline; text-underline: single">
+    <b>List of </b> <strong>th</strong><b> Attributes</b></a></span></font></p>
+    <h3><font face="Tahoma" style="font-size: 8pt"><span lang="EN">Syntax&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;...&lt;/td&gt;</span></font></h3>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN">
+    <a href="javascript:void(0);" title="Click for popup list" style="color: blue; text-decoration: underline; text-underline: single">
+    <b>List of </b> <strong>td</strong><b> Attributes</b></a></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>Table cells may contain two types of information: header 
+    information and data. This distinction enables user agents to render header 
+    and data cells distinctly, even in the absence of style sheets. For example, 
+    visual user agents may present header cell text with a </b> <strong>bold</strong><b> 
+    font. Speech synthesizers may render header information with a distinct 
+    voice inflection.</b></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>The </b> <strong>th</strong><b> element defines a cell that 
+    contains header information.</b></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>The </b> <strong>td</strong><b> element defines a cell that 
+    contains data.</b></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt; font-weight: 700"><span lang="EN">Cells may be empty (i.e. contain no data).</span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>The following table is the same as the last one above but 
+    contains the </b> <strong>th</strong><b> element to display header information.</b></span></font></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;table border=&quot;1&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;caption&gt;Acronyms And Their Meanings&lt;/caption&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp; &lt;tr&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp; &lt;th&gt;Acronym&lt;/th&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp; &lt;th&gt;Meaning&lt;/th&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp; &lt;/tr&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp; &lt;tr&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp; &lt;td&gt;GIF&lt;/td&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp; &lt;td&gt;Graphics Interchange Format&lt;/td&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp; &lt;/tr&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp; &lt;tr&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp; &lt;td&gt;JPEG&lt;/td&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp; &lt;td&gt;Joint Photographers Experts Group&lt;/td&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp; &lt;/tr&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;/table&gt;</span></code></pre>
+    <p><font face="Tahoma" style="font-size: 8pt; font-weight: 700"><span lang="EN">It is rendered as follows:</span></font></p>
+    <table class="MsoNormalTable" border="1" cellpadding="0">
+      <tr>
+        <td colspan="2" style="border: medium none; padding: .75pt">
+        <p class="MsoNormal" align="center" style="text-align: center">
+        <font face="Tahoma" style="font-size: 8pt; font-weight: 700">Acronyms 
+        And Their Meanings</font></td>
+      </tr>
+      <tr>
+        <td style="padding: .75pt">
+        <p class="MsoNormal" align="center" style="text-align: center">
+        <font face="Tahoma" style="font-size: 8pt"><b>
+        Acronym</b></font></td>
+        <td style="padding: .75pt">
+        <p class="MsoNormal" align="center" style="text-align: center">
+        <font face="Tahoma" style="font-size: 8pt"><b>
+        Meaning</b></font></td>
+      </tr>
+      <tr>
+        <td style="padding: .75pt">
+        <p class="MsoNormal">
+        <font face="Tahoma" style="font-size: 8pt; font-weight: 700">GIF</font></td>
+        <td style="padding: .75pt">
+        <p class="MsoNormal">
+        <font face="Tahoma" style="font-size: 8pt; font-weight: 700">Graphics Interchange Format</font></td>
+      </tr>
+      <tr>
+        <td style="padding: .75pt">
+        <p class="MsoNormal">
+        <font face="Tahoma" style="font-size: 8pt; font-weight: 700">JPEG</font></td>
+        <td style="padding: .75pt">
+        <p class="MsoNormal">
+        <font face="Tahoma" style="font-size: 8pt; font-weight: 700">Joint Photographers Experts Group</font></td>
+      </tr>
+    </table>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>Notice that when the
+    </b> <strong>th</strong><b> elements are 
+    used the words between them are displayed in </b> <strong>bold</strong><b> and they 
+    are automatically </b> <strong>centered</strong><b> horizontally and vertically 
+    within their respective cells.</b></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><strong><span lang="EN">Cells that span several rows or columns</span></strong></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>Cells may span several rows or columns. The number of 
+    rows or columns spanned by a cell is set by the </b> <strong>rowspan</strong><b> and
+    </b>
+    <strong>colspan</strong><b> attributes for the </b> <strong>th and td</strong><b> 
+    elements. This is known as merging cells within a table.</b></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt; font-weight: 700"><span lang="EN">For this example, lets look again at the first table 
+    given in Eg.1 above. The code is as follows:</span></font></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;table border=&quot;1&quot; summary=&quot;This table gives some statistics about two different</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;locations: average sunshine and rain per year, and whether</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; they get any snow.&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;caption&gt;Table with merged cells&lt;/caption&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;tr&gt;&lt;th rowspan=&quot;2&quot;&gt;City&lt;/th&gt;&lt;th colspan=&quot;2&quot;&gt;Average&lt;/th&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp; &lt;th rowspan=&quot;2&quot;&gt;Snow&lt;/th&gt;&lt;/tr&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;tr&gt;&lt;th&gt;Sunshine&lt;/th&gt;&lt;th&gt;Rain&lt;/th&gt;&lt;/tr&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;tr&gt;&lt;th&gt;Los Angeles&lt;/th&gt;&lt;td&gt;2184 hr/yr&lt;/td&gt;&lt;td&gt;900 ml/yr&lt;/td&gt;&lt;td&gt;No&lt;/td&gt;&lt;/tr&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;tr&gt;&lt;th&gt;New York&lt;/th&gt;&lt;td&gt;1456 hr/yr&lt;/td&gt;&lt;td&gt;2160 ml/yr&lt;/td&gt;&lt;td&gt;Yes&lt;/td&gt;&lt;/tr&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;/table&gt;</span></code></pre>
+    <p><font face="Tahoma" style="font-size: 8pt; font-weight: 700"><span lang="EN">which is rendered as follows:</span></font></p>
+    <table class="MsoNormalTable" border="1" cellpadding="0">
+      <tr style="height: 13.8pt">
+        <td colspan="4" style="height: 13.8pt; border-left: medium none; border-right: medium none; border-top: medium none; border-bottom: 1.0pt none black; padding: .75pt">
+        <p class="MsoNormal" align="center" style="text-align: center">
+        <font face="Tahoma" style="font-size: 8pt; font-weight: 700">Table 
+        with merged cells</font></td>
+        <![if !supportMisalignedRows]>
+        <td style="height: 13.8pt; border: medium none" width="0" height="18">
+        </td>
+        <![endif]>
+      </tr>
+      <tr>
+        <td rowspan="2" style="padding: .75pt">
+        <p class="MsoNormal" align="center" style="text-align: center">
+        <font face="Tahoma" style="font-size: 8pt"><b>City</b></font></td>
+        <td colspan="2" style="padding: .75pt">
+        <p class="MsoNormal" align="center" style="text-align: center">
+        <font face="Tahoma" style="font-size: 8pt"><b>
+        Average</b></font></td>
+        <td rowspan="2" style="padding: .75pt">
+        <p class="MsoNormal" align="center" style="text-align: center">
+        <font face="Tahoma" style="font-size: 8pt"><b>Snow</b></font></td>
+        <![if !supportMisalignedRows]>
+        <td style="border: medium none" width="0">
+        <p class="MsoNormal">&nbsp;</td>
+        <![endif]>
+      </tr>
+      <tr>
+        <td style="padding: .75pt">
+        <p class="MsoNormal" align="center" style="text-align: center">
+        <font face="Tahoma" style="font-size: 8pt"><b>
+        Sunshine</b></font></td>
+        <td style="padding: .75pt">
+        <p class="MsoNormal" align="center" style="text-align: center">
+        <font face="Tahoma" style="font-size: 8pt"><b>Rain</b></font></td>
+        <![if !supportMisalignedRows]>
+        <td style="border: medium none" width="0">
+        <p class="MsoNormal">&nbsp;</td>
+        <![endif]>
+      </tr>
+      <tr>
+        <td style="padding: .75pt">
+        <p class="MsoNormal" align="center" style="text-align: center">
+        <font face="Tahoma" style="font-size: 8pt"><b>Los 
+        Angeles</b></font></td>
+        <td style="padding: .75pt">
+        <p class="MsoNormal">
+        <font face="Tahoma" style="font-size: 8pt; font-weight: 700">2184 hr/yr</font></td>
+        <td style="padding: .75pt">
+        <p class="MsoNormal">
+        <font face="Tahoma" style="font-size: 8pt; font-weight: 700">900 ml/yr</font></td>
+        <td style="padding: .75pt">
+        <p class="MsoNormal">
+        <font face="Tahoma" style="font-size: 8pt; font-weight: 700">No</font></td>
+        <![if !supportMisalignedRows]>
+        <td style="border: medium none" width="0">
+        <p class="MsoNormal">&nbsp;</td>
+        <![endif]>
+      </tr>
+      <tr>
+        <td style="padding: .75pt">
+        <p class="MsoNormal" align="center" style="text-align: center">
+        <font face="Tahoma" style="font-size: 8pt"><b>New 
+        York</b></font></td>
+        <td style="padding: .75pt">
+        <p class="MsoNormal">
+        <font face="Tahoma" style="font-size: 8pt; font-weight: 700">1456 hr/yr</font></td>
+        <td style="padding: .75pt">
+        <p class="MsoNormal">
+        <font face="Tahoma" style="font-size: 8pt; font-weight: 700">2160 ml/yr</font></td>
+        <td style="padding: .75pt">
+        <p class="MsoNormal">
+        <font face="Tahoma" style="font-size: 8pt; font-weight: 700">Yes</font></td>
+        <![if !supportMisalignedRows]>
+        <td style="border: medium none" width="0">
+        <p class="MsoNormal">&nbsp;</td>
+        <![endif]>
+      </tr>
+    </table>
+    <p><font face="Tahoma" style="font-size: 8pt; font-weight: 700"><span lang="EN">Notice that: </span>
+    </font></p>
+    <ul type="disc" style="margin-bottom: 0in">
+      <li class="MsoNormal"><b><font face="Tahoma" style="font-size: 8pt"><span lang="EN">The first cell, starting from the 
+      top left hand corner of the table, spans 2 rows and this is done using the
+      </span></font><code style="font-family: Tahoma">
+      <span lang="EN" style="font-size: 8pt">rowspan=&quot;2&quot;</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN"> 
+      attribute (see the code above). </span></font></b></li>
+      <li class="MsoNormal"><b><font face="Tahoma" style="font-size: 8pt"><span lang="EN">The second cell of the first row 
+      spans 2 columns and this is done using the </span>
+      </font>
+      <code style="font-family: Tahoma">
+      <span lang="EN" style="font-size: 8pt">colspan=&quot;2&quot;</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN"> 
+      attribute (see the code above). </span></font></b></li>
+      <li class="MsoNormal"><b><font face="Tahoma" style="font-size: 8pt"><span lang="EN">The top right hand corner cell spans 
+      2 rows and this is done using the </span>
+      </font>
+      <code style="font-family: Tahoma">
+      <span lang="EN" style="font-size: 8pt">rowspan=&quot;2&quot;</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN"> 
+      attribute (see the code above). </span></font></b></li>
+      <li class="MsoNormal"><font face="Tahoma" style="font-size: 8pt"><span lang="EN">
+      <b>As cell 1 (top left hand corner), 
+      spans the first and second rows, the definition of the second row will 
+      take it into account. Thus, the first </b> <strong>th</strong><b> in row two 
+      actually defines the row's second cell and the second </b> <strong>th</strong><b> 
+      defines the row's third cell. The same principle would apply if the tags 
+      consisted of </b> <strong>td</strong><b> elements. </b> </span></font></li>
+    </ul>
+    <h3 style="margin-left: .5in"><font face="Tahoma" style="font-size: 8pt"><a name="brds"><span lang="EN">7.8 Borders and 
+    ruled lines</span></a></font></h3>
+    <p style="margin-left: .5in">
+    <font face="Tahoma" style="font-size: 8pt; font-weight: 700"><span lang="EN">The following attributes affect 
+    a table's external frame and internal rules (ruled lines).</span></font></p>
+    <p style="margin-left: .5in"><font face="Tahoma" style="font-size: 8pt"><strong><span lang="EN">Attributes and their 
+    possible values:</span></strong></font></p>
+    <p style="margin-left: .5in"><code style="font-family: Tahoma">
+    <span lang="EN" style="font-size: 8pt; font-weight:700">frame = 
+    void|above|below|hsides|lhs|rhs|vsides|box|border</span></code></p>
+    <p style="margin-left: .5in">
+    <font face="Tahoma" style="font-size: 8pt; font-weight: 700"><span lang="EN">This attribute specifies which 
+    sides of the frame surrounding a table will be visible. Possible values:
+    </span></font></p>
+    <ul type="disc" style="margin-bottom: 0in">
+      <ul type="disc" style="margin-bottom: 0in">
+        <li class="MsoNormal">
+        <font face="Tahoma" style="font-size: 8pt; font-weight: 700"><span lang="EN">void: No sides. This is the 
+        default value. </span></font></li>
+        <li class="MsoNormal">
+        <font face="Tahoma" style="font-size: 8pt; font-weight: 700"><span lang="EN">above: The top side only. </span>
+        </font>
+        </li>
+        <li class="MsoNormal">
+        <font face="Tahoma" style="font-size: 8pt; font-weight: 700"><span lang="EN">below: The bottom side only.
+        </span></font></li>
+        <li class="MsoNormal">
+        <font face="Tahoma" style="font-size: 8pt; font-weight: 700"><span lang="EN">hsides: The top and bottom sides 
+        only. </span></font></li>
+        <li class="MsoNormal">
+        <font face="Tahoma" style="font-size: 8pt; font-weight: 700"><span lang="EN">vsides: The right and left sides 
+        only. </span></font></li>
+        <li class="MsoNormal">
+        <font face="Tahoma" style="font-size: 8pt; font-weight: 700"><span lang="EN">lhs: The left-hand side only.
+        </span></font></li>
+        <li class="MsoNormal">
+        <font face="Tahoma" style="font-size: 8pt; font-weight: 700"><span lang="EN">rhs: The right-hand side only.
+        </span></font></li>
+        <li class="MsoNormal">
+        <font face="Tahoma" style="font-size: 8pt; font-weight: 700"><span lang="EN">box: All four sides. </span>
+        </font></li>
+        <li class="MsoNormal">
+        <font face="Tahoma" style="font-size: 8pt; font-weight: 700"><span lang="EN">border: All four sides. </span>
+        </font>
+        </li>
+      </ul>
+    </ul>
+    <p style="margin-left: .5in"><code style="font-family: Tahoma">
+    <span lang="EN" style="font-size: 8pt; font-weight:700">rules = none|groups|rows|cols|all</span></code></p>
+    <p style="margin-left: .5in">
+    <font face="Tahoma" style="font-size: 8pt; font-weight: 700"><span lang="EN">This attribute specifies which 
+    rules will appear between cells within a table. The rendering of rules is 
+    user agent dependent. Possible values: </span></font></p>
+    <ul type="disc" style="margin-bottom: 0in">
+      <ul type="disc" style="margin-bottom: 0in">
+        <li class="MsoNormal">
+        <font face="Tahoma" style="font-size: 8pt; font-weight: 700"><span lang="EN">none: No rules. This is the 
+        default value. </span></font></li>
+        <li class="MsoNormal">
+        <font face="Tahoma" style="font-size: 8pt; font-weight: 700"><span lang="EN">groups: Rules will appear between 
+        row groups (see thead, tfoot, and tbody) and column groups (see colgroup 
+        and col) only. </span></font></li>
+        <li class="MsoNormal">
+        <font face="Tahoma" style="font-size: 8pt; font-weight: 700"><span lang="EN">rows: Rules will appear between 
+        rows only. </span></font></li>
+        <li class="MsoNormal">
+        <font face="Tahoma" style="font-size: 8pt; font-weight: 700"><span lang="EN">cols: Rules will appear between 
+        columns only. </span></font></li>
+        <li class="MsoNormal">
+        <font face="Tahoma" style="font-size: 8pt; font-weight: 700"><span lang="EN">all: Rules will appear between all 
+        rows and columns. </span></font></li>
+      </ul>
+    </ul>
+    <p style="margin-left: .5in"><code style="font-family: Tahoma">
+    <span lang="EN" style="font-size: 8pt; font-weight:700">border = number</span></code></p>
+    <p style="margin-left: .5in">
+    <font face="Tahoma" style="font-size: 8pt; font-weight: 700"><span lang="EN">This attributes specifies the 
+    width (in pixels only) of the frame around a table.</span></font></p>
+    <p style="margin-left: .5in">
+    <font face="Tahoma" style="font-size: 8pt; font-weight: 700"><span lang="EN">To help distinguish the cells 
+    of a table, we can set the border attribute of the table element. Consider a 
+    previous example:</span></font></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: .5in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: .5in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;table border=&quot;1&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: .5in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;caption&gt;Acronyms And Their Meanings&lt;/caption&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: .5in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp; &lt;tr&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: .5in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp; &lt;th&gt;Acronym&lt;/th&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: .5in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp; &lt;th&gt;Meaning&lt;/th&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: .5in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp; &lt;/tr&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: .5in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp; &lt;tr&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: .5in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp; &lt;td&gt;GIF&lt;/td&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: .5in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp; &lt;td&gt;Graphics Interchange Format&lt;/td&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: .5in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp; &lt;/tr&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: .5in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp; &lt;tr&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: .5in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp; &lt;td&gt;JPEG&lt;/td&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: .5in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp; &lt;td&gt;Joint Photographers Experts Group&lt;/td&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: .5in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp; &lt;/tr&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: .5in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;/table&gt;</span></code></pre>
+    <p style="margin-left: .5in">
+    <font face="Tahoma" style="font-size: 8pt; font-weight: 700"><span lang="EN">which is rendered as follows:</span></font></p>
+    <table class="MsoNormalTable" border="1" cellpadding="0" style="margin-left: .5in">
+      <tr>
+        <td colspan="2" style="border: medium none; padding: .75pt">
+        <p class="MsoNormal" align="center" style="text-align: center">
+        <font face="Tahoma" style="font-size: 8pt; font-weight: 700">Acronyms 
+        And Their Meanings</font></td>
+      </tr>
+      <tr>
+        <td style="padding: .75pt">
+        <p class="MsoNormal" align="center" style="text-align: center">
+        <font face="Tahoma" style="font-size: 8pt"><b>
+        Acronym</b></font></td>
+        <td style="padding: .75pt">
+        <p class="MsoNormal" align="center" style="text-align: center">
+        <font face="Tahoma" style="font-size: 8pt"><b>
+        Meaning</b></font></td>
+      </tr>
+      <tr>
+        <td style="padding: .75pt">
+        <p class="MsoNormal">
+        <font face="Tahoma" style="font-size: 8pt; font-weight: 700">GIF</font></td>
+        <td style="padding: .75pt">
+        <p class="MsoNormal">
+        <font face="Tahoma" style="font-size: 8pt; font-weight: 700">Graphics Interchange Format</font></td>
+      </tr>
+      <tr>
+        <td style="padding: .75pt">
+        <p class="MsoNormal">
+        <font face="Tahoma" style="font-size: 8pt; font-weight: 700">JPEG</font></td>
+        <td style="padding: .75pt">
+        <p class="MsoNormal">
+        <font face="Tahoma" style="font-size: 8pt; font-weight: 700">Joint Photographers Experts Group</font></td>
+      </tr>
+    </table>
+    <p style="margin-left: .5in">
+    <font face="Tahoma" style="font-size: 8pt; font-weight: 700"><span lang="EN">The above example can be 
+    changed so that the user agent shows a border of three pixels thick on the 
+    top and bottom sides of the table, with a rule drawn between the columns.</span></font></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: .5in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: .5in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;table border=&quot;3&quot; frame=&quot;hsides&quot; rules=&quot;cols&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: .5in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;caption&gt;Acronyms And Their Meanings&lt;/caption&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: .5in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp; &lt;tr&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: .5in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp; &lt;th&gt;Acronym&lt;/th&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: .5in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp; &lt;th&gt;Meaning&lt;/th&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: .5in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp; &lt;/tr&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: .5in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp; &lt;tr&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: .5in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp; &lt;td&gt;GIF&lt;/td&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: .5in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp; &lt;td&gt;Graphics Interchange Format&lt;/td&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: .5in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp; &lt;/tr&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: .5in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp; &lt;tr&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: .5in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp; &lt;td&gt;JPEG&lt;/td&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: .5in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp; &lt;td&gt;Joint Photographers Experts Group&lt;/td&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: .5in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp; &lt;/tr&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: .5in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;/table&gt;</span></code></pre>
+    <p style="margin-left: .5in">
+    <font face="Tahoma" style="font-size: 8pt; font-weight: 700"><span lang="EN">which is rendered as follows:</span></font></p>
+    <table class="MsoNormalTable" border="1" cellpadding="0" style="border: 2.25pt outset; margin-left: .5in">
+      <tr>
+        <td colspan="2" style="border: medium none; padding: .75pt">
+        <p class="MsoNormal" align="center" style="text-align: center">
+        <font face="Tahoma" style="font-size: 8pt; font-weight: 700">Acronyms 
+        And Their Meanings</font></td>
+      </tr>
+      <tr>
+        <td style="padding: .75pt">
+        <p class="MsoNormal" align="center" style="text-align: center">
+        <font face="Tahoma" style="font-size: 8pt"><b>
+        Acronym</b></font></td>
+        <td style="padding: .75pt">
+        <p class="MsoNormal" align="center" style="text-align: center">
+        <font face="Tahoma" style="font-size: 8pt"><b>
+        Meaning</b></font></td>
+      </tr>
+      <tr>
+        <td style="padding: .75pt">
+        <p class="MsoNormal">
+        <font face="Tahoma" style="font-size: 8pt; font-weight: 700">GIF</font></td>
+        <td style="padding: .75pt">
+        <p class="MsoNormal">
+        <font face="Tahoma" style="font-size: 8pt; font-weight: 700">Graphics Interchange Format</font></td>
+      </tr>
+      <tr>
+        <td style="padding: .75pt">
+        <p class="MsoNormal">
+        <font face="Tahoma" style="font-size: 8pt; font-weight: 700">JPEG</font></td>
+        <td style="padding: .75pt">
+        <p class="MsoNormal">
+        <font face="Tahoma" style="font-size: 8pt; font-weight: 700">Joint Photographers Experts Group</font></td>
+      </tr>
+    </table>
+    <p>&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="74" bgcolor="#FFFFCC">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#009900">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="17" bgcolor="#FFCC00">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="17" bgcolor="#FFCC00">
+    <a name="hvalign">
+    <span lang="EN" style="font-size: 10pt; font-family: Tahoma; font-weight:700">7.9 
+    Horizontal and vertical alignment</span></a></td>
+    <td style="border-style: none; border-width: medium" width="14" height="17" bgcolor="#FFCC00">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="36" bgcolor="#FFFFCC">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="36" bgcolor="#FFFFCC">
+    <p style="margin-left: .5in">
+    <font face="Tahoma" style="font-size: 8pt; font-weight: 700"><span lang="EN">The following attributes may be 
+    set for different table elements.</span></font></p>
+    <p style="margin-left: .5in"><font face="Tahoma" style="font-size: 8pt"><strong><span lang="EN">Attributes and their 
+    possible values:</span></strong></font></p>
+    <p style="margin-left: .5in"><code style="font-family: Tahoma">
+    <span lang="EN" style="font-size: 8pt; font-weight:700">align = 
+    left|center|right|justify|char</span></code></p>
+    <p style="margin-left: .5in">
+    <font face="Tahoma" style="font-size: 8pt; font-weight: 700"><span lang="EN">This attribute specifies the 
+    alignment of data and the justification of text in a cell. Possible values:
+    </span></font></p>
+    <ul type="disc" style="margin-bottom: 0in">
+      <ul type="disc" style="margin-bottom: 0in">
+        <li class="MsoNormal"><font face="Tahoma" style="font-size: 8pt"><span lang="EN">
+        <b>left: Left-flush data/Left-justify 
+        text. </b> <strong>This is the default value for table data (td element).</strong><b>
+        </b>
+        </span></font></li>
+        <li class="MsoNormal"><font face="Tahoma" style="font-size: 8pt"><span lang="EN">
+        <b>center: Center data/Center-justify 
+        text. </b> <strong>This is the default value for table headers (th element).</strong><b>
+        </b>
+        </span></font></li>
+        <li class="MsoNormal">
+        <font face="Tahoma" style="font-size: 8pt; font-weight: 700"><span lang="EN">right: Right-flush 
+        data/Right-justify text. </span></font></li>
+        <li class="MsoNormal">
+        <font face="Tahoma" style="font-size: 8pt; font-weight: 700"><span lang="EN">justify: Double-justify text.
+        </span></font></li>
+        <li class="MsoNormal">
+        <font face="Tahoma" style="font-size: 8pt; font-weight: 700"><span lang="EN">char: Align text around a specific 
+        character. If a user agent doesn't support character alignment, behavior 
+        in the presence of this value is unspecified. </span></font></li>
+      </ul>
+    </ul>
+    <p style="margin-left: .5in"><code style="font-family: Tahoma">
+    <span lang="EN" style="font-size: 8pt; font-weight:700">valign = 
+    top|middle|bottom|baseline</span></code></p>
+    <p style="margin-left: .5in">
+    <font face="Tahoma" style="font-size: 8pt; font-weight: 700"><span lang="EN">This attribute specifies the 
+    vertical position of data within a cell. Possible values: </span></font></p>
+    <ul type="disc" style="margin-bottom: 0in">
+      <ul type="disc" style="margin-bottom: 0in">
+        <li class="MsoNormal">
+        <font face="Tahoma" style="font-size: 8pt; font-weight: 700"><span lang="EN">top: Cell data is flush with the 
+        top of the cell. </span></font></li>
+        <li class="MsoNormal"><font face="Tahoma" style="font-size: 8pt"><span lang="EN">
+        <b>middle: Cell data is centered 
+        vertically within the cell. </b> <strong>This is the default value.</strong><b>
+        </b>
+        </span></font></li>
+        <li class="MsoNormal">
+        <font face="Tahoma" style="font-size: 8pt; font-weight: 700"><span lang="EN">bottom: Cell data is flush with 
+        the bottom of the cell. </span></font></li>
+        <li class="MsoNormal">
+        <font face="Tahoma" style="font-size: 8pt; font-weight: 700"><span lang="EN">baseline: All cells in the same 
+        row as a cell whose valign attribute has this value should have their 
+        textual data positioned so that the first text line occurs on a baseline 
+        common to all cells in the row. This constraint does not apply to 
+        subsequent text lines in these cells. </span></font></li>
+      </ul>
+    </ul>
+    <p style="margin-left: .5in"><b><code style="font-family: Tahoma">
+    <span lang="EN" style="font-size: 8pt">char = character</span></code></b><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b><br>
+    This attribute specifies a single character within a text fragment to act as 
+    an axis for alignment. The default value for this attribute is the decimal 
+    point character for the current language as set by the lang attribute (e.g., 
+    the period (&quot;.&quot;) in English and the comma (&quot;,&quot;) in French).
+    </b> <strong>User 
+    agents are not required to support this attribute.</strong></span></font></p>
+    <p style="margin-left: .5in"><b><code style="font-family: Tahoma">
+    <span lang="EN" style="font-size: 8pt">charoff = length</span></code></b><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b><br>
+    When present, this attribute specifies the offset to the first occurrence of 
+    the alignment character on each line. If a line doesn't include the 
+    alignment character, it should be horizontally shifted to end at the 
+    alignment position.<br>
+    When charoff is used to set the offset of an alignment character, the 
+    direction of offset is determined by the current text direction (set by the 
+    dir attribute). In left-to-right texts (the default), offset is from the 
+    left margin. In right-to-left texts, offset is from the right margin. </b>
+    <strong>User agents are not required to support this attribute.</strong></span></font></p>
+    <p style="margin-left: .5in"><font face="Tahoma" style="font-size: 8pt"><strong><span lang="EN">Inheritance of 
+    alignment specifications</span></strong></font></p>
+    <p style="margin-left: .5in">
+    <font face="Tahoma" style="font-size: 8pt; font-weight: 700"><span lang="EN">The alignment of cell contents 
+    can be specified on a cell by cell basis, or inherited from enclosing 
+    elements, such as the row, column or the table itself.</span></font></p>
+    <p style="margin-left: .5in"><font face="Tahoma" style="font-size: 8pt"><span lang="EN">
+    <b>The order of precedence (from 
+    highest to lowest) for the attributes </b> <strong>align, char,</strong><b> and
+    </b>
+    <strong>charoff</strong><b> is the following:</b></span></font></p>
+    <p class="MsoNormal" style="text-indent: 0in; margin-left: 0in">
+    <span lang="EN">
+    <font face="Tahoma" style="font-size: 8pt; font-weight: 700">10.</font><span style="font-style: normal; font-variant: normal; font-weight: 700; font-size: 8pt; font-family: Tahoma">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </span><font face="Tahoma" style="font-size: 8pt"><b>An alignment attribute set on an element within a cell's data (e.g.
+    </b>
+    <strong>p</strong><b>). </b></font> </span></p>
+    <p class="MsoNormal" style="text-indent: -.25in; margin-left: 1.0in">
+    <span lang="EN">
+    <font face="Tahoma" style="font-size: 8pt; font-weight: 700">11.</font><span style="font-style: normal; font-variant: normal; font-weight: 700; font-size: 8pt; font-family: Tahoma">&nbsp;
+    </span><font face="Tahoma" style="font-size: 8pt"><b>An alignment attribute set on a cell (</b><strong>th</strong><b> and
+    </b> <strong>
+    td</strong><b>). </b></font> </span></p>
+    <p class="MsoNormal" style="text-indent: -.25in; margin-left: 1.0in">
+    <span lang="EN">
+    <font face="Tahoma" style="font-size: 8pt; font-weight: 700">12.</font><span style="font-style: normal; font-variant: normal; font-weight: 700; font-size: 8pt; font-family: Tahoma">&nbsp;
+    </span><font face="Tahoma" style="font-size: 8pt"><b>An alignment attribute set on a column grouping element (</b><strong>col</strong><b> 
+    and </b> <strong>colgroup</strong><b>). When a cell is part of a multi-column span, 
+    the alignment property is inherited from the cell definition at the 
+    beginning of the span. </b></font> </span></p>
+    <p class="MsoNormal" style="text-indent: -.25in; margin-left: 1.0in">
+    <span lang="EN">
+    <font face="Tahoma" style="font-size: 8pt; font-weight: 700">13.</font><span style="font-style: normal; font-variant: normal; font-weight: 700; font-size: 8pt; font-family: Tahoma">&nbsp;
+    </span><font face="Tahoma" style="font-size: 8pt"><b>An alignment attribute set on a row or row grouping element (</b><strong>tr, 
+    thead, tfoot,</strong><b> and </b> <strong>tbody</strong><b>). When a cell is part of a 
+    multi-row span, the alignment property is inherited from the cell definition 
+    at the beginning of the span. </b></font> </span></p>
+    <p class="MsoNormal" style="text-indent: -.25in; margin-left: 1.0in">
+    <span lang="EN">
+    <font face="Tahoma" style="font-size: 8pt; font-weight: 700">14.</font><span style="font-style: normal; font-variant: normal; font-weight: 700; font-size: 8pt; font-family: Tahoma">&nbsp;
+    </span><font face="Tahoma" style="font-size: 8pt; font-weight: 700">An alignment attribute set on the table.
+    </font> </span></p>
+    <p class="MsoNormal" style="text-indent: -.25in; margin-left: 1.0in">
+    <span lang="EN">
+    <font face="Tahoma" style="font-size: 8pt; font-weight: 700">15.</font><span style="font-style: normal; font-variant: normal; font-weight: 700; font-size: 8pt; font-family: Tahoma">&nbsp;
+    </span><font face="Tahoma" style="font-size: 8pt; font-weight: 700">The default alignment value.
+    </font> </span></p>
+    <p style="margin-left: .5in"><font face="Tahoma" style="font-size: 8pt"><span lang="EN">
+    <b>The order of precedence (from 
+    highest to lowest) for the attribute </b> <strong>valign</strong><b> (as well as the 
+    other inherited attributes </b> <strong>lang, dir,</strong><b> and </b> <strong>style</strong><b>) 
+    is the following:</b></span></font></p>
+    <p class="MsoNormal" style="text-indent: 0in; margin-left: 0in">
+    <span lang="EN">
+    <font face="Tahoma" style="font-size: 8pt; font-weight: 700">16.</font><span style="font-style: normal; font-variant: normal; font-weight: 700; font-size: 8pt; font-family: Tahoma">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </span><font face="Tahoma" style="font-size: 8pt"><b>An attribute set on an element within a cell's data (e.g.
+    </b> <strong>p</strong><b>). </b></font>
+    </span></p>
+    <p class="MsoNormal" style="text-indent: -.25in; margin-left: 1.0in">
+    <span lang="EN">
+    <font face="Tahoma" style="font-size: 8pt; font-weight: 700">17.</font><span style="font-style: normal; font-variant: normal; font-weight: 700; font-size: 8pt; font-family: Tahoma">&nbsp;
+    </span><font face="Tahoma" style="font-size: 8pt"><b>An attribute set on a cell (</b><strong>th</strong><b> and
+    </b> <strong>td</strong><b>). </b></font>
+    </span></p>
+    <p class="MsoNormal" style="text-indent: -.25in; margin-left: 1.0in">
+    <span lang="EN">
+    <font face="Tahoma" style="font-size: 8pt; font-weight: 700">18.</font><span style="font-style: normal; font-variant: normal; font-weight: 700; font-size: 8pt; font-family: Tahoma">&nbsp;
+    </span><font face="Tahoma" style="font-size: 8pt"><b>An attribute set on a row or row grouping element (</b><strong>tr, thead, 
+    tfoot,</strong><b> and </b> <strong>tbody</strong><b>). When a cell is part of a 
+    multi-row span, the attribute value is inherited from the cell definition at 
+    the beginning of the span. </b></font> </span></p>
+    <p class="MsoNormal" style="text-indent: -.25in; margin-left: 1.0in">
+    <span lang="EN">
+    <font face="Tahoma" style="font-size: 8pt; font-weight: 700">19.</font><span style="font-style: normal; font-variant: normal; font-weight: 700; font-size: 8pt; font-family: Tahoma">&nbsp;
+    </span><font face="Tahoma" style="font-size: 8pt"><b>An attribute set on a column grouping element (</b><strong>col</strong><b> 
+    and </b> <strong>colgroup</strong><b>). When a cell is part of a multi-column span, 
+    the attribute value is inherited from the cell definition at the beginning 
+    of the span. </b></font> </span></p>
+    <p class="MsoNormal" style="text-indent: -.25in; margin-left: 1.0in">
+    <span lang="EN">
+    <font face="Tahoma" style="font-size: 8pt; font-weight: 700">20.</font><span style="font-style: normal; font-variant: normal; font-weight: 700; font-size: 8pt; font-family: Tahoma">&nbsp;
+    </span><font face="Tahoma" style="font-size: 8pt; font-weight: 700">An attribute set on the table.
+    </font> </span></p>
+    <p class="MsoNormal" style="text-indent: -.25in; margin-left: 1.0in">
+    <span lang="EN">
+    <font face="Tahoma" style="font-size: 8pt; font-weight: 700">21.</font><span style="font-style: normal; font-variant: normal; font-weight: 700; font-size: 8pt; font-family: Tahoma">&nbsp;
+    </span><font face="Tahoma" style="font-size: 8pt; font-weight: 700">The default attribute value.
+    </font> </span></p>
+    <p style="margin-left: .5in">
+    <font face="Tahoma" style="font-size: 8pt; font-weight: 700"><span lang="EN">Furthermore, when rendering 
+    cells, horizontal alignment is determined by columns in preference to rows, 
+    while for vertical alignment, rows are given preference over columns.</span></font></p>
+    <p><span lang="EN" style="font-size: 8pt; font-family: Tahoma">
+    <b>Note that a cell may inherit an attribute not from its parent but from the
+    </b>
+    <strong>first cell in a span</strong><b>. This is an exception to the general 
+    attribute inheritance rules.</b></span></p>
+    <p>&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="36" bgcolor="#FFFFCC">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#009900">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="17" bgcolor="#FFCC00">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="17" bgcolor="#FFCC00">
+    <a name="cmgns">
+    <span lang="EN" style="font-size: 10pt; font-family: Tahoma; font-weight:700">7.10 
+    Cell margins</span></a></td>
+    <td style="border-style: none; border-width: medium" width="14" height="17" bgcolor="#FFCC00">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="36" bgcolor="#FFFFCC">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="36" bgcolor="#FFFFCC">
+    <p style="margin-left: .5in"><font face="Tahoma" style="font-size: 8pt"><strong><span lang="EN">Attributes</span></strong></font></p>
+    <p style="margin-left: .5in"><b><code style="font-family: Tahoma">
+    <span lang="EN" style="font-size: 8pt">cellspacing = length</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><br>
+    The attribute specifies the amount of space there is going to be between the 
+    individual cells and the table frame.</span></font></b></p>
+    <p style="margin-left: .5in"><b><code style="font-family: Tahoma">
+    <span lang="EN" style="font-size: 8pt">cellpadding = length</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><br>
+    This attribute specifies the amount of space between the border of the cell 
+    and its contents. If the value of this attribute is a pixel length, all four 
+    margins should be this distance from the contents. If the value of the 
+    attribute is a percentage length, the top and bottom margins should be 
+    equally separated from the content based on a percentage of the available 
+    vertical space, and the left and right margins should be equally separated 
+    from the content based on a percentage of the available horizontal space.</span></font></b></p>
+    <p style="margin-left: .5in"><b><font face="Tahoma" style="font-size: 8pt"><span lang="EN">These two attributes control 
+    spacing between cells (cellspacing) and within cells (cellpadding).</span></font></b></p>
+    <p style="margin-left: .5in"><font face="Tahoma" style="font-size: 8pt"><a name="eg8"><b>
+    <span lang="EN" style="color: red">Eg.8</span></b></a><b><span lang="EN"> In 
+    the following table, the cellspacing attribute specifies that cells should 
+    be separated from each other and from the table frame by twenty pixels. The 
+    cellpadding attribute specifies that the top margin of the cell and the 
+    bottom margin of the cell will each be separated from the cell's contents by 
+    5% of the available vertical space (the total being 10%). Similarly, the 
+    left margin of the cell and the right margin of the cell will each be 
+    separated from the cell's contents by 5% of the available horizontal space 
+    (the total being 10%). You could also just specify a value in pixels, e.g. 
+    &quot;10&quot; which means 10 pixels.</span></b></font></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: .5in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: .5in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;table border=&quot;1&quot; cellspacing=&quot;20&quot; cellpadding=&quot;10%&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: .5in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;tr&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: .5in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;td&gt;Cell 1&lt;/td&gt; </span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: .5in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;td&gt;Cell 2&lt;/td&gt; </span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: .5in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;td&gt;Cell 3&lt;/td&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: .5in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;/tr&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: .5in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;/table&gt;</span></code></pre>
+    <p style="margin-left: .5in"><b><font face="Tahoma" style="font-size: 8pt"><span lang="EN">which is rendered as follows:</span></font></b></p>
+    <table class="MsoNormalTable" border="1" cellspacing="20" cellpadding="0" style="margin-left: .5in">
+      <tr>
+        <td style="padding: 7.5pt">
+        <p class="MsoNormal"><b><font face="Tahoma" style="font-size: 8pt">Cell 1</font></b></td>
+        <td style="padding: 7.5pt">
+        <p class="MsoNormal"><b><font face="Tahoma" style="font-size: 8pt">Cell 2</font></b></td>
+        <td style="padding: 7.5pt">
+        <p class="MsoNormal"><b><font face="Tahoma" style="font-size: 8pt">Cell 3</font></b></td>
+      </tr>
+    </table>
+    <p style="margin-left: .5in"><font face="Tahoma" style="font-size: 8pt"><a name="ex7.1"><strong><span lang="EN">
+    Exercise 7.1</span></strong></a></font></p>
+    <p class="MsoNormal" style="text-indent: 0in; margin-left: 0in">
+    <span lang="EN"><b><font face="Tahoma" style="font-size: 8pt">1.</font></b><span style="font-style: normal; font-variant: normal; font-weight: 700; font-size: 8pt; font-family: Tahoma">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </span><font face="Tahoma" style="font-size: 8pt"><b>Reset the editor. Then type the code given in
+    <a href="mk:@MSITStore:\WINDOWS\Temporary%20Internet%20Files\htmItutoriaI.chm::/page007.htm#eg1#eg1" style="color: blue; text-decoration: underline; text-underline: single">
+    Eg.1</a> above between the </b> <strong>body</strong><b> tags. (Click on the
+    </b> <strong>
+    BACK</strong><b> button to return to this exercise after scrolling to Eg.1). 
+    Preview in Browser. </b></font> </span></p>
+    <p class="MsoNormal" style="text-indent: -.25in; margin-left: 1.0in">
+    <span lang="EN"><b><font face="Tahoma" style="font-size: 8pt">2.</font></b><span style="font-style: normal; font-variant: normal; font-weight: 700; font-size: 8pt; font-family: Tahoma">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </span><b><font face="Tahoma" style="font-size: 8pt">To the opening table tag, add these additional attributes and their 
+    values: bordercolor=&quot;#000000&quot; cellspacing=&quot;0&quot; cellpadding=&quot;3&quot;. The tag 
+    should now look like this: </font></b> </span></p>
+    <pre style="text-indent: -.25in; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 10.0pt; font-family: Courier New; margin-left: 1.0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><span lang="EN"><b><font face="Tahoma" style="font-size: 8pt"><code>3.</code></font></b><code style="font-family: Courier New"><span style="font-style: normal; font-variant: normal; font-weight: 700; font-size: 8pt; font-family: Tahoma">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></code><b><font face="Tahoma" style="font-size: 8pt"><code>&nbsp;</code></font></b></span></pre>
+    <pre style="text-indent: -.25in; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 10.0pt; font-family: Courier New; margin-left: 1.0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><span lang="EN"><b><font face="Tahoma" style="font-size: 8pt"><code>4.</code></font></b><code style="font-family: Courier New"><span style="font-style: normal; font-variant: normal; font-weight: 700; font-size: 8pt; font-family: Tahoma">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></code><b><font face="Tahoma" style="font-size: 8pt"><code>&lt;table border=&quot;1&quot; bordercolor=&quot;#000000&quot; cellspacing=&quot;0&quot; cellpadding=&quot;3&quot; summary=&quot;The </code></font></b></span></pre>
+    <pre style="text-indent: -.25in; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 10.0pt; font-family: Courier New; margin-left: 1.0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><span lang="EN"><b><font face="Tahoma" style="font-size: 8pt"><code>5.</code></font></b><code style="font-family: Courier New"><span style="font-style: normal; font-variant: normal; font-weight: 700; font-size: 8pt; font-family: Tahoma">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></code><b><font face="Tahoma" style="font-size: 8pt"><code>table gives some statistics about two different locations: average sunshine and </code></font></b></span></pre>
+    <pre style="text-indent: -.25in; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 10.0pt; font-family: Courier New; margin-left: 1.0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><span lang="EN"><b><font face="Tahoma" style="font-size: 8pt"><code>6.</code></font></b><code style="font-family: Courier New"><span style="font-style: normal; font-variant: normal; font-weight: 700; font-size: 8pt; font-family: Tahoma">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></code><b><font face="Tahoma" style="font-size: 8pt"><code>rain per year, and whether they get any snow.&quot;&gt;</code></font></b></span></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 1.0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp; </span></code></pre>
+    <p class="MsoNormal" style="margin-left: 1.0in; margin-bottom: 12.0pt">
+    <b><font face="Tahoma" style="font-size: 8pt">
+    <span lang="EN">Preview in Browser.</span></font></b></p>
+    <p class="MsoNormal" style="text-indent: 0in; margin-left: 1.0in">
+    <span lang="EN"><b><font face="Tahoma" style="font-size: 8pt">7.</font></b><span style="font-style: normal; font-variant: normal; font-weight: 700; font-size: 8pt; font-family: Tahoma">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </span><b><font face="Tahoma" style="font-size: 8pt">Change the numeric values of the attributes, including the &quot;border&quot; 
+    and &quot;bordercolor&quot; attributes (choose colors from the color palette). Preview 
+    in Browser after each change. </font></b> </span></p>
+    <p class="MsoNormal" style="text-indent: -.25in; margin-left: 1.0in">
+    <span lang="EN"><b><font face="Tahoma" style="font-size: 8pt">8.</font></b><span style="font-style: normal; font-variant: normal; font-weight: 700; font-size: 8pt; font-family: Tahoma">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </span><b><font face="Tahoma" style="font-size: 8pt">Add the attribute
+    </font></b> </span><b><code style="font-family: Tahoma">
+    <span lang="EN" style="font-size: 8pt">align=&quot;center&quot;</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN"> 
+    in the same way as you did for the others in (1) above. Preview in Browser. 
+    Now change </span></font><code style="font-family: Tahoma">
+    <span lang="EN" style="font-size: 8pt">&quot;center&quot;</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN"> 
+    to </span></font><code style="font-family: Tahoma">
+    <span lang="EN" style="font-size: 8pt">&quot;right&quot;</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN">. 
+    Preview in Browser. (Remember to use your keyboard space bar to include a 
+    blank space between each attribute/value pair and the next attribute/value 
+    pair). </span></font></b></p>
+    <p class="MsoNormal" style="text-indent: -.25in; margin-left: 1.0in">
+    <span lang="EN"><b><font face="Tahoma" style="font-size: 8pt">9.</font></b><span style="font-style: normal; font-variant: normal; font-weight: 700; font-size: 8pt; font-family: Tahoma">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </span><b><font face="Tahoma" style="font-size: 8pt">Add the attribute
+    </font></b> </span><b><code style="font-family: Tahoma">
+    <span lang="EN" style="font-size: 8pt">width=&quot;100%&quot;</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN">. 
+    Preview in Browser. Now add the attribute </span>
+    </font>
+    <code style="font-family: Tahoma">
+    <span lang="EN" style="font-size: 8pt">height=&quot;150&quot;</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN"> 
+    (this value is in pixels). Preview in Browser. Change the values of both 
+    attributes and preview in browser each time. </span></font></b></p>
+    <p class="MsoNormal" style="text-indent: -.25in; margin-left: 1.0in">
+    <span lang="EN"><b><font face="Tahoma" style="font-size: 8pt">10.</font></b><span style="font-style: normal; font-variant: normal; font-weight: 700; font-size: 8pt; font-family: Tahoma">&nbsp;
+    </span><font face="Tahoma" style="font-size: 8pt"><b>Change one or two pairs of opening and closing
+    </b> <strong>th</strong><b> 
+    tags to </b> <strong>td</strong><b> tags. Preview in Browser to see the effect of 
+    the change. Notice that the data enclosed within the </b> <strong>td</strong><b> 
+    tags are not in bold font but in normal font and that the text is no longer 
+    centered horizontally. </b></font> </span></p>
+    <p class="MsoNormal" style="text-indent: -.25in; margin-left: 1.0in">
+    <span lang="EN"><b><font face="Tahoma" style="font-size: 8pt">11.</font></b><span style="font-style: normal; font-variant: normal; font-weight: 700; font-size: 8pt; font-family: Tahoma">&nbsp;
+    </span><b><font face="Tahoma" style="font-size: 8pt">Remove the border attribute and its value, i.e remove
+    </font></b> </span>
+    <b>
+    <code style="font-family: Tahoma">
+    <span lang="EN" style="font-size: 8pt">border=&quot;1&quot;</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN">. 
+    Preview in Browser. </span></font></b></p>
+    <p class="MsoNormal" style="text-indent: -.25in; margin-left: 1.0in">
+    <span lang="EN"><b><font face="Tahoma" style="font-size: 8pt">12.</font></b><span style="font-style: normal; font-variant: normal; font-weight: 700; font-size: 8pt; font-family: Tahoma">&nbsp;
+    </span><font face="Tahoma" style="font-size: 8pt"><b>Reset the editor. Type the code given in
+    <a href="mk:@MSITStore:\WINDOWS\Temporary%20Internet%20Files\htmItutoriaI.chm::/page007.htm#eg3#eg3" style="color: blue; text-decoration: underline; text-underline: single">
+    Eg.3</a> above between the </b> <strong>body</strong><b> tags. Preview in Browser.
+    </b></font>
+    </span></p>
+    <p class="MsoNormal" style="text-indent: -.25in; margin-left: 1.0in">
+    <span lang="EN"><b><font face="Tahoma" style="font-size: 8pt">13.</font></b><span style="font-style: normal; font-variant: normal; font-weight: 700; font-size: 8pt; font-family: Tahoma">&nbsp;
+    </span><font face="Tahoma" style="font-size: 8pt"><b>To the </b> <strong>opening</strong><b> table tag, add these attributes and 
+    their values: </b></font> </span><b><code style="font-family: Tahoma">
+    <span lang="EN" style="font-size: 8pt">frame=&quot;border&quot; rules=&quot;groups&quot;</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN">. 
+    The tag should now look like this: </span>
+    </font>
+    <code style="font-family: Tahoma">
+    <span lang="EN" style="font-size: 8pt">&lt;table frame=&quot;border&quot; 
+    rules=&quot;groups&quot;&gt;</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN"> Preview in Browser. Notice how 
+    a vertical rule is placed between the 2 column groups. </span></font></b></p>
+    <p class="MsoNormal" style="text-indent: -.25in; margin-left: 1.0in">
+    <span lang="EN"><b><font face="Tahoma" style="font-size: 8pt">14.</font></b><span style="font-style: normal; font-variant: normal; font-weight: 700; font-size: 8pt; font-family: Tahoma">&nbsp;
+    </span><b><font face="Tahoma" style="font-size: 8pt">For the frame attribute, change the value from
+    </font></b> </span>
+    <b>
+    <code style="font-family: Tahoma">
+    <span lang="EN" style="font-size: 8pt">border</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN"> 
+    to each of the following, one value at a time: 
+    void|above|below|hsides|lhs|rhs|vsides|box. Preview in Browser after each 
+    change. </span></font></b></p>
+    <p class="MsoNormal" style="text-indent: -.25in; margin-left: 1.0in">
+    <span lang="EN"><b><font face="Tahoma" style="font-size: 8pt">15.</font></b><span style="font-style: normal; font-variant: normal; font-weight: 700; font-size: 8pt; font-family: Tahoma">&nbsp;
+    </span><b><font face="Tahoma" style="font-size: 8pt">For the rules attribute, change the value from
+    </font></b> </span>
+    <b>
+    <code style="font-family: Tahoma">
+    <span lang="EN" style="font-size: 8pt">groups</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN"> 
+    to each of the following, one value at a time: none|rows|cols|all. Preview 
+    in Browser after each change. </span></font></b></p>
+    <p class="MsoNormal" style="text-indent: -.25in; margin-left: 1.0in">
+    <span lang="EN"><b><font face="Tahoma" style="font-size: 8pt">16.</font></b><span style="font-style: normal; font-variant: normal; font-weight: 700; font-size: 8pt; font-family: Tahoma">&nbsp;
+    </span><b><font face="Tahoma" style="font-size: 8pt">Add </font></b> </span>
+    <b><code style="font-family: Tahoma">
+    <span lang="EN" style="font-size: 8pt">border=&quot;4&quot;</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN"> 
+    and Preview in Browser. Change the value of 4 to other numeric values and 
+    Preview in Browser after each change. </span></font></b></p>
+    <p class="MsoNormal" style="text-indent: -.25in; margin-left: 1.0in">
+    <span lang="EN"><b><font face="Tahoma" style="font-size: 8pt">17.</font></b><span style="font-style: normal; font-variant: normal; font-weight: 700; font-size: 8pt; font-family: Tahoma">&nbsp;
+    </span><b><font face="Tahoma" style="font-size: 8pt">Now add </font></b> </span>
+    <b><code style="font-family: Tahoma">
+    <span lang="EN" style="font-size: 8pt">bordercolor=&quot;#000000&quot; cellspacing=&quot;0&quot; 
+    cellpadding=&quot;0&quot;</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN"> to the tag and Preview in 
+    Browser. Change these attribute values a few times and Preview in Browser 
+    after each change. </span></font></b></p>
+    <p class="MsoNormal" style="text-indent: -.25in; margin-left: 1.0in">
+    <span lang="EN"><b><font face="Tahoma" style="font-size: 8pt">18.</font></b><span style="font-style: normal; font-variant: normal; font-weight: 700; font-size: 8pt; font-family: Tahoma">&nbsp;
+    </span><font face="Tahoma" style="font-size: 8pt"><b>Reset the editor. Type the code given in
+    <a href="mk:@MSITStore:\WINDOWS\Temporary%20Internet%20Files\htmItutoriaI.chm::/page007.htm#eg7#eg7" style="color: blue; text-decoration: underline; text-underline: single">
+    Eg.7</a> between the </b> <strong>body</strong><b> tags. Preview in Browser.
+    </b></font> </span>
+    </p>
+    <p class="MsoNormal" style="text-indent: -.25in; margin-left: 1.0in">
+    <span lang="EN"><b><font face="Tahoma" style="font-size: 8pt">19.</font></b><span style="font-style: normal; font-variant: normal; font-weight: 700; font-size: 8pt; font-family: Tahoma">&nbsp;
+    </span><font face="Tahoma" style="font-size: 8pt"><b>In the first rows </b> <strong>opening</strong><b> tr tag (i.e. the first 
+    opening tr tag), type the following attribute and value: </b></font> </span>
+    <b>
+    <code style="font-family: Tahoma">
+    <span lang="EN" style="font-size: 8pt">bgcolor=&quot;#FFFF00&quot;</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN"> 
+    Preview in Browser. (Each pair of </span>
+    </font>
+    <code style="font-family: Tahoma">
+    <span lang="EN" style="font-size: 8pt">&lt;tr&gt;&lt;/tr&gt;</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN"> 
+    tags designates a table row and each pair of </span>
+    </font>
+    <code style="font-family: Tahoma">
+    <span lang="EN" style="font-size: 8pt">&lt;td&gt;&lt;/td&gt;</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN"> 
+    between those tr tags designates a column within that row). [Look at the 
+    code in
+    <a href="mk:@MSITStore:\WINDOWS\Temporary%20Internet%20Files\htmItutoriaI.chm::/page007.htm#eg7#eg7" style="color: blue; text-decoration: underline; text-underline: single">
+    Eg.7</a>]. </span></font></b></p>
+    <p class="MsoNormal" style="text-indent: -.25in; margin-left: 1.0in">
+    <span lang="EN"><b><font face="Tahoma" style="font-size: 8pt">20.</font></b><span style="font-style: normal; font-variant: normal; font-weight: 700; font-size: 8pt; font-family: Tahoma">&nbsp;
+    </span><font face="Tahoma" style="font-size: 8pt"><b>In the second rows </b> <strong>opening</strong><b> tr tag, type the 
+    following attribute and value: </b></font> </span>
+    <b>
+    <code style="font-family: Tahoma">
+    <span lang="EN" style="font-size: 8pt">bgcolor=&quot;#33FF00&quot;</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN"> 
+    Preview in Browser. </span></font></b></p>
+    <p class="MsoNormal" style="text-indent: -.25in; margin-left: 1.0in">
+    <span lang="EN"><b><font face="Tahoma" style="font-size: 8pt">21.</font></b><span style="font-style: normal; font-variant: normal; font-weight: 700; font-size: 8pt; font-family: Tahoma">&nbsp;
+    </span><font face="Tahoma" style="font-size: 8pt"><b>In the following </b> <strong>opening</strong><b> td tag (which designates 
+    the 1st column of the 2nd row), type the following attribute and value: </b>
+    </font>
+    </span><b><code style="font-family: Tahoma">
+    <span lang="EN" style="font-size: 8pt">bgcolor=&quot;#FF99FF&quot;</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN"> 
+    Preview in Browser. </span></font></b></p>
+    <p class="MsoNormal" style="text-indent: -.25in; margin-left: 1.0in">
+    <span lang="EN"><b><font face="Tahoma" style="font-size: 8pt">22.</font></b><span style="font-style: normal; font-variant: normal; font-weight: 700; font-size: 8pt; font-family: Tahoma">&nbsp;
+    </span><b><font face="Tahoma" style="font-size: 8pt">In the same td tag add the following:
+    </font></b> </span>
+    <b>
+    <code style="font-family: Tahoma">
+    <span lang="EN" style="font-size: 8pt">align=&quot;center&quot;</span></code></b><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b> 
+    Preview in Browser. Change the value of center to the following, one value 
+    at a time: left (this is the default value for </b> <strong>td</strong><b> 
+    elements)|right|justify. (Center is the default value for </b> <strong>th</strong><b> 
+    elements). Preview in Browser after each change. </b> </span></font></p>
+    <p class="MsoNormal" style="text-indent: -.25in; margin-left: 1.0in">
+    <span lang="EN"><b><font face="Tahoma" style="font-size: 8pt">23.</font></b><span style="font-style: normal; font-variant: normal; font-weight: 700; font-size: 8pt; font-family: Tahoma">&nbsp;
+    </span><b><font face="Tahoma" style="font-size: 8pt">In the same td tag as above add the following:
+    </font></b> </span>
+    <b>
+    <code style="font-family: Tahoma">
+    <span lang="EN" style="font-size: 8pt">valign=&quot;top&quot;</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN"> 
+    Preview in Browser. Change the value of top to the following, one value at a 
+    time: middle (this is the default value)|bottom|baseline. Preview in Browser 
+    after each change. </span></font></b></p>
+    <p class="MsoNormal" style="text-indent: -.25in; margin-left: 1.0in">
+    <span lang="EN"><b><font face="Tahoma" style="font-size: 8pt">24.</font></b><span style="font-style: normal; font-variant: normal; font-weight: 700; font-size: 8pt; font-family: Tahoma">&nbsp;
+    </span><b><font face="Tahoma" style="font-size: 8pt">You probably didn't notice any change. Now add the following 
+    attribute and value to the opening table tag: </font></b> </span>
+    <b>
+    <code style="font-family: Tahoma">
+    <span lang="EN" style="font-size: 8pt">height=&quot;150&quot;</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN"> 
+    so that the tag looks like this: </span>
+    </font>
+    <code style="font-family: Tahoma">
+    <span lang="EN" style="font-size: 8pt">&lt;table border=&quot;1&quot; height=&quot;150&quot;&gt;</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN"> 
+    This will expand the table vertically. Now repeat the procedures above, 
+    previewing after each change. </span></font></b></p>
+    <p class="MsoNormal" style="text-indent: -.25in; margin-left: 1.0in">
+    <span lang="EN"><b><font face="Tahoma" style="font-size: 8pt">25.</font></b><span style="font-style: normal; font-variant: normal; font-weight: 700; font-size: 8pt; font-family: Tahoma">&nbsp;
+    </span><font face="Tahoma" style="font-size: 8pt"><b>In the next </b> <strong>opening</strong><b> td tag of the same row, type the 
+    following attribute and value: </b></font> </span>
+    <b>
+    <code style="font-family: Tahoma">
+    <span lang="EN" style="font-size: 8pt">bgcolor=&quot;#99CCCC&quot;</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN"> 
+    Preview in Browser. Notice that the bgcolor attribute of the td tag is given 
+    preference over the bgcolor attribute of the tr tag. </span></font></b></p>
+    <p style="margin-left: 1.0in"><font face="Tahoma" style="font-size: 8pt"><span lang="EN">
+    <b>Note that the </b> <strong>width, 
+    height, nowrap,</strong><b> and </b> <strong>bgcolor</strong><b> attributes for the 
+    table elements have all been deprecated in favor of style sheets.</b></span></font></p>
+    <p style="margin-left: 1.0in"><font face="Tahoma" style="font-size: 8pt"><span lang="EN">
+    <b>Therefore a better way to set 
+    this information would be by using either </b> <strong>inline style information</strong><b> 
+    as follows: </b> </span></font></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 1.0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;td style=&quot;background-color:#33FF00; width:150; text-align:center&quot;&gt;data here&lt;/td&gt;</span></code></pre>
+    <p class="MsoNormal" style="margin-left: 1.0in">
+    <font face="Tahoma" style="font-size: 8pt"><strong><span lang="EN">or</span></strong><b><span lang="EN"> 
+    by adding the information to a style sheet as follows: </span></b></font></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 1.0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">td {</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 1.0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">background-color:&quot;#33FF00&quot;;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 1.0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">width:&quot;150&quot;;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 1.0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">text-align:&quot;center&quot; </span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 1.0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">}</span></code></pre>
+    <p><span lang="EN" style="font-size: 8pt; font-family: Tahoma">
+    <b>You could do the same with the properties of the </b> <strong>table, tr,</strong><b> 
+    and </b> <strong>th</strong><b> elements.</b></span></p>
+    <p>&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="36" bgcolor="#FFFFCC">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#009900">&nbsp;</td>
+  </tr>
+</table>
+
+</body>
+
+</html>
