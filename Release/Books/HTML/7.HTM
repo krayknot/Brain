@@ -1,0 +1,662 @@
+<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>HTML Book</title>
+<style>
+<!--
+ li.MsoNormal
+	{mso-style-parent:"";
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	margin-left:0in; margin-right:0in; margin-top:0in}
+h3
+	{margin-right:0in;
+	margin-left:0in;
+	font-size:13.5pt;
+	font-family:"Times New Roman";
+	font-weight:bold}
+-->
+</style>
+<LINK href="../style.css" rel=stylesheet type=text/css>
+</head>
+
+<body>
+
+<table width="838" border="1" align="center" style="border-width: 0" height="1649">
+  <tr> 
+    <td bordercolor="0" style="border-style: none; border-width: medium" width="10" bgcolor="#33CCFF" height="55">&nbsp;</td>
+    <td bordercolor="0" style="border-style: none; border-width: medium" width="814" bgcolor="#33CCFF" colspan="2" height="55">
+    <font face="Broadway BT" size="7" color="#000000"><b>HTML Book</b></font></td>
+  </tr>
+  <tr> 
+    <td bordercolor="0" style="border-style: none; border-width: medium" width="832" colspan="3" bgcolor="#009900" height="13">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" bgcolor="#00CC99" height="17">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" bgcolor="#00CC99" height="17">
+    <font color="#000000">
+    <span lang="EN" style="font-size: 12.0pt; font-family: Arial Black">8. 
+    Links and Anchors</span></font></td>
+    <td style="border-style: none; border-width: medium" width="14" height="17" bgcolor="#00CC99">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#FFCC00">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#FFCC00">
+    <a name="introlinks">
+    <span lang="EN" style="font-size: 10pt; font-family: Tahoma; font-weight:700">8.1 
+    Introduction</span></a></td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#FFCC00">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="51" bgcolor="#FFFFCC">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="51" bgcolor="#FFFFCC" valign="top">
+    <span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight:700">A 
+    link is a connection from one Web resource to another. It has two ends, 
+    called anchors and a direction. The link starts at the &quot;source&quot; anchor and 
+    points to the &quot;destination&quot; anchor, which may be any resource on the Web 
+    (e.g., an HTML document, an element within the same HTML document that 
+    contains the link, a program, an image, a video file, a music/sound file, 
+    etc.).</span></td>
+    <td style="border-style: none; border-width: medium" width="14" height="51" bgcolor="#FFFFCC">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#009900">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="17" bgcolor="#FFCC00">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="17" bgcolor="#FFCC00">
+    <a name="visiting">
+    <span lang="EN" style="font-size: 10pt; font-family: Tahoma; font-weight:700">
+    8.2 Visiting a linked resource</span></a></td>
+    <td style="border-style: none; border-width: medium" width="14" height="17" bgcolor="#FFCC00">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="376" bgcolor="#FFFFCC">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="376" bgcolor="#FFFFCC">
+    <b><font face="Tahoma" style="font-size: 8pt">
+    <span lang="EN">Activating a link (e.g. by clicking on it) causes the 
+    retrieval of another Web resource.</span></font></b><p><b>
+    <font face="Tahoma" style="font-size: 8pt"><span lang="EN">The following 
+    example contains two links, one whose destination anchor is an HTML document 
+    named &quot;product.html&quot; and the other whose destination anchor is a GIF image 
+    in the file &quot;productimage.gif&quot;:</span></font></b></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;body&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;p&gt;For more product information go to &lt;a href=&quot;product.html&quot;&gt;product information&lt;/a&gt;.&lt;br&gt; </span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">For a screenshot of the product &lt;a href=&quot;../images/productimage.gif&quot;&gt;click here&lt;/a&gt;.&lt;/p&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;/body&gt;</span></code></pre>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>By activating these links, users may visit these 
+    resources. Note that the </b> <strong>href</strong><b> attribute in each source 
+    anchor specifies the address of the destination anchor with a URI. Since 
+    these resources are on the same server, relative URI's are given here.<br>
+    This URI </b> </span></font><b><code style="font-family: Tahoma">
+    <span lang="EN" style="font-size: 8pt">&lt;a href=&quot;product.html&quot;&gt;</span></code></b><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b> 
+    states that the linked to resource is a web page that is in the </b> <strong>same</strong><b> 
+    directory (or folder) as the web page that the link is on.<br>
+    This URI </b> </span></font><b><code style="font-family: Tahoma">
+    <span lang="EN" style="font-size: 8pt">&lt;a href=&quot;../images/productimage.gif&quot;&gt;</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN"> 
+    states that this resource is an image which (relative to the directory that 
+    the web page calling it is in), is one level up in the hierarchy defined by 
+    the path and then from there one level down in the images directory.</span></font></b></p>
+    <p><b><font face="Tahoma" style="font-size: 8pt"><span lang="EN">The destination anchor of a link may be an element within 
+    an HTML document. The destination anchor must be given an anchor name and 
+    any URI addressing this anchor must include the name as its fragment 
+    identifier.</span></font></b></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>Destination anchors in HTML documents may be specified 
+    either by the </b> <strong>a</strong><b> element (naming it with the name and id 
+    attributes), or by any other element (naming with the id attribute).</b></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><b><span lang="EN" style="color: red">Eg.1</span></b><span lang="EN"><b> If 
+    we had a web page whose entries on top of the page link to header elements 
+    in the same document, we could use the </b> <strong>a</strong><b> element to create 
+    destination anchors as follows:</b></span></font></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;p&gt;&lt;a href=&quot;#heading1&quot;&gt;1st Heading&lt;/a&gt;&lt;br&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;a href=&quot;#heading2&quot;&gt;2nd Heading&lt;/a&gt;&lt;br&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;a href=&quot;#heading3&quot;&gt;3rd Heading&lt;/a&gt;&lt;/p&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp; </span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;...the rest of the document...</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;h3&gt;&lt;a name=&quot;heading1&quot;&gt;1st Heading&lt;/a&gt;&lt;/h3&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ...heading1 data here...</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;h3&gt;&lt;a name=&quot;heading2&quot;&gt;2nd Heading&lt;/a&gt;&lt;/h3&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ...heading2 data here...</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;h3&gt;&lt;a name=&quot;heading3&quot;&gt;3rd Heading&lt;/a&gt;&lt;/h3&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ...heading3 data here...</span></code></pre>
+    <p><font face="Tahoma" style="font-size: 8pt"><b><span lang="EN" style="color: red">Eg.2</span><span lang="EN"> The 
+    same effect can be achieved by making the header elements themselves the 
+    anchors by using the id attribute instead of the name attribute:</span></b></font></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;p&gt;&lt;a href=&quot;#heading1&quot;&gt;1st Heading&lt;/a&gt;&lt;br&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;a href=&quot;#heading2&quot;&gt;2nd Heading&lt;/a&gt;&lt;br&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;a href=&quot;#heading3&quot;&gt;3rd Heading&lt;/a&gt;&lt;/p&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp; </span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;...the rest of the document...</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;h3&gt;&lt;id=&quot;heading1&quot;&gt;1st Heading&lt;/a&gt;&lt;/h3&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ...heading1 data here...</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;h3&gt;&lt;id=&quot;heading2&quot;&gt;2nd Heading&lt;/a&gt;&lt;/h3&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ...heading2 data here...</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;h3&gt;&lt;id=&quot;heading3&quot;&gt;3rd Heading&lt;/a&gt;&lt;/h3&gt;</span></code></pre>
+    <p><code style="font-family: Tahoma">
+    <span lang="EN" style="font-size: 8pt; font-weight:700">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ...heading3 data here...</span></code></td>
+    <td style="border-style: none; border-width: medium" width="14" height="376" bgcolor="#FFFFCC">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#009900">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="17" bgcolor="#FFCC00">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="17" bgcolor="#FFCC00">
+    <a name="relation">
+    <span lang="EN" style="font-size: 10pt; font-family: Tahoma; font-weight:700">8.3 
+    Other link relationships</span></a></td>
+    <td style="border-style: none; border-width: medium" width="14" height="17" bgcolor="#FFCC00">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="138" bgcolor="#FFFFCC">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="138" bgcolor="#FFFFCC">
+    <b><font face="Tahoma" style="font-size: 8pt">
+    <span lang="EN">The most common use of a link is to retrieve another Web 
+    resource. However, one can insert links in their documents that express 
+    other relationships between resources than simply activate a link to visit 
+    that particular resource. Links that express other types of relationships 
+    have one or more link types specified in their source anchor.</span></font></b><p>
+    <font face="Tahoma" style="font-size: 8pt">
+    <span lang="EN"><b>The roles of a link defined by </b> <strong>a or link</strong><b> 
+    are specified via the </b> <strong>rel and rev</strong><b> attributes.</b></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>For instance, links defined by the
+    </b> <strong>link</strong><b> 
+    element may describe the position of a document within a series of 
+    documents. In the following example, links within the document entitled 
+    &quot;Article 2&quot; point to the previous and next articles:</b></span></font></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;head&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;title&gt;Article 2&lt;/title&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;link rel=&quot;prev&quot; href=&quot;article1.html&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;link rel=&quot;next&quot; href=&quot;article3.html&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;/head&gt;</span></code></pre>
+    <p><span lang="EN" style="font-size: 8pt; font-family: Tahoma">
+    <b>The link type of the first link is &quot;prev&quot; and that of the second is &quot;next&quot;. 
+    These are two of several recognized link types. Links specified by the </b>
+    <strong>link</strong><b> element are not rendered with the document's contents, 
+    although user agents may render them in other ways, for example, as 
+    navigation tools.</b></span></td>
+    <td style="border-style: none; border-width: medium" width="14" height="138" bgcolor="#FFFFCC">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#009900">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="17" bgcolor="#FFCC00">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="17" bgcolor="#FFCC00">
+    <a name="assign">
+    <span lang="EN" style="font-size: 10pt; font-family: Tahoma; font-weight:700">8.4 
+    Assigning links and anchors</span></a></td>
+    <td style="border-style: none; border-width: medium" width="14" height="17" bgcolor="#FFCC00">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="215" bgcolor="#FFFFCC">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="215" bgcolor="#FFFFCC">
+    <font face="Tahoma" style="font-size: 8pt">
+    <span lang="EN"><b>Several HTML elements and attributes create links to other 
+    resources, for example, the </b> <strong>img</strong><b> element, the </b> <strong>form</strong><b> 
+    element, the </b> <strong>applet</strong><b> element, the </b> <strong>object</strong><b> 
+    element etc. However, this chapter discusses links and anchors created using 
+    the </b> <strong>link and a</strong><b> elements. The </b> <strong>link</strong><b> element 
+    may only appear in the head of a document. The </b> <strong>a</strong><b> element 
+    may only appear in the body.</b></span></font><p>
+    <font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>When the </b> <strong>a</strong><b> 
+    element's href attribute is set, the element defines a source anchor for a 
+    link that may be activated by the user to retrieve a Web resource. The 
+    source anchor is the location of the </b> <strong>a</strong><b> instance and the 
+    destination anchor is the Web resource.</b></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>When the
+    </b> <strong>name and id</strong><b> attributes of the </b>
+    <strong>a</strong><b> element are set, the element defines an anchor that may 
+    be the destination of other links.</b></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>The </b> <strong>name, id</strong><b> and
+    </b> <strong>href</strong><b> 
+    attributes may be set simultaneously in the same </b> <strong>a</strong><b> element 
+    instance.</b></span></font></p>
+    <p><span lang="EN" style="font-size: 8pt; font-family: Tahoma">
+    <b>The </b> <strong>link</strong><b> element defines a relationship between the current 
+    document and another resource. The </b> <strong>link</strong><b> element has no 
+    content, but the relationships it defines may be rendered by some user 
+    agents.</b></span></td>
+    <td style="border-style: none; border-width: medium" width="14" height="215" bgcolor="#FFFFCC">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#009900">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#FFCC00">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#FFCC00">
+    <a name="titles">
+    <span lang="EN" style="font-size: 10pt; font-family: Tahoma; font-weight:700">8.5 
+    Link title attribute</span></a></td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#FFCC00">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="224" bgcolor="#FFFFCC">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="224" bgcolor="#FFFFCC">
+    <font face="Tahoma" style="font-size: 8pt">
+    <span lang="EN"><b>The </b> <strong>title</strong><b> attribute may be set for both
+    </b>
+    <strong>a and link</strong><b> to add information about the nature of a link. 
+    This information may be rendered as a tooltip, spoken by a user agent, etc.</b></span></font><p>
+    <b><font face="Tahoma" style="font-size: 8pt">
+    <span lang="EN">A title can be supplied for each link by using the title 
+    attribute as follows:</span></font></b></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;body&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;p&gt;For more product information go to &lt;a href=&quot;product.html&quot; title=&quot;Click to </span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">go to product information page&quot;&gt;product information&lt;/a&gt;.&lt;br&gt; </span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">For a screenshot of the product &lt;a href=&quot;../images/productimage.gif&quot; title=&quot;Click for </span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">screenshot of product&quot;&gt;click here&lt;/a&gt;.&lt;/p&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;/body&gt;</span></code></pre>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>Note: All the code between the opening and closing
+    </b>
+    <strong>a</strong><b> tags should be on the same line. (The lines are broken 
+    here to prevent you from having to scroll this page horizontally while 
+    reading it).</b></span></font></p>
+    <p><b><font face="Tahoma" style="font-size: 8pt"><span lang="EN">The links are rendered with tooltips as follows (place 
+    your cursor over the links to see the tooltips):</span></font></b></p>
+    <p>
+    <span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight:700">
+    For more product information go to
+    <a href="javascript:alert('This%20link%20is%20for%20illustration%20only%20and%20is%20not%20functional.')" title="Click to go to product information page" style="color: blue; text-decoration: underline; text-underline: single">
+    product information</a>.<br>
+    For a screenshot of the product
+    <a href="javascript:alert('This%20link%20is%20for%20illustration%20only%20and%20is%20not%20functional.')" title="Click for screenshot of product" style="color: blue; text-decoration: underline; text-underline: single">
+    click here</a>.</span></td>
+    <td style="border-style: none; border-width: medium" width="14" height="224" bgcolor="#FFFFCC">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#009900">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="17" bgcolor="#FFCC00">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="17" bgcolor="#FFCC00">
+    <a name="international">
+    <span lang="EN" style="font-size: 10pt; font-family: Tahoma; font-weight:700">8.6 
+    Internationalizing links</span></a></td>
+    <td style="border-style: none; border-width: medium" width="14" height="17" bgcolor="#FFCC00">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="93" bgcolor="#FFFFCC">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="93" bgcolor="#FFFFCC">
+    <font face="Tahoma" style="font-size: 8pt">
+    <span lang="EN"><b>Links may point to documents encoded with different 
+    character encodings, therefore the </b> <strong>a and link</strong><b> elements 
+    support the charset attribute. This attribute allows you to advise user 
+    agents about the encoding of data at the other end of the link.</b></span></font><p>
+    <font face="Tahoma" style="font-size: 8pt">
+    <span lang="EN"><b>The </b> <strong>hreflang</strong><b> attribute provides user agents 
+    with information about the language of a resource at the end of a link, just 
+    as the </b> <strong>lang</strong><b> attribute provides information about the 
+    language of an element's content or attribute values.</b></span></font></p>
+    <p>
+    <span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight:700">
+    Using this additional knowledge, user agents should be able to avoid 
+    presenting nonsense to the user. Instead, they may either locate resources 
+    necessary for the correct presentation of the document or, if they cannot 
+    locate the resources, they should at least warn the user that the document 
+    will be unreadable and explain the cause.</span></p>
+    <p>&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="93" bgcolor="#FFFFCC">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#009900">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="17" bgcolor="#FFCC00">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="17" bgcolor="#FFCC00">
+    <a name="ael">
+    <span lang="EN" style="font-size: 10pt; font-family: Tahoma; font-weight:700">8.7 
+    The a element</span></a></td>
+    <td style="border-style: none; border-width: medium" width="14" height="17" bgcolor="#FFCC00">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="74" bgcolor="#FFFFCC">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="74" bgcolor="#FFFFCC">
+    <h3><font face="Tahoma" style="font-size: 8pt"><span lang="EN">Syntax&nbsp;&nbsp;&nbsp;&nbsp;&lt;a&gt;...&lt;/a&gt;</span></font></h3>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN">
+    <a href="javascript:void(0);" title="Click for popup list" style="color: blue; text-decoration: underline; text-underline: single">
+    <b>List of </b> <strong>a</strong><b> Attributes</b></a></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>Each </b> <strong>a</strong><b> element and its attributes define 
+    an anchor as follows:</b></span></font></p>
+    <ol start="1" type="1" style="margin-bottom: 0in">
+      <li class="MsoNormal"><font face="Tahoma" style="font-size: 8pt"><span lang="EN">
+      <b>The </b> <strong>a</strong><b> element's 
+      content defines the position of the anchor. </b> </span></font></li>
+      <li class="MsoNormal"><font face="Tahoma" style="font-size: 8pt"><span lang="EN">
+      <b>The </b> <strong>name</strong><b> and </b>
+      <strong>id</strong><b> attributes name the anchor so that it may be the 
+      destination of other links. </b> </span></font></li>
+      <li class="MsoNormal"><font face="Tahoma" style="font-size: 8pt"><span lang="EN">
+      <b>The </b> <strong>href</strong><b> attribute 
+      makes this anchor the source anchor of exactly one link. </b> </span>
+      </font></li>
+    </ol>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>In the following example, the
+    </b> <strong>a</strong><b> element 
+    defines a link. The source anchor is the page designated as the &quot;Homepage&quot; 
+    and the destination anchor is &quot;http://www.somesite.com/&quot;:</b></span></font></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">For more information please visit our &lt;a href=&quot;http://www.somesite.com/&quot;&gt;Homepage&lt;/a&gt;. </span></code></pre>
+    <p><b><font face="Tahoma" style="font-size: 8pt"><span lang="EN">This is rendered as follows: </span>
+    </font></b></p>
+    <p><b><font face="Tahoma" style="font-size: 8pt"><span lang="EN">For more information please visit our
+    <a href="javascript:alert('This%20link%20is%20for%20illustration%20only%20and%20is%20not%20functional.')" style="color: blue; text-decoration: underline; text-underline: single">
+    Homepage</a>.</span></font></b></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>When a user activates this link, the user agent will 
+    retrieve the resource, which in this case, is an HTML document. The above 
+    link will place the retrieved page in the </b> <strong>same</strong><b> window that 
+    it is on.</b></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>To place a linked resource (say, from an external site) 
+    into a </b> <strong>newly opened window</strong><b> while keeping the original 
+    window open, add the code </b> </span></font><b>
+    <code style="font-family: Tahoma">
+    <span lang="EN" style="font-size: 8pt">target=&quot;_blank&quot;</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN"> 
+    after the </span></font><code style="font-family: Tahoma">
+    <span lang="EN" style="font-size: 8pt">href</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN"> 
+    value as follows:</span></font></b></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">For more news go to &lt;a href=&quot;http://www.othersite.com/&quot; target=&quot;_blank&quot;&gt;Site's Name&lt;/a&gt;. </span></code></pre>
+    <p><b><font face="Tahoma" style="font-size: 8pt"><span lang="EN">Now when a user clicks on the link, a new window will 
+    open with the retrieved web page in it as illustrated below:</span></font></b></p>
+    <p><b><font face="Tahoma" style="font-size: 8pt"><span lang="EN">For more news go to
+    <a href="javascript:document.write('This%20is%20the%20new%20window%20which%20would%20contain%20the%20web%20page%20from%20the%20external%20source.')" target="_" style="color: blue; text-decoration: underline; text-underline: single">
+    Site's Name</a>.</span></font></b></p>
+    <p><b><font face="Tahoma" style="font-size: 8pt"><span lang="EN">User agents generally render links in a way that makes 
+    them obvious to users, such as by underlining the links, etc. and the 
+    rendering may also vary according to whether the user has already visited 
+    the link or not.</span></font></b></p>
+    <p><b><font face="Tahoma" style="font-size: 8pt"><span lang="EN">We can define an anchor named &quot;games&quot; in the file &quot;products.html&quot; 
+    as follows:</span></font></b></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">...text preceding anchor...</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;a name=&quot;games&quot; id=&quot;games&quot;&gt;This is the location of the anchor named games.&lt;/a&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">...text after anchor...</span></code></pre>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>After defining the anchor, it can be linked to from the 
+    same or another document. URIs that designate anchors contain a &quot;#&quot; 
+    character followed by the anchor name, known as the </b> <strong>fragment 
+    identifier</strong><b>. Here are some examples of such URIs:</b></span></font></p>
+    <ul type="disc" style="margin-bottom: 0in">
+      <li class="MsoNormal"><b><font face="Tahoma" style="font-size: 8pt"><span lang="EN">An absolute URI: http://www.somesite.com/products.html#games
+      </span></font></b></li>
+      <li class="MsoNormal"><font face="Tahoma" style="font-size: 8pt"><span lang="EN">
+      <b>A relative URI: ../products.html#games </b>
+      <strong>or just</strong><b> products.html#games </b> </span></font></li>
+      <li class="MsoNormal"><font face="Tahoma" style="font-size: 8pt"><span lang="EN">
+      <b>Defining the link in the </b> <strong>
+      same document</strong><b> is as follows: #games </b> </span></font></li>
+    </ul>
+    <p><b><font face="Tahoma" style="font-size: 8pt"><span lang="EN">Therefore, a link defined in the file &quot;specifications.html&quot; 
+    in the same directory as &quot;products.html&quot; would refer to the anchor as 
+    follows:</span></font></b></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">...text preceding anchor...</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">For more product information, click &lt;a href=&quot;../products.html#games&quot;&gt;here&lt;/a&gt;.</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">...text after anchor...</span></code></pre>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>The </b> <strong>a</strong><b> element in the following example 
+    specifies a link (with href) and creates a named anchor (with the name and 
+    id attributes) simultaneously:</b></span></font></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">For a picture of the games product click</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;a name=&quot;photo_games&quot; id=&quot;photo_games&quot; href=&quot;http://www.mysite.com/images/games.jpg&quot;&gt;here&lt;/a&gt;.</span></code></pre>
+    <p>
+    <span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight:700">
+    This example contains a link to a JPG image of the product. Activating the 
+    link will cause the image to be retrieved from the Web.</span></p>
+    <p>&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="74" bgcolor="#FFFFCC">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#009900">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="17" bgcolor="#FFCC00">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="17" bgcolor="#FFCC00">
+    <a name="syntax">
+    <span lang="EN" style="font-size: 10pt; font-family: Tahoma; font-weight:700">8.8 
+    Syntax used in anchor names</span></a></td>
+    <td style="border-style: none; border-width: medium" width="14" height="17" bgcolor="#FFCC00">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="36" bgcolor="#FFFFCC">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="36" bgcolor="#FFFFCC">
+    <b><font face="Tahoma" style="font-size: 8pt">
+    <span lang="EN">An anchor name is the value of either the name or id 
+    attribute when used in the context of anchors. Anchor names must adhere the 
+    following rules:</span></font></b><ul type="disc" style="margin-bottom: 0in">
+      <li class="MsoNormal"><font face="Tahoma" style="font-size: 8pt"><span lang="EN">
+      <b>Uniqueness: Anchor names must be 
+      unique within a document. Anchor names that differ only in case may </b>
+      <strong>not</strong><b> appear in the same document. </b> </span></font></li>
+      <li class="MsoNormal"><b><font face="Tahoma" style="font-size: 8pt"><span lang="EN">String matching: Comparisons between 
+      fragment identifiers and anchor names must be done by exact 
+      (case-sensitive) match. </span></font></b></li>
+    </ul>
+    <p><b><font face="Tahoma" style="font-size: 8pt"><span lang="EN">Therefore, the following example is correct with respect 
+    to string matching and must be considered a match by user agents:</span></font></b></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;a href=&quot;#abc&quot;&gt;anchor 1&lt;/a&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">...more document text...</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;a name=&quot;abc&quot;&gt;anchor 1&lt;/a&gt;</span></code></pre>
+    <p><b><font face="Tahoma" style="font-size: 8pt"><span lang="EN">The following example is illegal with respect to 
+    uniqueness since the two names are the same except for case:</span></font></b></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;a name=&quot;xxx&quot;&gt;anchor 1&lt;/a&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;a name=&quot;XXX&quot;&gt;anchor 2&lt;/a&gt;</span></code></pre>
+    <p><b><font face="Tahoma" style="font-size: 8pt"><span lang="EN">Although the following example is legal HTML, the 
+    behavior of the user agent is not defined. Some user agents may incorrectly 
+    consider this a match and others may not.</span></font></b></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;a href=&quot;#xxx&quot;&gt;anchor 1&lt;/a&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">...more document text...</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;a name=&quot;XXX&quot;&gt;anchor 1&lt;/a&gt;</span></code></pre>
+    <p>
+    <span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight:700">
+    Hence, always keep the same case (i.e. identical values) for the same anchor 
+    names and restrict them to ASCII characters.</span></p>
+    <p>&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="36" bgcolor="#FFFFCC">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#009900">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="17" bgcolor="#FFCC00">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="17" bgcolor="#FFCC00">
+    <a name="idanchor">
+    <span lang="EN" style="font-size: 10pt; font-family: Tahoma; font-weight:700">8.9 
+    Anchors using the id attribute</span></a></td>
+    <td style="border-style: none; border-width: medium" width="14" height="17" bgcolor="#FFCC00">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="36" bgcolor="#FFFFCC">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="36" bgcolor="#FFFFCC">
+    <font face="Tahoma" style="font-size: 8pt">
+    <span lang="EN"><b>The id attribute may be used to create an anchor at the 
+    start tag of any element including the </b> <strong>a</strong><b> element.</b></span></font><p>
+    <font face="Tahoma" style="font-size: 8pt">
+    <span lang="EN"><b>This example illustrates the use of the </b> <strong>id</strong><b> 
+    attribute to position an anchor in an </b> <strong>h2</strong><b> element. The 
+    anchor is linked to via the </b> <strong>a</strong><b> element.</b></span></font></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">More information about this in &lt;a href=&quot;#paragraph4&quot;&gt;Paragraph Four&lt;/a&gt;.</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">...further down in the document...</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;h2 id=&quot;paragraph4&quot;&gt;Paragraph Four&lt;/h2&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">...further down in the document...</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">Please refer to &lt;a href=&quot;#paragraph4&quot;&gt;Paragraph Four&lt;/a&gt; above for more details.</span></code></pre>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>The </b> <strong>id</strong><b> and
+    </b> <strong>name</strong><b> 
+    attributes share the same name space. This means that they cannot both 
+    define an anchor with the same name in the same document. However, it is </b>
+    <strong>permissible to use both attributes</strong><b> to specify an element's 
+    unique identifier for the following elements: </b> <strong>a, applet, form, 
+    frame, iframe, img, and map</strong><b>. When both attributes are used on a
+    </b>
+    <strong>single element</strong><b>, their values must be </b> <strong>identical</strong><b>.</b></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>Since many existing HTML clients (user agents) don't 
+    support the use of id-type attributes in this way and the name attribute has 
+    been deprecated, </b> <strong>identical values</strong><b> should be supplied for 
+    both of these attributes to ensure maximum forward and backward 
+    compatibility as follows:</b></span></font></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;a id=&quot;foo&quot; name=&quot;foo&quot;&gt;...anchor description here...&lt;/a&gt;.</span></code></pre>
+    <p><b><font face="Tahoma" style="font-size: 8pt"><span lang="EN">The id attribute value must be unique throughout the 
+    document.</span></font></b></p>
+    <p><b><font face="Tahoma" style="font-size: 8pt"><span lang="EN">Therefore, the following example is illegal HTML since 
+    these attributes declare the same name twice in the same document.</span></font></b></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;a href=&quot;#anchor1&quot;&gt;Anchor One&lt;/a&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">...further down the document...</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;h3 id=&quot;anchor1&quot;&gt;Anchor One&lt;/h3&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">...further down the document...</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;a name=&quot;anchor1&quot;&gt;Anchor One&lt;/a&gt;</span></code></pre>
+    <p><b><font face="Tahoma" style="font-size: 8pt"><span lang="EN">Because of its specification in the HTML DTD, the name 
+    attribute may contain character entity references. The id attribute, on the 
+    other hand, may not contain character entity references.</span></font></b></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>Some points to remember when deciding whether to use the
+    </b>
+    <strong>name</strong><b> or </b> <strong>id</strong><b> attribute:</b></span></font></p>
+    <ul type="disc" style="margin-bottom: 0in">
+      <li class="MsoNormal"><b><font face="Tahoma" style="font-size: 8pt"><span lang="EN">The id attribute can act as more 
+      than just an anchor name (e.g., style sheet selector, processing 
+      identifier, etc.). </span></font></b></li>
+      <li class="MsoNormal"><b><font face="Tahoma" style="font-size: 8pt"><span lang="EN">The name attribute allows richer 
+      anchor names (with character entity references). </span></font></b></li>
+    </ul>
+    <p><b><span lang="EN" style="font-size: 8pt; font-family: Tahoma">
+    Some older user agents don't support anchors created with the id attribute. 
+    (Therefore, as already mentioned above, to ensure maximum forward and 
+    backward compatibility it is best to use both the id and name attributes, 
+    e.g.,<br>
+    </span><code style="font-family: Tahoma">
+    <span lang="EN" style="font-size: 8pt">&lt;a id=&quot;foo&quot; name=&quot;foo&quot;&gt;...anchor 
+    description here...&lt;/a&gt;</span></code><span lang="EN" style="font-size: 8pt; font-family: Tahoma">).
+    </span></b></p>
+    <p>&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="36" bgcolor="#FFFFCC">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#009900">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="17" bgcolor="#FFCC00">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="17" bgcolor="#FFCC00">
+    <span lang="EN" style="font-size: 10pt; font-family: Tahoma; font-weight:700">8.10 
+    The base element</span></td>
+    <td style="border-style: none; border-width: medium" width="14" height="17" bgcolor="#FFCC00">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="36" bgcolor="#FFFFCC">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="36" bgcolor="#FFFFCC">
+    <h3><font face="Tahoma" style="font-size: 8pt"><span lang="EN">Syntax&nbsp;&nbsp;&nbsp;&nbsp;&lt;base&gt;</span></font></h3>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN">
+    <a href="javascript:void(0);" title="Click for popup list" style="color: blue; text-decoration: underline; text-underline: single">
+    <b>List of </b> <strong>base</strong><b> Attributes</b></a></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>Links and references to external resources, e.g. images, 
+    applets, style sheets, etc. are always specified by a URI. Relative URIs are 
+    resolved according to a base URI. The </b> <strong>base</strong><b> element allows 
+    you to specify a document's base URI explicitly.</b></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>When present, the
+    </b> <strong>base</strong><b> element must 
+    appear in the </b> <strong>head</strong><b> section of an HTML document, before any 
+    element that refers to an external source. The path information specified by 
+    the </b> <strong>base</strong><b> element only affects URIs in the document where 
+    the element appears.</b></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>For example, given the following
+    </b> <strong>base and a</strong><b> 
+    declarations:</b></span></font></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0 Transitional//EN&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;html&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;head&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;title&gt;Products page&lt;/title&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;base href=&quot;http://www.mysite.com/products.html&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;/head&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;body&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;p&gt;To see our landscape paintings click &lt;a href=&quot;../images/landscapes.gif&quot;&gt;here&lt;/a&gt;.&lt;p&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;/body&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;/html&gt;</span></code></pre>
+    <p><b><font face="Tahoma" style="font-size: 8pt"><span lang="EN">the relative URI &quot;../images/landscapes.gif&quot; would resolve 
+    to:</span></font></b></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">http://www.mysite.com/images/landscapes.gif</span></code></pre>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>Note that the
+    </b> <strong>object and applet</strong><b> elements 
+    define attributes that take precedence over the value set by the </b> <strong>
+    base</strong><b> element.</b></span></font></p>
+    <p class="MsoNormal"><font face="Tahoma" style="font-size: 8pt"><a name="ex8.1"><strong><span lang="EN">Exercise 8.1</span></strong></a><b><span lang="EN">
+    </span></b></font></p>
+    <ol start="1" type="1" style="margin-bottom: 0in">
+      <li class="MsoNormal"><font face="Tahoma" style="font-size: 8pt"><span lang="EN">
+      <b>Type the code in
+      <a href="mk:@MSITStore:\WINDOWS\Temporary%20Internet%20Files\htmItutoriaI.chm::/page008.htm#eg1#eg1" style="color: blue; text-decoration: underline; text-underline: single">
+      Eg.1</a> into the editor. (Click on the </b> <strong>BACK</strong><b> button to 
+      return to this exercise after scrolling to Eg.1). </b> </span></font></li>
+      <li class="MsoNormal"><font face="Tahoma" style="font-size: 8pt"><span lang="EN">
+      <b>Now type about 30 &lt;br&gt; tags before 
+      the line that says &quot;...rest of the document here...&quot;. This is only to 
+      increase the amount of blank space between the </b> <strong>source anchors</strong><b> 
+      (designated by </b> </span></font><b><code style="font-family: Tahoma">
+      <span lang="EN" style="font-size: 8pt">&lt;a href=&quot;#heading1&quot;&gt;1st 
+      Heading&lt;/a&gt;</span></code></b><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>) and the
+      </b> <strong>destination 
+      anchors</strong><b> (designated by </b> </span>
+      </font><b>
+      <code style="font-family: Tahoma">
+      <span lang="EN" style="font-size: 8pt">&lt;a name=&quot;heading1&quot;&gt;1st 
+      Heading&lt;/a&gt;</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN">) so that it is possible for the 
+      page to scroll when the source anchor is clicked on. </span></font></b></li>
+      <li class="MsoNormal"><b><font face="Tahoma" style="font-size: 8pt"><span lang="EN">Preview in Browser. Click on the 
+      source anchors to see the page scroll to the destination anchors. </span>
+      </font></b>
+      </li>
+      <li class="MsoNormal"><b><font face="Tahoma" style="font-size: 8pt"><span lang="EN">Now add id attributes to all the 
+      destination anchors so that these anchors contain both the id and name 
+      attributes as shown below:</span></font></b></li>
+    </ol>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: .5in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight:700"><span lang="EN">&lt;h3&gt;&lt;a id=&quot;heading1&quot; name=&quot;heading1&quot;&gt;1st Heading&lt;/a&gt;&lt;/h3&gt;</span></code></pre>
+    <p><span lang="EN" style="font-size: 8pt; font-family: Tahoma">
+    <b>Preview in Browser. Again, click on the source anchors to see the page 
+    scroll to the destination anchors. (Remember that the name attribute has 
+    been </b> <strong>deprecated</strong><b> and that the id attribute is not supported 
+    by all browsers at present. Therefore use </b> <strong>both id and name 
+    attributes</strong><b> when coding destination anchors as this will ensure 
+    maximum backward and forward compatibility).</b></span></p>
+    <p>&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="36" bgcolor="#FFFFCC">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#009900">&nbsp;</td>
+  </tr>
+</table>
+
+</body>
+
+</html>

@@ -1,0 +1,707 @@
+<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>HTML Book</title>
+<style>
+<!--
+ li.MsoNormal
+	{mso-style-parent:"";
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	margin-left:0in; margin-right:0in; margin-top:0in}
+-->
+</style>
+<LINK href="../style.css" rel=stylesheet type=text/css>
+</head>
+
+<body>
+
+<table width="838" border="1" align="center" style="border-width: 0" height="1474">
+  <tr> 
+    <td bordercolor="0" style="border-style: none; border-width: medium" width="10" bgcolor="#33CCFF" height="55">&nbsp;</td>
+    <td bordercolor="0" style="border-style: none; border-width: medium" width="814" bgcolor="#33CCFF" colspan="2" height="55">
+    <font face="Broadway BT" size="7" color="#000000"><b>HTML Book</b></font></td>
+  </tr>
+  <tr> 
+    <td bordercolor="0" style="border-style: none; border-width: medium" width="832" colspan="3" bgcolor="#009900" height="13">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" bgcolor="#00CC99" height="17">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" bgcolor="#00CC99" height="17">
+    <span lang="EN" style="font-size: 12.0pt; font-family: Arial Black">11. 
+    Frames</span></td>
+    <td style="border-style: none; border-width: medium" width="14" height="17" bgcolor="#00CC99">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#FFCC00">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#FFCC00">
+    <a name="introframes">
+    <span lang="EN" style="font-size: 10pt; font-family: Tahoma; font-weight: 700">
+    11.1 Introduction</span></a></td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#FFCC00">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="116" bgcolor="#FFFFCC">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="116" bgcolor="#FFFFCC">
+    <font face="Tahoma" style="font-size: 8pt; font-weight: 700">
+    <span lang="EN">Frames are used to divide the browser window into several 
+    parts or views. Each frame consists of an individual HTML document. Most 
+    frames pages that you see on the Internet are those where the navigation 
+    links are in the frame on the left side of the browser window. When the 
+    links in this frame are clicked, the requested web page appears in the frame 
+    on the right side. The navigation links in the frame on the left side of the 
+    browser window stay visible all the time.</span></font><p>
+    <font face="Tahoma" style="font-size: 8pt"><strong>
+    <span lang="EN" style="color: red">Eg.1</span></strong><b><span lang="EN"> 
+    Below is a frameset document of the type described above:</span></b></font></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0 Frameset//EN&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;html&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;head&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;title&gt;A frameset document&lt;/title&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;/head&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;frameset cols=&quot;20%, 80%&quot; frameborder=&quot;1&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;frame src=&quot;navigation.htm&quot; name=&quot;navigation&quot; scrolling=&quot;auto&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;frame src=&quot;sitecontent.htm&quot; name=&quot;contents&quot; scrolling=&quot;yes&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN"> &lt;/frameset&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp; &lt;noframes&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;This frameset document contains:&lt;/p&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;ul&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;&lt;a href=&quot;navigation.htm&quot;&gt;Navigation Menu&lt;/a&gt;&lt;/li&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;&lt;a href=&quot;sitecontent.htm&quot;&gt;Main Contents&lt;/a&gt;&lt;/li&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/ul&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp; &lt;/noframes&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;/html&gt;</span></code></pre>
+    <p><font face="Tahoma" style="font-size: 8pt; font-weight: 700">
+    <span lang="EN">The frame layout would be as illustrated below:</span></font></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Tahoma; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><b><span lang="EN">&nbsp; -----------------------------------------------</span></b></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Tahoma; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><b><span lang="EN"> |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |</span></b></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Tahoma; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><b><span lang="EN"> |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |</span></b></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Tahoma; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><b><span lang="EN"> |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</span></b></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Tahoma; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><b><span lang="EN"> |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |</span></b></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Tahoma; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><b><span lang="EN"> |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |</span></b></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Tahoma; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><b><span lang="EN"> |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |</span></b></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Tahoma; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><b><span lang="EN"> |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |</span></b></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Tahoma; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><b><span lang="EN"> |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</span></b></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Tahoma; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><b><span lang="EN"> |&nbsp; FRAME 1&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FRAME 2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |</span></b></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Tahoma; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><b><span lang="EN"> |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |</span></b></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Tahoma; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><b><span lang="EN"> |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |</span></b></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Tahoma; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><b><span lang="EN"> |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |</span></b></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Tahoma; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><b><span lang="EN"> |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</span></b></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Tahoma; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><b><span lang="EN"> |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |</span></b></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Tahoma; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><b><span lang="EN"> |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |</span></b></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Tahoma; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><b><span lang="EN"> |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |</span></b></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Tahoma; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><b><span lang="EN"> |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |</span></b></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Tahoma; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><b><span lang="EN">&nbsp; -----------------------------------------------&nbsp; </span></b></pre>
+    <p><span lang="EN" style="font-size: 8pt; font-family: Tahoma"><b>If the 
+    browser is unable to display frames or is configured not to, it will render 
+    the contents of the </b><strong>noframes</strong><b> element.</b></span></td>
+    <td style="border-style: none; border-width: medium" width="14" height="116" bgcolor="#FFFFCC">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#009900">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="17" bgcolor="#FFCC00">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="17" bgcolor="#FFCC00">
+    <a name="loframes">
+    <span lang="EN" style="font-size: 10pt; font-family: Tahoma; font-weight: 700">
+    11.2 Layout Of Frames</span></a></td>
+    <td style="border-style: none; border-width: medium" width="14" height="17" bgcolor="#FFCC00">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="136" bgcolor="#FFFFCC">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="136" bgcolor="#FFFFCC" valign="top">
+    <font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>An HTML 
+    document that describes a frames layout (called a frameset document) has a 
+    different makeup to an HTML document without frames. A standard document has 
+    one </b><strong>head</strong><b> section and one </b><strong>body</strong><b> 
+    section. A frameset document has a </b><strong>head</strong><b> section, and 
+    a </b><strong>frameset</strong><b> section in place of the </b><strong>body</strong><b> 
+    section.</b></span></font><p><font face="Tahoma" style="font-size: 8pt">
+    <span lang="EN"><b>The </b><strong>frameset</strong><b> section of a 
+    document specifies the layout of views in the main browser window. In 
+    addition, the </b><strong>frameset</strong><b> section can contain a </b>
+    <strong>noframes</strong><b> element to provide alternate content for 
+    browsers that do not support frames or are configured not to display frames.</b></span></font></p>
+    <p><span lang="EN" style="font-size: 8pt; font-family: Tahoma"><b>Elements 
+    that might normally be placed in the </b><strong>body</strong><b> element 
+    must not appear before the first </b><strong>frameset</strong><b> element or 
+    the </b><strong>frameset</strong><b> will be ignored.</b></span></td>
+    <td style="border-style: none; border-width: medium" width="14" height="136" bgcolor="#FFFFCC">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#009900">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="17" bgcolor="#FFCC00">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="17" bgcolor="#FFCC00">
+    <a name="framest">
+    <span lang="EN" style="font-size: 10pt; font-family: Tahoma; font-weight: 700">
+    11.3 The frameset Element</span></a></td>
+    <td style="border-style: none; border-width: medium" width="14" height="17" bgcolor="#FFCC00">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="138" bgcolor="#FFFFCC">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="138" bgcolor="#FFFFCC">
+    <h3><font face="Tahoma" style="font-size: 8pt"><span lang="EN">
+    Syntax&nbsp;&nbsp;&nbsp;&nbsp;&lt;frameset&gt;...&lt;/frameset&gt;</span></font></h3>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN">
+    <a href="javascript:void(0);" title="Click for popup list" style="color: blue; text-decoration: underline; text-underline: single">
+    <b>List of </b><strong>frameset</strong><b> Attributes</b></a></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>The </b>
+    <strong>frameset</strong><b> element specifies the layout of the main user 
+    window in terms of rectangular subspaces.</b></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><strong><span lang="EN">Rows 
+    and columns</span></strong></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>Setting the
+    </b><strong>rows</strong><b> attribute defines the number of horizontal 
+    subspaces in a frameset. Setting the </b><strong>cols</strong><b> attribute 
+    defines the number of vertical subspaces. Both attributes may be set 
+    simultaneously to create a grid.</b></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>If the </b>
+    <strong>rows</strong><b> attribute is not set, each column extends the 
+    entire length of the page. If the </b><strong>cols</strong><b> attribute is 
+    not set, each row extends the entire width of the page. If neither attribute 
+    is set, the frame takes up exactly the size of the page.</b></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt; font-weight: 700">
+    <span lang="EN">Frames are created left-to-right for columns and 
+    top-to-bottom for rows. When both attributes are specified, views are 
+    created left-to-right in the top row, left-to-right in the second row, etc.</span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><strong>
+    <span lang="EN" style="color: red">Eg.2</span></strong><b><span lang="EN"> 
+    In the example below, the screen is divided horizontally in two, creating a 
+    top half and a bottom half.</span></b></font></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;frameset rows=&quot;50%, 50%&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">...the rest of the definition goes between these tags...</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;/frameset&gt;</span></code></pre>
+    <p><font face="Tahoma" style="font-size: 8pt"><strong>
+    <span lang="EN" style="color: red">Eg.3</span></strong><b><span lang="EN"> 
+    The next example creates three columns. The second column has a fixed width 
+    of 250 pixels. The first column receives 25% of the remaining space and the 
+    third column 75% of the remaining space.</span></b></font></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;frameset cols=&quot;1*,250,3*&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">...the rest of the definition goes between these tags...</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;/frameset&gt;</span></code></pre>
+    <p><font face="Tahoma" style="font-size: 8pt"><strong>
+    <span lang="EN" style="color: red">Eg.4</span></strong><b><span lang="EN"> 
+    The next example creates a 2x3 grid of subspaces.</span></b></font></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;frameset rows=&quot;30%,70%&quot; cols=&quot;33%,34%,33%&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">...the rest of the definition goes between these tags...</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;/frameset&gt;</span></code></pre>
+    <p><font face="Tahoma" style="font-size: 8pt"><strong>
+    <span lang="EN" style="color: red">Eg.5</span></strong><b><span lang="EN"> 
+    In the next example, the first view is allotted 30% of the total browser 
+    window height. The second view is specified to be exactly 350 pixels high. 
+    The fourth frame's height is specified as &quot;2*&quot;, so it is twice as high as 
+    the third frame, whose height is only &quot;*&quot; (equivalent to 1*).</span></b></font></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;frameset rows=&quot;30%,350,*,2*&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">...the rest of the definition goes between these tags...</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;/frameset&gt;</span></code></pre>
+    <p><font face="Tahoma" style="font-size: 8pt"><strong><span lang="EN">Nested 
+    frame sets</span></strong></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt; font-weight: 700">
+    <span lang="EN">Framesets may be nested to any level.</span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><strong>
+    <span lang="EN" style="color: red">Eg.6</span></strong><span lang="EN"><b> 
+    In the following example, the outer </b><strong>frameset</strong><b> divides 
+    the available space into three equal columns. The inner </b><strong>frameset</strong><b> 
+    then divides the second area into two rows of unequal height.</b></span></font></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;frameset cols=&quot;33%, 33%, 34%&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp; ...contents of first frame here...</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp; &lt;frameset rows=&quot;40%, 60%&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ...contents of second frame, first row here...</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ...contents of second frame, second row here...</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp; &lt;/frameset&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp; ...contents of third frame here...</span></code></pre>
+    <p><code style="font-family: Tahoma">
+    <span lang="EN" style="font-size: 8pt; font-weight: 700">&lt;/frameset&gt;</span></code></td>
+    <td style="border-style: none; border-width: medium" width="14" height="138" bgcolor="#FFFFCC">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#009900">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="17" bgcolor="#FFCC00">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="17" bgcolor="#FFCC00">
+    <span lang="EN" style="font-size: 10pt; font-family: Tahoma; font-weight: 700">
+    11.4 The frame Element</span></td>
+    <td style="border-style: none; border-width: medium" width="14" height="17" bgcolor="#FFCC00">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="215" bgcolor="#FFFFCC">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="215" bgcolor="#FFFFCC">
+    <h3><font face="Tahoma" style="font-size: 8pt"><span lang="EN">
+    Syntax&nbsp;&nbsp;&nbsp;&nbsp;&lt;frame&gt;</span></font></h3>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN">
+    <a href="javascript:void(0);" title="Click for popup list" style="color: blue; text-decoration: underline; text-underline: single">
+    <b>List of </b><strong>frame</strong><b> Attributes</b></a></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>The </b>
+    <strong>frame</strong><b> element defines the contents and appearance of a 
+    single frame.</b></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><strong><span lang="EN">
+    Specifying the initial contents of a frame</span></strong></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>The </b>
+    <strong>src</strong><b> attribute specifies the initial document the frame 
+    will contain.</b></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><strong>
+    <span lang="EN" style="color: red">Eg.7</span></strong><b><span lang="EN"> 
+    The following example:</span></b></font></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0 Frameset//EN&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;html&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;head&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;title&gt;A frameset document&lt;/title&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;/head&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;frameset cols=&quot;20%, 80%&quot; frameborder=&quot;1&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp; &lt;frameset rows=&quot;70%,30%&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;frame src=&quot;navigation.htm&quot; name=&quot;navigation&quot; scrolling=&quot;auto&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;frame src=&quot;image.gif&quot; name=&quot;image&quot; scrolling=&quot;no&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN"> &lt;/frameset&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN"> &lt;frame src=&quot;sitecontent.htm&quot; name=&quot;contents&quot; scrolling=&quot;yes&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;/frameset&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;/html&gt;</span></code></pre>
+    <p><font face="Tahoma" style="font-size: 8pt; font-weight: 700">
+    <span lang="EN">will create a layout as follows:</span></font></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Tahoma; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><b><span lang="EN">&nbsp; ---------------------------------------------</span></b></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Tahoma; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><b><span lang="EN"> |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |</span></b></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Tahoma; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><b><span lang="EN"> |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |</span></b></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Tahoma; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><b><span lang="EN"> |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</span></b></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Tahoma; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><b><span lang="EN"> |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |</span></b></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Tahoma; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><b><span lang="EN"> |&nbsp;&nbsp; FRAME 1&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |</span></b></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Tahoma; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><b><span lang="EN"> |(NAVIGATION)|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |</span></b></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Tahoma; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><b><span lang="EN"> |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |</span></b></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Tahoma; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><b><span lang="EN"> |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FRAME 3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;|</span></b></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Tahoma; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><b><span lang="EN"> |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (CONTENTS)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |</span></b></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Tahoma; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><b><span lang="EN"> |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |</span></b></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Tahoma; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><b><span lang="EN"> |------------|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |</span></b></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Tahoma; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><b><span lang="EN"> |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |</span></b></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Tahoma; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><b><span lang="EN"> |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |</span></b></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Tahoma; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><b><span lang="EN"> |&nbsp; FRAME 2&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |</span></b></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Tahoma; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><b><span lang="EN"> |&nbsp; (IMAGE)&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |</span></b></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Tahoma; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><b><span lang="EN"> |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |</span></b></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Tahoma; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><b><span lang="EN">&nbsp; ---------------------------------------------</span></b></pre>
+    <p><font face="Tahoma" style="font-size: 8pt"><strong><span lang="EN">Visual 
+    rendering of a frames window</span></strong></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>In Eg.8 
+    below, using the </b><strong>frame</strong><b> element and its attributes, 
+    we can specify that Frame 1 will allow scroll bars only when needed (using 
+    the </b></span></font><b><code style="font-family: Tahoma">
+    <span lang="EN" style="font-size: 8pt">auto</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN"> 
+    attribute). Frame 2 will leave white space around its content (i.e. the 
+    image file, using the </span></font><code style="font-family: Tahoma">
+    <span lang="EN" style="font-size: 8pt">marginwidth</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN"> 
+    and </span></font><code style="font-family: Tahoma">
+    <span lang="EN" style="font-size: 8pt">marginheight</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN"> 
+    attributes) and the frame will not be resizeable (using the </span></font>
+    <code style="font-family: Tahoma"><span lang="EN" style="font-size: 8pt">
+    noresize</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN"> 
+    attribute). No border will be drawn between Frames 1 and 2 (using the </span>
+    </font><code style="font-family: Tahoma">
+    <span lang="EN" style="font-size: 8pt">frameborder=&quot;0&quot;</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN"> 
+    attribute and value). A border will be drawn (by default) separating Frames 
+    1 and 2 from Frame 3.</span></font></b></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>See </b>
+    <a href="javascript:void(0);" title="Click for popup list" style="color: blue; text-decoration: underline; text-underline: single">
+    <b>List of </b><strong>frame</strong><b> Attributes</b></a></span></font></p>
+    <p class="MsoNormal"><font face="Tahoma" style="font-size: 8pt"><strong>
+    <span lang="EN" style="color: red">Eg.8</span></strong><b><span lang="EN">
+    </span></b></font></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0 Frameset//EN&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;html&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;head&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;title&gt;A frameset document&lt;/title&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;/head&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;frameset cols=&quot;20%, 80%&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp; &lt;frameset rows=&quot;70%,30%&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;frame src=&quot;navigation.htm&quot; name=&quot;navigation&quot; scrolling=&quot;auto&quot; frameborder=&quot;0&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;frame src=&quot;image.gif&quot; name=&quot;image&quot; scrolling=&quot;no&quot; </span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;marginwidth=&quot;10&quot; marginheight=&quot;10&quot; frameborder=&quot;0&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN"> &lt;/frameset&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN"> &lt;frame src=&quot;sitecontent.htm&quot; name=&quot;contents&quot; scrolling=&quot;yes&quot; noresize&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;/frameset&gt;</span></code></pre>
+    <p><code style="font-family: Tahoma">
+    <span lang="EN" style="font-size: 8pt; font-weight: 700">&lt;/html&gt;</span></code></td>
+    <td style="border-style: none; border-width: medium" width="14" height="215" bgcolor="#FFFFCC">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#009900">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#FFCC00">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#FFCC00">
+    <a name="targetframe">
+    <span lang="EN" style="font-size: 10pt; font-family: Tahoma; font-weight: 700">
+    11.5 Specifying Target Frame Information</span></a></td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#FFCC00">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="224" bgcolor="#FFFFCC">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="224" bgcolor="#FFFFCC">
+    <b><code style="font-family: Tahoma"><span lang="EN" style="font-size: 8pt">
+    target = frame-target</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN">: 
+    This attribute specifies the name of a frame where a document is to be 
+    opened.</span></font></b><p><font face="Tahoma" style="font-size: 8pt">
+    <span lang="EN"><b>See <span style="color: #009900">name</span> in </b>
+    <a href="javascript:void(0);" title="Click for popup list" style="color: blue; text-decoration: underline; text-underline: single">
+    <b>List of </b><strong>frame</strong><b> Attributes</b></a></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>By 
+    assigning a name to a frame using the name attribute, it can be referred to 
+    as the &quot;target&quot; of links defined by other elements. The target attribute may 
+    be set for elements that create links (</b><strong>a, link</strong><b>), 
+    image maps (</b><strong>area</strong><b>), and forms (</b><strong>form</strong><b>).</b></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><strong>
+    <span lang="EN" style="color: red">Eg.9</span></strong><b><span lang="EN"> 
+    The example below illustrates how targets allow another web page to be 
+    loaded into a particular named frame. First we define the frameset document 
+    as shown below:</span></b></font></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0 Transitional//EN&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;html&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;head&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;title&gt;A frameset document&lt;/title&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;/head&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;frameset cols=&quot;20%, 80%&quot; frameborder=&quot;1&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;frame src=&quot;navigation.htm&quot; <span style="color: #3300FF">name=&quot;navigation&quot;</span> scrolling=&quot;auto&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;frame src=&quot;sitecontent.htm&quot; <span style="color: #3300FF">name=&quot;contents&quot;</span> scrolling=&quot;yes&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN"> &lt;/frameset&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;/html&gt;</span></code></pre>
+    <p><font face="Tahoma" style="font-size: 8pt"><a name="eg10"><strong>
+    <span lang="EN" style="color: red">Eg.10</span></strong></a><b><span lang="EN"> 
+    Then, in the document, sitecontent.htm, we have links which contain the 
+    target attribute whose value is &quot;contents&quot;. In this way we establish links 
+    to the frame named </span></b></font><b><code style="font-family: Tahoma">
+    <span lang="EN" style="font-size: 8pt; color: #3300FF">&quot;contents&quot;</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN">.</span></font></b></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0 Frameset//EN&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;html&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;head&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;title&gt;Document containing anchors with specific targets&lt;/title&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;/head&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;body&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">...beginning of document sitecontent.htm...</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;p&gt;For product news </span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href=&quot;productnews.htm&quot; <span style="color: #3300FF">target=&quot;contents&quot;</span>&gt;click here&lt;/a&gt;.&lt;/p&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">...more of document...</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;p&gt;For latest product news</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&nbsp;&nbsp; &lt;a href=&quot;latestnews.htm&quot; <span style="color: #3300FF">target=&quot;contents&quot;</span>&gt;click here&lt;/a&gt;.&lt;/p&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;/body&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;/html&gt;</span></code></pre>
+    <p><b><font face="Tahoma" style="font-size: 8pt"><span lang="EN">Activating 
+    either link opens a new document in the frame named </span></font>
+    <code style="font-family: Tahoma">
+    <span lang="EN" style="font-size: 8pt; color: #3300FF">&quot;contents&quot;</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN"> 
+    while the other frame named &quot;navigation&quot;, maintains its initial contents.</span></font></b></p>
+    <p><b><span lang="EN" style="font-size: 8pt; font-family: Tahoma">When 
+    coding the links in the document </span><code style="font-family: Tahoma">
+    <span lang="EN" style="font-size: 8pt; color: #3300FF">&quot;navigation.htm&quot;</span></code><span lang="EN" style="font-size: 8pt; font-family: Tahoma">, 
+    the </span><code style="font-family: Tahoma">
+    <span lang="EN" style="font-size: 8pt; color: #3300FF">target=&quot;contents&quot;</span></code><span lang="EN" style="font-size: 8pt; font-family: Tahoma"> 
+    attribute and value will have to be stated as in the above example so that 
+    the linked pages load into the frame named &quot;contents&quot;.</span></b></td>
+    <td style="border-style: none; border-width: medium" width="14" height="224" bgcolor="#FFFFCC">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#009900">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="17" bgcolor="#FFCC00">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="17" bgcolor="#FFCC00">
+    <a name="defaulttarget">
+    <span lang="EN" style="font-size: 10pt; font-family: Tahoma; font-weight: 700">
+    11.6 Setting The Default Target For Links</span></a></td>
+    <td style="border-style: none; border-width: medium" width="14" height="17" bgcolor="#FFCC00">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="93" bgcolor="#FFFFCC">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="93" bgcolor="#FFFFCC">
+    <font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>When many 
+    links in the same document designate the same target, as for example in the 
+    navigation page or menu, it is possible to specify the target once and 
+    dispense with the target attribute of each element. This is done by setting 
+    the target attribute of the </b><strong>base</strong><b> element.</b></span></font><h3>
+    <font face="Tahoma" style="font-size: 8pt"><span lang="EN">Syntax&nbsp;&nbsp;&nbsp;&nbsp;&lt;base&gt;</span></font></h3>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN">
+    <a href="javascript:void(0);" title="Click for popup list" style="color: blue; text-decoration: underline; text-underline: single">
+    <b>List of </b><strong>base</strong><b> Attributes</b></a></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>Let's 
+    return to the previous example, this time adding the target information by 
+    defining it in the </b><strong>base</strong><b> element and removing it from 
+    the </b><strong>a</strong><b> elements.</b></span></font></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0 Frameset//EN&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;html&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;head&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;title&gt;Document using base element and a specific target&lt;/title&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;base href=&quot;http://www.somesite.com/&quot; target=&quot;contents&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;/head&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;body&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">...beginning of document sitecontent.htm...</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;p&gt;For product news </span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href=&quot;productnews.htm&quot;&gt;click here&lt;/a&gt;.&lt;/p&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">...more of document...</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;p&gt;For latest product news</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&nbsp;&nbsp; &lt;a href=&quot;latestnews.htm&quot;&gt;click here&lt;/a&gt;.&lt;/p&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;/body&gt;</span></code></pre>
+    <p><code style="font-family: Tahoma">
+    <span lang="EN" style="font-size: 8pt; font-weight: 700">&lt;/html&gt;</span></code></p>
+    <p>&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="93" bgcolor="#FFFFCC">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#009900">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="17" bgcolor="#FFCC00">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="17" bgcolor="#FFCC00">
+    <a name="targetvalues">
+    <span lang="EN" style="font-size: 10pt; font-family: Tahoma; font-weight: 700">
+    11.7 Target Values</span></a></td>
+    <td style="border-style: none; border-width: medium" width="14" height="17" bgcolor="#FFCC00">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="74" bgcolor="#FFFFCC">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="74" bgcolor="#FFFFCC">
+    <font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>The following 
+    target values are permitted in order to specify the name of a frame or 
+    window so it may be targeted from links in other documents. Either a </b>
+    <strong>window-name</strong><b> or </b><strong>frame-name</strong><b> may be 
+    specified (#1), or one of the other </b><strong>special values</strong><b> 
+    (#2 to #5) below:</b></span></font><ol start="1" type="1" style="margin-bottom: 0in">
+      <li class="MsoNormal"><b><code style="font-family: Tahoma">
+      <span lang="EN" style="font-size: 8pt">window/frame name</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN">: 
+      The name of a window/frame. </span></font></b></li>
+      <li class="MsoNormal"><b><code style="font-family: Tahoma">
+      <span lang="EN" style="font-size: 8pt">_blank</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN">: 
+      Specifies to load the link into a newly opened blank window. This window 
+      is not named. </span></font></b></li>
+      <li class="MsoNormal"><b><code style="font-family: Tahoma">
+      <span lang="EN" style="font-size: 8pt">_parent</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN">: 
+      Specifies to load the link into the immediate parent of the document the 
+      link is in. </span></font></b></li>
+      <li class="MsoNormal"><b><code style="font-family: Tahoma">
+      <span lang="EN" style="font-size: 8pt">_self</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN">: 
+      Specifies to load the link into the same window the link was clicked in.
+      </span></font></b></li>
+      <li class="MsoNormal"><b><code style="font-family: Tahoma">
+      <span lang="EN" style="font-size: 8pt">_top</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN">: 
+      Specifies to load the link into the full body of the window. </span>
+      </font></b></li>
+    </ol>
+    <p>
+    <span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700">
+    If there is no frame or window that matches the specified target, a new 
+    window is opened for the link.</span></td>
+    <td style="border-style: none; border-width: medium" width="14" height="74" bgcolor="#FFFFCC">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#009900">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="17" bgcolor="#FFCC00">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="17" bgcolor="#FFCC00">
+    <a name="alternate">
+    <span lang="EN" style="font-size: 10pt; font-family: Tahoma; font-weight: 700">
+    11.8 Alternate Content</span></a></td>
+    <td style="border-style: none; border-width: medium" width="14" height="17" bgcolor="#FFCC00">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="36" bgcolor="#FFFFCC">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="36" bgcolor="#FFFFCC">
+    <font face="Tahoma" style="font-size: 8pt; font-weight: 700">
+    <span lang="EN">Alternate content should be provided for those user agents 
+    that do not support frames or are configured not to display frames.</span></font><h3>
+    <font face="Tahoma" style="font-size: 8pt"><span lang="EN">Syntax&nbsp;&nbsp;&nbsp;&nbsp;&lt;noframes&gt;...&lt;/noframes&gt;</span></font></h3>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN">
+    <a href="javascript:void(0);" title="Click for popup list" style="color: blue; text-decoration: underline; text-underline: single">
+    <b>List of </b><strong>noframes</strong><b> Attributes</b></a></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>The </b>
+    <strong>noframes</strong><b> element specifies content that should be 
+    displayed only by user agents that do not support frames or are configured 
+    not to display frames. The contents of a </b><strong>noframes</strong><b> 
+    declaration must only be displayed by user agents that support frames when 
+    they are configured </b><strong>not</strong><b> to display frames. However, 
+    user agents that do not support frames must </b><strong>always</strong><b> 
+    display the contents of a </b><strong>noframes</strong><b> declaration.</b></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>The </b>
+    <strong>noframes</strong><b> element may be used at the end of the </b>
+    <strong>frameset</strong><b> section of a document that uses the frameset 
+    DTD.</b></span></font></p>
+    <p class="MsoNormal"><font face="Tahoma" style="font-size: 8pt">
+    <a name="eg11"><strong><span lang="EN" style="color: red">Eg.11</span></strong></a><b><span lang="EN">
+    </span></b></font></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0 Frameset//EN&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;html&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;head&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;title&gt;A frameset document&lt;/title&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;/head&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;frameset cols=&quot;20%, 80%&quot; frameborder=&quot;1&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;frame src=&quot;navigation.htm&quot; name=&quot;navigation&quot; scrolling=&quot;auto&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;frame src=&quot;sitecontent.htm&quot; name=&quot;contents&quot; scrolling=&quot;yes&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN"> &lt;/frameset&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp; &lt;noframes&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;For the No Frames version &lt;a href=&quot;noframes.htm&quot;&gt;click here&lt;/a&gt;.&lt;/p&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp; &lt;/noframes&gt;</span></code></pre>
+    <p><code style="font-family: Tahoma">
+    <span lang="EN" style="font-size: 8pt; font-weight: 700">&lt;/html&gt;</span></code></p>
+    <p>&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="36" bgcolor="#FFFFCC">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#009900">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="17" bgcolor="#FFCC00">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="17" bgcolor="#FFCC00">
+    <a name="iframes">
+    <span lang="EN" style="font-size: 10pt; font-family: Tahoma; font-weight: 700">
+    11.9 Inline frames: the iframe element</span></a></td>
+    <td style="border-style: none; border-width: medium" width="14" height="17" bgcolor="#FFCC00">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="36" bgcolor="#FFFFCC">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="36" bgcolor="#FFFFCC">
+    <h3><font face="Tahoma" style="font-size: 8pt"><span lang="EN">Syntax&nbsp;&nbsp;&nbsp;&nbsp;&lt;iframe&gt;...&lt;/iframe&gt;</span></font></h3>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN">
+    <a href="javascript:void(0);" title="Click for popup list" style="color: blue; text-decoration: underline; text-underline: single">
+    <b>List of </b><strong>iframe</strong><b> Attributes</b></a></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>To insert a 
+    frame within a block of text the </b><strong>iframe</strong><b> element can 
+    be used.</b></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>The 
+    information to be inserted inline is designated by the </b><strong>src</strong><b> 
+    attribute of this element. The contents of the </b><strong>iframe</strong><b> 
+    element should only be displayed by user agents that do not support frames 
+    or are configured not to display frames.</b></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><a name="eg12"><strong>
+    <span lang="EN" style="color: red">Eg.12</span></strong></a><b><span lang="EN"> 
+    In the following example, user agents that support frames will place an 
+    inline frame surrounded by a border in the middle of the text.</span></b></font></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;iframe src=&quot;somedoc.htm&quot; width=&quot;300&quot; height=&quot;400&quot;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;scrolling=&quot;auto&quot; frameborder=&quot;1&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">[Your user agent is unable to display frames. However, </span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">to visit the document</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;a href=&quot;somedoc.htm&quot;&gt;click here.&lt;/a&gt;]</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;/iframe&gt;</span></code></pre>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>Inline 
+    frames may not be resized and therefore do not take the </b><strong>noresize</strong><b> 
+    attribute.</b></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><a name="ex11.1"><strong>
+    <span lang="EN">Exercise 11.1</span></strong></a></font></p>
+    <ol start="1" type="1" style="margin-bottom: 0in">
+      <li class="MsoNormal">
+      <font face="Tahoma" style="font-size: 8pt; font-weight: 700">
+      <span lang="EN">Clear the editor completely by right clicking in the 
+      editor and clicking on &quot;Select All&quot;. Then right click again and click on 
+      &quot;Delete&quot;. Now type the code given in
+      <a href="mk:@MSITStore:\WINDOWS\Temporary%20Internet%20Files\htmItutoriaI.chm::/page011.htm#eg1#eg1" style="color: blue; text-decoration: underline; text-underline: single">
+      Eg.1</a> above into the editor. Preview in Browser. (The URI's given are 
+      fictitious, therefore you will see a web page saying &quot;Web page unavailable 
+      offline&quot;). </span></font></li>
+      <li class="MsoNormal"><b><font face="Tahoma" style="font-size: 8pt">
+      <span lang="EN">In the opening frameset tag, change both percentage values 
+      to </span></font><code style="font-family: Tahoma">
+      <span lang="EN" style="font-size: 8pt">50%</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN">. 
+      Preview in Browser. Now change </span></font>
+      <code style="font-family: Tahoma"><span lang="EN" style="font-size: 8pt">
+      frameborder=&quot;1&quot;</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN"> 
+      to </span></font><code style="font-family: Tahoma">
+      <span lang="EN" style="font-size: 8pt">frameborder=&quot;0&quot;</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN">. 
+      Preview in Browser. </span></font></b></li>
+      <li class="MsoNormal"><b><font face="Tahoma" style="font-size: 8pt">
+      <span lang="EN">In the first frame tag, add the attribute </span></font>
+      <code style="font-family: Tahoma"><span lang="EN" style="font-size: 8pt">
+      noresize</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN">. 
+      Preview in Browser. Now try to resize the frames by holding the cursor 
+      over the border until you get the double headed arrow. You will see that 
+      this is not possible because of the noresize attribute. Remove the 
+      noresize attribute and try again. You should be able to resize the frames 
+      now. </span></font></b></li>
+      <li class="MsoNormal"><b><font face="Tahoma" style="font-size: 8pt">
+      <span lang="EN">In the second frame tag, change </span></font>
+      <code style="font-family: Tahoma"><span lang="EN" style="font-size: 8pt">
+      scrolling=&quot;yes&quot;</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN"> 
+      to </span></font><code style="font-family: Tahoma">
+      <span lang="EN" style="font-size: 8pt">scrolling=&quot;no&quot;</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN">. 
+      Preview in Browser. Notice that the scroll bar disappears. </span></font>
+      </b></li>
+      <li class="MsoNormal">
+      <font face="Tahoma" style="font-size: 8pt; font-weight: 700">
+      <span lang="EN">Change the opening frameset tag attributes to correspond 
+      to those given in
+      <a href="mk:@MSITStore:\WINDOWS\Temporary%20Internet%20Files\htmItutoriaI.chm::/page011.htm#eg4#eg4" style="color: blue; text-decoration: underline; text-underline: single">
+      Eg.4</a> above. Preview in Browser. </span></font></li>
+      <li class="MsoNormal"><b><font face="Tahoma" style="font-size: 8pt">
+      <span lang="EN">Now add 4 extra </span></font>
+      <code style="font-family: Tahoma"><span lang="EN" style="font-size: 8pt">
+      &lt;frame&gt;</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN"> 
+      tags below the first two. Preview in Browser. </span></font></b></li>
+      <li class="MsoNormal">
+      <font face="Tahoma" style="font-size: 8pt; font-weight: 700">
+      <span lang="EN">Clear the editor as you did above. Type the code given in
+      <a href="mk:@MSITStore:\WINDOWS\Temporary%20Internet%20Files\htmItutoriaI.chm::/page011.htm#eg8#eg8" style="color: blue; text-decoration: underline; text-underline: single">
+      Eg.8</a> into the editor. Preview in Browser. </span></font></li>
+      <li class="MsoNormal"><b><font face="Tahoma" style="font-size: 8pt">
+      <span lang="EN">Add the </span></font><code style="font-family: Tahoma">
+      <span lang="EN" style="font-size: 8pt">frameborder=&quot;0&quot;</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN"> 
+      attribute and value to the last frame tag. Preview in Browser. </span>
+      </font></b></li>
+      <li class="MsoNormal">
+      <font face="Tahoma" style="font-size: 8pt; font-weight: 700">
+      <span lang="EN">Change the values of marginwidth and marginheight in the 
+      second frame tag to 40. Preview in Browser. Double the value and Preview 
+      in Browser again. Notice that the top and bottom margins (controlled by 
+      marginheight) and left and right margins (controlled by marginwidth) are 
+      increased when these values are increased. </span></font></li>
+      <li class="MsoNormal"><font face="Tahoma" style="font-size: 8pt">
+      <span lang="EN"><b>Reset the editor. Type the code given in
+      <a href="mk:@MSITStore:\WINDOWS\Temporary%20Internet%20Files\htmItutoriaI.chm::/page011.htm#eg12#eg12" style="color: blue; text-decoration: underline; text-underline: single">
+      Eg.12</a> between the </b><strong>body</strong><b> tags in the editor. 
+      Preview in Browser. </b></span></font></li>
+    </ol>
+    <p>
+    <span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700">
+    Change the values, one at a time, of frameborder (possible values are 1 and 
+    0), scrolling (possible values are yes, no and auto) and width and height. 
+    Preview in browser after each change. </span></p>
+    <p>&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="36" bgcolor="#FFFFCC">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#009900">&nbsp;</td>
+  </tr>
+</table>
+
+</body>
+
+</html>

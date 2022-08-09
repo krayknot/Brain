@@ -1,0 +1,1388 @@
+<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>HTML Book</title>
+<style>
+<!--
+ li.MsoNormal
+	{mso-style-parent:"";
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	margin-left:0in; margin-right:0in; margin-top:0in}
+h3
+	{margin-right:0in;
+	margin-left:0in;
+	font-size:13.5pt;
+	font-family:"Times New Roman";
+	font-weight:bold}
+-->
+</style>
+<LINK href="../style.css" rel=stylesheet type=text/css>
+</head>
+
+<body>
+
+<table width="838" border="1" align="center" style="border-width: 0" height="1475">
+  <tr> 
+    <td bordercolor="0" style="border-style: none; border-width: medium" width="10" bgcolor="#33CCFF" height="55">&nbsp;</td>
+    <td bordercolor="0" style="border-style: none; border-width: medium" width="814" bgcolor="#33CCFF" colspan="2" height="55">
+    <font face="Broadway BT" size="7" color="#000000"><b>HTML Book</b></font></td>
+  </tr>
+  <tr> 
+    <td bordercolor="0" style="border-style: none; border-width: medium" width="832" colspan="3" bgcolor="#009900" height="13">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" bgcolor="#00CC99" height="17">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" bgcolor="#00CC99" height="17">
+    <span lang="EN" style="font-size: 12.0pt; font-family: Arial Black">12. 
+    Forms</span></td>
+    <td style="border-style: none; border-width: medium" width="14" height="17" bgcolor="#00CC99">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#FFCC00">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#FFCC00">
+    <a name="introforms">
+    <span lang="EN" style="font-size: 10pt; font-family: Tahoma; font-weight: 700">
+    12.1 Introduction</span></a></td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#FFCC00">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="116" bgcolor="#FFFFCC">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="116" bgcolor="#FFFFCC">
+    <font face="Tahoma" style="font-size: 8pt; font-weight: 700">
+    <span lang="EN">A form is a section of a document containing special 
+    elements called controls (text boxes, password boxes, textareas, checkboxes, 
+    radio buttons, menus, buttons, etc.), and labels on those controls. Users 
+    usually complete a form by entering text in text boxes, password boxes or 
+    textareas, checking boxes or radio buttons, selecting menu items, etc., 
+    before submitting the form to a Web or mail server for processing. Web 
+    servers normally have to have some sort of script installed on them, usually 
+    CGI scripts, to gather and process information from the more elaborate 
+    forms. Some forms containing, for example, menus (such as navigation menus), 
+    can be processed using javascript.</span></font><p>
+    <font face="Tahoma" style="font-size: 8pt"><strong>
+    <span lang="EN" style="color: red">Eg.1</span></strong><b><span lang="EN"> 
+    Below is a simple form that includes labels, text boxes, and push buttons 
+    (i.e. the submit and reset buttons):</span></b></font></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;form name=&quot;Creditcard&quot; action=&quot;http://www.somesite.com/cgi-bin/userinfo.pl&quot; method=&quot;post&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">Card Holders Name: &lt;input type=&quot;text&quot; name=&quot;CustomerName&quot; size=&quot;20&quot;&gt;&lt;br&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">Card Number: &lt;input type=&quot;text&quot; name=&quot;Number&quot; size=&quot;20&quot; maxlength=&quot;20&quot;&gt;&lt;br&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">Expiry Date: &lt;input type=&quot;text&quot; name=&quot;Month&quot; size=&quot;2&quot; maxlength=&quot;2&quot; value=&quot;MM&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">/&lt;input type=&quot;text&quot; name=&quot;Year&quot; size=&quot;2&quot; maxlength=&quot;2&quot; value=&quot;YY&quot;&gt;&lt;br&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt; &lt;input type=&quot;reset&quot; value=&quot;Reset&quot;&gt;</span></code></pre>
+    <p><code style="font-family: Tahoma">
+    <span lang="EN" style="font-size: 8pt; font-weight: 700">&lt;/form&gt;</span></code></td>
+    <td style="border-style: none; border-width: medium" width="14" height="116" bgcolor="#FFFFCC">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#009900">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="17" bgcolor="#FFCC00">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="17" bgcolor="#FFCC00">
+    <a name="controls">
+    <span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700">
+    12.2 Form Controls</span></a></td>
+    <td style="border-style: none; border-width: medium" width="14" height="17" bgcolor="#FFCC00">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="137" bgcolor="#FFFFCC">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="137" bgcolor="#FFFFCC" valign="top">
+    <font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>Users interact 
+    with forms through named controls. A control's name is given by its </b>
+    <strong>name</strong><b> attribute within a </b><strong>form</strong><b> 
+    element.</b></span></font><p>
+    <font face="Tahoma" style="font-size: 8pt; font-weight: 700">
+    <span lang="EN">Each control has both an initial value and a current value, 
+    both of which are character strings. The control's current value is first 
+    set to the initial value. After that, the control's current value may be 
+    modified through user interaction and scripts. A control's initial value 
+    does not change. Therefore each control's current value is reset to its 
+    initial value when a form is reset. If a control does not have an initial 
+    value, the effect on that control of resetting the form is undefined.</span></font></p>
+    <p><span lang="EN" style="font-size: 8pt; font-family: Tahoma"><b>When a 
+    form is submitted for processing, some controls have their name paired with 
+    their current value and these pairs are submitted with the form. Those 
+    controls for which name/value pairs are submitted are called </b><strong>
+    successful controls</strong><b>.</b></span></td>
+    <td style="border-style: none; border-width: medium" width="14" height="137" bgcolor="#FFFFCC">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#009900">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="17" bgcolor="#FFCC00">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="17" bgcolor="#FFCC00">
+    <a name="types">
+    <span lang="EN" style="font-size: 10pt; font-family: Tahoma; font-weight: 700">
+    12.3 Control Types</span></a></td>
+    <td style="border-style: none; border-width: medium" width="14" height="17" bgcolor="#FFCC00">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="138" bgcolor="#FFFFCC">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="138" bgcolor="#FFFFCC">
+    <font face="Tahoma" style="font-size: 8pt; font-weight: 700">
+    <span lang="EN">The following control types exist:</span></font><p class="MsoNormal">
+    <font face="Tahoma" style="font-size: 8pt"><strong><span lang="EN">button</span></strong><b><span lang="EN">
+    </span></b></font></p>
+    <p class="MsoNormal" style="margin-left: .5in">
+    <font face="Tahoma" style="font-size: 8pt; font-weight: 700">
+    <span lang="EN">Three types of buttons may be created: </span></font></p>
+    <p class="MsoNormal" style="text-indent: -.25in; margin-left: 1.0in">
+    <font face="Tahoma">
+    <span lang="EN" style="font-size: 8pt; font-weight: 700">·</span></font><span style="font-style: normal; font-variant: normal; font-weight: 700; font-size: 8pt; font-family: Tahoma" lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </span><font face="Tahoma" style="font-size: 8pt"><strong><span lang="EN">
+    submit</span></strong><b><span lang="EN"> buttons: When activated, a submit 
+    button submits a form. A form may contain more than one submit button.
+    </span></b></font></p>
+    <p class="MsoNormal" style="text-indent: -.25in; margin-left: 1.0in">
+    <font face="Tahoma">
+    <span lang="EN" style="font-size: 8pt; font-weight: 700">·</span></font><span style="font-style: normal; font-variant: normal; font-weight: 700; font-size: 8pt; font-family: Tahoma" lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </span><font face="Tahoma" style="font-size: 8pt"><strong><span lang="EN">
+    reset</span></strong><b><span lang="EN"> buttons: When activated, a reset 
+    button resets all controls to their initial values. </span></b></font></p>
+    <p class="MsoNormal" style="text-indent: -.25in; margin-left: 1.0in">
+    <font face="Tahoma">
+    <span lang="EN" style="font-size: 8pt; font-weight: 700">·</span></font><span style="font-style: normal; font-variant: normal; font-weight: 700; font-size: 8pt; font-family: Tahoma" lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </span><font face="Tahoma" style="font-size: 8pt"><strong><span lang="EN">
+    push</span></strong><b><span lang="EN"> buttons: Push buttons have no 
+    default behavior. Each push button may have client-side scripts associated 
+    with the element's event attributes. When an event occurs (e.g., the user 
+    presses the button, releases it, etc.), the associated script is triggered.
+    </span></b></font></p>
+    <p style="margin-left: 1.0in">
+    <font face="Tahoma" style="font-size: 8pt; font-weight: 700">
+    <span lang="EN">The scripting language of a push button script should be 
+    specified through a default script declaration.</span></font></p>
+    <p class="MsoNormal" style="margin-left: .5in">
+    <font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>Buttons are 
+    created with the </b><strong>button</strong><b> element or the </b><strong>
+    input</strong><b> element. The </b><strong>button</strong><b> element offers 
+    richer rendering capabilities than the </b><strong>input</strong><b> 
+    element. </b></span></font></p>
+    <p class="MsoNormal"><font face="Tahoma" style="font-size: 8pt"><strong>
+    <span lang="EN">checkbox</span></strong><b><span lang="EN"> </span></b>
+    </font></p>
+    <p class="MsoNormal" style="margin-left: .5in">
+    <font face="Tahoma" style="font-size: 8pt; font-weight: 700">
+    <span lang="EN">Checkboxes (and radio buttons) are on/off switches that may 
+    be toggled by the user. A switch is on when the control element's checked 
+    attribute is set. When a form is submitted, only &quot;on&quot; checkbox controls can 
+    become successful. </span></font></p>
+    <p style="margin-left: .5in"><font face="Tahoma" style="font-size: 8pt">
+    <span lang="EN"><b>Several checkboxes in a form may share the same control 
+    name. Therefore, checkboxes allow users to select several values for the 
+    same property. The </b><strong>input</strong><b> element is used to create a 
+    checkbox control.</b></span></font></p>
+    <p class="MsoNormal"><font face="Tahoma" style="font-size: 8pt"><strong>
+    <span lang="EN">radio button</span></strong><b><span lang="EN"> </span></b>
+    </font></p>
+    <p class="MsoNormal" style="margin-left: .5in">
+    <font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>Radio buttons 
+    are like checkboxes except that when several share the same control name, 
+    they are mutually exclusive. That is, when one is switched &quot;on&quot;, all others 
+    with the same name are switched &quot;off&quot;. The </b><strong>input</strong><b> 
+    element is used to create a radio button control. </b></span></font></p>
+    <p style="margin-left: .5in"><font face="Tahoma" style="font-size: 8pt">
+    <span lang="EN"><b>One of the radio buttons in a set should be checked at 
+    all times. If none of the </b><strong>input</strong><b> elements of a set of 
+    radio buttons specifies &quot;checked&quot;, then the user agent must check the first 
+    radio button of the set initially. However, you should ensure that in each 
+    set of radio buttons, one is initially &quot;on&quot; since user agents behave 
+    differently.</b></span></font></p>
+    <p class="MsoNormal"><font face="Tahoma" style="font-size: 8pt"><strong>
+    <span lang="EN">menu</span></strong><b><span lang="EN"> </span></b></font>
+    </p>
+    <p class="MsoNormal" style="margin-left: .5in">
+    <font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>Menus offer 
+    users options from which to choose. The </b><strong>select</strong><b> 
+    element creates a menu, in combination with the </b><strong>optgroup</strong><b> 
+    and </b><strong>option</strong><b> elements. </b></span></font></p>
+    <p class="MsoNormal"><font face="Tahoma" style="font-size: 8pt"><strong>
+    <span lang="EN">text input</span></strong><b><span lang="EN"> </span></b>
+    </font></p>
+    <p class="MsoNormal" style="margin-left: .5in">
+    <font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>Two types of 
+    controls can be created that allow users to input text. The </b><strong>
+    input</strong><b> element creates a single-line input control and the </b>
+    <strong>textarea</strong><b> element creates a multi-line input control. In 
+    both cases, the input text becomes the control's current value. </b></span>
+    </font></p>
+    <p class="MsoNormal"><font face="Tahoma" style="font-size: 8pt"><strong>
+    <span lang="EN">file select</span></strong><b><span lang="EN"> </span></b>
+    </font></p>
+    <p class="MsoNormal" style="margin-left: .5in">
+    <font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>This control 
+    type allows the user to select files so that their contents may be submitted 
+    with a form. The </b><strong>input</strong><b> element is used to create a 
+    file select control. </b></span></font></p>
+    <p class="MsoNormal"><font face="Tahoma" style="font-size: 8pt"><strong>
+    <span lang="EN">hidden control</span></strong><b><span lang="EN"> </span>
+    </b></font></p>
+    <p class="MsoNormal" style="margin-left: .5in">
+    <font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>You can create 
+    controls that are not rendered but whose values are submitted with a form. 
+    This control type is generally used to store information between 
+    client/server exchanges that would otherwise be lost due to the stateless 
+    nature of HTTP. The </b><strong>input</strong><b> element is used to create 
+    a hidden control. </b></span></font></p>
+    <p class="MsoNormal"><font face="Tahoma" style="font-size: 8pt"><strong>
+    <span lang="EN">object control</span></strong><b><span lang="EN"> </span>
+    </b></font></p>
+    <p><span lang="EN" style="font-size: 8pt; font-family: Tahoma"><b>You can 
+    insert generic objects in forms such that associated values are submitted 
+    along with other controls. Object controls are created with the </b><strong>
+    object</strong><b> element. </b></span></td>
+    <td style="border-style: none; border-width: medium" width="14" height="138" bgcolor="#FFFFCC">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#009900">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="17" bgcolor="#FFCC00">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="17" bgcolor="#FFCC00">
+    <span lang="EN" style="font-size: 10pt; font-family: Tahoma; font-weight: 700">
+    12.4 The form Element</span></td>
+    <td style="border-style: none; border-width: medium" width="14" height="17" bgcolor="#FFCC00">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="215" bgcolor="#FFFFCC">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="215" bgcolor="#FFFFCC">
+    <h3><font face="Tahoma" style="font-size: 8pt"><span lang="EN">
+    Syntax&nbsp;&nbsp;&nbsp;&nbsp;&lt;form&gt;...&lt;/form&gt;</span></font></h3>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN">
+    <a href="javascript:void(0);" title="Click for popup list" style="color: blue; text-decoration: underline; text-underline: single">
+    <b>List of </b><strong>form</strong><b> Attributes</b></a></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>The </b>
+    <strong>form</strong><b> element acts as a container for controls. It 
+    specifies:</b></span></font></p>
+    <ul type="disc" style="margin-bottom: 0in">
+      <li class="MsoNormal"><font face="Tahoma" style="font-size: 8pt">
+      <span lang="EN"><b>The layout of the form (given by the contents of the
+      </b><strong>form</strong><b> element). </b></span></font></li>
+      <li class="MsoNormal">
+      <font face="Tahoma" style="font-size: 8pt; font-weight: 700">
+      <span lang="EN">The program that will handle the completed and submitted 
+      form (specified as the value of the action attribute). The receiving 
+      program must be able to parse name/value pairs in order to make use of 
+      them and are usually CGI programs. </span></font></li>
+      <li class="MsoNormal">
+      <font face="Tahoma" style="font-size: 8pt; font-weight: 700">
+      <span lang="EN">The method by which user data will be sent to the server 
+      (specified as the value of the method attribute). </span></font></li>
+    </ul>
+    <p><font face="Tahoma" style="font-size: 8pt; font-weight: 700">
+    <span lang="EN">A form can contain text and markup (paragraphs, lists, etc.) 
+    in addition to form controls.</span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt; font-weight: 700">
+    <span lang="EN">Below is the example given in Eg.1 above and shows that the 
+    form will be processed by the &quot;userinfo.pl&quot; CGI program when submitted. The 
+    form will be sent to the program using the HTTP &quot;post&quot; method.</span></font></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;form name=&quot;Creditcard&quot; action=&quot;http://www.somesite.com/cgi-bin/userinfo.pl&quot; method=&quot;post&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">Card Holders Name: &lt;input type=&quot;text&quot; name=&quot;CustomerName&quot; size=&quot;20&quot;&gt;&lt;br&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">Card Number: &lt;input type=&quot;text&quot; name=&quot;Number&quot; size=&quot;20&quot; maxlength=&quot;20&quot;&gt;&lt;br&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">Expiry Date: &lt;input type=&quot;text&quot; name=&quot;Month&quot; size=&quot;2&quot; maxlength=&quot;2&quot; value=&quot;MM&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">/&lt;input type=&quot;text&quot; name=&quot;Year&quot; size=&quot;2&quot; maxlength=&quot;2&quot; value=&quot;YY&quot;&gt;&lt;br&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt; &lt;input type=&quot;reset&quot;&gt;</span></code></pre>
+    <p><code style="font-family: Tahoma">
+    <span lang="EN" style="font-size: 8pt; font-weight: 700">&lt;/form&gt;</span></code></td>
+    <td style="border-style: none; border-width: medium" width="14" height="215" bgcolor="#FFFFCC">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#009900">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#FFCC00">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#FFCC00">
+    <span lang="EN" style="font-size: 10pt; font-family: Tahoma; font-weight: 700">
+    12.5 The input Element</span></td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#FFCC00">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="224" bgcolor="#FFFFCC">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="224" bgcolor="#FFFFCC">
+    <h3><font face="Tahoma" style="font-size: 8pt"><span lang="EN">
+    Syntax&nbsp;&nbsp;&nbsp;&nbsp;&lt;input&gt;</span></font></h3>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN">
+    <a href="javascript:void(0);" title="Click for popup list" style="color: blue; text-decoration: underline; text-underline: single">
+    <b>List of </b><strong><span style="text-decoration: none">input</span></strong><b> 
+    Attributes</b></a></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>The control 
+    type defined by the </b><strong>input</strong><b> element depends on the 
+    value of the type attribute:</b></span></font></p>
+    <p class="MsoNormal"><font face="Tahoma" style="font-size: 8pt"><strong>
+    <span lang="EN">text</span></strong><b><span lang="EN"> </span></b></font>
+    </p>
+    <p class="MsoNormal" style="margin-left: .5in">
+    <font face="Tahoma" style="font-size: 8pt; font-weight: 700">
+    <span lang="EN">Creates a single-line text input control. </span></font></p>
+    <p class="MsoNormal"><font face="Tahoma" style="font-size: 8pt"><strong>
+    <span lang="EN">password</span></strong><b><span lang="EN"> </span></b>
+    </font></p>
+    <p class="MsoNormal" style="margin-left: .5in">
+    <font face="Tahoma" style="font-size: 8pt; font-weight: 700">
+    <span lang="EN">Like the control type defined by &quot;text&quot;, but the input text 
+    is rendered in a way so as to hide the characters, for example, a series of 
+    asterisks. This control type is often used for sensitive input such as 
+    passwords. </span></font></p>
+    <p class="MsoNormal"><font face="Tahoma" style="font-size: 8pt"><strong>
+    <span lang="EN">checkbox</span></strong><b><span lang="EN"> </span></b>
+    </font></p>
+    <p class="MsoNormal" style="margin-left: .5in">
+    <font face="Tahoma" style="font-size: 8pt; font-weight: 700">
+    <span lang="EN">Creates a checkbox. </span></font></p>
+    <p class="MsoNormal"><font face="Tahoma" style="font-size: 8pt"><strong>
+    <span lang="EN">radio</span></strong><b><span lang="EN"> </span></b></font>
+    </p>
+    <p class="MsoNormal" style="margin-left: .5in">
+    <font face="Tahoma" style="font-size: 8pt; font-weight: 700">
+    <span lang="EN">Creates a radio button. </span></font></p>
+    <p class="MsoNormal"><font face="Tahoma" style="font-size: 8pt"><strong>
+    <span lang="EN">submit</span></strong><b><span lang="EN"> </span></b></font>
+    </p>
+    <p class="MsoNormal" style="margin-left: .5in">
+    <font face="Tahoma" style="font-size: 8pt; font-weight: 700">
+    <span lang="EN">Creates a submit button. </span></font></p>
+    <p class="MsoNormal"><font face="Tahoma" style="font-size: 8pt"><strong>
+    <span lang="EN">image</span></strong><b><span lang="EN"> </span></b></font>
+    </p>
+    <p class="MsoNormal" style="margin-left: .5in">
+    <font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>Creates a 
+    submit button which is an image. The value of the </b><strong>src</strong><b> 
+    attribute specifies the URI of the image that will form the button. You 
+    should provide alternate text for the image via the </b><strong>alt</strong><b> 
+    attribute in case the visual user agent is unable to render images or is 
+    configured not to. </b></span></font></p>
+    <p class="MsoNormal"><font face="Tahoma" style="font-size: 8pt"><strong>
+    <span lang="EN">reset</span></strong><b><span lang="EN"> </span></b></font>
+    </p>
+    <p class="MsoNormal" style="margin-left: .5in">
+    <font face="Tahoma" style="font-size: 8pt; font-weight: 700">
+    <span lang="EN">Creates a reset button. </span></font></p>
+    <p class="MsoNormal"><font face="Tahoma" style="font-size: 8pt"><strong>
+    <span lang="EN">button</span></strong><b><span lang="EN"> </span></b></font>
+    </p>
+    <p class="MsoNormal" style="margin-left: .5in">
+    <font face="Tahoma" style="font-size: 8pt; font-weight: 700">
+    <span lang="EN">Creates a push button. User agents will probably use the 
+    value of the value attribute as the button's label. </span></font></p>
+    <p class="MsoNormal"><font face="Tahoma" style="font-size: 8pt"><strong>
+    <span lang="EN">hidden</span></strong><b><span lang="EN"> </span></b></font>
+    </p>
+    <p class="MsoNormal" style="margin-left: .5in">
+    <font face="Tahoma" style="font-size: 8pt; font-weight: 700">
+    <span lang="EN">Creates a hidden control. </span></font></p>
+    <p class="MsoNormal"><font face="Tahoma" style="font-size: 8pt"><strong>
+    <span lang="EN">file</span></strong><b><span lang="EN"> </span></b></font>
+    </p>
+    <p>
+    <span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700">
+    Creates a file select control. User agents may use the value of the value 
+    attribute as the initial file name.</span></td>
+    <td style="border-style: none; border-width: medium" width="14" height="224" bgcolor="#FFFFCC">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#009900">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="17" bgcolor="#FFCC00">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="17" bgcolor="#FFCC00">
+    <a name="inputctrls">
+    <span lang="EN" style="font-size: 10pt; font-family: Tahoma; font-weight: 700">
+    12.6 Examples Of Other Types Of input Controls</span></a></td>
+    <td style="border-style: none; border-width: medium" width="14" height="17" bgcolor="#FFCC00">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="93" bgcolor="#FFFFCC">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="93" bgcolor="#FFFFCC">
+    <font face="Tahoma" style="font-size: 8pt"><strong>
+    <span lang="EN" style="color: red">Eg.2</span></strong><b><span lang="EN"> 
+    In the following example, the JavaScript function name </span></b></font><b>
+    <code style="font-family: Tahoma"><span lang="EN" style="font-size: 8pt">
+    verify</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN"> 
+    is triggered when the &quot;onclick&quot; event occurs in order to verify that all 
+    fields have been completed and whether they have been completed in the 
+    correct manner (e.g. as in the case of an e-mail address etc.). This example 
+    has to be used in conjunction with a Javascript script (not included here):</span></font></b><pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;head&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;meta http-equiv=&quot;Content-Script-Type&quot; content=&quot;text/javascript&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;/head&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;body&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN"> &lt;form action=&quot;http://www.somesite.com/cgi-bin/userinfo.pl&quot; method=&quot;post&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&nbsp;&nbsp; &lt;input type=&quot;button&quot; value=&quot;Submit&quot; onclick=&quot;verify()&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN"> &lt;/form&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;/body&gt;</span></code></pre>
+    <p><font face="Tahoma" style="font-size: 8pt"><strong>
+    <span lang="EN" style="color: red">Eg.3</span></strong><span lang="EN"><b> 
+    The following example shows how the contents of a user-specified file may be 
+    submitted with a form. The user is prompted for their name and a list of 
+    file names whose contents should be submitted with the form. By specifying 
+    the </b><strong>enctype</strong><b> value of </b><strong>
+    &quot;multipart/form-data&quot;</strong><b>, each file's contents will be packaged for 
+    submission in a separate section of a multipart document.</b></span></font></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;form action=&quot;http://www.somesite.com/cgi-bin/userinfo.pl&quot;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&nbsp;&nbsp; enctype=&quot;multipart/form-data&quot;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&nbsp;&nbsp; method=&quot;post&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN"> &lt;p&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN"> Name: &lt;input type=&quot;text&quot; name=&quot;senders_name&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN"> Choose the file you are sending: &lt;input type=&quot;file&quot; name=&quot;file_name&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN"> &lt;/p&gt;</span></code></pre>
+    <p><code style="font-family: Tahoma">
+    <span lang="EN" style="font-size: 8pt; font-weight: 700">&lt;/form&gt;</span></code></p>
+    <p>&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="93" bgcolor="#FFFFCC">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#009900">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="17" bgcolor="#FFCC00">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="17" bgcolor="#FFCC00">
+    <a name="btnelement">
+    <span lang="EN" style="font-size: 10pt; font-family: Tahoma; font-weight: 700">
+    12.7 The button Element</span></a></td>
+    <td style="border-style: none; border-width: medium" width="14" height="17" bgcolor="#FFCC00">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="74" bgcolor="#FFFFCC">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="74" bgcolor="#FFFFCC">
+    <h3><font face="Tahoma" style="font-size: 8pt"><span lang="EN">
+    Syntax&nbsp;&nbsp;&nbsp;&nbsp;&lt;button&gt;...&lt;/button&gt;</span></font></h3>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN">
+    <a href="javascript:void(0);" title="Click for popup list" style="color: blue; text-decoration: underline; text-underline: single">
+    <b>List of </b><strong>button</strong><b> Attributes</b></a></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>Buttons 
+    created with the </b><strong>button</strong><b> element function just like 
+    buttons created with the </b><strong>input</strong><b> element. However, the
+    </b><strong>button</strong><b> element may have content and therefore they 
+    offer richer rendering possibilities. For example, a </b><strong>button</strong><b> 
+    element that contains an image functions like and may resemble an </b>
+    <strong>input</strong><b> element whose type is set to &quot;image&quot;, but the </b>
+    <strong>button</strong><b> element type allows content. Visual user agents 
+    may render </b><strong>button</strong><b> buttons with relief and an up/down 
+    motion when clicked, while they may render </b><strong>input</strong><b> 
+    buttons as flat images.</b></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><strong>
+    <span lang="EN" style="color: red">Eg.4</span></strong><span lang="EN"><b> 
+    The example below is similar to Eg.1 above, but creates the submit and reset 
+    buttons with the </b><strong>button</strong><b> element instead of the </b>
+    <strong>input</strong><b> element. The buttons contain images created by 
+    using the </b><strong>img</strong><b> element.</b></span></font></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;form name=&quot;Creditcard&quot; action=&quot;http://www.somesite.com/cgi-bin/userinfo.pl&quot; method=&quot;post&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">Card Holders Name: &lt;input type=&quot;text&quot; name=&quot;CustomerName&quot; size=&quot;20&quot;&gt;&lt;br&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">Card Number: &lt;input type=&quot;text&quot; name=&quot;Number&quot; size=&quot;20&quot; maxlength=&quot;20&quot;&gt;&lt;br&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">Expiry Date: &lt;input type=&quot;text&quot; name=&quot;Month&quot; size=&quot;2&quot; maxlength=&quot;2&quot; value=&quot;MM&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">/&lt;input type=&quot;text&quot; name=&quot;Year&quot; size=&quot;2&quot; maxlength=&quot;2&quot; value=&quot;YY&quot;&gt;&lt;br&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;button name=&quot;submit&quot; value=&quot;submit&quot; type=&quot;submit&quot;&gt; </span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">SEND &lt;img src=&quot;/images/submit.gif&quot; width=&quot;50&quot; height=&quot;30&quot; alt=&quot;Click to submit form&quot;&gt;&lt;/button&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;button name=&quot;reset&quot; type=&quot;reset&quot;&gt; </span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">RESET &lt;img src=&quot;/images/reset.gif&quot; width=&quot;50&quot; height=&quot;30&quot; alt=&quot;Click to reset form&quot;&gt;&lt;/button&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;/form&gt;</span></code></pre>
+    <p><span lang="EN" style="font-size: 8pt; font-family: Tahoma"><b>Do not use 
+    an image map with an </b><strong>img</strong><b> element that appears as the 
+    contents of a </b><strong>button</strong><b> element as this is not allowed.</b></span></p>
+    <p>&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="74" bgcolor="#FFFFCC">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#009900">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="17" bgcolor="#FFCC00">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="17" bgcolor="#FFCC00">
+    <a name="sopto">
+    <span lang="EN" style="font-size: 10pt; font-family: Tahoma; font-weight: 700">
+    12.8 The select, optgroup, and option Elements</span></a></td>
+    <td style="border-style: none; border-width: medium" width="14" height="17" bgcolor="#FFCC00">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="36" bgcolor="#FFFFCC">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="36" bgcolor="#FFFFCC">
+    <h3><font face="Tahoma" style="font-size: 8pt"><span lang="EN">
+    Syntax&nbsp;&nbsp;&nbsp;&nbsp;&lt;select&gt;...&lt;/select&gt;</span></font></h3>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN">
+    <a href="javascript:void(0);" title="Click for popup list" style="color: blue; text-decoration: underline; text-underline: single">
+    <b>List of </b><strong><span style="text-decoration: none">select</span></strong><b> 
+    Attributes</b></a></span></font></p>
+    <h3><font face="Tahoma" style="font-size: 8pt"><span lang="EN">Syntax&nbsp;&nbsp;&nbsp;&nbsp;&lt;optgroup&gt;...&lt;/optgroup&gt;</span></font></h3>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN">
+    <a href="javascript:void(0);" title="Click for popup list" style="color: blue; text-decoration: underline; text-underline: single">
+    <b>List of </b><strong><span style="text-decoration: none">optgroup</span></strong><b> 
+    Attributes</b></a></span></font></p>
+    <h3><font face="Tahoma" style="font-size: 8pt"><span lang="EN">
+    Syntax&nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;...&lt;/option&gt;</span></font></h3>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN">
+    <a href="javascript:void(0);" title="Click for popup list" style="color: blue; text-decoration: underline; text-underline: single">
+    <b>List of </b><strong><span style="text-decoration: none">option</span></strong><b> 
+    Attributes</b></a></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>The </b>
+    <strong>select</strong><b> element creates a menu. Each choice offered by 
+    the menu is represented by an </b><strong>option</strong><b> element. A </b>
+    <strong>select</strong><b> element must contain at least one </b><strong>
+    option</strong><b> element.</b></span></font></p>
+    <p><span lang="EN" style="font-size: 8pt; font-family: Tahoma"><b>The </b>
+    <strong>optgroup</strong><b> element allows you to group choices logically. 
+    This is useful when the user has to choose from a long list of options since 
+    groups of related choices are easier to work with than a single long list of 
+    options. Groups may not be nested, therefore all </b><strong>optgroup</strong><b> 
+    elements must be specified directly within a </b><strong>select</strong><b> 
+    element.</b></span></p>
+    <p>&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="36" bgcolor="#FFFFCC">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#009900">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="17" bgcolor="#FFCC00">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="17" bgcolor="#FFCC00">
+    <a name="preselected">
+    <span lang="EN" style="font-size: 10pt; font-family: Tahoma; font-weight: 700">
+    12.9 Pre-selected Options</span></a></td>
+    <td style="border-style: none; border-width: medium" width="14" height="17" bgcolor="#FFCC00">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="36" bgcolor="#FFFFCC">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="36" bgcolor="#FFFFCC">
+    <font face="Tahoma" style="font-size: 8pt; font-weight: 700">
+    <span lang="EN">No choice, or one or more choices may be pre-selected for 
+    the user. User agents should determine which choices are pre-selected as 
+    follows:</span></font><ul type="disc" style="margin-bottom: 0in">
+      <li class="MsoNormal"><font face="Tahoma" style="font-size: 8pt">
+      <span lang="EN"><b>If no </b><strong>option</strong><b> element has the
+      </b><strong>selected</strong><b> attribute set, user agent behavior for 
+      choosing which option is initially selected is undefined. As user agent 
+      behavior differs, you should ensure that each menu includes a default 
+      pre-selected </b><strong>option</strong><b> element. </b></span></font>
+      </li>
+      <li class="MsoNormal"><font face="Tahoma" style="font-size: 8pt">
+      <span lang="EN"><b>If one </b><strong>option</strong><b> element has the 
+      selected attribute set, it should be pre-selected. </b></span></font></li>
+      <li class="MsoNormal"><font face="Tahoma" style="font-size: 8pt">
+      <span lang="EN"><b>If the </b><strong>select</strong><b> element has the 
+      multiple attribute set and more than one </b><strong>option</strong><b> 
+      element has the selected attribute set, they should all be pre-selected.
+      </b></span></font></li>
+      <li class="MsoNormal"><font face="Tahoma" style="font-size: 8pt">
+      <span lang="EN"><b>It is considered an error if more than one </b><strong>
+      option</strong><b> element has the </b><strong>selected</strong><b> 
+      attribute set and the </b><strong>select</strong><b> element does not have 
+      the multiple attribute set. </b></span></font></li>
+    </ul>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>When 
+    rendering a menu choice, user agents should use the value of the </b>
+    <strong>label</strong><b> attribute of the </b><strong>option</strong><b> 
+    element as the choice. If this attribute is not specified, user agents 
+    should use the contents of the </b><strong>option</strong><b> element.</b></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>The </b>
+    <strong>label</strong><b> attribute of the </b><strong>optgroup</strong><b> 
+    element specifies the label for a group of choices.</b></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><strong>
+    <span lang="EN" style="color: red">Eg.5</span></strong><b><span lang="EN"> 
+    The following example creates a menu that allows the user to select which of 
+    six items he or she is, for example, interested in buying. The first, second 
+    and third special offer items are pre-selected but may be deselected by the 
+    user. The remaining items are not pre-selected. The size attribute states 
+    that the menu should only have 5 rows even though the user may select from 
+    among 6 options. The other options are made available through a scrolling 
+    mechanism.</span></b></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>The closing
+    </b><strong>select</strong><b> tag is followed by the </b><strong>input</strong><b> 
+    elements and their attributes and values for forming the submit and reset 
+    buttons.</b></span></font></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;form action=&quot;http://www.somesite.com/cgi-bin/order_processor.pl&quot; method=&quot;post&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&nbsp; &lt;p&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&nbsp; &lt;select multiple size=&quot;5&quot; name=&quot;selections&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;option selected value=&quot;Special_Item_1&quot;&gt;Special_Item_1&lt;/option&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;option selected value=&quot;Special_Item_2&quot;&gt;Special_Item_2&lt;/option&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;option selected value=&quot;Special_Item_3&quot;&gt;Special_Item_3&lt;/option&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;option&gt;Item_4&lt;/option&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;option&gt;Item_5&lt;/option&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;option&gt;Item_6&lt;/option&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&nbsp; &lt;/select&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&nbsp; &lt;/p&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&nbsp; &lt;p&gt;Hold down the Ctrl key to make multiple selections.&lt;/p&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&nbsp; &lt;p&gt;&lt;input type=&quot;submit&quot; value=&quot;Send&quot;&gt; &lt;input type=&quot;reset&quot;&gt;&lt;/p&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;/form&gt;</span></code></pre>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>Only 
+    selected options will be </b><strong>successful</strong><b> when using the 
+    select attribute/value pair of name=&quot;selections&quot;. When no options are 
+    selected, the control is not successful and neither the name nor any values 
+    are submitted to the server when the form is submitted. Note that where the 
+    value attribute is set, it determines the control's initial value, otherwise 
+    it's the element's contents.</b></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><strong>
+    <span lang="EN" style="color: red">Eg.6</span></strong><span lang="EN"><b> 
+    In the following example, use is made of the </b><strong>optgroup</strong><b> 
+    element to group choices:</b></span></font></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;form action=&quot;http://www.somesite.com/cgi-bin/program_name.pl&quot; method=&quot;post&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN"> &lt;p&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN"> &lt;select name=&quot;T_shirts&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp; &lt;option selected label=&quot;none&quot; value=&quot;none&quot;&gt;None&lt;/option&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN"> &lt;optgroup label=&quot;T-shirt small size&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp; &lt;option label=&quot;plain_blue&quot; value=&quot;T_shirt_small_blue&quot;&gt;Small T-shirt-plain blue&lt;/option&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp; &lt;option label=&quot;plain_white&quot; value=&quot;T_shirt_small_white&quot;&gt;Small T-shirt-plain white&lt;/option&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp; &lt;option label=&quot;plain_navy&quot; value=&quot;T_shirt_small_navy&quot;&gt;Small T-shirt-plain navy&lt;/option&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN"> &lt;/optgroup&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN"> &lt;optgroup label=&quot;T-shirt medium size&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp; &lt;option label=&quot;plain_blue&quot; value=&quot;T_shirt_medium_blue&quot;&gt;Medium T-shirt-plain blue&lt;/option&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp; &lt;option label=&quot;plain_white&quot; value=&quot;T_shirt_medium_white&quot;&gt;Medium T-shirt-plain white&lt;/option&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp; &lt;option label=&quot;plain_navy&quot; value=&quot;T_shirt_medium_navy&quot;&gt;Medium T-shirt-plain navy&lt;/option&gt;&nbsp;&nbsp; </span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&lt;/optgroup&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN"> &lt;optgroup label=&quot;T-shirt large size&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp; &lt;option label=&quot;plain_blue&quot; value=&quot;T_shirt_large_blue&quot;&gt;Large T-shirt-plain blue&lt;/option&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp; &lt;option label=&quot;plain_white&quot; value=&quot;T_shirt_large_white&quot;&gt;Large T-shirt-plain white&lt;/option&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp; &lt;option label=&quot;plain_navy&quot; value=&quot;T_shirt_large_navy&quot;&gt;Large T-shirt-plain navy&lt;/option&gt; </span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&lt;/optgroup&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN"> &lt;/p&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN"> &lt;/select&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;/form&gt;</span></code></pre>
+    <p><font face="Tahoma" style="font-size: 8pt; font-weight: 700">
+    <span lang="EN">The following grouping is represented in the above form:</span></font></p>
+    <ul type="disc" style="margin-bottom: 0in">
+      <li class="MsoNormal">
+      <font face="Tahoma" style="font-size: 8pt; font-weight: 700">
+      <span lang="EN">None </span></font></li>
+      <li class="MsoNormal">
+      <font face="Tahoma" style="font-size: 8pt; font-weight: 700">
+      <span lang="EN">T-shirt small size:<br>
+      plain blue<br>
+      plain white<br>
+      plain navy </span></font></li>
+      <li class="MsoNormal">
+      <font face="Tahoma" style="font-size: 8pt; font-weight: 700">
+      <span lang="EN">T-shirt medium size:<br>
+      plain blue<br>
+      plain white<br>
+      plain navy </span></font></li>
+      <li class="MsoNormal">
+      <font face="Tahoma" style="font-size: 8pt; font-weight: 700">
+      <span lang="EN">T-shirt large size:<br>
+      plain blue<br>
+      plain white<br>
+      plain navy </span></font></li>
+    </ul>
+    <p>
+    <span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700">
+    The above form is rendered as a drop-down menu which allows users to select 
+    from the available choices.</span></p>
+    <p>&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="36" bgcolor="#FFFFCC">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#009900">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="17" bgcolor="#FFCC00">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="17" bgcolor="#FFCC00">
+    <a name="txtarea">
+    <span lang="EN" style="font-size: 10pt; font-family: Tahoma; font-weight: 700">
+    12.10 The textarea Element</span></a></td>
+    <td style="border-style: none; border-width: medium" width="14" height="17" bgcolor="#FFCC00">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="36" bgcolor="#FFFFCC">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="36" bgcolor="#FFFFCC">
+    <h3><font face="Tahoma" style="font-size: 8pt"><span lang="EN">Syntax&nbsp;&nbsp;&nbsp;&nbsp;&lt;textarea&gt;...&lt;/textarea&gt;</span></font></h3>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN">
+    <a href="javascript:void(0);" title="Click for popup list" style="color: blue; text-decoration: underline; text-underline: single">
+    <b>List of </b><strong>textarea</strong><b> Attributes</b></a></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>The </b>
+    <strong>textarea</strong><b> element creates a multi-line text input 
+    control. User agents will use the contents of this element as the initial 
+    value of the control and will render this text initially.</b></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><strong>
+    <span lang="EN" style="color: red">Eg.7</span></strong><span lang="EN"><b> 
+    The following example creates a </b><strong>textarea</strong><b> control 
+    that is 10 rows by 70 columns and contains one line of text initially. The
+    </b><strong>textarea</strong><b> is followed by submit and reset buttons:</b></span></font></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;form action=&quot;http://somesite.com/cgi-bin/somescript.pl&quot; method=&quot;post&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&nbsp; &lt;p style=&quot;text-align:center&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&nbsp; &lt;textarea name=&quot;sometext&quot; rows=&quot;10&quot; cols=&quot;70&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&nbsp; Type your comments in this text box.</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&nbsp; &lt;/textarea&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&nbsp; &lt;/p&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&nbsp; &lt;p style=&quot;text-align:center&quot;&gt;&lt;input type=&quot;submit&quot; value=&quot;Send&quot;&gt; &lt;input type=&quot;reset&quot;&gt;&lt;/p&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;/form&gt;</span></code></pre>
+    <p><span lang="EN" style="font-size: 8pt; font-family: Tahoma"><b>Setting 
+    the </b><strong>readonly</strong><b> attribute allows you to display 
+    unmodifiable text in a </b><strong>textarea</strong><b>. This differs from 
+    using standard marked-up text in a document because the value of </b>
+    <strong>textarea</strong><b> is submitted with the form. This may be useful 
+    in situations such as when a form has an agreement in it and the user has to 
+    acknowledge that he or she has read and abides by the agreement or 
+    conditions set forth before submitting the form.</b></span></p>
+    <p>&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="36" bgcolor="#FFFFCC">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#009900">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="17" bgcolor="#FFCC00">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="17" bgcolor="#FFCC00">
+    <a name="labl">
+    <span lang="EN" style="font-size: 10pt; font-family: Tahoma; font-weight: 700">
+    12.11 Labels</span></a></td>
+    <td style="border-style: none; border-width: medium" width="14" height="17" bgcolor="#FFCC00">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="36" bgcolor="#FFFFCC">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="36" bgcolor="#FFFFCC">
+    <span lang="EN" style="font-size: 8pt; font-family: Tahoma"><b>Some form 
+    controls (e.g. buttons) automatically have labels associated with them while 
+    most do not (e.g. text fields, radio buttons, checkboxes etc.). For those 
+    controls that have implicit labels, user agents will use the value of the
+    </b><strong>value attribute</strong><b> as the label string. The </b>
+    <strong>label</strong><b> element is used to specify labels for controls 
+    that do not have implicit labels.</b></span></td>
+    <td style="border-style: none; border-width: medium" width="14" height="36" bgcolor="#FFFFCC">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#009900">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="17" bgcolor="#FFCC00">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="17" bgcolor="#FFCC00">
+    <a name="labelement">
+    <span lang="EN" style="font-size: 10pt; font-family: Tahoma; font-weight: 700">
+    12.12 The label Element</span></a></td>
+    <td style="border-style: none; border-width: medium" width="14" height="17" bgcolor="#FFCC00">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="36" bgcolor="#FFFFCC">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="36" bgcolor="#FFFFCC">
+    <h3><font face="Tahoma" style="font-size: 8pt"><span lang="EN">
+    Syntax&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;...&lt;/label&gt;</span></font></h3>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN">
+    <a href="javascript:void(0);" title="Click for popup list" style="color: blue; text-decoration: underline; text-underline: single">
+    <b>List of </b><strong>label</strong><b> Attributes</b></a></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>To attach 
+    information to controls the </b><strong>label</strong><b> element may be 
+    used. Each </b><strong>label</strong><b> element is associated with exactly 
+    one form control.</b></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>The </b>
+    <strong>for</strong><b> attribute associates a label with another control. 
+    Also, the value of the </b><strong>for</strong><b> attribute must be the 
+    same as the value of the </b><strong>id</strong><b> attribute of the 
+    associated control element. More than one </b><strong>label</strong><b> may 
+    be associated with the same control by creating multiple references via the
+    </b><strong>for</strong><b> attribute.</b></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><strong>
+    <span lang="EN" style="color: red">Eg.8</span></strong><b><span lang="EN"> 
+    The following is an example:</span></b></font></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;form action=&quot;http://www.somesite.com/cgi-bin/mailscript.pl&quot; method=&quot;post&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&nbsp;&nbsp; &lt;p&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&nbsp;&nbsp; &lt;label for=&quot;firstname&quot;&gt;First name: &lt;/label&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;input type=&quot;text&quot; id=&quot;firstname&quot;&gt;&lt;br&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&nbsp;&nbsp; &lt;label for=&quot;familyname&quot;&gt;Family name: &lt;/label&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;input type=&quot;text&quot; id=&quot;familyname&quot;&gt;&lt;br&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&nbsp;&nbsp; &lt;label for=&quot;email&quot;&gt;e-mail: &lt;/label&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;input type=&quot;text&quot; id=&quot;email&quot;&gt;&lt;br&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&nbsp;&nbsp; &lt;input type=&quot;radio&quot; name=&quot;format&quot; value=&quot;HTML&quot;&gt; HTML Format Newsletter&lt;br&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&nbsp;&nbsp; &lt;input type=&quot;radio&quot; name=&quot;format&quot; value=&quot;Plain_text&quot;&gt; Plain Text Format Newsletter&lt;/p&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&nbsp;&nbsp; &lt;p&gt;&lt;input type=&quot;submit&quot; value=&quot;Send&quot;&gt; &lt;input type=&quot;reset&quot;&gt;&lt;/p&gt;</span></code></pre>
+    <p><code style="font-family: Tahoma">
+    <span lang="EN" style="font-size: 8pt; font-weight: 700">&lt;/form&gt;</span></code></p>
+    <p>&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="36" bgcolor="#FFFFCC">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="17" bgcolor="#FFCC00">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="17" bgcolor="#FFCC00">
+    <a name="fieldsetlegend">
+    <span lang="EN" style="font-size: 10pt; font-family: Tahoma; font-weight: 700">
+    12.13 The fieldset and legend Elements</span></a></td>
+    <td style="border-style: none; border-width: medium" width="14" height="17" bgcolor="#FFCC00">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="36" bgcolor="#FFFFCC">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="36" bgcolor="#FFFFCC">
+    <h3><font face="Tahoma" style="font-size: 8pt"><span lang="EN">Syntax&nbsp;&nbsp;&nbsp;&nbsp;&lt;fieldset&gt;...&lt;/fieldset&gt;</span></font></h3>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN">
+    <a href="javascript:void(0);" title="Click for popup list" style="color: blue; text-decoration: underline; text-underline: single">
+    <b>List of </b><strong>fieldset</strong><b> Attributes</b></a></span></font></p>
+    <h3><font face="Tahoma" style="font-size: 8pt"><span lang="EN">
+    Syntax&nbsp;&nbsp;&nbsp;&nbsp;&lt;legend&gt;...&lt;/legend&gt;</span></font></h3>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN">
+    <a href="javascript:void(0);" title="Click for popup list" style="color: blue; text-decoration: underline; text-underline: single">
+    <b>List of </b><strong>legend</strong><b> Attributes</b></a></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>The </b>
+    <strong>fieldset</strong><b> element allows you to group related controls 
+    and labels. Grouping controls makes it easier for users to understand the 
+    purpose of the controls and makes documents more accessible.</b></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>The </b>
+    <strong>legend</strong><b> element allows you to assign a caption to a </b>
+    <strong>fieldset</strong><b>.</b></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><strong>
+    <span lang="EN" style="color: red">Eg.9</span></strong><b><span lang="EN"> 
+    In the following example, a form is created which is similar to that someone 
+    might fill out at a bank's website. There are three sections containing 
+    controls for inputting the appropriate information comprising personal 
+    information, information to be requested, and present bankers.</span></b></font></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;form action=&quot;http://www.somebank.com/cgi-bin/somescript.pl&quot; method=&quot;post&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN"> &lt;p&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN"> &lt;fieldset&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp; &lt;legend&gt;Personal Information&lt;/legend&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp; First Name: &lt;input name=&quot;firstname&quot; type=&quot;text&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp; Family Name: &lt;input name=&quot;familyname&quot; type=&quot;text&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp; &lt;select name=&quot;salutation&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;option selected value=&quot;Title&quot;&gt;Title&lt;/option&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;option&gt;Mr&lt;/option&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;option&gt;Miss&lt;/option&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;option&gt;Mrs&lt;/option&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;option&gt;Ms&lt;/option&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;option&gt;Other&lt;/option&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&nbsp; &lt;/select&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&nbsp; &lt;p&gt;Street Address: &lt;input name=&quot;street_address&quot; type=&quot;text&quot;&gt; </span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&nbsp;City: &lt;input name=&quot;city&quot; type=&quot;text&quot; size=&quot;14&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp; State: &lt;input name=&quot;state&quot; type=&quot;text&quot; size=&quot;14&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp; Country: &lt;input name=&quot;state&quot; type=&quot;text&quot; size=&quot;12&quot;&gt;&lt;/p&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN"> &lt;/fieldset&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN"> &lt;fieldset&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp; &lt;legend&gt;Information Required About&lt;/legend&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp; &lt;input name=&quot;account_type&quot; type=&quot;checkbox&quot; value=&quot;Checking&quot;&gt; Checking Accounts</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp; &lt;input name=&quot;account_type&quot; type=&quot;checkbox&quot; value=&quot;Savings&quot;&gt; Savings Accounts</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp; &lt;input name=&quot;account_type&quot; type=&quot;checkbox&quot; value=&quot;CDs&quot;&gt; CD Accounts</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&nbsp;&nbsp; &lt;p&gt;Please let us know what other products you are interested in:&lt;/p&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp; &lt;p&gt;&lt;textarea name=&quot;other_info&quot; rows=&quot;10&quot; cols=&quot;50&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp; &lt;/textarea&gt;&lt;/p&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN"> &lt;/fieldset&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN"> &lt;fieldset&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp; &lt;legend&gt;Present Bankers&lt;/legend&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp; Are you presently a customer of this bank? </span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&nbsp;&lt;input name=&quot;present_banker&quot; type=&quot;radio&quot; value=&quot;Yes&quot;&gt;Yes</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp; &lt;input name=&quot;present_banker&quot; type=&quot;radio&quot; value=&quot;No&quot;&gt;No</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN"> &lt;/fieldset&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN"> &lt;p&gt;&lt;input type=&quot;submit&quot; value=&quot;Send&quot;&gt; &lt;input type=&quot;reset&quot;&gt;&lt;/p&gt;</span></code></pre>
+    <p><code style="font-family: Tahoma">
+    <span lang="EN" style="font-size: 8pt; font-weight: 700">&lt;/form&gt;</span></code></td>
+    <td style="border-style: none; border-width: medium" width="14" height="36" bgcolor="#FFFFCC">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="17" bgcolor="#FFCC00">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="17" bgcolor="#FFCC00">
+    <a name="roc">
+    <span lang="EN" style="font-size: 10pt; font-family: Tahoma; font-weight: 700">
+    12.14 Disabled And Read-Only Controls</span></a></td>
+    <td style="border-style: none; border-width: medium" width="14" height="17" bgcolor="#FFCC00">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="36" bgcolor="#FFFFCC">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="36" bgcolor="#FFFFCC">
+    <font face="Tahoma" style="font-size: 8pt; font-weight: 700">
+    <span lang="EN">In situations where user input is unwanted, it is possible 
+    to disable a control or render it read-only. For example, you may want to 
+    include some read-only text that must be submitted as a value along with the 
+    form. This could be an agreement or set of conditions, for example.</span></font><p>
+    <font face="Tahoma" style="font-size: 8pt"><strong><span lang="EN">Disabled 
+    controls</span></strong></font></p>
+    <p><b><code style="font-family: Tahoma">
+    <span lang="EN" style="font-size: 8pt">Disabled:</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN"> 
+    When set for a form control, this attribute disables the control for user 
+    input.</span></font></b></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>The 
+    following elements support the </b><strong>disabled</strong><b> attribute:
+    </b><strong>button, input, optgroup, option, select,</strong><b> and </b>
+    <strong>textarea</strong><b>.</b></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>When the
+    </b><strong>disabled</strong><b> attribute is set it has the following 
+    effects on an element:</b></span></font></p>
+    <ul type="disc" style="margin-bottom: 0in">
+      <li class="MsoNormal">
+      <font face="Tahoma" style="font-size: 8pt; font-weight: 700">
+      <span lang="EN">Disabled controls do not receive focus. </span></font>
+      </li>
+      <li class="MsoNormal"><font face="Tahoma" style="font-size: 8pt">
+      <span lang="EN"><b>Disabled controls </b><strong>cannot</strong><b> be 
+      successful, i.e. their values will not be submitted with the form. </b>
+      </span></font></li>
+    </ul>
+    <p><font face="Tahoma" style="font-size: 8pt"><strong>
+    <span lang="EN" style="color: red">Eg.10</span></strong><span lang="EN"><b> 
+    In the following example, the </b><strong>input</strong><b> element is 
+    disabled. Therefore, it cannot receive user input and its value will not be 
+    submitted with the form.</b></span></font></p>
+    <p><code style="font-family: Tahoma">
+    <span lang="EN" style="font-size: 8pt; font-weight: 700">&lt;input type=&quot;text&quot; 
+    name=&quot;somename&quot; value=&quot;somevalue&quot; disabled&gt;</span></code></p>
+    <p><font face="Tahoma" style="font-size: 8pt; font-weight: 700">
+    <span lang="EN">It is rendered as follows:</span></font></p>
+    <p><span lang="EN">
+    <font face="Tahoma" style="font-size: 8pt; font-weight: 700">
+    <input TYPE="TEXT" NAME="somename" VALUE="somevalue" size="20"></font></span></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><strong><span lang="EN">
+    Read-only controls</span></strong></font></p>
+    <p><b><code style="font-family: Tahoma">
+    <span lang="EN" style="font-size: 8pt">readonly:</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN"> 
+    When set for a form control, this attribute prohibits changes to the 
+    control.</span></font></b></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>Using the
+    </b><strong>readonly</strong><b> attribute prevents the control from being 
+    modified by the user.</b></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>The 
+    following elements support the </b><strong>readonly</strong><b> attribute:
+    </b><strong>input</strong><b> and </b><strong>textarea</strong><b>.</b></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>When set, 
+    the </b><strong>readonly</strong><b> attribute has the following effects on 
+    an element:</b></span></font></p>
+    <ul type="disc" style="margin-bottom: 0in">
+      <li class="MsoNormal">
+      <font face="Tahoma" style="font-size: 8pt; font-weight: 700">
+      <span lang="EN">Read-only elements receive focus but cannot be modified by 
+      the user. </span></font></li>
+      <li class="MsoNormal"><font face="Tahoma" style="font-size: 8pt">
+      <span lang="EN"><b>Read-only elements </b><strong>are successful</strong><b>.
+      </b></span></font></li>
+    </ul>
+    <p><font face="Tahoma" style="font-size: 8pt"><strong>
+    <span lang="EN" style="color: red">Eg.11</span></strong><span lang="EN"><b> 
+    In the following example, the </b><strong>textarea</strong><b> element is 
+    readonly. Therefore the user will be unable to modify the control.</b></span></font></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN"> &lt;textarea name=&quot;agreement&quot; rows=&quot;5&quot; cols=&quot;30&quot; readonly&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&nbsp; THIS IS THE AGREEMENT</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&nbsp; </span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&nbsp;&nbsp;Agreement Clause #1.</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&nbsp; Agreement Clause #2.</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&nbsp; Agreement Clause #3.</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;&nbsp; Agreement Clause #4.</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN"> &lt;/textarea&gt;</span></code></pre>
+    <p><font face="Tahoma" style="font-size: 8pt; font-weight: 700">
+    <span lang="EN">It is rendered as follows:</span></font></p>
+    <p><span lang="EN">
+    <font face="Tahoma" style="font-size: 8pt; font-weight: 700">
+    <textarea ROWS="5" NAME="agreement" cols="20">   THIS IS THE AGREEMENT&#13;&#10;   &#13;&#10;   Agreement Clause #1.&#13;&#10;   Agreement Clause #2.&#13;&#10;   Agreement Clause #3.&#13;&#10;   Agreement Clause #4.&#13;&#10;</textarea></font></span></p>
+    <p>&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="36" bgcolor="#FFFFCC">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="17" bgcolor="#FFCC00">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="17" bgcolor="#FFCC00">
+    <a name="formsub">
+    <span lang="EN" style="font-size: 10pt; font-family: Tahoma; font-weight: 700">
+    12.15 Form Submission Methods</span></a></td>
+    <td style="border-style: none; border-width: medium" width="14" height="17" bgcolor="#FFCC00">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="36" bgcolor="#FFFFCC">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="36" bgcolor="#FFFFCC">
+    <font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>The </b>
+    <strong>method</strong><b> attribute of the </b><strong>form</strong><b> 
+    element specifies the HTTP method used to send the form to the processing 
+    agent. This attribute may have one of the following two values:</b></span></font><ul type="disc" style="margin-bottom: 0in">
+      <li class="MsoNormal"><b><code style="font-family: Tahoma">
+      <span lang="EN" style="font-size: 8pt">get:</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN"> 
+      With the HTTP &quot;get&quot; method, the form data set is appended to the URI 
+      specified by the action attribute using a question-mark (&quot;?&quot;) as separator 
+      and this new URI is sent to the processing agent. </span></font></b></li>
+      <li class="MsoNormal"><b><code style="font-family: Tahoma">
+      <span lang="EN" style="font-size: 8pt">post:</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN"> 
+      With the HTTP &quot;post&quot; method, the form data set is included in the body of 
+      the form and sent to the processing agent. </span></font></b></li>
+    </ul>
+    <p><font face="Tahoma" style="font-size: 8pt; font-weight: 700">
+    <span lang="EN">The &quot;get&quot; method should be used when the form is idempotent, 
+    that is, causes no side-effects. Many database searches have no visible 
+    side-effects and make ideal applications for the &quot;get&quot; method.</span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt; font-weight: 700">
+    <span lang="EN">If the service associated with the processing of a form 
+    causes side effects, for example, if the form modifies a database or 
+    subscription to a service, the &quot;post&quot; method should be used.</span></font></p>
+    <p>
+    <span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700">
+    Usually the script on the server that is used as the processing agent will 
+    specify which of the attribute values to use (i.e. either get or post). 
+    Therefore, it is always advisable to check the script's documentation before 
+    setting this attribute's value in a form.</span></p>
+    <p>&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="36" bgcolor="#FFFFCC">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="17" bgcolor="#FFCC00">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="17" bgcolor="#FFCC00">
+    <a name="scontrols">
+    <span lang="EN" style="font-size: 10pt; font-family: Tahoma; font-weight: 700">
+    12.16 Successful Controls</span></a></td>
+    <td style="border-style: none; border-width: medium" width="14" height="17" bgcolor="#FFCC00">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="36" bgcolor="#FFFFCC">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="36" bgcolor="#FFFFCC">
+    <font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>A successful 
+    control is one that is valid for submission. Every successful control has 
+    its control name </b><strong>paired</strong><b> with its current value as 
+    part of the submitted form data set. A successful control must be defined 
+    within a </b><strong>form</strong><b> element and must have a control name.</b></span></font><p>
+    <font face="Tahoma" style="font-size: 8pt; font-weight: 700">
+    <span lang="EN">However:</span></font></p>
+    <ul type="disc" style="margin-bottom: 0in">
+      <li class="MsoNormal">
+      <font face="Tahoma" style="font-size: 8pt; font-weight: 700">
+      <span lang="EN">Controls that are disabled cannot be successful. </span>
+      </font></li>
+      <li class="MsoNormal">
+      <font face="Tahoma" style="font-size: 8pt; font-weight: 700">
+      <span lang="EN">All checkboxes that are &quot;on&quot; may be successful. </span>
+      </font></li>
+      <li class="MsoNormal">
+      <font face="Tahoma" style="font-size: 8pt; font-weight: 700">
+      <span lang="EN">Only the &quot;on&quot; radio button may be successful for radio 
+      buttons that share the same value of the name attribute. </span></font>
+      </li>
+      <li class="MsoNormal"><font face="Tahoma" style="font-size: 8pt">
+      <span lang="EN"><b>For menus, the control name is provided by a </b>
+      <strong>select</strong><b> element and values are provided by </b><strong>
+      option</strong><b> elements. Only selected options may be successful. When 
+      no options are selected, the control is not successful and neither the 
+      name nor any values are submitted to the server when the form is 
+      submitted. </b></span></font></li>
+      <li class="MsoNormal">
+      <font face="Tahoma" style="font-size: 8pt; font-weight: 700">
+      <span lang="EN">The current value of a file select is a list of one or 
+      more file names. Upon submission of the form, the contents of each file 
+      are submitted with the rest of the form data. The file contents are 
+      packaged according to the form's content type. </span></font></li>
+      <li class="MsoNormal">
+      <font face="Tahoma" style="font-size: 8pt; font-weight: 700">
+      <span lang="EN">If a form contains more than one submit button, only the 
+      activated submit button is successful. </span></font></li>
+    </ul>
+    <p><font face="Tahoma" style="font-size: 8pt; font-weight: 700">
+    <span lang="EN">If a control doesn't have a current value when the form is 
+    submitted, user agents are not required to treat it as a successful control.</span></font></p>
+    <p>
+    <span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700">
+    Hidden controls and controls that are not rendered because of style sheet 
+    settings may be successful.</span></p>
+    <p>&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="36" bgcolor="#FFFFCC">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="17" bgcolor="#FFCC00">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="17" bgcolor="#FFCC00">
+    <a name="ddmenu">
+    <span lang="EN" style="font-size: 10pt; font-family: Tahoma; font-weight: 700">
+    12.17 Drop-Down Navigation Menu</span></a></td>
+    <td style="border-style: none; border-width: medium" width="14" height="17" bgcolor="#FFCC00">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="36" bgcolor="#FFFFCC">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="36" bgcolor="#FFFFCC">
+    <font face="Tahoma" style="font-size: 8pt"><strong>
+    <span lang="EN" style="color: red">Eg.12</span></strong><span lang="EN"><b> 
+    You can use the following example to create a drop-down navigation menu. 
+    These are often useful when you need to preserve space on your web pages. 
+    Place the following code in red between the </b><strong>head</strong><b> 
+    tags of your page (if you are embedding it in your web pages) or place it in 
+    your external script document (in which case you should leave out the 
+    opening and closing </b><strong>script</strong><b> tags). Then reference the 
+    external script document in your web pages.</b></span></font><pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;script language=&quot;JavaScript&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;!-- Hide from older browsers</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">function load(link) </span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;var URL = link.options[link.selectedIndex].value </span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;window.top.location.href = URL</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN"> link.selectedIndex=0</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN"> }</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN"> // End Hide --&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;/script&gt;</span></code></pre>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>Now place 
+    the following code in red between the </b><strong>body</strong><b> tags of 
+    your document at the place where you want the drop-down navigation menu to 
+    appear.</b></span></font></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;form name=&quot;navigation&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;select name=&quot;navmenu&quot; size=&quot;1&quot; onChange=&quot;load(this)&quot; style=&quot;color: #ffffff; </span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">font-family: verdana; font-weight: bold; font-size: 10px; background-color: #777777&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;option value=&quot;&quot;&gt;Navigation Menu</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;option value=&quot;index.htm&quot;&gt;Homepage</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;option value=&quot;products.htm&quot;&gt;Our Products</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;option value=&quot;prices.htm&quot;&gt;Our Prices</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;option value=&quot;specials.htm&quot;&gt;Special Offers</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;option value=&quot;newsletter.htm&quot;&gt;Free Newsletter</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;/select&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;/form&gt;</span></code></pre>
+    <p><font face="Tahoma" style="font-size: 8pt; font-weight: 700">
+    <span lang="EN">This drop-down menu does not have a GO button, i.e. once a 
+    link is clicked on, it is immediately followed and the new web page starts 
+    to load.</span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><a name="ex12.1"><strong>
+    <span lang="EN">Exercise 12.1</span></strong></a></font></p>
+    <ol start="1" type="1" style="margin-bottom: 0in">
+      <li class="MsoNormal"><font face="Tahoma" style="font-size: 8pt">
+      <span lang="EN"><b>Type the code given in
+      <a href="mk:@MSITStore:\WINDOWS\Temporary%20Internet%20Files\htmItutoriaI.chm::/page012.htm#eg1#eg1" style="color: blue; text-decoration: underline; text-underline: single">
+      Eg.1</a> between the </b><strong>body</strong><b> tags in the editor. 
+      Preview in Browser. </b></span></font></li>
+      <li class="MsoNormal"><b><font face="Tahoma" style="font-size: 8pt">
+      <span lang="EN">In the </span></font><code style="font-family: Tahoma">
+      <span lang="EN" style="font-size: 8pt">input</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN"> 
+      tag for the year (Expiry Date) change the value of the size attribute from 
+      2 to 4. Preview in Browser. Notice the increase in the size of the text 
+      box. </span></font></b></li>
+      <li class="MsoNormal">
+      <font face="Tahoma" style="font-size: 8pt; font-weight: 700">
+      <span lang="EN">Now try to type the numeric value for the full year in the 
+      box. You'll see that you can't because the maxlength attribute value is 
+      still 2. </span></font></li>
+      <li class="MsoNormal">
+      <font face="Tahoma" style="font-size: 8pt; font-weight: 700">
+      <span lang="EN">Change the maxlength attribute value to 4. Preview in 
+      Browser. </span></font></li>
+      <li class="MsoNormal"><b><font face="Tahoma" style="font-size: 8pt">
+      <span lang="EN">Now try to type the full year (4 digits) into the box. You 
+      are now able to type up to 4 characters in the text box. If this is the 
+      format you want the year to be written in, then also change </span></font>
+      <code style="font-family: Tahoma"><span lang="EN" style="font-size: 8pt">
+      value=&quot;YY&quot;</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN"> 
+      to </span></font><code style="font-family: Tahoma">
+      <span lang="EN" style="font-size: 8pt">value=&quot;YYYY&quot;</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN"> 
+      to indicate to users that 4 digits must be used to specify the year.
+      </span></font></b></li>
+      <li class="MsoNormal">
+      <font face="Tahoma" style="font-size: 8pt; font-weight: 700">
+      <span lang="EN">Now click inside the expiry date boxes and fill in the 
+      boxes with any month and year (two digit numeric value for the month and 
+      four digits for the year). You will see that you need to clear the default 
+      information in the boxes first before entering the required details.
+      </span></font></li>
+      <li class="MsoNormal"><b><font face="Tahoma" style="font-size: 8pt">
+      <span lang="EN">Add </span></font><code style="font-family: Tahoma">
+      <span lang="EN" style="font-size: 8pt">onfocus=&quot;this.value=''&quot;</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN"> 
+      into the Expiry Date input tags. For example, the first input tag (for the 
+      month) should look as follows: </span></font></b></li>
+    </ol>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;input type=&quot;text&quot; name=&quot;Month&quot; size=&quot;2&quot; maxlength=&quot;2&quot; value=&quot;MM&quot; onfocus=&quot;this.value=''&quot;&gt;</span></code></pre>
+    <p class="MsoNormal">
+    <font face="Tahoma" style="font-size: 8pt; font-weight: 700">
+    <span lang="EN">Remember to keep a blank space between the / and the 
+    character before it. </span></font></p>
+    <ol start="8" type="1" style="margin-bottom: 0in">
+      <li class="MsoNormal">
+      <font face="Tahoma" style="font-size: 8pt; font-weight: 700">
+      <span lang="EN">Do the same for the input tag relating to the year. </span>
+      </font></li>
+      <li class="MsoNormal">
+      <font face="Tahoma" style="font-size: 8pt; font-weight: 700">
+      <span lang="EN">Preview in Browser. Click inside each text box. You'll 
+      notice that the default text in these boxes disappears and you can type 
+      the required information in these boxes immediately. </span></font></li>
+      <li class="MsoNormal"><b><font face="Tahoma" style="font-size: 8pt">
+      <span lang="EN">Replace </span></font><code style="font-family: Tahoma">
+      <span lang="EN" style="font-size: 8pt">onfocus=&quot;this.value=''&quot;</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN"> 
+      with </span></font><code style="font-family: Tahoma">
+      <span lang="EN" style="font-size: 8pt">onfocus=&quot;this.select()&quot;</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN">. 
+      Preview in Browser and then click in each of the boxes. In this case 
+      you'll notice that the default text is selected (highlighted) but 
+      disappears once you start typing in the box leaving only the typed 
+      information in the boxes. </span></font></b></li>
+      <li class="MsoNormal"><b><font face="Tahoma" style="font-size: 8pt">
+      <span lang="EN">Add </span></font><code style="font-family: Tahoma">
+      <span lang="EN" style="font-size: 8pt">style=&quot;border-width:1; border-style:solid; 
+      border-color:#000000; font-family:arial; font-size:12px; font-weight:bold; 
+      color:#FFFFFF; background-color:#008080&quot;</span></code></b><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b> 
+      into the end of the input tag for the </b><strong>submit button</strong><b> 
+      and the input tag for the </b><strong>reset button</strong><b> just as you 
+      did in the above exercises. Remember to leave a blank space between the / 
+      and the character before it. Preview in Browser. </b></span></font></li>
+      <li class="MsoNormal">
+      <font face="Tahoma" style="font-size: 8pt; font-weight: 700">
+      <span lang="EN">In the input tag for the submit button, change the value 
+      of border-width to 3. Preview in Browser. </span></font></li>
+      <li class="MsoNormal">
+      <font face="Tahoma" style="font-size: 8pt; font-weight: 700">
+      <span lang="EN">Change the value of border-style from solid to the 
+      following, one at a time: double, ridge, groove, inset, outset, dotted, 
+      dashed and none (these are the permitted values). Preview in Browser after 
+      each change. You'll probably notice that the dotted and dashed values 
+      don't work in this case. </span></font></li>
+      <li class="MsoNormal">
+      <font face="Tahoma" style="font-size: 8pt; font-weight: 700">
+      <span lang="EN">Change the font-size value to 13px. Preview in Browser.
+      </span></font></li>
+      <li class="MsoNormal"><font face="Tahoma" style="font-size: 8pt">
+      <span lang="EN"><b>Change the value of color to #FFFF00 (in hexadecimal 
+      code for color, the character 0 = zero </b><strong>always</strong><b>).
+      </b></span></font></li>
+      <li class="MsoNormal">
+      <font face="Tahoma" style="font-size: 8pt; font-weight: 700">
+      <span lang="EN">Experiment with the other style property values, 
+      especially those that affect the border. Using the right border-color 
+      value will make the button look a lot better compared to certain other 
+      border-color values. </span></font></li>
+      <li class="MsoNormal"><font face="Tahoma" style="font-size: 8pt">
+      <span lang="EN"><b>Type the code given in
+      <a href="mk:@MSITStore:\WINDOWS\Temporary%20Internet%20Files\htmItutoriaI.chm::/page012.htm#eg4#eg4" style="color: blue; text-decoration: underline; text-underline: single">
+      Eg.4</a> between the </b><strong>body</strong><b> tags in the editor. 
+      Preview in Browser. The inset area on the button that you see with an </b>
+      <strong>X</strong><b> in it is where your image would be. </b></span>
+      </font></li>
+      <li class="MsoNormal">
+      <font face="Tahoma" style="font-size: 8pt; font-weight: 700">
+      <span lang="EN">Change the values of the image width and height. Preview 
+      in Browser. Notice the effect on the size of the button. </span></font>
+      </li>
+      <li class="MsoNormal">
+      <font face="Tahoma" style="font-size: 8pt; font-weight: 700">
+      <span lang="EN">Remove the word SEND which is between the first set of the 
+      button opening and closing tags. Preview in Browser. If your image 
+      contains information about the purpose of the button then there is no need 
+      to repeat the information here. </span></font></li>
+      <li class="MsoNormal">
+      <font face="Tahoma" style="font-size: 8pt; font-weight: 700">
+      <span lang="EN">Change the wording of the alt attributes. Preview in 
+      Browser and hold the cursor (arrow) over the region where your image would 
+      be on each button. You should see the new alt information that you just 
+      added with regard to that button image. </span></font></li>
+      <li class="MsoNormal"><font face="Tahoma" style="font-size: 8pt">
+      <span lang="EN"><b>Reset the editor. Type the code given in
+      <a href="mk:@MSITStore:\WINDOWS\Temporary%20Internet%20Files\htmItutoriaI.chm::/page012.htm#eg5#eg5" style="color: blue; text-decoration: underline; text-underline: single">
+      Eg.5</a> between the </b><strong>body</strong><b> tags in the editor. 
+      Preview in Browser. </b></span></font></li>
+      <li class="MsoNormal"><b><font face="Tahoma" style="font-size: 8pt">
+      <span lang="EN">In the third opening option tag, remove </span></font>
+      <code style="font-family: Tahoma"><span lang="EN" style="font-size: 8pt">
+      selected value=&quot;Special_Item_3&quot;</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN">. 
+      Preview in Browser. You'll notice that only the first two items are 
+      selected now. </span></font></b></li>
+      <li class="MsoNormal"><font face="Tahoma" style="font-size: 8pt">
+      <span lang="EN"><b>Reset the editor. Type the code given in
+      <a href="mk:@MSITStore:\WINDOWS\Temporary%20Internet%20Files\htmItutoriaI.chm::/page012.htm#eg6#eg6" style="color: blue; text-decoration: underline; text-underline: single">
+      Eg.6</a> between the </b><strong>body</strong><b> tags in the editor. 
+      Preview in Browser. This produces a drop-down list of grouped choices. </b>
+      </span></font></li>
+      <li class="MsoNormal"><font face="Tahoma" style="font-size: 8pt">
+      <span lang="EN"><b>Reset the editor. Type the code given in
+      <a href="mk:@MSITStore:\WINDOWS\Temporary%20Internet%20Files\htmItutoriaI.chm::/page012.htm#eg7#eg7" style="color: blue; text-decoration: underline; text-underline: single">
+      Eg.7</a> between the </b><strong>body</strong><b> tags in the editor. 
+      Preview in Browser. </b></span></font></li>
+      <li class="MsoNormal">
+      <font face="Tahoma" style="font-size: 8pt; font-weight: 700">
+      <span lang="EN">Change the value of the rows attribute from 10 to 5 and 
+      the value of the cols attribute from 70 to 50. Preview in Browser. </span>
+      </font></li>
+      <li class="MsoNormal">
+      <font face="Tahoma" style="font-size: 8pt; font-weight: 700">
+      <span lang="EN">Immediately after the line that says &quot;Type your comments 
+      in this text box.&quot; add &quot;Use a maximum of 200 characters.&quot; Preview in 
+      Browser. This is the default text in the textarea multi-line box. </span>
+      </font></li>
+      <li class="MsoNormal">
+      <font face="Tahoma" style="font-size: 8pt; font-weight: 700">
+      <span lang="EN">While you are previewing the textarea box, type a couple 
+      of sentences into the box. In this case you are able to add sentences to 
+      the textarea box. </span></font></li>
+      <li class="MsoNormal"><b><font face="Tahoma" style="font-size: 8pt">
+      <span lang="EN">Now add </span></font><code style="font-family: Tahoma">
+      <span lang="EN" style="font-size: 8pt">readonly</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN"> 
+      to the end of the opening textarea tag. Preview in Browser and try to add 
+      the same sentences again. You'll notice that you are unable to do so this 
+      time because of the </span></font><code style="font-family: Tahoma">
+      <span lang="EN" style="font-size: 8pt">readonly</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN"> 
+      attribute that you have just added. This is useful when you want the user 
+      to agree to certain terms before submitting the form. </span></font></b>
+      </li>
+      <li class="MsoNormal"><font face="Tahoma" style="font-size: 8pt">
+      <span lang="EN"><b>Reset the editor. Type the code given in
+      <a href="mk:@MSITStore:\WINDOWS\Temporary%20Internet%20Files\htmItutoriaI.chm::/page012.htm#eg8#eg8" style="color: blue; text-decoration: underline; text-underline: single">
+      Eg.8</a> between the </b><strong>body</strong><b> tags in the editor. 
+      Preview in Browser. This is an example of how the </b><strong>label</strong><b> 
+      element is used to attach information to controls. </b></span></font></li>
+      <li class="MsoNormal"><font face="Tahoma" style="font-size: 8pt">
+      <span lang="EN"><b>Reset the editor. Type the code given in
+      <a href="mk:@MSITStore:\WINDOWS\Temporary%20Internet%20Files\htmItutoriaI.chm::/page012.htm#eg9#eg9" style="color: blue; text-decoration: underline; text-underline: single">
+      Eg.9</a> between the </b><strong>body</strong><b> tags in the editor. 
+      Preview in Browser. This is an example of how the </b><strong>fieldset</strong><b> 
+      element is used to group related controls and labels. Also, the </b>
+      <strong>legend</strong><b> element is used to assign a caption to a </b>
+      <strong>fieldset</strong><b>. </b></span></font></li>
+      <li class="MsoNormal"><font face="Tahoma" style="font-size: 8pt">
+      <span lang="EN"><b>Reset the editor. Type the code given in
+      <a href="mk:@MSITStore:\WINDOWS\Temporary%20Internet%20Files\htmItutoriaI.chm::/page012.htm#eg12#eg12" style="color: blue; text-decoration: underline; text-underline: single">
+      Eg.12</a> into the editor, placing the first part (the script tags and 
+      everything within it) between the </b><strong>head</strong><b> tags and 
+      the second part between the </b><strong>body</strong><b> section. Preview 
+      in Browser. </b></span></font></li>
+      <li class="MsoNormal"><font face="Tahoma" style="font-size: 8pt">
+      <span lang="EN"><b>Again type the second part of the code directly 
+      underneath the same code that you just typed in the </b><strong>body</strong><b> 
+      section. Now remove the closing form tag (&lt;/form&gt;) of the first part and 
+      the opening form tag (&lt;form name=&quot;navigation&quot;&gt;) of the second part that 
+      you just typed. Preview in Browser. The two drop-down menus should be 
+      side-by-side. </b></span></font></li>
+      <li class="MsoNormal"><b><font face="Tahoma" style="font-size: 8pt">
+      <span lang="EN">Place a br tag (&lt;br&gt;) after the closing select tag 
+      (&lt;/select&gt;) of the first part. Preview in Browser again. This time, the 
+      two drop-down menus should be one under the other. Of course, you would 
+      use each drop-down menu for a different purpose. For example, the first 
+      drop-down menu would be for internal links to your own site and the next 
+      drop-down menu could be to news sites such as cnn.com, abc.com, bbc.co.uk, 
+      etc. When linking to external sites, use the full web address within 
+      double quotation marks as the option value, e.g.<br>
+      </span></font><code style="font-family: Tahoma">
+      <span lang="EN" style="font-size: 8pt">&lt;option value=&quot;http://www.cnn.com&quot;&gt;CNN</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN">
+      </span></font></b></li>
+      <li class="MsoNormal"><b><font face="Tahoma" style="font-size: 8pt">
+      <span lang="EN">Now remove the inline style information from the first 
+      opening select tag (i.e. remove <br>
+      </span></font><code style="font-family: Tahoma">
+      <span lang="EN" style="font-size: 8pt">style=&quot;color: #ffffff; font-family: 
+      verdana; font-weight: bold; font-size: 10px; background-color: #777777&quot;</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN">) 
+      making sure not to remove the &gt; character. Preview in Browser. </span>
+      </font></b></li>
+    </ol>
+    <p>
+    <span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700">
+    Experiment with the style property values to create different looking 
+    drop-down menus.</span></p>
+    <p>&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="36" bgcolor="#FFFFCC">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#009900">&nbsp;</td>
+  </tr>
+</table>
+
+</body>
+
+</html>

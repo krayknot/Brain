@@ -1,0 +1,746 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>HTML Book</title>
+<style>
+<!--
+ li.MsoNormal
+	{mso-style-parent:"";
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	margin-left:0in; margin-right:0in; margin-top:0in}
+ div.MsoNormal
+	{mso-style-parent:"";
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	margin-left:0in; margin-right:0in; margin-top:0in}
+-->
+</style>
+<LINK href="../style.css" rel=stylesheet type=text/css>
+</head>
+
+<body>
+
+<table width="838" border="1" align="center" style="border-width: 0" height="1474">
+  <tr> 
+    <td bordercolor="0" style="border-style: none; border-width: medium" width="10" bgcolor="#33CCFF" height="55">&nbsp;</td>
+    <td bordercolor="0" style="border-style: none; border-width: medium" width="814" bgcolor="#33CCFF" colspan="2" height="55">
+    <font face="Broadway BT" size="7" color="#000000"><b>HTML Book</b></font></td>
+  </tr>
+  <tr> 
+    <td bordercolor="0" style="border-style: none; border-width: medium" width="832" colspan="3" bgcolor="#009900" height="13">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" bgcolor="#00CC99" height="17">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" bgcolor="#00CC99" height="17">
+    <span lang="EN" style="font-size: 12.0pt; font-family: Arial Black">15. Some 
+    Useful Scripts And Code</span></td>
+    <td style="border-style: none; border-width: medium" width="14" height="17" bgcolor="#00CC99">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#FFCC00">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#FFCC00">
+    <a name="ddownmenu">
+    <span lang="EN" style="font-size: 10pt; font-family: Tahoma; font-weight: 700">
+    15.1 Drop-Down Navigation Menu</span></a></td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#FFCC00">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="116" bgcolor="#FFFFCC">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="116" bgcolor="#FFFFCC">
+    <font face="Tahoma" style="font-size: 8pt"><strong>
+    <span lang="EN" style="color: red">Eg.1</span></strong><span lang="EN"><b> 
+    You can use the following example to create a drop-down navigation menu. 
+    These are often useful when you need to preserve space on your web pages. 
+    Place the following code in red between the </b><strong>head</strong><b> 
+    tags of your page (if you are embedding it in your web pages) or place it in 
+    your external script document (in which case you should leave out the 
+    opening and closing </b><strong>script</strong><b> tags). Then reference the 
+    external script document in your web pages.</b></span></font><pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;script language=&quot;javascript&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;!-- Hide from older browsers</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">function load() {&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;var URL = document.navmenu.site.selectedIndex</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN"> location.href = document.navmenu.site.options[URL].value</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN"> }</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN"> // End Hide --&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;/script&gt;</span></code></pre>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>Now place 
+    the following code in red between the </b><strong>body</strong><b> tags of 
+    your document at the place where you want the drop-down navigation menu to 
+    appear. This drop-down menu does not have a </b><strong>Go</strong><b> 
+    button, i.e. once a selection is made, it is immediately followed and the 
+    new web page starts to load. The following two examples contain relative 
+    URI's which are links to web pages on the same site. If your links are to 
+    external sites then you must use absolute URI's, e.g. </b></span></font><b>
+    <code style="font-family: Tahoma"><span lang="EN" style="font-size: 8pt">
+    &lt;option value=&quot;http://www.cnn.com&quot;&gt;CNN</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN"> 
+    for the option values.</span></font></b></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;form name=&quot;navmenu&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;select name=&quot;site&quot; size=&quot;1&quot; onChange=&quot;load(this)&quot; style=&quot;color: #ffffff; </span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">font-family: verdana; font-weight: bold; font-size: 10px; background-color: #777777&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;option value=&quot;&quot;&gt;Navigation Menu</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;option value=&quot;index.htm&quot;&gt;Homepage</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;option value=&quot;products.htm&quot;&gt;Our Products</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;option value=&quot;prices.htm&quot;&gt;Our Prices</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;option value=&quot;specials.htm&quot;&gt;Special Offers</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;option value=&quot;newsletter.htm&quot;&gt;Free Newsletter</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;/select&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;/form&gt;</span></code></pre>
+    <p align="center" style="text-align: center"><font face="Tahoma"><b>
+    <span lang="EN" style="font-size: 8pt; color: blue">OR</span></b></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>Use this 
+    variation of the above code between the </b><strong>body</strong><b> tags if 
+    you want a drop-down navigation menu with a </b><strong>Go</strong><b> 
+    button. With this type of navigation menu a user has to click on the </b>
+    <strong>Go</strong><b> button after making a selection before the new web 
+    page starts to load.</b></span></font></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;form name=&quot;navmenu&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;select name=&quot;site&quot; size=&quot;1&quot; style=&quot;color: #ffffff; </span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">font-family: verdana; font-weight: bold; font-size: 10px; background-color: #777777&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;option value=&quot;&quot;&gt;Navigation Menu</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;option value=&quot;index.htm&quot;&gt;Homepage</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;option value=&quot;products.htm&quot;&gt;Our Products</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;option value=&quot;prices.htm&quot;&gt;Our Prices</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;option value=&quot;specials.htm&quot;&gt;Special Offers</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;option value=&quot;newsletter.htm&quot;&gt;Free Newsletter</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;/select&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;input type=&quot;button&quot; value=&quot;Go&quot; onClick=&quot;load(this)&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;/form&gt;</span></code></pre>
+    </td>
+    <td style="border-style: none; border-width: medium" width="14" height="116" bgcolor="#FFFFCC">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#009900">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="17" bgcolor="#FFCC00">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="17" bgcolor="#FFCC00">
+    <a name="closebutton">
+    <span lang="EN" style="font-size: 10pt; font-family: Tahoma; font-weight: 700">
+    15.2 Button To Close A Pop-Up Window</span></a></td>
+    <td style="border-style: none; border-width: medium" width="14" height="17" bgcolor="#FFCC00">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="136" bgcolor="#FFFFCC">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="136" bgcolor="#FFFFCC" valign="top">
+    <font face="Tahoma" style="font-size: 8pt"><strong>
+    <span lang="EN" style="color: red">Eg.2</span></strong><span lang="EN"><b> 
+    Use the following example to create a button that will close a pop-up or 
+    secondary browser window. Place the script between the </b><strong>body</strong><b> 
+    tags where you want the </b><strong>button</strong><b> to appear on the 
+    page.</b></span></font><pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;center&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;form name=&quot;closebutton&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;input type=&quot;button&quot; value=&quot;CLOSE&quot; onClick=&quot;window.close()&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;/form&gt;</span></code></pre>
+    <p><code style="font-family: Tahoma">
+    <span lang="EN" style="font-size: 8pt; font-weight: 700">&lt;/center&gt;</span></code></td>
+    <td style="border-style: none; border-width: medium" width="14" height="136" bgcolor="#FFFFCC">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#009900">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="17" bgcolor="#FFCC00">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="17" bgcolor="#FFCC00">
+    <a name="linkclose">
+    <span lang="EN" style="font-size: 10pt; font-family: Tahoma; font-weight: 700">
+    15.3 Text Link To Close A Pop-Up Window</span></a></td>
+    <td style="border-style: none; border-width: medium" width="14" height="17" bgcolor="#FFCC00">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="138" bgcolor="#FFFFCC">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="138" bgcolor="#FFFFCC">
+    <font face="Tahoma" style="font-size: 8pt"><strong>
+    <span lang="EN" style="color: red">Eg.3</span></strong><span lang="EN"><b> 
+    Use the next example to create a text link, that when clicked, will close 
+    the pop-up or secondary window. Again, place the code between the </b>
+    <strong>body</strong><b> tags where you want the </b><strong>text link</strong><b> 
+    to appear on the page.</b></span></font><pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;center&gt;&lt;a href=&quot;javascript:window.close()&quot;&gt;CLOSE WINDOW&lt;/a&gt;&lt;/center&gt;</span></code></pre>
+    <p>
+    <span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700">
+    In both Eg.2 and Eg.3 above, the center element has been used to 
+    horizontally center the button and text link on the page.</span></p>
+    <p>&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="138" bgcolor="#FFFFCC">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#009900">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="17" bgcolor="#FFCC00">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="17" bgcolor="#FFCC00">
+    <a name="backbutton">
+    <span lang="EN" style="font-size: 10pt; font-family: Tahoma; font-weight: 700">
+    15.4 Adding A Back Button</span></a></td>
+    <td style="border-style: none; border-width: medium" width="14" height="17" bgcolor="#FFCC00">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="215" bgcolor="#FFFFCC">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="215" bgcolor="#FFFFCC">
+    <font face="Tahoma" style="font-size: 8pt"><strong>
+    <span lang="EN" style="color: red">Eg.4</span></strong><span lang="EN"><b> 
+    If you've got a web page on your site that is accessed from many different 
+    web pages, such as a copyright notice and you don't want to add a link back 
+    to all the other pages that link to it, then just add a javascript back 
+    button that links to the previous page using the following code which is 
+    placed between the </b><strong>body</strong><b> tags:</b></span></font><pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;center&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;form name=&quot;backbutton&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;input type=&quot;button&quot; value=&quot;BACK&quot; onClick=&quot;history.back()&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;/form&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;/center&gt;</span></code></pre>
+    <p><font face="Tahoma" style="font-size: 8pt"><strong>
+    <span lang="EN" style="color: red">Eg.5</span></strong><span lang="EN"><b>
+    </b><strong>Or</strong><b> you can customize the look of the button by 
+    adding inline style information as follows (works with any form button):</b></span></font></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;center&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;form name=&quot;backbutton&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;input type=&quot;button&quot; value=&quot;BACK&quot; onClick=&quot;history.back()&quot; style=&quot;font-family:verdana; </span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">font-size:12px; font-weight:bold; color:#000000; background-color:#00FFFF&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;/form&gt;</span></code></pre>
+    <p><code style="font-family: Tahoma">
+    <span lang="EN" style="font-size: 8pt; font-weight: 700">&lt;/center&gt;</span></code></td>
+    <td style="border-style: none; border-width: medium" width="14" height="215" bgcolor="#FFFFCC">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#009900">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#FFCC00">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#FFCC00">
+    <a name="dbc">
+    <span lang="EN" style="font-size: 10pt; font-family: Tahoma; font-weight: 700">
+    15.5 Disabling Browser Caching</span></a></td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#FFCC00">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="224" bgcolor="#FFFFCC">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="224" bgcolor="#FFFFCC">
+    <font face="Tahoma" style="font-size: 8pt"><strong>
+    <span lang="EN" style="color: red">Eg.6</span></strong><b><span lang="EN"> 
+    If you don't want browsers to cache a particular web page or web pages, 
+    perhaps because they may be time sensitive (stocks and shares information 
+    for example), you can add the following meta tag between the </span></b>
+    </font><b><code style="font-family: Tahoma">
+    <span lang="EN" style="font-size: 8pt">head</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN"> 
+    tags of the document(s) you wish to prevent from being cached as follows:</span></font></b><pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;head&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;meta http-equiv=&quot;pragma&quot; content=&quot;no-cache&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;/head&gt;</span></code></pre>
+    <p><font face="Tahoma" style="font-size: 8pt; font-weight: 700">
+    <span lang="EN">This will prevent your web page from being cached by most 
+    browsers, however it will have no effect on proxy server caches.</span></font></p>
+    <p><span lang="EN" style="font-size: 8pt; font-family: Tahoma"><b>Whatever 
+    your reason is for preventing caching, make sure it's a very good one. 
+    Remember that a lot of people go back and refer to web pages of interest to 
+    them </b><strong>after</strong><b> a surfing session and that most of these 
+    people are probably using a dial-up connection. If your web page prevents 
+    caching it will not be available offline and will have to be downloaded 
+    again. Therefore, disabling browser caching without a good reason could be 
+    very annoying to most people.</b></span></td>
+    <td style="border-style: none; border-width: medium" width="14" height="224" bgcolor="#FFFFCC">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#009900">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="17" bgcolor="#FFCC00">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="17" bgcolor="#FFCC00">
+    <a name="redirect">
+    <span lang="EN" style="font-size: 10pt; font-family: Tahoma; font-weight: 700">
+    15.6 Browser Redirect Page</span></a></td>
+    <td style="border-style: none; border-width: medium" width="14" height="17" bgcolor="#FFCC00">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="93" bgcolor="#FFFFCC">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="93" bgcolor="#FFFFCC">
+    <font face="Tahoma" style="font-size: 8pt"><strong>
+    <span lang="EN" style="color: red">Eg.7</span></strong><b><span lang="EN"> 
+    Use this code if you no longer have a particular web page on your site and 
+    want to avoid your visitors from getting 404 error messages. You can easily 
+    redirect the browser to another web page on your site or even to another 
+    site. Simply replace the old page with this HTML code:</span></b></font><pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0 Transitional//EN&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;html&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;head&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;meta http-equiv=&quot;refresh&quot; content=&quot;1;URL=name_of_page.htm&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;/head&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;body&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma"><span lang="EN" style="color: blue; font-weight: 700">&lt;p&gt;&lt;center&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma"><span lang="EN" style="color: blue; font-weight: 700">If you are not redirected automatically, click &lt;a href=&quot;name_of_page.htm&quot;&gt;here&lt;/a&gt;.</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma"><span lang="EN" style="color: blue; font-weight: 700">&lt;/center&gt;&lt;/p&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;/body&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;/html&gt;</span></code></pre>
+    <p><b><font face="Tahoma" style="font-size: 8pt"><span lang="EN">If the 
+    redirection is to another page on your web site then the value of URL would 
+    be </span></font><code style="font-family: Tahoma">
+    <span lang="EN" style="font-size: 8pt">URL=name_of_page.htm</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN"> 
+    (if the page extension that you are using on your site is different, replace 
+    .htm with the extension that you use on your site, i.e. .html, .sht or .shtml). 
+    However, if the redirection is to another site, then include the full URL to 
+    the external site as follows: </span></font>
+    <code style="font-family: Tahoma"><span lang="EN" style="font-size: 8pt">
+    URL=http://www.sitename.com/</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN">. 
+    The 1 in the meta tag instructs the browser to wait 1 second before 
+    redirection commences. You can change this value to whatever suits you.</span></font></b></p>
+    <p>
+    <span lang="EN" style="font-size: 8pt; font-family: Tahoma; font-weight: 700">
+    You should also add a link to the destination web page or external site as 
+    well, since some older browsers don't support the refresh meta tag. (The 
+    code for the link is shown in blue between the body tags in the above 
+    example; it can be written on one line but not done so here to prevent this 
+    page from having to be scrolled horizontally by the reader. Be sure to 
+    include the correct URL here also).</span></p>
+    <p>&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="93" bgcolor="#FFFFCC">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#009900">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="17" bgcolor="#FFCC00">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="17" bgcolor="#FFCC00">
+    <a name="breakframe">
+    <span lang="EN" style="font-size: 10pt; font-family: Tahoma; font-weight: 700">
+    15.7 Break Out Of Frames</span></a></td>
+    <td style="border-style: none; border-width: medium" width="14" height="17" bgcolor="#FFCC00">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="74" bgcolor="#FFFFCC">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="74" bgcolor="#FFFFCC">
+    <font face="Tahoma" style="font-size: 8pt"><strong>
+    <span lang="EN" style="color: red">Eg.8</span></strong><span lang="EN"><b> 
+    Using this script on your page(s) will prevent other sites (i.e. framed 
+    sites) from displaying your page(s) within their frame. However, do not use 
+    this script on pages that are displayed within </b><strong>your own frames</strong><b> 
+    otherwise the script will destroy the frames. To automatically break your 
+    page(s) out of frames, add the following onload event handler inside the </b>
+    <strong>opening body</strong><b> tag of your web page(s) as follows:</b></span></font><pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN" style="color: black">&lt;body</span><span lang="EN"> onLoad=&quot;if(self!=top)top.location=self.location&quot;<span style="color: black">&gt;</span></span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma"><span lang="EN" style="color: black; font-weight: 700">...Your page contents here...</span></code></pre>
+    <p><code style="font-family: Tahoma">
+    <span lang="EN" style="font-size: 8pt; color: black; font-weight: 700">
+    &lt;/body&gt;</span></code></td>
+    <td style="border-style: none; border-width: medium" width="14" height="74" bgcolor="#FFFFCC">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#009900">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="17" bgcolor="#FFCC00">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="17" bgcolor="#FFCC00">
+    <a name="datemod">
+    <span lang="EN" style="font-size: 10pt; font-family: Tahoma; font-weight: 700">
+    15.8 Automatically Add Page Modification Date</span></a></td>
+    <td style="border-style: none; border-width: medium" width="14" height="17" bgcolor="#FFCC00">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="36" bgcolor="#FFFFCC">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="36" bgcolor="#FFFFCC">
+    <font face="Tahoma" style="font-size: 8pt"><strong>
+    <span lang="EN" style="color: red">Eg.9</span></strong><span lang="EN"><b> 
+    Use this script to automatically add a page last modified date and time on a 
+    web page. The date and time information is retrieved from the file's date 
+    and time stamp since the system automatically changes the date and time 
+    stamp on the file whenever a file is modified and saved. Place the following 
+    script between the </b><strong>body</strong><b> tags exactly where you want 
+    the page modification details to appear on the web page:</b></span></font><pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&nbsp;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;script language=&quot;javascript&quot; type=&quot;text/javascript&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;!--</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">document.write(&quot;This page was last modified on &quot; + document.lastModified)</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">// --&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;/script&gt;</span></code></pre>
+    <p><b><span lang="EN" style="font-size: 8pt; font-family: Tahoma">Make sure 
+    you include the single blank space between </span>
+    <code style="font-family: Tahoma"><span lang="EN" style="font-size: 8pt">on</span></code><span lang="EN" style="font-size: 8pt; font-family: Tahoma"> 
+    and </span><code style="font-family: Tahoma">
+    <span lang="EN" style="font-size: 8pt">&quot;</span></code><span lang="EN" style="font-size: 8pt; font-family: Tahoma"> 
+    (which is part of the sentence between the brackets above).</span></b></p>
+    <p>&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="36" bgcolor="#FFFFCC">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#009900">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="17" bgcolor="#FFCC00">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="17" bgcolor="#FFCC00">
+    <a name="puwindow">
+    <span lang="EN" style="font-size: 10pt; font-family: Tahoma; font-weight: 700">
+    15.9 Creating A Popup Window</span></a></td>
+    <td style="border-style: none; border-width: medium" width="14" height="17" bgcolor="#FFCC00">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="36" bgcolor="#FFFFCC">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="36" bgcolor="#FFFFCC">
+    <font face="Tahoma" style="font-size: 8pt; font-weight: 700">
+    <span lang="EN">There are three variations of this script. </span></font>
+    <ol start="1" type="1" style="margin-bottom: 0in">
+      <li class="MsoNormal"><font face="Tahoma" style="font-size: 8pt">
+      <span lang="EN"><b>One to create a popup window on your visitor's browser 
+      when a link or button is </b><strong>clicked</strong><b>, </b></span>
+      </font></li>
+      <li class="MsoNormal"><font face="Tahoma" style="font-size: 8pt">
+      <span lang="EN"><b>One to create a popup window when a web page </b>
+      <strong>loads</strong><b> and </b></span></font></li>
+      <li class="MsoNormal"><font face="Tahoma" style="font-size: 8pt">
+      <span lang="EN"><b>One to create a popup window when a web page </b>
+      <strong>unloads</strong><b>. </b></span></font></li>
+    </ol>
+    <div class="MsoNormal" align="center" style="text-align: center">
+      <span lang="EN">
+      <hr size="2" width="50%" noshade color="#0099ff" align="center"></span>
+    </div>
+    <p><font face="Tahoma" style="font-size: 8pt"><strong>
+    <span lang="EN" style="color: red">Eg.10</span></strong><span lang="EN"><b>
+    </b><strong>Create a popup window when a link or button is clicked.</strong></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>Place the 
+    first part shown below between the </b><strong>head</strong><b> tags of the 
+    document:</b></span></font></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;script language=&quot;javascript&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">function popupwin(){</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma"><span lang="EN" style="color: blue; font-weight: 700">window.open('URL','WindowName','toolbar=1,menubar=1,scrollbars=1,resizable=1,status=1,</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma"><span lang="EN" style="color: blue; font-weight: 700">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; location=1,screenX=120,screenY=160,top=120,left=160,width=470,height=350')</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">}</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;/script&gt;</span></code></pre>
+    <p><font face="Tahoma" style="font-size: 8pt"><strong>
+    <span lang="EN" style="color: red">Note:</span></strong><span lang="EN"><b> 
+    The line in blue above must be typed on </b><strong>one line</strong><b> or 
+    the script will </b><strong>not work</strong><b>. It's been written on two 
+    lines here to prevent readers from having to scroll this page horizontally.</b></span></font></p>
+    <p><b><font face="Tahoma" style="font-size: 8pt"><span lang="EN">You can 
+    edit what's in between the brackets after </span></font>
+    <code style="font-family: Tahoma">
+    <span lang="EN" style="font-size: 8pt; color: blue">window.open</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN"> 
+    as follows (but don't remove the single quotation marks):</span></font></b></p>
+    <ol start="1" type="1" style="margin-bottom: 0in">
+      <li class="MsoNormal"><b><font face="Tahoma" style="font-size: 8pt">
+      <span lang="EN">Replace </span></font><code style="font-family: Tahoma">
+      <span lang="EN" style="font-size: 8pt; color: blue">URL</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN"> 
+      with the location of the web page that you want to load in the popup 
+      window. If the web page is in the same directory you can use a relative 
+      URL such as </span></font><code style="font-family: Tahoma">
+      <span lang="EN" style="font-size: 8pt; color: blue">page_name.htm</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><br>
+      If it's located at an external site then you must use the full URL such as
+      </span></font><code style="font-family: Tahoma">
+      <span lang="EN" style="font-size: 8pt; color: blue">http://www.othersite.com</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN"> 
+      (this will load the site's index [default] page) or </span></font>
+      <code style="font-family: Tahoma">
+      <span lang="EN" style="font-size: 8pt; color: blue">http://www.othersite.com/page_name.htm</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN"> 
+      (this will load the page that you have specified). </span></font></b></li>
+      <li class="MsoNormal"><b><font face="Tahoma" style="font-size: 8pt">
+      <span lang="EN">Replace </span></font><code style="font-family: Tahoma">
+      <span lang="EN" style="font-size: 8pt; color: blue">WindowName</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN"> 
+      with whatever name you choose to give the popup window. If it's to prompt 
+      your visitor's to sign up for your newsletter then you can name the popup 
+      window 'newletter'. This is usually only used in situations where you 
+      would want to target other links to load in that particular popup window. 
+      Otherwise you can leave the space between the single quotation marks blank 
+      but with no white space between them as follows </span></font>
+      <code style="font-family: Tahoma">
+      <span lang="EN" style="font-size: 8pt; color: blue">''</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN"> 
+      However, do not remove the quotation marks from the line of code. </span>
+      </font></b></li>
+      <li class="MsoNormal"><b><font face="Tahoma" style="font-size: 8pt">
+      <span lang="EN">The popup window properties of </span></font>
+      <code style="font-family: Tahoma">
+      <span lang="EN" style="font-size: 8pt; color: blue">toolbar</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN"> 
+      through to </span></font><code style="font-family: Tahoma">
+      <span lang="EN" style="font-size: 8pt; color: blue">location</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN"> 
+      have been given a value of </span></font>
+      <code style="font-family: Tahoma">
+      <span lang="EN" style="font-size: 8pt; color: blue">1</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN"> 
+      which is equivalent to yes, i.e. the popup window will have all of these 
+      properties. Therefore a popup window created using the above script will 
+      have a toolbar, a location bar and all the other properties listed in 
+      between these two properties.<br>
+      <br>
+      Giving these properties a value of </span></font>
+      <code style="font-family: Tahoma">
+      <span lang="EN" style="font-size: 8pt; color: blue">0</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN"> 
+      (zero) is equivalent to no. The popup window will not have any properties 
+      that are given a value of 0.<br>
+      <br>
+      You can therefore customize the properties of the popup window by giving 
+      each property a value of 1 or 0.<br>
+      <br>
+      For </span></font><code style="font-family: Tahoma">
+      <span lang="EN" style="font-size: 8pt; color: blue">scrollbars</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN">, 
+      you can also use a value of </span></font>
+      <code style="font-family: Tahoma">
+      <span lang="EN" style="font-size: 8pt; color: blue">auto</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN">, 
+      in which case the popup window will only have scrollbars if they are 
+      needed, i.e. if the web page being displayed is larger than the viewing 
+      area of the popup window and therefore needs to be scrolled. </span>
+      </font></b></li>
+      <li class="MsoNormal"><b><code style="font-family: Tahoma">
+      <span lang="EN" style="font-size: 8pt; color: blue">screenX, screenY, top 
+      and left</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN"> 
+      refer to the screen position of the popup window when it opens. ScreenX 
+      and screenY is supported by Netscape and top and left is supported by 
+      Internet Explorer. Change their values to suit your own situation.<br>
+      <br>
+      Remember that </span></font><code style="font-family: Tahoma">
+      <span lang="EN" style="font-size: 8pt; color: blue">screenX</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN"> 
+      is equivalent to </span></font><code style="font-family: Tahoma">
+      <span lang="EN" style="font-size: 8pt; color: blue">top</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN"> 
+      (both of which refer to the screen's x-axis and must have the same value) 
+      and that </span></font><code style="font-family: Tahoma">
+      <span lang="EN" style="font-size: 8pt; color: blue">screenY</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN"> 
+      is equivalent to </span></font><code style="font-family: Tahoma">
+      <span lang="EN" style="font-size: 8pt; color: blue">left</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN"> 
+      (both of which refer to the screen's Y-axis and must also have the same 
+      value). </span></font></b></li>
+      <li class="MsoNormal"><b><font face="Tahoma" style="font-size: 8pt">
+      <span lang="EN">The </span></font><code style="font-family: Tahoma">
+      <span lang="EN" style="font-size: 8pt; color: blue">width</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN"> 
+      refers to the width of the popup window. You can change this value to suit 
+      your own needs. </span></font></b></li>
+      <li class="MsoNormal"><b><font face="Tahoma" style="font-size: 8pt">
+      <span lang="EN">The </span></font><code style="font-family: Tahoma">
+      <span lang="EN" style="font-size: 8pt; color: blue">height</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN"> 
+      refers to the height of the popup window. You can change this value to 
+      suit your own needs. </span></font></b></li>
+    </ol>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>To create a 
+    clickable </b><strong>link</strong><b>, place the second part shown below 
+    between the </b><strong>body</strong><b> tags of your document and position 
+    it where you want it to appear on the web page:</b></span></font></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;a href=&quot;javascript:popupwin()&quot;&gt;link description&lt;/a&gt;</span></code></pre>
+    <p align="center" style="text-align: center"><font face="Tahoma"><b>
+    <span lang="EN" style="font-size: 8pt">OR</span></b></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>To create a 
+    clickable </b><strong>button</strong><b>, place the second part shown below 
+    between the </b><strong>body</strong><b> tags of your document and position 
+    it where you want it to appear on the web page:</b></span></font></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;form name=&quot;popupwindow&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;input type=&quot;button&quot; value=&quot;LABEL HERE&quot; onclick=&quot;popupwin()&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;/form&gt;</span></code></pre>
+    <p><b><font face="Tahoma" style="font-size: 8pt"><span lang="EN">Change
+    </span></font><code style="font-family: Tahoma">
+    <span lang="EN" style="font-size: 8pt">LABEL HERE</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN"> 
+    to whatever text you want to appear on the button.</span></font></b></p>
+    <div class="MsoNormal" align="center" style="text-align: center">
+      <span lang="EN">
+      <hr size="2" width="50%" noshade color="#0099ff" align="center"></span>
+    </div>
+    <p><font face="Tahoma" style="font-size: 8pt"><strong>
+    <span lang="EN" style="color: red">Eg.11</span></strong><span lang="EN"><b>
+    </b><strong>Create a popup window when a web page loads.</strong></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>Place the 
+    first part shown below (identical to that given in
+    <a href="mk:@MSITStore:\WINDOWS\Temporary%20Internet%20Files\htmItutoriaI.chm::/page015.htm#eg10#eg10" style="color: blue; text-decoration: underline; text-underline: single">
+    Eg.10</a>) between the </b><strong>head</strong><b> tags of the document:</b></span></font></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;script language=&quot;javascript&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">function popupwin(){</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma"><span lang="EN" style="color: blue; font-weight: 700">window.open('URL','WindowName','toolbar=1,menubar=1,scrollbars=1,resizable=1,status=1,</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma"><span lang="EN" style="color: blue; font-weight: 700">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; location=1,screenX=120,screenY=160,top=120,left=160,width=470,height=350')</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">}</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;/script&gt;</span></code></pre>
+    <p><font face="Tahoma" style="font-size: 8pt"><strong>
+    <span lang="EN" style="color: red">Note:</span></strong><span lang="EN"><b> 
+    The line in blue above must be typed on </b><strong>one line</strong><b> or 
+    the script will </b><strong>not work</strong><b>. It's been written on two 
+    lines here to prevent readers from having to scroll this page horizontally.</b></span></font></p>
+    <p><b><font face="Tahoma" style="font-size: 8pt"><span lang="EN">Now place
+    </span></font><code style="font-family: Tahoma">
+    <span lang="EN" style="font-size: 8pt">onload=&quot;popupwin()&quot;</span></code></b><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b> 
+    inside the </b><strong>opening body</strong><b> tag of the document so that 
+    it looks as follows:</b></span></font></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN" style="color: black">&lt;body</span><span lang="EN"> onload=&quot;popupwin()&quot;<span style="color: black">&gt;</span></span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma"><span lang="EN" style="color: black; font-weight: 700">...Your page contents here...</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma"><span lang="EN" style="color: black; font-weight: 700">&lt;/body&gt;</span></code></pre>
+    <div class="MsoNormal" align="center" style="text-align: center">
+      <span lang="EN">
+      <hr size="2" width="50%" noshade color="#0099ff" align="center"></span>
+    </div>
+    <p><font face="Tahoma" style="font-size: 8pt"><strong>
+    <span lang="EN" style="color: red">Eg.12</span></strong><span lang="EN"><b>
+    </b><strong>Create a popup window when a web page unloads.</strong></span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b>Place the 
+    first part shown below (identical to that given in
+    <a href="mk:@MSITStore:\WINDOWS\Temporary%20Internet%20Files\htmItutoriaI.chm::/page015.htm#eg10#eg10" style="color: blue; text-decoration: underline; text-underline: single">
+    Eg.10</a> and
+    <a href="mk:@MSITStore:\WINDOWS\Temporary%20Internet%20Files\htmItutoriaI.chm::/page015.htm#eg11#eg11" style="color: blue; text-decoration: underline; text-underline: single">
+    Eg.11</a>) between the </b><strong>head</strong><b> tags of the document:</b></span></font></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;script language=&quot;javascript&quot;&gt;</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">function popupwin(){</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma"><span lang="EN" style="color: blue; font-weight: 700">window.open('URL','WindowName','toolbar=1,menubar=1,scrollbars=1,resizable=1,status=1,</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma"><span lang="EN" style="color: blue; font-weight: 700">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; location=1,screenX=120,screenY=160,top=120,left=160,width=470,height=350')</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">}</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN">&lt;/script&gt;</span></code></pre>
+    <p><font face="Tahoma" style="font-size: 8pt"><strong>
+    <span lang="EN" style="color: red">Note:</span></strong><span lang="EN"><b> 
+    The line in blue above must be typed on </b><strong>one line</strong><b> or 
+    the script will </b><strong>not work</strong><b>. It's been written on two 
+    lines here to prevent readers from having to scroll this page horizontally.</b></span></font></p>
+    <p><b><font face="Tahoma" style="font-size: 8pt"><span lang="EN">Now place
+    </span></font><code style="font-family: Tahoma">
+    <span lang="EN" style="font-size: 8pt">onunload=&quot;popupwin()&quot;</span></code></b><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b> 
+    inside the </b><strong>opening body</strong><b> tag of the document so that 
+    it looks as follows:</b></span></font></p>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN" style="color: black">&lt;body</span><span lang="EN"> onunload=&quot;popupwin()&quot;<span style="color: black">&gt;</span></span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma"><span lang="EN" style="color: black; font-weight: 700">...Your page contents here...</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma"><span lang="EN" style="color: black; font-weight: 700">&lt;/body&gt;</span></code></pre>
+    <div class="MsoNormal" align="center" style="text-align: center">
+      <span lang="EN">
+      <hr size="2" width="50%" noshade color="#0099ff" align="center"></span>
+    </div>
+    <p>&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="36" bgcolor="#FFFFCC">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#009900">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="17" bgcolor="#FFCC00">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="17" bgcolor="#FFCC00">
+    <a name="autoclose">
+    <span lang="EN" style="font-size: 10pt; font-family: Tahoma; font-weight: 700">
+    15.10 Automatically Close A Popup Window</span></a></td>
+    <td style="border-style: none; border-width: medium" width="14" height="17" bgcolor="#FFCC00">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="36" bgcolor="#FFFFCC">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="36" bgcolor="#FFFFCC">
+    <font face="Tahoma" style="font-size: 8pt"><a name="eg13"><strong>
+    <span lang="EN" style="color: red">Eg.13</span></strong></a><span lang="EN"><b> 
+    Use the following script to automatically close a popup window after a 
+    certain number of seconds. Add the following onload event handler inside the
+    </b><strong>opening body</strong><b> tag of the web page that is going to
+    </b><strong>load in the popup window</strong><b> as follows:</b></span></font><pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma; font-weight: 700"><span lang="EN" style="color: black">&lt;body</span><span lang="EN"> onload=&quot;setTimeout(window.close, 10000)&quot;<span style="color: black">&gt;</span></span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma"><span lang="EN" style="color: black; font-weight: 700">...Popup page's contents here...</span></code></pre>
+    <pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8pt; font-family: Courier New; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><code style="font-family: Tahoma"><span lang="EN" style="color: black; font-weight: 700">&lt;/body&gt;</span></code></pre>
+    <p><b><font face="Tahoma" style="font-size: 8pt"><span lang="EN">The 
+    numerical value of </span></font><code style="font-family: Tahoma">
+    <span lang="EN" style="font-size: 8pt">10000</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN"> 
+    refers to the number of milliseconds that the popup window should stay open 
+    for before closing. Change this numerical value to suit your own situation. 
+    Remember that this figure is always given in milliseconds.</span></font></b></p>
+    <p><font face="Tahoma" style="font-size: 8pt; font-weight: 700">
+    <span lang="EN">1000 milliseconds = 1 second<br>
+    10000 milliseconds = 10 seconds</span></font></p>
+    <p><font face="Tahoma" style="font-size: 8pt"><a name="ex15.1"><strong>
+    <span lang="EN">Exercise 15.1</span></strong></a></font></p>
+    <ol start="1" type="1" style="margin-bottom: 0in">
+      <li class="MsoNormal"><font face="Tahoma" style="font-size: 8pt">
+      <span lang="EN"><b>Reset the editor. Type the code given in
+      <a href="mk:@MSITStore:\WINDOWS\Temporary%20Internet%20Files\htmItutoriaI.chm::/page015.htm#eg1#eg1" style="color: blue; text-decoration: underline; text-underline: single">
+      Eg.1</a> into the editor, placing the first part (the script tags and 
+      everything within it) between the </b><strong>head</strong><b> tags and 
+      the second part between the </b><strong>body</strong><b> section. Preview 
+      in Browser. </b></span></font></li>
+      <li class="MsoNormal"><font face="Tahoma" style="font-size: 8pt">
+      <span lang="EN"><b>Again type the second part of the code directly 
+      underneath the same code that you just typed in the </b><strong>body</strong><b> 
+      section. Now remove the closing form tag (&lt;/form&gt;) of the first part and 
+      the opening form tag (&lt;form name=&quot;navigation&quot;&gt;) of the second part that 
+      you just typed. Preview in Browser. The two drop-down menus should be 
+      side-by-side. </b></span></font></li>
+      <li class="MsoNormal"><b><font face="Tahoma" style="font-size: 8pt">
+      <span lang="EN">Place a br tag (&lt;br&gt;) after the closing select tag 
+      (&lt;/select&gt;) of the first part. Preview in Browser again. This time, the 
+      two drop-down menus should be one under the other. Of course, you would 
+      use each drop-down menu for a different purpose. For example, the first 
+      drop-down menu would be for internal links to your own site and the next 
+      drop-down menu could be to news sites such as cnn.com, abc.com, bbc.co.uk, 
+      etc. When linking to external sites, use the full web address within 
+      double quotation marks as the option value, e.g.<br>
+      </span></font><code style="font-family: Tahoma">
+      <span lang="EN" style="font-size: 8pt">&lt;option value=&quot;http://www.cnn.com&quot;&gt;CNN</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN">
+      </span></font></b></li>
+      <li class="MsoNormal"><b><font face="Tahoma" style="font-size: 8pt">
+      <span lang="EN">Now remove the inline style information from the first 
+      opening select tag (i.e. remove <br>
+      </span></font><code style="font-family: Tahoma">
+      <span lang="EN" style="font-size: 8pt">style=&quot;color: #ffffff; font-family: 
+      verdana; font-weight: bold; font-size: 10px; background-color: #777777&quot;</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN">) 
+      making sure not to remove the &gt; character. Preview in Browser. </span>
+      </font></b></li>
+      <li class="MsoNormal">
+      <font face="Tahoma" style="font-size: 8pt; font-weight: 700">
+      <span lang="EN">Experiment with the style property values to create 
+      different looking drop-down menus. </span></font></li>
+      <li class="MsoNormal"><font face="Tahoma" style="font-size: 8pt">
+      <span lang="EN"><b>Reset the editor. Type the code given in
+      <a href="mk:@MSITStore:\WINDOWS\Temporary%20Internet%20Files\htmItutoriaI.chm::/page015.htm#eg2#eg2" style="color: blue; text-decoration: underline; text-underline: single">
+      Eg.2</a> between the </b><strong>body</strong><b> tags in the editor. 
+      Preview in Browser and then close the browser window using the button. </b>
+      </span></font></li>
+      <li class="MsoNormal"><font face="Tahoma" style="font-size: 8pt">
+      <span lang="EN"><b>Reset the editor. Type the code given in
+      <a href="mk:@MSITStore:\WINDOWS\Temporary%20Internet%20Files\htmItutoriaI.chm::/page015.htm#eg3#eg3" style="color: blue; text-decoration: underline; text-underline: single">
+      Eg.3</a> between the </b><strong>body</strong><b> tags in the editor. 
+      Preview in Browser and then close the browser window using the text link.
+      </b></span></font></li>
+      <li class="MsoNormal"><font face="Tahoma" style="font-size: 8pt">
+      <span lang="EN"><b>Reset the editor. Type the code given in
+      <a href="mk:@MSITStore:\WINDOWS\Temporary%20Internet%20Files\htmItutoriaI.chm::/page015.htm#eg4#eg4" style="color: blue; text-decoration: underline; text-underline: single">
+      Eg.4</a> between the </b><strong>body</strong><b> tags in the editor. 
+      Preview in Browser. </b></span></font></li>
+      <li class="MsoNormal"><font face="Tahoma" style="font-size: 8pt">
+      <span lang="EN"><b>Reset the editor. Type the code given in
+      <a href="mk:@MSITStore:\WINDOWS\Temporary%20Internet%20Files\htmItutoriaI.chm::/page015.htm#eg5#eg5" style="color: blue; text-decoration: underline; text-underline: single">
+      Eg.5</a> between the </b><strong>body</strong><b> tags in the editor. 
+      Preview in Browser. As you will see, the look of the button is different 
+      compared to that in Eg.15. (This is the only difference between Eg.15 and 
+      Eg.16). </b></span></font></li>
+      <li class="MsoNormal"><b><font face="Tahoma" style="font-size: 8pt">
+      <span lang="EN">In
+      <a href="mk:@MSITStore:\WINDOWS\Temporary%20Internet%20Files\htmItutoriaI.chm::/page015.htm#eg5#eg5" style="color: blue; text-decoration: underline; text-underline: single">
+      Eg.5</a>, type a semi-colon delimiter (</span></font><code style="font-family: Tahoma"><span lang="EN" style="font-size: 8pt">;</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN">) 
+      after </span></font><code style="font-family: Tahoma">
+      <span lang="EN" style="font-size: 8pt">background:#00FFFF</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN"> 
+      and then type </span></font><code style="font-family: Tahoma">
+      <span lang="EN" style="font-size: 8pt">cursor:hand</span></code></b><font face="Tahoma" style="font-size: 8pt"><span lang="EN"><b> 
+      after it and </b><strong>inside</strong><b> of the closing quotation mark 
+      (</b></span></font><b><code style="font-family: Tahoma"><span lang="EN" style="font-size: 8pt">&quot;</span></code><font face="Tahoma" style="font-size: 8pt"><span lang="EN">). 
+      Preview in Browser. You'll notice that when you now hold the cursor over 
+      the button it changes to a hand. (Refer to the CSS reference page in this 
+      tutorial for the other permitted values of cursor). </span></font></b>
+      </li>
+    </ol>
+    <p><span lang="EN" style="font-size: 8pt; font-family: Tahoma"><b>Reset the 
+    editor. Type the code given in
+    <a href="mk:@MSITStore:\WINDOWS\Temporary%20Internet%20Files\htmItutoriaI.chm::/page015.htm#eg9#eg9" style="color: blue; text-decoration: underline; text-underline: single">
+    Eg.9</a> between the </b><strong>body</strong><b> tags in the editor. 
+    Preview in Browser.</b></span></p>
+    <p>&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="36" bgcolor="#FFFFCC">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#009900">&nbsp;</td>
+  </tr>
+</table>
+
+</body>
+
+</html>
