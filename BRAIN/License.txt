@@ -1,0 +1,84 @@
+KrayKnot Breaking Technologies
+Electronic End User License Agreement
+For the BRAIN ver 1.00 application software
+
+NOTICE TO USER:
+THIS IS A CONTRACT.  BY INSTALLING THIS SOFTWARE YOU ACCEPT ALL 
+THE TERMS AND CONDITIONS OF THIS AGREEMENT.
+
+This KrayKnot Breaking Technologies End User License Agreement 
+accompanies the KRayKnot BRAIN ver 1.00 software product and related 
+explanatory materials  ("Software").  The term "Software" also shall 
+include any upgrades, modified versions or updates of the Software 
+licensed to you by KrayKnot.  Please read this Agreement carefully.  
+At the end, if you do not wish to accept this Agreement, to decline 
+this agreement, in which case you should stop the installation or 
+the use of the Software.
+
+Upon your acceptance of this Agreement, Krayknot grants to you a non-exclusive 
+license to use the Software, provided that you agree to the following:
+
+1.  Use of the Software.
+
+- You may install the Software on a hard disk or other storage 
+device; install and use the Software on a file server for use on 
+a network for the purposes of (i) permanent installation onto hard 
+disks or other storage devices or (ii) use of the Software over such 
+network; and make backup copies of the Software.
+
+- You may make a backup copy of the Software, but you should NOT make 
+nor distribute copies of the Software for any other purpose, without 
+obtaining a written agreement from KrayKnot.  If you down-load the Software 
+from the Internet or similar on-line source, you must include the KrayKnot
+copyright notice for the Software with any on-line distribution and 
+on any media you distribute that includes the Software.
+
+2.  Copyright and Trademark Rights.  The Software is owned by KrayKnot
+and its suppliers, and its structure, organization and code are the 
+valuable trade secrets of KrayKnot and its suppliers.  The Software also 
+is protected by Indian Copyright Law and pending for International Treaty 
+provisions. You may use trademarks only insofar as required to comply 
+with Section 1 of this Agreement and to identify printed output produced 
+by the Software, in accordance with accepted trademark practice, 
+including identification of trademark owner's name.  Such use of any 
+trademark does not give you any rights of ownership in that trademark.  
+Except as stated above, this Agreement does not grant you any 
+intellectual property rights in the Software.
+
+3.  Restrictions.  You agree not to modify, adapt, translate, reverse 
+engineer, decompile, disassemble or otherwise attempt to discover the 
+source code of the Software. The Software is licensed and distributed 
+by KrayKnot for viewing and editing BRAIN ver 1.00.
+
+4.  No Warranty.  The Software is being delivered to you AS IS and 
+KrayKnot makes no warranty as to its use or performance.  KrayKnot AND ITS 
+SUPPLIERS DO NOT AND CANNOT WARRANT THE PERFORMANCE OR RESULTS YOU 
+MAY OBTAIN BY USING THE SOFTWARE OR DOCUMENTATION.  KrayKnot AND ITS 
+SUPPLIERS MAKE NO WARRANTIES, EXPRESS OR IMPLIED, AS TO NON-INFRINGEMENT 
+OF THIRD PARTY RIGHTS, MERCHANTABILITY, OR FITNESS FOR ANY PARTICULAR 
+PURPOSE.  IN NO EVENT WILL KrayKnot OR ITS SUPPLIERS BE LIABLE TO YOU FOR 
+ANY CONSEQUENTIAL, INCIDENTAL OR SPECIAL DAMAGES, INCLUDING ANY LOST 
+PROFITS OR LOST SAVINGS, EVEN IF A KrayKnot REPRESENTATIVE HAS BEEN ADVISED 
+OF THE POSSIBILITY OF SUCH DAMAGES, OR FOR ANY CLAIM BY ANY THIRD PARTY.
+Some states or jurisdictions do not allow the exclusion or limitation 
+of incidental, consequential or special damages, or the exclusion of 
+implied warranties or limitations on how long an implied warranty may 
+last, so the above limitations may not apply to you.
+
+5. Governing Law and General Provisions. This Agreement will not be governed by 
+the Indians Convention on Contracts for the International Sale of 
+Goods, the application of which is expressly excluded.  If any part of 
+this Agreement is found void and unenforceable, it will not affect the 
+validity of the balance of the Agreement, which shall remain valid and 
+enforceable according to its terms. You agree that the Software will not 
+be shipped, transferred or exported into any country or used in any manner 
+prohibited by the Indian Export Administration Act or any other 
+export laws, restrictions or regulations.  This Agreement shall 
+automatically terminate upon failure by you to comply with its terms.  
+This Agreement may only be modified in writing signed by an authorized 
+person of KrayKnot.
+
+
+Unpublished-rights reserved under the copyright laws of the India. 
+KrayKnot Breaking Technologies, 2004-2005 PRatap Nagar, Sanganer, Jaipur.[India]
+
