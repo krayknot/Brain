@@ -1,0 +1,452 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<link rel="File-List" href="1_files/filelist.xml">
+<title>DATABASE</title>
+<style>
+
+<!--
+ li.MsoNormal
+	{mso-style-parent:"";
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	margin-left:0in; margin-right:0in; margin-top:0in}
+-->
+</style>
+<!--[if !mso]>
+<style>
+v\:*         { behavior: url(#default#VML) }
+o\:*         { behavior: url(#default#VML) }
+.shape       { behavior: url(#default#VML) }
+div.Section1
+	{page:Section1;}
+</style>
+<![endif]--><!--[if gte mso 9]>
+<xml><o:shapedefaults v:ext="edit" spidmax="1027"/>
+</xml><![endif]-->
+</head>
+
+<body>
+
+<table width="838" border="1" align="center" style="border-width: 0" height="1714">
+  <tr> 
+    <td bordercolor="0" style="border-style: none; border-width: medium" width="10" bgcolor="#33CCFF" height="55">&nbsp;</td>
+    <td bordercolor="0" style="border-style: none; border-width: medium" width="814" bgcolor="#33CCFF" colspan="2" height="55">
+    <b><font face="Broadway BT" size="7">DATABASE</font></b><font face="Broadway BT" size="7" color="#000000"><b> </b></font></td>
+  </tr>
+  <tr> 
+    <td bordercolor="0" style="border-style: none; border-width: medium" width="832" colspan="3" bgcolor="#009900" height="13">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" bgcolor="#00CC99" height="17">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" bgcolor="#00CC99" height="17">
+    &nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="17" bgcolor="#00CC99">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#FFCC00">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#FFCC00">
+    &nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#FFCC00">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="116" bgcolor="#FFFFCC">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="116" bgcolor="#FFFFCC">
+    <div class="Section1">
+      <p class="MsoNormal" align="center" style="text-align: center"><b>
+      <span style="font-size: 16.0pt">Database Security (Common-sense 
+      Principles)</span></b></p>
+      <p class="MsoNormal">&nbsp;</div>
+    <p class="MsoNormal" style="text-align: justify">
+    <span style="font-size: 9.0pt">Lately database security issues have been 
+    flooding the media and Internet news-wires. Fist with the Slammer worm and 
+    now with the most recent criminals accessing over 8 million credit card 
+    numbers. </span></p>
+    <p class="MsoNormal" style="text-align: justify">
+    <span style="font-size: 9.0pt">&nbsp;So I sit back and say to myself, &quot;Did the 
+    sysadmins fall asleep behind the wheel?&quot; As the internet has boomed and 
+    we've increased our reliance on the convenience and relative low cost of 
+    web-enabling information systems, we have become lazy in our implementation 
+    of basic security practices. </span></p>
+    <p class="MsoNormal" style="text-align: justify">
+    <span style="font-size: 9.0pt">Now part of this problem is the pressure 
+    placed on today's system admin's by the upper-crust of corporate America. 
+    The first question to every sysadmin is, &quot;How soon can this be up?&quot; and not 
+    &quot;How much of a security risk is this?&quot;. But, in light of current events it 
+    has become painfully obvious we need to re-adjust our thinking. So, let me 
+    begin this article with a brief synopsis of how security policies should be 
+    implemented and then move into actual system configuration. </span></p>
+    <p class="MsoNormal" style="text-align: justify">
+    <span style="font-size: 9.0pt">&nbsp;</span><b><u><span style="font-size: 9.0pt">Basic 
+    Security Structure </span></u></b></p>
+    <p class="MsoNormal" style="text-align: justify">
+    <span style="font-size: 9.0pt">Through my travels as a Network Security 
+    Specialist I have consistently come across companies with a single focus in 
+    mind, &quot;Software Security&quot;. They place so much emphasis on this single 
+    portion of security that they loose sight of the big picture. The big 
+    picture is of course, &quot;Without a structured security hierarchy any basic 
+    security policy will fail!&quot; </span></p>
+    <p class="MsoNormal" style="text-align: justify">
+    <span style="font-size: 9.0pt">&nbsp;To often system administrators are left to 
+    their own accord, managing the security of their systems with little or no 
+    oversight by a higher security administrator. This raises the following 
+    questions: </span></p>
+    <p class="MsoNormal" style="text-align: justify">
+    <span style="font-size: 9.0pt">&nbsp;Who ensures system administrators are 
+    following security guide-lines? </span></p>
+    <p class="MsoNormal" style="text-align: justify">
+    <span style="font-size: 9.0pt">How does an organization ensure all system 
+    administrators are applying the latest patches? </span></p>
+    <p class="MsoNormal" style="text-align: justify">
+    <span style="font-size: 9.0pt">What organization ensures that the latest 
+    patches have been tested to ensure they do not cause additional system 
+    faults </span></p>
+    <p class="MsoNormal" style="text-align: justify">
+    <span style="font-size: 9.0pt">Who performs security audits on the 
+    corporation as a whole?&nbsp; </span></p>
+    <p class="MsoNormal" style="text-align: justify">
+    <span style="font-size: 9.0pt">&nbsp;</span></p>
+    <p class="MsoNormal" style="text-align: justify">
+    <span style="font-size: 9.0pt; font-family: Verdana; color: black"><!--[if gte vml 1]><v:shapetype id="_x0000_t75"
+ coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe"
+ filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_s1026" type="#_x0000_t75" alt="" style='width:226.5pt;
+ height:146.25pt'>
+ <v:imagedata src="" o:href="file:///D:\Kshitij\VB%20Projects\Database%20Security%20(Common-sense%20Principles)_files\org_chart.gif"/>
+</v:shape><![endif]--></span></p>
+    <p class="MsoNormal"><i>
+    <span style="font-size: 8.0pt; font-family: Verdana; color: black">An 
+    example of a good clean and effective network security <br>
+    organization. </span></i></p>
+    <p class="MsoNormal">
+    <span style="font-size: 8.0pt; font-family: Verdana; color: black">&nbsp;</span><span style="font-size: 9.0pt; color: black">Without 
+    a proper structure you begin to get chaos when it comes to such an important 
+    topic as security. Jim of the East Coast Office has all of his patches up to 
+    date, but he has an insecure link with Bill on the west-coast, who has 
+    failed to properly configure his firewall. Some one or a group of someone's 
+    should be looking at the big picture. </span></p>
+    <p class="MsoNormal" style="text-align: justify">
+    <span style="font-size: 9.0pt; color: black">&nbsp;Now that I have gotten that 
+    basic security organization rant out of my system, let me begin a little 
+    more technical look at database security. </span></p>
+    <p class="MsoNormal" style="text-align: justify">
+    <span style="font-size: 9.0pt; color: black">&nbsp;</span><b><u><span style="font-size: 9.0pt; color: black">Database 
+    Vulnerabilities (The many fronts of the security war!) </span></u></b></p>
+    <p class="MsoNormal" style="text-align: justify">
+    <span style="font-size: 9.0pt; color: black">&nbsp;Basically database security 
+    can be broken down into the following key points of interest. </span></p>
+    <p class="MsoNormal" style="text-align: justify">
+    <span style="font-size: 9.0pt; color: black">&nbsp;</span><b><span style="font-size: 9.0pt; color: black">Server 
+    Security </span></b></p>
+    <p class="MsoNormal" style="text-align: justify"><b>
+    <span style="font-size: 9.0pt; color: black">Database Connections </span>
+    </b></p>
+    <p class="MsoNormal" style="text-align: justify"><b>
+    <span style="font-size: 9.0pt; color: black">Table Access Control </span>
+    </b></p>
+    <p class="MsoNormal" style="text-align: justify"><b>
+    <span style="font-size: 9.0pt; color: black">Restricting Database Access
+    </span></b></p>
+    <p class="MsoNormal" style="text-align: justify"><b><u>
+    <span style="font-size: 9.0pt; color: black">Server Security </span></u></b>
+    </p>
+    <p class="MsoNormal" style="text-align: justify">
+    <span style="font-size: 9.0pt; color: black">Server security is the process 
+    of limiting actual access to the database server itself, and in my humble 
+    opinion it is the most important angle of security and should be carefully 
+    planned. The basic idea behind this is, &quot;You can't access what you can't 
+    see&quot;. Why in the name of the Almighty (or whoever else you believe in, or if 
+    you are an Atheist, substitute your own name here) would you let your 
+    database server be visible to the world. This is not a web server here, 
+    there should be no such thing as an anonymous connection. Now some people 
+    would say, &quot;Well, what if your database server is supplying information to 
+    dynamic web pages?&quot;, well I'll turn that around and say, &quot;Your database back 
+    end should never be on the same machine as your web server, not just for 
+    security, but for performance!&quot; If your database server is supplying 
+    information to a web server then it should be configure to allow connections 
+    only from that web server. Now that bring me to the next point of 
+    discussion:</span></p>
+    <p style="text-align: justify; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt">
+    <span style="font-size: 9.0pt; color: black">Without a proper structure you 
+    begin to get chaos when it comes to such an important topic as security. Jim 
+    of the East Coast Office has all of his patches up to date, but he has an 
+    insecure link with Bill on the west-coast, who has failed to properly 
+    configure his firewall. Some one or a group of someone's should be looking 
+    at the big picture. </span></p>
+    <p style="text-align: justify; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt">
+    <span style="font-size: 9.0pt; color: black">Now that I have gotten that 
+    basic security organization rant out of my system, let me begin a little 
+    more technical look at database security. </span></p>
+    <p style="text-align: justify; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt">
+    <span style="font-size: 9.0pt; color: black">Database Vulnerabilities (The 
+    many fronts of the security war!) </span></p>
+    <p style="text-align: justify; margin-top: 0in">
+    <span style="font-size: 9.0pt; color: black">Basically database security can 
+    be broken down into the following key points of interest. </span></p>
+    <ul type="disc" style="margin-bottom: 0in">
+      <li class="MsoNormal" style="color: black; text-align: justify">
+      <span style="font-size: 9.0pt">Server Security </span></li>
+      <li class="MsoNormal" style="color: black; text-align: justify">
+      <span style="font-size: 9.0pt">Database Connections </span></li>
+      <li class="MsoNormal" style="color: black; text-align: justify">
+      <span style="font-size: 9.0pt">Table Access Control </span></li>
+      <li class="MsoNormal" style="color: black; text-align: justify">
+      <span style="font-size: 9.0pt">Restricting Database Access </span></li>
+    </ul>
+    <p style="text-align: justify; margin-bottom: .0001pt"><b><u>
+    <span style="font-size: 9.0pt; color: black">Server Security </span></u></b>
+    </p>
+    <p style="text-align: justify; margin-bottom: .0001pt">
+    <span style="font-size: 9.0pt; color: black">Server security is the process 
+    of limiting actual access to the database server itself, and in my humble 
+    opinion it is the most important angle of security and should be carefully 
+    planned. The basic idea behind this is, &quot;You can't access what you can't 
+    see&quot;. Why in the name of the Almighty (or whoever else you believe in, or if 
+    you are an Atheist, substitute your own name here) would you let your 
+    database server be visible to the world. This is not a web server here, 
+    there should be no such thing as an anonymous connection. Now some people 
+    would say, &quot;Well, what if your database server is supplying information to 
+    dynamic web pages?&quot;, well I'll turn that around and say, &quot;Your database back 
+    end should never be on the same machine as your web server, not just for 
+    security, but for performance!&quot; If your database server is supplying 
+    information to a web server then it should be configure to allow connections 
+    only from that web server. Now that bring me to the next point of 
+    discussion: </span></p>
+    <p class="MsoNormal" style="text-align: justify">
+    <span style="font-size: 9.0pt; color: black"><!--[if gte vml 1]><v:shape id="_x0000_s1027" type="#_x0000_t75"
+ alt="" style='width:226.5pt;height:146.25pt'>
+ <v:imagedata src="" o:href="file:///D:\Kshitij\VB%20Projects\Database%20Security%20(Common-sense%20Principles)_files\trust_ip.gif"/>
+</v:shape><![endif]--></span></p>
+    <p class="MsoNormal"><i><span style="font-size: 9.0pt; color: black">Here 
+    Trusted IP Access has limited the database server <br>
+    to only answering information requests from the known IP of <br>
+    the web server. </span></i></p>
+    <p class="MsoNormal" style="text-align: justify">
+    <span style="font-size: 9.0pt; color: black">&nbsp;&nbsp;</span><b><u><span style="font-size: 9.0pt; color: black">Trusted 
+    IP addresses </span></u></b></p>
+    <p class="MsoNormal" style="text-align: justify">
+    <span style="font-size: 9.0pt; color: black">Every server, should be 
+    configured to only allow trusted IP addresses. You don't allow just anyone 
+    to come into your house and talk to your children. In the same respect you 
+    should know exactly who should be allowed to &quot;talk&quot; to your database server.
+    </span></p>
+    <p class="MsoNormal" style="text-align: justify">
+    <span style="font-size: 9.0pt; color: black">&nbsp;If it's a back end for a web 
+    server., then only that web server.'s address should be allowed to access 
+    that database server. If the database server is supplying information to a 
+    homegrown application that is running on the internal network, then it 
+    should only answer to addresses from within the internal network. Also 
+    please none of this cheap mentality of hosting your web databases on the 
+    same server that houses internal database information. Why would you have 
+    internal information out in the DMZ, its not called the DMZ for nothing.
+    </span></p>
+    <p class="MsoNormal" style="text-align: justify">
+    <span style="font-size: 9.0pt; color: black">&nbsp;</span><b><u><span style="font-size: 9.0pt; color: black">Database 
+    Connections </span></u></b></p>
+    <p class="MsoNormal" style="text-align: justify">
+    <span style="font-size: 9.0pt; color: black">These days with the number of 
+    Dynamic Applications it becomes tempting to allow immediate unauthenticated 
+    updates to a database. I say, &quot;Ney!&quot; to such laziness. If you are going to 
+    allow users to make updates to a database via a web page, ensure that you 
+    validate all updates to ensure that all updates are valid. For example 
+    ensure that you are removing any possible SQL code from a user supplied 
+    input. If a normal user should never be inputting it don't allow the data to 
+    ever be submitted. </span></p>
+    <p class="MsoNormal" style="text-align: justify">
+    <span style="font-size: 9.0pt; color: black">&nbsp;If you are one of those 
+    administrators that feels the need to use ODBC connections ensure that every 
+    connection uses it's own unique user to access the shared data. It 
+    personally makes my skin crawl when I see the user account &quot;sa&quot; used for 
+    every connection and data source on the server. Does every employee in your 
+    company have keys to every room in the building? I'll let you address that 
+    problem quietly if they do. </span></p>
+    <p class="MsoNormal" style="text-align: justify">
+    <span style="font-size: 9.0pt; color: black">&nbsp;</span><b><u><span style="font-size: 9.0pt; color: black">Table 
+    Access Control </span></u></b></p>
+    <p class="MsoNormal" style="text-align: justify">
+    <span style="font-size: 9.0pt; color: black">Table access control is 
+    probably one of the most overlooked forms of database security because of 
+    the inherent difficult in applying it. Properly using Table access control 
+    will require the collaboration of both system administrator and database 
+    developer, and we all know that &quot;collaboration&quot; is a foreign word in the IT 
+    industry. </span></p>
+    <p class="MsoNormal" style="text-align: justify">
+    <span style="font-size: 9.0pt; color: black">&nbsp;An example would be allowing 
+    read access to user imputed information to the public. If a user just 
+    imputed the information whey would they have to look at it within the same 
+    session. Or, if a table is just used for system reference why should it have 
+    any other permissions beside read available? </span></p>
+    <p class="MsoNormal" style="text-align: justify">
+    <span style="font-size: 9.0pt; color: black">&nbsp;Unfortunately table structure 
+    and proper relational database structure and development is a little out of 
+    the scope of this article. But, keep a look out for it in my upcoming &quot;bitch 
+    sessions&quot; </span></p>
+    <p class="MsoNormal" style="text-align: justify">
+    <span style="font-size: 9.0pt; color: black">&nbsp;</span><b><u><span style="font-size: 9.0pt; color: black">Restricting 
+    Database Access </span></u></b></p>
+    <p class="MsoNormal" style="text-align: justify">
+    <span style="font-size: 9.0pt; color: black">Now being that we have 
+    completed a basic overview of database security I want to dive a little 
+    further into the specifics of server security. Mainly into the network 
+    access of the system. Specifically targeting Internet based databases, since 
+    they have been the most recent targets of attacks. All web-enabled 
+    applications have ports that they listen to ( I know this is pretty basic to 
+    most of you but, it needs to be said for the beginners!). </span></p>
+    <p class="MsoNormal" style="text-align: justify">
+    <span style="font-size: 9.0pt; color: black">&nbsp;Most cyber criminals ( I 
+    always refrain from the media sensationalized term &quot;Hackers&quot; or &quot;Crackers&quot;) 
+    are going to do a simple &quot;port scan&quot; to look for ports that are open that 
+    popular database systems use by default. Now I say by default, because you 
+    can change the ports a service listens on, which I personally feel is a 
+    great way to throw off a criminal. </span></p>
+    <p class="MsoNormal" style="text-align: justify">
+    <span style="font-size: 9.0pt; color: black">&nbsp;First they will attempt to 
+    determine if a machine is even at a specific address. They will do this by 
+    pinging the system. (If you don't know what ping is quietly close this 
+    article, you need to do some studying first!) This is done by simply opening 
+    up a command line and typing &quot;ping&quot;. </span></p>
+    <p class="MsoNormal" style="text-align: justify">
+    <span style="font-size: 9.0pt; color: black">&nbsp;C:\ ping 127.0.0.1 </span></p>
+    <p class="MsoNormal" style="text-align: justify">
+    <span style="font-size: 9.0pt; color: black">&nbsp;or </span></p>
+    <p class="MsoNormal" style="text-align: justify">
+    <span style="font-size: 9.0pt; color: black">root@localhost: ~$: ping 
+    127.0.0.1 </span></p>
+    <p class="MsoNormal" style="text-align: justify">
+    <span style="font-size: 9.0pt; color: black">&nbsp;The response should look like 
+    this: </span></p>
+    <p class="MsoNormal" style="text-align: justify">
+    <span style="font-size: 9.0pt; color: black">&nbsp;Pinging 127.0.0.1 with 32 
+    bytes of data: </span></p>
+    <p class="MsoNormal" style="text-align: justify">
+    <span style="font-size: 9.0pt; color: black">&nbsp;Reply from 127.0.0.1: bytes=32 
+    time&lt;10ms TTL=128 </span></p>
+    <p class="MsoNormal" style="text-align: justify">
+    <span style="font-size: 9.0pt; color: black">Reply from 127.0.0.1: bytes=32 
+    time&lt;10ms TTL=128 </span></p>
+    <p class="MsoNormal" style="text-align: justify">
+    <span style="font-size: 9.0pt; color: black">Reply from 127.0.0.1: bytes=32 
+    time&lt;10ms TTL=128 </span></p>
+    <p class="MsoNormal" style="text-align: justify">
+    <span style="font-size: 9.0pt; color: black">Reply from 127.0.0.1: bytes=32 
+    time&lt;10ms TTL=128 </span></p>
+    <p class="MsoNormal" style="text-align: justify">
+    <span style="font-size: 9.0pt; color: black">&nbsp;Ping statistics for 127.0.0.1:
+    </span></p>
+    <p class="MsoNormal" style="text-align: justify">
+    <span style="font-size: 9.0pt; color: black">Packets: Sent = 4, Received = 
+    4, Lost = 0 (0% </span></p>
+    <p class="MsoNormal" style="text-align: justify">
+    <span style="font-size: 9.0pt; color: black">Approximate round trip times in 
+    milli-seconds: </span></p>
+    <p class="MsoNormal" style="text-align: justify">
+    <span style="font-size: 9.0pt; color: black">Minimum = 0ms, Maximum = 0ms, 
+    Average = 0ms </span></p>
+    <p class="MsoNormal" style="text-align: justify">
+    <span style="font-size: 9.0pt; color: black">&nbsp;</span></p>
+    <p class="MsoNormal" style="text-align: justify">
+    <span style="font-size: 9.0pt; color: black"><!--[if gte vml 1]><v:shape id="_x0000_s1028" type="#_x0000_t75"
+ alt="" style='width:231pt;height:114pt'>
+ <v:imagedata src="" o:href="file:///D:\Kshitij\VB%20Projects\Database%20Security%20(Common-sense%20Principles)_files\ping_small.gif"/>
+</v:shape><![endif]--></span></p>
+    <p class="MsoNormal"><i><span style="font-size: 9.0pt; color: black">An 
+    example of the ping command being used on a windows box.</span></i></p>
+    <p class="MsoNormal" style="text-align: justify">
+    <span style="font-size: 9.0pt; color: black">&nbsp;</span><span style="font-size: 9.0pt; color: black">The 
+    criminal now knows there is a system answering at this address. First thing 
+    to prevent this is to disable any UDP packets. This will prevent ping 
+    requests from being replied to. </span></p>
+    <p style="text-align: justify; margin-top: 0in">
+    <span style="font-size: 9.0pt; color: black">There are many ways to prevent 
+    open access from the Internet and each database system has it's own set of 
+    unique features as well as each OS. So I am merely going to touch on a few 
+    methods. </span></p>
+    <ul type="disc" style="margin-bottom: 0in">
+      <li class="MsoNormal" style="color: black; text-align: justify">
+      <span style="font-size: 9.0pt">Trusted IP addresses - UNIX servers are 
+      configured to answer only pings from a list of “trusted�</span><span style="font-size: 9.0pt; font-family: Verdana">�</span><span style="font-size: 9.0pt"> 
+      hosts. In UNIX, this is accomplished by configuring the rhosts file, which 
+      restricts server access to a list of specific users. </span></li>
+      <li class="MsoNormal" style="color: black; text-align: justify">
+      <span style="font-size: 9.0pt">Server account disabling – If you suspend 
+      the server ID after three password attempts, attackers are thwarted. 
+      Without user ID suspension, an attacker can run a program that generates 
+      millions of passwords until it guesses the user ID and password 
+      combination. </span></li>
+      <li class="MsoNormal" style="color: black; text-align: justify">
+      <span style="font-size: 9.0pt">Special tools – Products such as Zone 
+      Alarm send an alert when an external server is attempting to breach your 
+      firewall security. </span></li>
+    </ul>
+    <p style="text-align: justify"><span style="font-size: 9.0pt; color: black">
+    Oracle has a wealth of authentication methods: </span></p>
+    <ul type="disc" style="margin-bottom: 0in">
+      <li class="MsoNormal" style="color: black; text-align: justify">
+      <span style="font-size: 9.0pt">Kerberos securit y – This popular 
+      &quot;ticket&quot;-based authentication system sidesteps several security risks.
+      </span></li>
+      <li class="MsoNormal" style="color: black; text-align: justify">
+      <span style="font-size: 9.0pt">Virtual private databases – VPD 
+      technology can restrict access to selected rows of tables. </span></li>
+      <li class="MsoNormal" style="color: black; text-align: justify">
+      <span style="font-size: 9.0pt">Role-based security – Object privileges 
+      can be grouped into roles, which can then be assigned to specific users.
+      </span></li>
+      <li class="MsoNormal" style="color: black; text-align: justify">
+      <span style="font-size: 9.0pt">Grant-execute security – Execution 
+      privileges on procedures can be tightly coupled to users. When a user 
+      executes the procedures, they gain database access, but only within the 
+      scope of the procedure. </span></li>
+      <li class="MsoNormal" style="color: black; text-align: justify">
+      <span style="font-size: 9.0pt">Authentication servers – Secure 
+      authentication servers provide positive identification for external users.
+      </span></li>
+      <li class="MsoNormal" style="color: black; text-align: justify">
+      <span style="font-size: 9.0pt">Port access security - All Oracle 
+      applications are directed to listen at a specific port number on the 
+      server. Like any standard HTTP server, the Oracle Web Listener can be 
+      configured to restrict access. </span></li>
+    </ul>
+    <p style="text-align: justify; margin-bottom: .0001pt">
+    <span style="font-size: 9.0pt; color: black">I hope that I have broadened 
+    your view of database security, and quite possibly helped eliminate or at 
+    least lower the threat of criminals looking for the &quot;easy kill&quot;. (I know 
+    that is a little egotistical of me) If you have any questions or wish to 
+    contact me. (Flames and praise are welcomed equally) contact me at: 
+    vb_masters@yahoo.com</span></p>
+    <p style="text-align: justify; margin-left: 0in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt">
+    <span style="font-size: 9.0pt; color: black">Kshitij Kumar</span></td>
+    <td style="border-style: none; border-width: medium" width="14" height="116" bgcolor="#FFFFCC">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="border-style: none; border-width: medium" width="9" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="795" height="11" bgcolor="#009900">&nbsp;</td>
+    <td style="border-style: none; border-width: medium" width="14" height="11" bgcolor="#009900">&nbsp;</td>
+  </tr>
+  </table>
+
+</body>
+
+</html>
