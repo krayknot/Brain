@@ -1,0 +1,221 @@
+BODY
+{
+    BACKGROUND-COLOR: #ffffff;
+    COLOR: #666666;
+    FONT-FAMILY: Verdana, Arial,Helvetica;
+    MARGIN: 0px
+}
+TD
+{
+    COLOR: #666666;
+    FONT-FAMILY: Tahoma, Verdana, Arial, Helvetica;
+    FONT-SIZE: 11px;
+    FONT-WEIGHT: normal
+}
+.b
+{
+    COLOR: #666666;
+    FONT-FAMILY: Tahoma, Verdana, Arial, Helvetica;
+    FONT-SIZE: 11px;
+    FONT-WEIGHT: bold
+}
+.bw
+{
+    COLOR: #ffffff;
+    FONT-FAMILY: Tahoma, Verdana, Arial, Helvetica;
+    FONT-SIZE: 11px;
+    FONT-WEIGHT: bold
+}
+.w
+{
+    COLOR: #ffffff;
+    FONT-FAMILY: Tahoma, Verdana, Arial, Helvetica;
+    FONT-SIZE: 11px;
+    FONT-WEIGHT: normal
+}
+.dg
+{
+    COLOR: #333333;
+    FONT-FAMILY: Tahoma, Verdana, Arial, Helvetica;
+    FONT-SIZE: 11px;
+    FONT-WEIGHT: normal
+}
+.job
+{
+    COLOR: #ffffff;
+    FONT-FAMILY: Tahoma, Verdana, Arial, Helvetica;
+    FONT-SIZE: 11px;
+    FONT-WEIGHT: bold
+}
+.footer
+{
+    COLOR: #2d5980;
+    FONT-FAMILY: Tahoma, Verdana, Arial, Helvetica;
+    FONT-SIZE: 11px;
+    FONT-WEIGHT: normal
+}
+A:link
+{
+    COLOR: #333333;
+    TEXT-DECORATION: none
+}
+A:visited
+{
+    COLOR: black;
+    TEXT-DECORATION: none
+}
+A:active
+{
+    COLOR: #333333;
+    TEXT-DECORATION: none
+}
+A:hover
+{
+    COLOR: darkgreen;
+    TEXT-DECORATION: underline
+}
+A.w:link
+{
+    COLOR: #ffffff;
+    TEXT-DECORATION: none
+}
+A.w:visited
+{
+    COLOR: #ffffff;
+    TEXT-DECORATION: none
+}
+A.w:active
+{
+    COLOR: #ffffff;
+    TEXT-DECORATION: none
+}
+A.w:hover
+{
+    COLOR: #996639;
+    TEXT-DECORATION: underline
+}
+A.n:link
+{
+    COLOR: #666666;
+    TEXT-DECORATION: none
+}
+A.n:visited
+{
+    COLOR: sienna;
+    FONT-FAMILY: Tahoma;
+    TEXT-DECORATION: underline
+}
+A.n:active
+{
+    COLOR: #666666;
+    TEXT-DECORATION: none
+}
+A.n:hover
+{
+    COLOR: #996639;
+    TEXT-DECORATION: underline
+}
+A.o:link
+{
+    COLOR: #2d5980;
+    TEXT-DECORATION: none
+}
+A.o:visited
+{
+    COLOR: #2d5980;
+    TEXT-DECORATION: none
+}
+A.o:active
+{
+    COLOR: #2d5980;
+    TEXT-DECORATION: none
+}
+A.o:hover
+{
+    COLOR: #996639;
+    TEXT-DECORATION: underline
+}
+INPUT.text
+{
+    COLOR: #666666;
+    FONT-FAMILY: Tahoma, Tahoma, Verdana, Arial, Helvetica;
+    FONT-SIZE: 11px;
+    FONT-WEIGHT: normal
+}
+SELECT
+{
+    COLOR: #666666;
+    FONT-FAMILY: Tahoma, Verdana, Arial, Helvetica;
+    FONT-SIZE: 11px;
+    FONT-WEIGHT: normal
+}
+.TNA
+{
+    COLOR: red;
+    FONT-FAMILY: Verdana;
+    FONT-SIZE: 11px;
+    FONT-WEIGHT: bold;
+    TEXT-DECORATION: none
+}
+A.TNA:hover
+{
+    TEXT-DECORATION: underline
+}
+.HeaderClass
+{
+    COLOR: black;
+    FONT-FAMILY: Verdana;
+    FONT-SIZE: 12px;
+    FONT-WEIGHT: bold
+}
+.TableHead
+{
+    BACKGROUND-COLOR: #aec5d0;
+    COLOR: white;
+    FONT-FAMILY: Verdana;
+    FONT-SIZE: 10px;
+    FONT-WEIGHT: bold
+}
+.BlackText
+{
+    COLOR: black;
+    FONT-FAMILY: Verdana;
+    FONT-SIZE: 11px
+}
+.BlackLink
+{
+    COLOR: black;
+    FONT-FAMILY: Verdana;
+    FONT-SIZE: 11px;
+    FONT-WEIGHT: bold;
+    TEXT-DECORATION: none
+}
+A.BlackLink:hover
+{
+    TEXT-DECORATION: underline
+}
+.GreenLink
+{
+    COLOR: green;
+    FONT-FAMILY: Verdana;
+    FONT-SIZE: 11px;
+    FONT-WEIGHT: bold;
+    TEXT-DECORATION: none
+}
+A.GreenLink:hover
+{
+    TEXT-DECORATION: underline
+}
+INPUT
+{
+    BORDER-BOTTOM-COLOR: black;
+    BORDER-BOTTOM-WIDTH: 1px;
+    BORDER-LEFT-COLOR: black;
+    BORDER-LEFT-WIDTH: 1px;
+    BORDER-RIGHT-COLOR: black;
+    BORDER-RIGHT-WIDTH: 1px;
+    BORDER-TOP-COLOR: black;
+    BORDER-TOP-WIDTH: 1px;
+    COLOR: black;
+    FONT-FAMILY: Verdana
+}
